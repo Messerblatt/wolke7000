@@ -13,33 +13,34 @@ configuration:
     - templates
     - .obsidian
   theme:
-    fontOrigin: googleFonts
-    cdnCaching: true
+    fontOrigin: local
+    cdnCaching: false
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      title: "Source Code Pro"
+      header: "Source Code Pro"
+      body: "Source Code Pro"
+      code: "Source Code Pro"
     colors:
       lightMode:
-        light: "#f4f1e8"
-        lightgray: "#d8d2c2"
-        gray: "#9c9a8f"
-        darkgray: "#353a36"
-        dark: "#17231e"
-        secondary: "#167c6c"
-        tertiary: "#b85f3c"
-        highlight: "rgba(22, 124, 108, 0.14)"
-        textHighlight: "#e5c85c88"
+        light: "#f6fafd"
+        lightgray: "#d8e5ee"
+        gray: "#8297a6"
+        darkgray: "#334452"
+        dark: "#152735"
+        secondary: "#236b9e"
+        tertiary: "#6653a3"
+        highlight: "rgba(35, 107, 158, 0.12)"
+        textHighlight: "rgba(137, 207, 240, 0.38)"
       darkMode:
-        light: "#101714"
-        lightgray: "#29342f"
-        gray: "#52615a"
-        darkgray: "#c8d1cc"
-        dark: "#edf3ef"
-        secondary: "#55c7ad"
-        tertiary: "#df8963"
-        highlight: "rgba(85, 199, 173, 0.15)"
-        textHighlight: "#d4af3766"
+        light: "#0e1722"
+        lightgray: "#263746"
+        gray: "#647d90"
+        darkgray: "#d4e2ec"
+        dark: "#f0f7fb"
+        secondary: "#7dd3fc"
+        tertiary: "#c4b5fd"
+        highlight: "rgba(125, 211, 252, 0.14)"
+        textHighlight: "rgba(91, 159, 194, 0.42)"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -110,8 +111,30 @@ plugins:
     order: 92
   - source: "@quartz-community/quartz-fonts"
     enabled: true
+    options:
+      useThemeFonts: false
+      fontOrigin: selfHosted
+      title:
+        name: "Source Code Pro"
+        weights: [400, 600, 700]
+      header:
+        name: "Source Code Pro"
+        weights: [400, 600, 700]
+      body:
+        name: "Source Code Pro"
+        weights: [400, 500, 600, 700]
+        includeItalic: true
+      code:
+        name: "Source Code Pro"
+        weights: [400, 600]
+      h1: '"Wolke Title", "Source Code Pro", sans-serif'
+      h2: '"Wolke Title", "Source Code Pro", sans-serif'
+      h3: '"Wolke Title", "Source Code Pro", sans-serif'
+      h4: '"Wolke Title", "Source Code Pro", sans-serif'
+      h5: '"Wolke Title", "Source Code Pro", sans-serif'
+      h6: '"Wolke Title", "Source Code Pro", sans-serif'
   - source: "@quartz-themes/core"
-    enabled: true
+    enabled: false
     options:
       theme: default
       mode: both

@@ -1,3 +1,138 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/static/fonts/source-code-pro/SourceCodePro_VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/static/fonts/source-code-pro/SourceCodePro_VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wolke Title";
+  src: url("/static/fonts/page-title/Treamd.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --titleFont: "Wolke Title", "Source Code Pro", sans-serif;    
+  --titleFont: "Source Code Pro", monospace;
+  --headerFont: "Source Code Pro", monospace;
+  --bodyFont: "Source Code Pro", monospace;
+  --codeFont: "Source Code Pro", monospace;
+
+  --font-text: "Source Code Pro", monospace;
+  --font-interface: "Source Code Pro", monospace;
+  --font-monospace: "Source Code Pro", monospace;
+
+  --heading-h1-size: clamp(2.5rem, 5vw, 4rem);
+  --heading-h2-size: clamp(2rem, 3.8vw, 3rem);
+  --heading-h3-size: clamp(1.65rem, 3vw, 2.3rem);
+  --heading-h4-size: clamp(1.4rem, 2.3vw, 1.85rem);
+  --heading-h5-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  --heading-h6-size: clamp(1.05rem, 1.5vw, 1.25rem);
+}
+
+
+.page-title,
+.page-title a {
+  font-family: "Wolke Title";
+  font-size: 3.75rem;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Wolke Title";
+}
+
+body article h1 {
+  font-size: var(--heading-h1-size);
+}
+
+body article h2 {
+  font-size: var(--heading-h2-size);
+}
+
+body article h3 {
+  font-size: var(--heading-h3-size);
+}
+
+body article h4 {
+  font-size: var(--heading-h4-size);
+}
+
+body article h5 {
+  font-size: var(--heading-h5-size);
+}
+
+body article h6 {
+  font-size: var(--heading-h6-size);
+}
+
+/* Properties panel: align tags cleanly */
+.note-properties .note-properties-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  vertical-align: middle;
+}
+
+/* The plugin inserts comma separators between tags.
+   Hide them when using spacing through flex-gap. */
+.note-properties .note-properties-tags .note-properties-separator {
+  display: none;
+}
+
+/* Override Quartz's tag-pill styling */
+.note-properties .note-properties-tags a.internal-link.tag-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+
+  background: transparent;
+  border-radius: 0;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.note-properties .note-properties-tags a.internal-link.tag-link:hover {
+  background: transparent;
+  color: var(--tertiary);
+  text-decoration: underline;
+}
+
+/* Keep a theme-generated # aligned with the tag text */
+.note-properties .note-properties-tags a.tag-link::before {
+  position: static;
+  display: inline;
+  margin: 0 0.1em 0 0;
+  padding: 0;
+  line-height: inherit;
+  vertical-align: baseline;
+  transform: none;
+}
+
+body a.internal-link {
+    background-color: transparent;
+    padding: 3px;
+    margin: 3px;
+    display: inline;
+}
+
+    
