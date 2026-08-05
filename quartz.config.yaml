@@ -20,26 +20,27 @@ configuration:
       body: Source Sans Pro
       code: IBM Plex Mono
     colors:
-      lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+       lightMode:
+        light: "#f4f1e8"
+        lightgray: "#d8d2c2"
+        gray: "#9c9a8f"
+        darkgray: "#353a36"
+        dark: "#17231e"
+        secondary: "#167c6c"
+        tertiary: "#b85f3c"
+        highlight: "rgba(22, 124, 108, 0.14)"
+        textHighlight: "#e5c85c88"
+
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#101714"
+        lightgray: "#29342f"
+        gray: "#52615a"
+        darkgray: "#c8d1cc"
+        dark: "#edf3ef"
+        secondary: "#55c7ad"
+        tertiary: "#df8963"
+        highlight: "rgba(85, 199, 173, 0.15)"
+        textHighlight: "#d4af3766"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
