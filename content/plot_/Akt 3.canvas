@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"188f9d9973e1fdb8","x":-660,"y":-92,"width":250,"height":60,"type":"text","text":"# Beginn Akt 3"},
+		{"id":"6ee956ec5a6a437e","x":750,"y":-80,"width":250,"height":60,"type":"text","text":"# Wolke 7000"}
+	],
+	"edges":[]
+}

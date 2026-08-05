@@ -1,0 +1,1 @@
+ein Wäscheschiff mit vielen Waschmaschinen an Board. Zieht Treuhänder an, die für die Besatzung klauen. 

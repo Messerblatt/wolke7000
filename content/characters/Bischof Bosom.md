@@ -1,0 +1,7 @@
+---
+aliases:
+  - Reverent Forevius
+---
+
+#espiritus 
+

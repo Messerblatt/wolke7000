@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"b3a709890c53a9c8","type":"text","text":"# Deuterium\n\nModerner Michaelangelo\n\nStirbt zu Beginn von Akt 2\n\nEine Bloße Schachfigur für Siebenstrom","x":-480,"y":1331,"width":250,"height":289},
+		{"id":"84e10a5f9cd8e052","type":"text","text":"# Sam 3\n\nErfinder, Gutmensch\n\nMöchte die Oxfords verlassen. Möglich ist das nur, indem er seinen Glauben an die Menschheit verliert (Die Austrittskarte der Oxfords)","x":-140,"y":1331,"width":250,"height":329},
+		{"id":"ab1c27bbaa3ecf40","type":"text","text":"# T1ng\n\nSteinalter Ritter auf Rollerblades\n\nDer älteste Oxford (und wahrscheinlich auch der mächtigste)\n\nFungiert als stiller Weise, berät nur","x":-820,"y":1331,"width":250,"height":289},
+		{"id":"028ed89f040c3a22","type":"text","text":"# Fünfblut\n\nEin Junge mit übermenschlichen Kräften","x":220,"y":1331,"width":250,"height":329},
+		{"id":"f3fad484cb8b69b4","type":"text","text":"# Sexy Sechs","x":540,"y":1331,"width":250,"height":335},
+		{"id":"4b2dac679bac0672","type":"text","text":"# Siebenstrom","x":860,"y":1325,"width":250,"height":335},
+		{"id":"bc833a7733e32b7c","type":"text","text":"# Okta⁸","x":1180,"y":1331,"width":250,"height":335},
+		{"id":"8a733a5314ba7418","type":"text","text":"# Dr 9\n\nComputergenie und Most-Wanted.\n\nAsberger mit Realitätsverlust\n\nFührte den Staatreset herbei","x":1500,"y":1331,"width":250,"height":357}
+	],
+	"edges":[]
+}
