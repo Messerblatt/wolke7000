@@ -20,7 +20,7 @@ configuration:
       body: Source Sans Pro
       code: IBM Plex Mono
     colors:
-       lightMode:
+      lightMode:
         light: "#f4f1e8"
         lightgray: "#d8d2c2"
         gray: "#9c9a8f"
@@ -30,7 +30,6 @@ configuration:
         tertiary: "#b85f3c"
         highlight: "rgba(22, 124, 108, 0.14)"
         textHighlight: "#e5c85c88"
-
       darkMode:
         light: "#101714"
         lightgray: "#29342f"
