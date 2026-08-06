@@ -1,7 +1,8 @@
 #neuberlin
 
+![[icon_diskoord.jpg]]
 
-> [!abstract]  
+> [!abstract]
 > Das **Tempelhofer Diskoord** die größte freie Werft NeuBerlins. In den ehemaligen Flughafenhallen werden Boote gebaut, repariert, umgerüstet und notdürftig wieder schwimmfähig gemacht. Die alten Rollfelder liegen größtenteils unter Wasser und bilden heute den **Tempelhofer See**, der als Schiffspark genutzt wird.
 > 
 > Im ehemaligen Funkturm befindet sich die Schaltzentrale von [[Open Wings]].

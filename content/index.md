@@ -12,12 +12,13 @@ tags:
 ---
 ![[poster_atalantax.png]]
 
+
 Das ist der Digital Garden von **Wolke 7000**, einem open-end und open-world open-source Solarpunk Projekt, bei dem es um fliegende Schiffe und einer besseren Zukunft geht.
 
 
 ![[koko_third.png]]
 >[!info] 
->Zu den Characters gehts [[Characters|hier]].
+>Zu den Characters gehts [[Characters Übersicht|hier]].
 
 ## Warum?
 
@@ -32,7 +33,7 @@ Nur ein paar einzelne, versprengte Territorien können sich noch vor den globale
 >[!tip] NeuBerlin
 >NeuBerlin ist das alte Berlin, nur dass NeuBerlin halb unter Wasser versunken liegt und die Anarchie in der Stadt ausgebrochen ist. Boote und Schiffe sind die bevorzugten Transportmittel. 
 
-Die Stadt wird von 4 Schleusen, eine pro Himmelsrichtung (oder sollte man sagen: Himmel 7000-Richtung??) mit Wasser versorgt, welches durch strategische Bombeneinschläge in den umherliegenden Territorien zur Stadt bewegt wird. NeuBerlin ist bevölkert von einer Mischung unterschiedlicher [[Characters]].
+Die Stadt wird von 4 Schleusen, eine pro Himmelsrichtung (oder sollte man sagen: Himmel 7000-Richtung??) mit Wasser versorgt, welches durch strategische Bombeneinschläge in den umherliegenden Territorien zur Stadt bewegt wird. NeuBerlin ist bevölkert von einer Mischung unterschiedlicher [[Characters Übersicht]].
 
 ![[icon_openWing.png]]
 
@@ -50,7 +51,7 @@ Das Projekt ist **multimedial** ausgelegt. Mit wolke7000.com möchte ich Türen 
 
 Vielleicht wird daraus eine Serie, ein Webformat, eine Roman-Serie, ein Videospiel - wer weiß? Alles mögliche könnte aus diesem Projekt entstehen.
 
-# Was dich erwartet könnte
+## Was dich erwartet könnte
 
 | Bereich     | Inhalt                                                                |
 | ----------- | --------------------------------------------------------------------- |
@@ -63,7 +64,21 @@ Vielleicht wird daraus eine Serie, ein Webformat, eine Roman-Serie, ein Videospi
 | Kultur      | Regenfeste, Running Gags und Stadtmythen                              |
 | Lore        | Geschichte, Religionen, Politik und Unsinn mit erstaunlich viel Logik |
 
-# ⚠️ Spoilerwarnung
+
+## ⚠️ Spoilerwarnung
 
 Dieser Vault enthält einige Spoiler. Falls du dagegen wissen möchtest, warum in NeuBerlin irgendwann ein drei Meter großer, halbtransparenter Hirsch über Hausdächer springt oder weshalb Brieftauben das Internet ersetzen, bist du hier genau richtig.
+
+
+## Contributions
+
+Das Github-Repo zu Wolke 7000 findest du: [hier](https://github.com/Messerblatt/wolke7000/tree/v5). Fühl dich frei
+
+
+## About
+
+![[markus_pic.jpg]]
+
+Mein Name ist Markus Meyer. Meine Website findest du hier: markus6000.com. Falls du mir eine Mail schreiben möchtest, lass mich gerne von dir hören: markusmeyer2000 [at] protonmail.com.
+
 

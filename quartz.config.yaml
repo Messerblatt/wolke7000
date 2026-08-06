@@ -5,9 +5,10 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: plausible
+    provider: google
+    tagId: "G-TJM3526RLT"
   locale: en-US
-  baseUrl: wolke7000.com
+  baseUrl: "wolke7000.com"
   ignorePatterns:
     - private
     - templates
@@ -16,10 +17,10 @@ configuration:
     fontOrigin: local
     cdnCaching: false
     typography:
-      title: "Source Code Pro"
-      header: "Source Code Pro"
-      body: "Source Code Pro"
-      code: "Source Code Pro"
+      title: Source Code Pro
+      header: Source Code Pro
+      body: Source Code Pro
+      code: Source Code Pro
     colors:
       lightMode:
         light: "#f6fafd"
@@ -29,8 +30,8 @@ configuration:
         dark: "#152735"
         secondary: "#236b9e"
         tertiary: "#6653a3"
-        highlight: "rgba(35, 107, 158, 0.12)"
-        textHighlight: "rgba(137, 207, 240, 0.38)"
+        highlight: rgba(35, 107, 158, 0.12)
+        textHighlight: rgba(137, 207, 240, 0.38)
       darkMode:
         light: "#0e1722"
         lightgray: "#263746"
@@ -39,9 +40,11 @@ configuration:
         dark: "#f0f7fb"
         secondary: "#7dd3fc"
         tertiary: "#c4b5fd"
-        highlight: "rgba(125, 211, 252, 0.14)"
-        textHighlight: "rgba(91, 159, 194, 0.42)"
+        highlight: rgba(125, 211, 252, 0.14)
+        textHighlight: rgba(91, 159, 194, 0.42)
 plugins:
+  - source: github:quartz-community/unlisted-pages
+    enabled: true
   - source: "@quartz-community/created-modified-date"
     enabled: true
     options:
@@ -115,18 +118,30 @@ plugins:
       useThemeFonts: false
       fontOrigin: selfHosted
       title:
-        name: "Source Code Pro"
-        weights: [400, 600, 700]
+        name: Source Code Pro
+        weights:
+          - 400
+          - 600
+          - 700
       header:
-        name: "Source Code Pro"
-        weights: [400, 600, 700]
+        name: Source Code Pro
+        weights:
+          - 400
+          - 600
+          - 700
       body:
-        name: "Source Code Pro"
-        weights: [400, 500, 600, 700]
+        name: Source Code Pro
+        weights:
+          - 400
+          - 500
+          - 600
+          - 700
         includeItalic: true
       code:
-        name: "Source Code Pro"
-        weights: [400, 600]
+        name: Source Code Pro
+        weights:
+          - 400
+          - 600
       h1: '"Wolke Title", "Source Code Pro", sans-serif'
       h2: '"Wolke Title", "Source Code Pro", sans-serif'
       h3: '"Wolke Title", "Source Code Pro", sans-serif'
@@ -253,8 +268,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Impressum: impressum
+        Datenschutz: Datenschutzerklaerung
     layout:
       position: footer
       priority: 50
@@ -296,6 +311,10 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  - source: github:quartz-community/unlisted-pages
+    enabled: true
+    options: {}
+    order: 45
 layout:
   groups:
     toolbar:

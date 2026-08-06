@@ -2,7 +2,7 @@
 ![[icon_openWing.png]]
 
 
-Die **Open Wingss** Foundation ist eine gemeinnützige Stiftung zur Nachrichtenübermittlung und Informationskoordination in NeuBerlin. Sie betreibt das gleichnamige Brieftaubennetz, das die Stadtteile sowie zahlreiche Außenposten der Wasserstraßen von NeuBerlin miteinander verbindet. Open Wingss gilt als eine der ältesten noch aktiven Institutionen der Stadt und wird als „Internet 1“ in die Geschichte von NeuBerlin eingehen. Anders als das "Internet 0" der Alten Welt transportiert Open Wingss ausschließlich physische Nachrichtenkapseln. Die Stiftung verfolgt die Grundsätze der Freiheit, Überprüfbarkeit und Unabhängigkeit des Informationsaustausches. Open Wingss agiert unabhängig von zentraler Kontrolle und wird vom [[Tempelhof Diskoord]] koordiniert.
+Die **Open Wings** Foundation ist eine gemeinnützige Stiftung zur Nachrichtenübermittlung und Informationskoordination in NeuBerlin. Sie betreibt das gleichnamige Brieftaubennetz, das die Stadtteile sowie zahlreiche Außenposten der Wasserstraßen von NeuBerlin miteinander verbindet. Open Wingss gilt als eine der ältesten noch aktiven Institutionen der Stadt und wird als „Internet 1“ in die Geschichte von NeuBerlin eingehen. Anders als das "Internet 0" der Alten Welt transportiert Open Wings ausschließlich physische Nachrichtenkapseln. Die Stiftung verfolgt die Grundsätze der Freiheit, Überprüfbarkeit und Unabhängigkeit des Informationsaustausches. Open Wingss agiert unabhängig von zentraler Kontrolle und wird vom [[Tempelhof Diskoord]] koordiniert.
 
 ### Geschichte
 

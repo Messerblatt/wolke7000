@@ -31,3 +31,4 @@ Gantt wendet größte Mühen auf, den Candytron zu analysieren, und versteht ins
 
 Aus diesem Vorsatz ist seine Idee entstanden, es müsse eine Art neuartiges Diagramm existierten, über das Siebenstrom Kenntnisse hat, er selbst aber nicht. So beginnt Gantt seine Arbeit an der Erfindung eines neuen Diagramms. Weitere Ausführungen über das Diagramm werden im Buch **Gantt's Diagramm** erzählt. 
 
+hier
