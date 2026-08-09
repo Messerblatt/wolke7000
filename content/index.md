@@ -10,7 +10,9 @@ tags:
   - wolke7000
   - ship
 ---
-![[poster_atalantax.png]]
+
+
+![[poster_2.png]]
 
 
 Das ist der Digital Garden von **Wolke 7000**, einem open-end und open-world open-source Solarpunk Projekt, bei dem es um fliegende Schiffe und einer besseren Zukunft geht.
@@ -26,14 +28,14 @@ Die bisher so naiven Umsetzungen von Solarpunk brachten mich dazu, einen bessere
 
 ## Die Lore
 
-Die Geschichte beginnt im Jahre 2126 in NeuBerlin. Durch Atomkriege und Klimakatastrophen ist die Welt am Untergehen. Der entfesselte Raubtierkapitalismus und die Schwarmdummheit der Menschen sorgten dafür, dass die Menschheit das Fliegen verlernte. Dann stellte sich auch noch heraus, dass Raumfahrt - leider leider - ebenfalls kein veritables Konzept darstellt, um die Menschheit aus der Klemme zu holen. So ist die Menschheit sich selbst überlassen, ohne Möglichkeit, zu fliehen.
+Die Geschichte beginnt im Jahre 2126 in NeuBerlin. Durch Atomkriege und Klimakatastrophen ist die Welt am Untergehen. Der entfesselte Raubtierkapitalismus und die Schwarmdummheit der Menschen haben dafür gesorgt, dass die Menschheit das Fliegen verlernte. Dann crashen auch noch die letzten finanzierbaren Raumfahrtprojekte, und die Menschheit steht da, ohne Fluchttaxi ins All, hilflos im Archipel der letzten noch bewohnbaren Oasen der Erde.
 
-Nur ein paar einzelne, versprengte Territorien können sich noch vor den globalen Superkatastrophen schützen. NeuBerlin ist ein solcher Ort, und hier beginnt die Geschichte.
+NeuBerlin ist eine solche Oase, und hier beginnt die Geschichte.
 
 >[!tip] NeuBerlin
 >NeuBerlin ist das alte Berlin, nur dass NeuBerlin halb unter Wasser versunken liegt und die Anarchie in der Stadt ausgebrochen ist. Boote und Schiffe sind die bevorzugten Transportmittel. 
 
-Die Stadt wird von 4 Schleusen, eine pro Himmelsrichtung (oder sollte man sagen: Himmel 7000-Richtung??) mit Wasser versorgt, welches durch strategische Bombeneinschläge in den umherliegenden Territorien zur Stadt bewegt wird. NeuBerlin ist bevölkert von einer Mischung unterschiedlicher [[Characters Übersicht]].
+Die Stadt wird von 4 Schleusen - eine pro Himmelsrichtung - mit Wasser versorgt, das durch strategische Bombeneinschläge in den umherliegenden Territorien zur Stadt bewegt wird. NeuBerlin ist bevölkert von einer Liga der außergewöhnlichen [[Characters Übersicht|Characters]].
 
 ![[icon_openWing.png]]
 
@@ -41,15 +43,17 @@ Die Stadt wird von 4 Schleusen, eine pro Himmelsrichtung (oder sollte man sagen:
 >Zu Open Wings gehts [[Open Wings|hier]].
 
 
-Das Internet, wie wir es kennen, wurde in NeuBerlin durch [[Open Wings]] ersetzt. Ein Hacker namens [[Salt Brah]] koordiniert die Brieftauben vom Funkturm des [[Tempelhof Diskoord]]. [[Ciao Von Bella]] und [[funky (dot) blend|Funky.blend]] kümmern sich darum, dass Brieftauben und Schiffe die Infrastruktur mit Informationen und Material der [[EVERYTHING]] versorgen. Die EVERYTHING ist ein Meta-Schiff, und was das zu bedeuten hat, weiß ich auch noch nicht. 
+Das Internet, wie wir es kennen, wurde in NeuBerlin durch [[Open Wings]] ersetzt. Ein Hacker namens [[Salt Brah]] koordiniert die Brieftauben vom Funkturm des [[Tempelhof Diskoord]]. [[Ciao Von Bella]] und [[funky (dot) blend|Funky.blend]] kümmern sich darum, dass Brieftauben und Schiffe die Infrastruktur mit Informationen und Material der [[ships/EVERYTHING|EVERYTHING]] versorgen. Die EVERYTHING ist ein Meta-Schiff, und was das zu bedeuten hat, weiß ich auch noch nicht. 
 
 Die Saga beginnt.
 
 ## Was aus Wolke 7000 werden könnte
 
-Das Projekt ist **multimedial** ausgelegt. Mit wolke7000.com möchte ich Türen öffnen für Künstlerinnen und Künstlern, für Developer, die Lust haben, an einem größerem Solarpunk-Projekt mitwirken zu wollen.
+Weiß ich nicht. Keine Ahnung. Das ganze Thema sollte ursprünglich in einem Sci-fi Roman kulminieren, aber mit sci-fi bin ich skeptisch: Seit weiß-gott-wie-vielen Jahren schreibt die Sci-Fi Community über KI. Jetzt ist die KI da, und die sci-fi Leute checken nicht, dass KI keine Fiction mehr ist. 
 
-Vielleicht wird daraus eine Serie, ein Webformat, eine Roman-Serie, ein Videospiel - wer weiß? Alles mögliche könnte aus diesem Projekt entstehen.
+### Alles langweilig und immer das Gleiche
+
+In der Geschichte von Wolke 7000 spielt KI keine Rolle. Und naja weißt du, weil die Geschichte zum Rausgehen animiert, geht auch der Roman eine Runde in neuen Medienformen spazieren. Ich probiere hier irgendwas, und falls du zugucken willst, wie die Geschichte das Fliegen lernt: Ich stoße jeden Sonntag einen git-commit an, und die CI-Pipeline deployed die neuen Inhalte hier auf wolke7000.com. Komm nächste Woche wieder.
 
 ## Was dich erwartet könnte
 
@@ -65,12 +69,7 @@ Vielleicht wird daraus eine Serie, ein Webformat, eine Roman-Serie, ein Videospi
 | Lore        | Geschichte, Religionen, Politik und Unsinn mit erstaunlich viel Logik |
 
 
-## ⚠️ Spoilerwarnung
-
-Dieser Vault enthält einige Spoiler. Falls du dagegen wissen möchtest, warum in NeuBerlin irgendwann ein drei Meter großer, halbtransparenter Hirsch über Hausdächer springt oder weshalb Brieftauben das Internet ersetzen, bist du hier genau richtig.
-
-
-## Contributions
+## Das Repo
 
 Das Github-Repo zu Wolke 7000 findest du: [hier](https://github.com/Messerblatt/wolke7000/tree/v5). Fühl dich frei
 
@@ -79,6 +78,6 @@ Das Github-Repo zu Wolke 7000 findest du: [hier](https://github.com/Messerblatt/
 
 ![[markus_pic.jpg]]
 
-Mein Name ist Markus Meyer. Meine Website findest du hier: markus6000.com. Falls du mir eine Mail schreiben möchtest, lass mich gerne von dir hören: markusmeyer2000 [at] protonmail.com.
+Ich bin Markus. Meine Website findest du hier: markus6000.com. Falls du mir eine Mail schreiben möchtest, lass gerne von dir hören: markusmeyer2000 [at] protonmail.com.
 
 

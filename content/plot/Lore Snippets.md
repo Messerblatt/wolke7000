@@ -139,18 +139,18 @@ funkys Laudatio fällt gewöhnlich knapp aus:
 > „Sieht furchtbar aus. Würd ick sofort fahren.“
 
 
-#### Gemeinsame Szenen mit Gantt
+#### Gemeinsame Szenen mit Fibo
 
 ## Mögliche gemeinsame Szenen
 
 > [!example] Das Rennen  
-> Gantt behauptet, FLITZAs Steuerung sei bei hoher Geschwindigkeit instabil. funky fordert ihn auf, das Gegenteil praktisch zu beweisen, und setzt ihn hinter sich auf das Boot. Während des Rennens erklärt Gantt lautstark, warum jede Kurve physikalisch falsch ist. funky gewinnt.
+> Fibo behauptet, FLITZAs Steuerung sei bei hoher Geschwindigkeit instabil. funky fordert ihn auf, das Gegenteil praktisch zu beweisen, und setzt ihn hinter sich auf das Boot. Während des Rennens erklärt Fibo lautstark, warum jede Kurve physikalisch falsch ist. funky gewinnt.
 
 > [!example] Die beschädigte INFINITY  
-> Nach einem Angriff müssen beide gemeinsam eine tragende Sektion der INFINITY stabilisieren. Gantt berechnet die Belastung, funky entscheidet, welche Teile des Schiffes geopfert werden können. Zum ersten Mal streiten sie nicht darüber, wer recht hat, sondern darüber, wer das größere Risiko übernimmt.
+> Nach einem Angriff müssen beide gemeinsam eine tragende Sektion der INFINITY stabilisieren. Fibo berechnet die Belastung, funky entscheidet, welche Teile des Schiffes geopfert werden können. Zum ersten Mal streiten sie nicht darüber, wer recht hat, sondern darüber, wer das größere Risiko übernimmt.
 
 > [!example] Die Blender-Datei  
-> Gantt findet in funkys Modellbibliothek eine unvollendete Konstruktion, die auffällig viele seiner eigenen Designprinzipien übernimmt. Der Dateiname lautet `nicht_gantt.blend`.
+> Fibo findet in funkys Modellbibliothek eine unvollendete Konstruktion, die auffällig viele seiner eigenen Designprinzipien übernimmt. Der Dateiname lautet `nicht_Fibo.blend`.
 
 > [!example] Das schlechte Kompliment  
-> funky betrachtet eine von Gantt gebaute Maschine lange und sagt schließlich: „Kannste lassen.“ Gantt ist tagelang ungewöhnlich guter Laune.
+> funky betrachtet eine von Fibo gebaute Maschine lange und sagt schließlich: „Kannste lassen.“ Fibo ist tagelang ungewöhnlich guter Laune.

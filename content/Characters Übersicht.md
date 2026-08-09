@@ -9,40 +9,53 @@
 
 ---
 
-## [[Gantt]]
+## [[Fibo]]
 
-![[gantt_third.jpg]]
+![[fibo_third.jpg]]
 
 
 > [!abstract] Kurzprofil  
-> **Gantt** ist Steuermann der [[NIMBUS]], Hacker, Erfinder und universelles Technikgenie. Seine umfassenden Kompetenzen in allem, was irgendwie mit Technik zu tun hat, macht ihn für das [[Himmelfahrtskommando]] unverzichtbar.
+> **Fibo** ist Steuermann der [[NIMBUS]], Hacker, Erfinder und universelles Technikgenie. Seine umfassenden Kompetenzen in allem, was irgendwie mit Technik zu tun hat, macht ihn für das [[Himmelfahrtskommando]] unverzichtbar.
 
 ---
 ## [[Spasti]]
 
 
 > [!abstract] Kurzprofil  
-> **Spasti** ist Querolant, Anarchist, Brandstifter und Nahkämpfer der [[NIMBUS]]. Er trinkt Kraftstoffe, kann Feuer speien und politische Diskussionen durch gezielte Schläge erheblich verkürzen. Wie sein Körper diese Belastungen übersteht, ist wissenschaftlich ungeklärt. [[Gantt]] bezeichnet ihn als „biochemische Unmöglichkeit“, „laufenden Motorschaden“ oder „Beweis gegen die Vernunft“.
+> **Spasti** ist Querolant, Anarchist, Brandstifter und Nahkämpfer der [[NIMBUS]]. Er trinkt Kraftstoffe, kann Feuer speien und politische Diskussionen durch gezielte Schläge erheblich verkürzen. Wie sein Körper diese Belastungen übersteht, ist wissenschaftlich ungeklärt. [[Fibo]] bezeichnet ihn als „biochemische Unmöglichkeit“, „laufenden Motorschaden“ oder „Beweis gegen die Vernunft“.
 
 ---
 
 ## [[Samsa]]
 
+![[samsa_third.png]]
+
+>[!abstract] Kurzprofil
+>**Samsa** ([[Open Wings]] Kennung **OW-Samsa-071**) ist die Brieftaube der [[NIMBUS]]. Sie transportiert Briefe und leichte Gegenstände für die Crew und fungiert als die persönliche Poststelle. Besonders nahestehend ist ihr Verhältnis mit Koko, die für Samsa engste Vertraute und beste Freundin ist. 
 
 ---
-
 ## [[Nero]]
 
 
+![[nero_third.png]]
+
+>[!abstract] Kurzprofil
+>Nero ist vermutlich Drahtzieher der Exilium AG. Seine Gewohnheit, mit gleicher Pathologie zu lügen wie mit Überraschungseffekten aufzutauchen und zu verschwinden, macht ihn schwer einschätzbar. Man weiß so gut wie gar nichts über ihn; ein Umstand, der ihm großes Vergnügen bereitet. Fibo bezeichnet ihn als **404er**. Spasti verfällt bei Situationen, in denen Nero erscheint, in sonderbare Traumatas, die vermutlich mit seiner Vergangenheit im Exilium in Zusammenhang steht.
 
 ---
-
 ## [[Ajax]]
 
+![[ajax_third.png]]
+
+>[!abstract] Kurzprofil
+>**Ajax** ist ex Marineangehöriger und Leiter des **Marine-Archivs von NeuBerlin**. Nach einer schweren Schulterverletzung während der Alsterkriege wurde er nach NeuBerlin versetzt und übernahm dort faktisch die Führung des Archivs, nachdem seine Vorgänger ausschieden und die Zentralverwaltung verschwand. Er ist Veteran, Überlebenskünstler und Ausbilder jüngerer Kapitäne; und ein Mann, der nicht müde wird, über inkompetentes Management zu schimpfen.
 
 ---
 
 ## [[Mia Von Schöneberg]]
+
+
+
 
 
 ---
@@ -52,6 +65,16 @@
 
 
 ---
+
+
+
+## [[Solo Mio]]
+
+
+
+
+---
+
 
 ## [[Salt Brah]]
 
@@ -80,12 +103,6 @@
 > [!abstract]  
 > **Ciao Von Bella** ist Falknerin, Administratorin von [[Tempelhof Diskoord]] und eine der tragenden Figuren der [[Open Wings]] Foundation. Sie gilt als ruhig, weitsichtig und schwer zu täuschen. Wer eine Brieftaube schlecht behandelt, lernt sehr schnell, dass Ciao's Zorn keine Grenzen kennt.
 > 
-
-
----
- 
-## [[Solo Mio]]
-
 
 ---
 ## [[T1ng Trebuchet]]

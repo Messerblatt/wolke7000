@@ -1,9 +1,14 @@
-
-#nimbus #himmelfahrtskommando #neuberlin #exilium 
+---
+tags:
+  - nimbus
+  - himmelfahrtskommando
+  - neuberlin
+  - exilium
+---
 
 
 > [!abstract] Kurzprofil  
-> **Spasti** ist Querolant, Anarchist, Brandstifter und Nahkämpfer der [[NIMBUS-Crew]]. Er trinkt Kraftstoffe, kann Feuer speien und politische Diskussionen durch gezielte Schläge erheblich verkürzen. Wie sein Körper diese Belastungen übersteht, ist wissenschaftlich ungeklärt. [[Gantt]] bezeichnet ihn als „biochemische Unmöglichkeit“, „laufenden Motorschaden“ oder „Beweis gegen die Vernunft“.
+> **Spasti** ist Querolant, Anarchist, Brandstifter und Nahkämpfer der [[NIMBUS-Crew]]. Er trinkt Kraftstoffe, kann Feuer speien und politische Diskussionen durch gezielte Schläge erheblich verkürzen. Wie sein Körper diese Belastungen übersteht, ist wissenschaftlich ungeklärt. [[Fibo]] bezeichnet ihn als „biochemische Unmöglichkeit“, „laufenden Motorschaden“ oder „Beweis gegen die Vernunft“.
 
 | Merkmal                   | Beschreibung                                    |
 | ------------------------- | ----------------------------------------------- |
@@ -25,11 +30,11 @@
 > [!quote] Spasti über seine Kindheit  
 > „Ich hatte eine normale Kindheit. Die anderen waren das Problem.“
 
-Nachdem ihm nahezu alle öffentlichen Einrichtungen die Einschulung verwiesen haben, heuerte Spasti bei der [[Exilium AG]] an. Das Unternehmen betrieb ein weitverzweigtes System aus unterirdischen Anlagen unter den südlichen Bezirken NeuBerlins. Die Arbeitsbedingungen galten als miserabel, doch ging Spasti im kontinuierlichen Psychoterror der Exilium AG regelrecht auf.
+Nachdem ihm nahezu alle öffentlichen Einrichtungen die Einschulung verwiesen haben, heuerte Spasti bei der [[Exilium AG]] an. Das Unternehmen betrieb ein weitverzweigtes System aus unterirdischen Anlagen unter den südlichen Bezirken NeuBerlins. Die Arbeitsbedingungen galten als miserabel, doch ging Spasti im Psychoterror der Exilium regelrecht auf.
 
-Seine Begeisterung hielt jedoch nur so lange an, bis ihm auffiel, dass das Chaos der Exilium einer hierarchischen Struktur folge. Spasti, der jegliche Form gesellschaftlicher Ordnung ablehnt, reagierte darauf mit einer Meuterei. Einen konkreten Plan, außer dem Stiften von Chaos, verfolgte er dabei nicht, behauptet später jedoch, alles sei „militärisch durchdacht“ gewesen.
+Seine Begeisterung hielt jedoch nur so lange an, bis ihm auffiel, dass das Chaos der Exilium einer hierarchischen Struktur folgte. Spasti, der jegliche Form gesellschaftlicher Ordnung ablehnt, reagierte darauf mit einer Meuterei. Einen konkreten Plan, außer dem Stiften von Chaos, verfolgte er dabei nicht, behauptet später jedoch, alles sei „militärisch durchdacht“ gewesen.
 
-Gantt hält es für wahrscheinlicher, dass Spasti lediglich angefangen habe zu schreien und die Ereignisse anschließend eine Eigendynamik entwickelten.
+[[Fibo]] hält es für wahrscheinlicher, dass Spasti lediglich angefangen habe zu schreien und die Ereignisse anschließend eine Eigendynamik entwickelten.
 
 > [!info] Vermutlicher Ablauf der Meuterei
 > 
@@ -44,17 +49,17 @@ Spasti schildert die Meuterei bei jeder Gelegenheit anders. In einer Version dau
 
 Wahrscheinlich war es das Rohr.
 
-Er verließ die unterirdischen Anlagen und stieg durch einen Versorgungsschacht in den südlichen Territorien NeuBerlins auf. Kurz nach seinem Auftauchen begegnete er [[Kokolores]] und [[Gantt]], die sich auf einer Entdeckungsreise befanden.
+Er verließ die unterirdischen Anlagen und stieg durch einen Versorgungsschacht in den südlichen Territorien NeuBerlins auf. Kurz nach seinem Auftauchen begegnete er [[Kokolores]] und [[Fibo]], die sich auf einer Entdeckungsreise befanden.
 
-Gantt hielt Spasti zunächst für einen toxischen Industrieunfall, Kokolores hingegen erkannte in ihm einen orientierungslosen, aber zutiefst loyalen Menschen. Sie erzählte ihm von den Botschaften der Wolke 7000 und ihrer Überzeugung, vom Himmel auserwählt worden zu sein. Spasti war sofort beeindruckt und schwor der NIMBUS ewige Loyalität.
+[[Fibo]] hielt Spasti zunächst für einen toxischen Industrieunfall, [[Kokolores]] hingegen erkannte in ihm einen orientierungslosen, aber zutiefst loyalen Menschen. Sie erzählte ihm von den Botschaften der Wolke 7000 und ihrer Überzeugung, vom Himmel auserwählt worden zu sein. Spasti war sofort beeindruckt und schwor der [[NIMBUS]] ewige Loyalität.
 
 Ob er verstand, was Wolke 7000 war, spielte dabei keine Rolle.
 
-> [!quote] Spasti über Kokolores
+> [!quote] Spasti über [[Kokolores]]
 > „Wenn der Himmel Koko ausgesucht hat, wird er schon wissen, warum. Der Himmel ist sehr groß.“
 
 
-Seitdem begleitet er die NIMBUS als Brandstifter und Schläger.
+Seitdem begleitet er die [[NIMBUS]] als Brandstifter und Schläger.
 
 ## Persönlichkeit
 
@@ -82,7 +87,9 @@ Problematisch wird es bei technischen Zusammenhängen. Besonders Türklinken ste
 > [!danger] Türklinken  
 > Aus unerfindlichen Gründen ist Spasti nicht in der Lage, das kausale Verhältnis zwischen einer Türklinke und der dazugehörigen Tür zu erfassen.
 
-Gantt versuchte mehrfach, ihm die Mechanik einer Türklinke zu erklären. Nach dem vierten Versuch entwickelte Spasti die Überzeugung, Türen seien „kleine autoritäre Grenzregimes“. Seither bevorzugt er Fenster.
+[[Fibo]] versuchte mehrfach, ihm die Mechanik einer Türklinke zu erklären. Nach dem vierten Versuch entwickelte Spasti die Überzeugung, Türen seien „kleine autoritäre Grenzregimes“. 
+
+Seitdem bevorzugt er Fenster.
 
 Trotz seiner Aggressivität ist Spasti emotional zugänglich und besitzt eine kindlich Form der Zuneigung. Menschen, denen er vertraut, verteidigt er ohne Zögern. Seine Loyalität ist absolut, manchmal irrational und häufig gefährlicher als die Bedrohung, vor der er beschützen möchte.
 
@@ -138,7 +145,7 @@ Sein Kampfstil folgt einem einfachen Prinzip:
 
 > **Solange auf das Ziel einschlagen, bis es aufhört, sich zu bewegen.**
 
-Gantt bezeichnet diese Methode als „rekursive Gewaltanwendung ohne Abbruchbedingung“.
+[[Fibo]] bezeichnet diese Methode als „rekursive Gewaltanwendung ohne Abbruchbedingung“.
 
 Typische Lösungsansätze seiner Faust-Methodik:
 
@@ -157,7 +164,7 @@ Typische Lösungsansätze seiner Faust-Methodik:
 
 Zudem besitzt Spasti eine natürliche Begabung, Angst auszulösen. Seine körperliche Erscheinung und die Möglichkeit, jederzeit in Flammen aufzugehen, verhelfen ihm in Verhandlungen stets zu schlagkräftigen Effekten.
 
-Kokolores nutzt diese Eigenschaft gelegentlich strategisch: Während sie mit Clanführern verhandelt, steht Spasti schweigend hinter ihr und trinkt demonstrativ aus einem Benzinkanister. In vielen Fällen beschleunigt dies die Konsensbildung erheblich.
+[[Kokolores]] nutzt diese Eigenschaft gelegentlich strategisch: Während sie mit Clanführern verhandelt, steht Spasti schweigend hinter ihr und trinkt demonstrativ aus einem Benzinkanister. In vielen Fällen beschleunigt dies die Konsensbildung erheblich.
 
 ## Beziehungen
 
@@ -171,13 +178,13 @@ Meist genügt ein bestimmter Blick, eine ruhige Berührung oder die Erinnerung d
 
 Seine Zuneigung zu ihr besitzt para-romantische Züge, bleibt jedoch undefiniert. Spasti selbst scheint keinen klaren Unterschied zwischen Liebe, Loyalität und dem Wunsch zu erkennen, jeden ihrer Feinde zu verprügeln.
 
-### Gantt
+### Fibo
 
-Zwischen Spasti und [[Gantt]] besteht eine intensive Hassfreundschaft.
+Zwischen Spasti und [[Fibo]] besteht eine intensive Hassfreundschaft.
 
-Gantt hält Spasti für irrational, zerstörerisch und intellektuell kaum belastbar. Spasti betrachtet Gantt als schwach und unnötig wortreich.
+[[Fibo]] hält Spasti für irrational, zerstörerisch und intellektuell kaum belastbar. Spasti betrachtet [[Fibo]] als schwach und unnötig wortreich.
 
-Dennoch ergänzen sie sich bei Gefahren ausgezeichnet. Gantt weiß, dass Spasti ihn beschützen wird. Spasti weiß, dass Gantt beinahe jedes Problem reparieren kann, das Spasti zuvor verursacht hat.
+Dennoch ergänzen sie sich bei Gefahren ausgezeichnet. [[Fibo]] weiß, dass Spasti ihn beschützen wird. Spasti weiß, dass [[Fibo]] beinahe jedes Problem reparieren kann, das Spasti zuvor verursacht hat.
 
 ### Die Clanführer NeuBerlins
 
@@ -189,7 +196,7 @@ Mehrere Clanführer haben interne Regeln für Begegnungen mit ihm entwickelt:
 2. **KEINE** Titel mit "Chief" o.Ä. verwenden.
 3. **KEINE** verschlossenen Türen zwischen Spasti und dem Ausgang.
 4. **KEINE** Diskussionen über Eigentumsrecht
-5. Kokolores informieren, bevor das Gespräch beginnt.
+5. [[Kokolores]] informieren, bevor das Gespräch beginnt.
 
 
 ## Öffentliche Wahrnehmung
@@ -206,4 +213,4 @@ So erscheint sein Name häufig auf Hauswänden. Mehrere Parolen werden ihm zuges
 > „Eine andere Welt ist möglich. Die hier kann weg.“
 > „Tür zu? Revolution.“
 
-Gantt vermutet, dass Spastis Anhänger ihn für wesentlich philosophischer halten, als er tatsächlich ist. Spasti empfindet das als Kompliment.
+[[Fibo]] vermutet, dass Spastis Anhänger ihn für wesentlich philosophischer halten, als er tatsächlich ist. Spasti empfindet das als Kompliment.

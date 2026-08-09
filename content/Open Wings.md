@@ -27,7 +27,7 @@ In den darauffolgenden Jahren wurde Open Wings großflächig in NeuBerlin etabli
 
 Open Wings versteht sich ausdrücklich nicht als Postdienst, sondern als öffentliche Infrastruktur. Die Stiftung transportiert ausschließlich Briefe. Waren, Ersatzteile oder Lebensmittel werden grundsätzlich nicht durch Brieftauben befördert.
 
-Stattdessen dient Open Wings als Kommunikationsschicht über dem Wasserverkehr der Stadt. Benötigt eine Werkstatt beispielsweise ein bestimmtes Ventil, wird zunächst eine Nachricht über Open Wings an den Material-Index der [[EVERYTHING]] übermittelt. Dort wird geprüft, welcher Lastkahn den gesuchten Gegenstand führt und auf welchem Kanal er sich befindet. Erst danach macht sich ein Versorgungsboot auf den Weg.
+Stattdessen dient Open Wings als Kommunikationsschicht über dem Wasserverkehr der Stadt. Benötigt eine Werkstatt beispielsweise ein bestimmtes Ventil, wird zunächst eine Nachricht über Open Wings an den Material-Index der [[ships/EVERYTHING]] übermittelt. Dort wird geprüft, welcher Lastkahn den gesuchten Gegenstand führt und auf welchem Kanal er sich befindet. Erst danach macht sich ein Versorgungsboot auf den Weg.
 
 Die Verbindung zwischen Open Wings und EVERYTHING gilt als eines der elementaren logistischen Systeme NeuBerlins und wird häufig mit dem Verhältnis zwischen Daten- und Transportnetzen der Alten Welt verglichen.
 

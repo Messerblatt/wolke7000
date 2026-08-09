@@ -3,7 +3,7 @@
 
 [[Kokolores]]
 [[Spasti]]
-[[Gantt]]
+[[Fibo]]
 [[Samsa]]
 
 ## [[NEXT]]

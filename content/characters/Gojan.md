@@ -1,5 +1,12 @@
+---
+tags:
+  - neuberlin
+  - next
+  - himmelfahrtskommando
+---
 
-#next #neuberlin #himmelfahrtskommando 
+Gojan ist sowohl für die Wasserwerke zuständig, als auch dafür, die Pippkids von ihren Eskalationen abzuhalten. 
+
 
 
 Als vor 35 Jahren der damals junge, lockenköpfige [[Gojan]] unter den hohen Schultern seiner Eltern über die Landebahnen des Tempelhofer Feldes ging, kam ihm eine Idee, und er rannte drauflos. 25 Jahre später ruderte Gojan der Große per Kanu auf den Staudämmen der Südflanke den Weg zurück. Die Bewohner von NeuBerlin warfen Blumensträuße und Dornenkronen von den Decks der umhertreibenden Schiffe zu ihm herunter. Ihre Segel hingen straff im Wind, hunderte von Brieftauben flatterten über die Südflanke, während die Menschen auf den aufbrausenden Hochgewässern der neuen Möglichkeiten jubelten. Gojan hat die Südflanke errichtet, den letzten noch fehlenden Deich von NeuBerlin.

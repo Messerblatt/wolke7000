@@ -1,6 +1,6 @@
 #ship 
 
 [[Kokolores]]
-[[Gantt]]
+[[Fibo]]
 [[Spasti]]
 [[Samsa]]
