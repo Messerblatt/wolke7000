@@ -2,17 +2,8 @@
 title: Wolke 7000
 publish: true
 tags:
-  - diskoord
-  - espiritus
-  - infinity
-  - neuberlin
-  - oxford
-  - wolke7000
-  - ship
 ---
-
-
-![[poster_2.png]]
+![[poster_4.png]]
 
 
 Das ist der Digital Garden von **Wolke 7000**, einem open-end und open-world open-source Solarpunk Projekt, bei dem es um fliegende Schiffe und einer besseren Zukunft geht.
@@ -53,7 +44,7 @@ Weiß ich nicht. Keine Ahnung. Das ganze Thema sollte ursprünglich in einem Sci
 
 ### Alles langweilig und immer das Gleiche
 
-In der Geschichte von Wolke 7000 spielt KI keine Rolle. Und naja weißt du, weil die Geschichte zum Rausgehen animiert, geht auch der Roman eine Runde in neuen Medienformen spazieren. Ich probiere hier irgendwas, und falls du zugucken willst, wie die Geschichte das Fliegen lernt: Ich stoße jeden Sonntag einen git-commit an, und die CI-Pipeline deployed die neuen Inhalte hier auf wolke7000.com. Komm nächste Woche wieder.
+In der Geschichte von Wolke 7000 spielt KI keine Rolle. Und naja weißt du, weil die Geschichte zum Rausgehen animiert, geht auch der Roman eine Runde in neuen Medienformen spazieren. Ich probiere hier irgendwas, und falls du zugucken willst, wie die Geschichte das Fliegen lernt: Ich stoße jeden Sonntag einen neuen `git commit` an, und die CI-Pipeline deployed die neuen Inhalte hier auf wolke7000.com. Komm nächste Woche noch einmal wieder.
 
 ## Was dich erwartet könnte
 
@@ -71,13 +62,13 @@ In der Geschichte von Wolke 7000 spielt KI keine Rolle. Und naja weißt du, weil
 
 ## Das Repo
 
-Das Github-Repo zu Wolke 7000 findest du: [hier](https://github.com/Messerblatt/wolke7000/tree/v5). Fühl dich frei
+Das Github-Repo zu Wolke 7000 findest du: [hier](https://github.com/Messerblatt/wolke7000/tree/v5).
 
 
 ## About
 
 ![[markus_pic.jpg]]
 
-Ich bin Markus. Meine Website findest du hier: markus6000.com. Falls du mir eine Mail schreiben möchtest, lass gerne von dir hören: markusmeyer2000 [at] protonmail.com.
+Ich bin Markus. Meine Website findest du hier: [markus6000.com](https://markus6000.com). Falls du mir eine Mail schreiben möchtest, lass gerne von dir hören: markusmeyer2000 [at] protonmail.com.
 
 

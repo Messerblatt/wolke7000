@@ -1,8 +1,14 @@
 ---
-tags:
-  - nimbus
-  - himmelfahrtskommando
-  - neuberlin
+aliases:
+friend:
+  - "[[Kokolores]]"
+  - "[[Spasti]]"
+  - "[[Admiral 7]]"
+  - "[[funky (dot) blend]]"
+enemy:
+  - "[[Nero]]"
+clan: nimbus
+ship: NIMBUS
 ---
 
 ![[fibo_1.png]]
@@ -31,11 +37,11 @@ Obwohl etablierte Wissenschaftler auf seine tatsächliche Urheberschaft aufmerks
 > [!note] Akademische Reputation  
 > Fibo besitzt keinen anerkannten Bildungsabschluss. Dennoch beruhen mehrere wissenschaftliche Karrieren indirekt auf seinen Texten, Berechnungen und Erfindungen.
 
-Er lernte Kokolores auf einer Party in der Dekantine kennen. Sie verstanden sich auf Anhieb und beschlossen, für das Schätzesuchen gemeinsame Sache zu machen. 
+Er lernte [[Kokolores]] auf einer Party in der Dekantine kennen. Sie verstanden sich auf Anhieb und beschlossen, für das Schätzesuchen gemeinsame Sache zu machen. 
 
-Sie stahlen die NIMBUS von den Docks der südlichen Spandau-Gemeinde und befahren seitdem gemeinsam die Wasserstraßen von NeuBerlin. Das Steuer übernimmt meist er.
+Sie stahlen die [[NIMBUS]] von den Docks der südlichen Spandau-Gemeinde und befahren seitdem gemeinsam die Wasserstraßen von NeuBerlin. Das Steuer übernimmt meist er.
 
-Während einer von Fibo angestoßenen Entdeckungsmission in die südlichen Gewässer NeuBerlins trafen er und Kokolores auf [[Spasti]]. Dieser war gerade dabei, aus den Tunneln der [[Exilium AG]] an die Oberfläche zu steigen.
+Während einer von Fibo angestoßenen Entdeckungsmission in die südlichen Gewässer NeuBerlins trafen er und [[Kokolores]] auf [[Spasti]]. Dieser war gerade dabei, aus den Tunneln der [[Exilium AG]] an die Oberfläche zu steigen.
 
 ## Fähigkeiten
 
@@ -43,11 +49,11 @@ Während einer von Fibo angestoßenen Entdeckungsmission in die südlichen Gewä
 
 Fibo kann fremde Technik zerlegen und in veränderter Form reproduzieren. Grade bei Geräten von Wolke 7000 wird sein Reverse-Engineering nützlich.
 
-Nach der Untersuchung eines [[Candytron|Candytrons]] von [[Siebenstrom]] kommt Fibo zu der Überzeugung, dass dessen Technik - und Siebenstrom selbst - genial und absolut revolutionär sein muss. Seitdem betrachtet er Siebenstrom als einen der wenigen Menschen, mit denen sich ein fachliches Gespräch noch lohnen könnte.
+Nach der Untersuchung eines [[Candytron|Candytrons]] von [[Admiral 7]] kommt Fibo zu der Überzeugung, dass dessen Technik - und [[Admiral 7]] selbst - genial und absolut revolutionär sein muss. Seitdem betrachtet er [[Admiral 7]] als einen der wenigen Menschen, mit denen sich ein fachliches Gespräch noch lohnen könnte.
 
 ### Navigation
 
-Als Steuermann der NIMBUS ist Fibo für die technische Navigation des Schiffes zuständig. Dabei kombiniert er alte Karten, Wetterdaten und Beobachtungen der Crew.
+Als Steuermann der [[NIMBUS]] ist Fibo für die technische Navigation des Schiffes zuständig. Dabei kombiniert er alte Karten, Wetterdaten und Beobachtungen der Crew.
 
 ### SERVERKLASSE A
 
@@ -55,7 +61,7 @@ Aus den Überresten verschiedener Computerteile konstruierte Fibo seinen ersten 
 
 Im Laufe seiner Nutzung entwickelte A jedoch ein eigenes Bewusstsein und begab sich auf eine Reise, ohne ihrem Schöpfer Bescheid zu sagen. 
 
->[!quote] Spasti über Fibo
+>[!quote] [[Spasti]] über Fibo
 > „Fibos Computer ist so schlau, dass er vor ihm weggelaufen ist.“
 
 Der Aufenthaltsort von SERVERKLASSE A ist unbekannt.
@@ -76,7 +82,7 @@ Auf der Unterseite des Laptops befindet sich ein Sticker mit der Aufschrift:
 
 
 > [!danger] Potenzial zur Katastrophe
-> SERVERKLASSE B ist ein digitales Seuchengebiet, was den Gebrauch des Laptops zu einer riskanten Angelegenheit macht. Seine Zerstörung könnte lokale Netzwerke lahmlegen, autonome Systeme infizieren oder sogar das gesamte Internet löschen.
+> [[SERVERKLASSE B]] ist ein digitales Seuchengebiet, was den Gebrauch des Laptops zu einer riskanten Angelegenheit macht. Seine Zerstörung könnte lokale Netzwerke lahmlegen, autonome Systeme infizieren oder sogar das gesamte Internet löschen.
 
 ## Persönlichkeit
 
@@ -84,9 +90,9 @@ Fibo denkt kühl, logisch und systematisch. Er betrachtet Situationen als techni
 
 Seine logische Art führt regelmäßig zu Konflikten. Fibo empfindet es selten als notwendig, unangenehme Wahrheiten abzumildern. Wenn er eine Idee für schlecht hält, sagt er es. Wenn er eine Person für inkompetent hält, auch.
 
-Fibo ist schlank, drahtig und trägt lange braune Haare. Er legt Wert auf Sauberkeit und führt ein entsprechendes Pflege-Regime, bei dem er sich 5 mal täglich in einer ausgedehnten hygienischen Prozedur wäscht.
+Fibo ist schlank, drahtig und trägt lange braune Haare. Er legt Wert auf Sauberkeit und führt hierzu ein umfangreiches Pflege-Regime.
 
-Er schläft viel, isst gern und verbringt lange Zeit damit, über Projekte nachzudenken, die er nicht anfängt. Nur punktuell mobilisiert er seinen außergewöhnlichen Intellekt, wenn sein Interesse für übermäßig komplizierte Lösungsansätze errwacht. 
+Er schläft viel, isst gern und verbringt lange Zeit damit, über Projekte nachzudenken, die er nicht anfängt. Nur punktuell mobilisiert er seinen außergewöhnlichen Intellekt, wenn sein Interesse für übermäßig komplizierte Lösungsansätze erwacht. 
 
 In solchen Phasen arbeitet er beinahe manisch. Sobald sich aber herausstellt, wie hoch der tatsächliche Arbeitsaufwand ist, verliert er die Motivation.
 
@@ -96,7 +102,7 @@ Fibo liebt Essen mehr als nahezu alles andere. Auf Bestechungsversuche mit Essen
 
 ### Kokolores
 
-Die Botschaften, die Kokolores nach eigenen Angaben von Wolke 7000 empfängt, betrachtet Fibo als Esoterik.
+Die Botschaften, die [[Kokolores]] nach eigenen Angaben von Wolke 7000 empfängt, betrachtet Fibo als Esoterik.
 
 Er sucht für ihre Fähigkeiten nach rationalen Erklärungen, wie z.B. akustische Phänomene, technische Signale oder selektive Erinnerung.
 
@@ -104,10 +110,9 @@ Häufig scheitern seine Untersuchungen daran, dass [[Spasti]] die Geräte besch�
 
 ### Spasti
 
-Zwischen Fibo und Spasti ist augenblicklich ein Nerd-Bully-Dualismus entstanden: Spasti mobbt Fibo, während Spasti's Idiotien Fibo dazu einladen, ihn auf möglichst kreative und indirekte Weise zu beleidigen.
+Zwischen Fibo und [[Spasti]] ist augenblicklich ein Nerd-Bully-Dualismus entstanden: [[Spasti]] mobbt Fibo, während [[Spasti]]'s Idiotien Fibo dazu einladen, ihn auf möglichst kreative und indirekte Weise zu beleidigen.
 
 Trotz ihrer ständigen Zankereien ergänzen sie sich in Kämpfen ausgezeichnet. Spastis kompromisslose Form der Problemlösung bezeichnet Fibo meist abschätzig als **Brute-Force**:
 
->[!quote] Fibo über Spasti
-> „Spasti ist das einzige Problem, das auf andere Problem einschlägt.“
-
+>[!quote] Fibo über [[Spasti]]
+> „[[Spasti]] ist das einzige Problem, das auf andere Problem einschlägt.“

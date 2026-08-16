@@ -1,9 +1,15 @@
 ---
-tags:
-  - neuberlin
-  - himmelfahrtskommando
-  - exilium
+friend:
+  - "[[Kokolores]]"
+enemy:
+  - "[[Nero]]"
+  - "[[Gojan]]"
+clan: mitte
+archive_presence: true
 ---
+
+
+
 ![[imgs/characters/ajax/ajax.png]]
 
 >[!abstract] Kurzprofil
@@ -30,7 +36,7 @@ Der Grund für seine Versetzung nach NeuBerlin war ein komplizierter Schulterbru
 
 Die mehrfache Frakturierung des Schulterblatts wurde in einer zehnstündigen Operation mit Titanplatten stabilisiert; kleinere Splitter verblieben im Gewebe, da ihre Entfernung ein größeres Risiko dargestellt hätte als ihr Verbleib.
 
-Eine chronische Nervenreizung führt bis heute dazu, dass sich Wetterumschwünge als ziehender Schmerz in der Schulter bemerkbar machen. Ajax nennt es schlicht seinen **„Wetterbericht“**.
+Eine chronische Nervenreizung führt bis heute dazu, dass sich Wetterumschwünge als ziehender Schmerz in der Schulter bemerkbar machen. Ajax nennt es seinen **„Wetterbericht“**.
 
 Neben seiner Arbeit im Marine-Archiv gastiert Ajax als Dozent an der **Humboldt-Universität**, wo er Lehrgänge für angehende Kapitäne anbietet. In den Kaffeepausen bringt er Jugendlichen auf den Dächern der Universität gelegentlich Straßenkampf bei – eine pädagogische Ergänzung, die nach eigener Aussage „im Curriculum nur schlecht abgebildet“ sei.
 
@@ -40,7 +46,7 @@ Für seine militärischen Einsätze in den Alsterkriegen von Hamburg_2 wurde Aja
 
 Ajax ist bereits jenseits der fünfzig, körperlich jedoch weiterhin fit. Seine militärische Vergangenheit hat ihn zu einem ruhigen, schwer einschüchterbaren Mann gemacht, der Gefahren selten dramatisiert. Er kennt Gewalt gut genug, um sie nicht romantisieren zu müssen. Wenn er eingreift, dann meist entschlossen und ohne viel Aufhebens.
 
-Gleichzeitig hat Ajax hat wenig Geduld für Mismanagement, inkompetente Führung oder Menschen, die Verantwortung mit Titeln verwechseln. Dass er selbst die Leitung des Marine-Archivs übernahm, obwohl ihm niemand offiziell das Amt übertrug, entspricht seiner Grundhaltung: Wenn eine Aufgabe getan werden muss und niemand Zuständiger auftaucht, wird sie eben erledigt.
+Gleichzeitig hat Ajax wenig Geduld für Mismanagement, inkompetente Führung oder Menschen, die Verantwortung mit Titeln verwechseln. Dass er selbst die Leitung des Marine-Archivs übernahm, obwohl ihm niemand offiziell das Amt übertrug, entspricht seiner Grundhaltung: Wenn eine Aufgabe getan werden muss und niemand Zuständiger auftaucht, wird sie eben erledigt.
 
 Eine bemerkenswerte Schwäche besitzt der ehemalige Marine dennoch: **Ajax hat Angst vorm Fliegen.** Für ein späteres Mitglied des Himmelfahrtskommandos ist dies ausgesprochen unpraktisch und macht seinen Beitritt zu einer Unternehmung, deren Ziel ausgerechnet der Himmel ist, zu einer besonderen persönlichen Herausforderung.
 

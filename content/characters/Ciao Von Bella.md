@@ -1,9 +1,14 @@
 ---
-tags:
-  - infinity
-  - himmelfahrtskommando
-  - neuberlin
-  - diskoord
+friend:
+  - "[[Salt Brah]]"
+  - "[[funky (dot) blend]]"
+  - "[[Kokolores]]"
+  - "[[Samsa]]"
+enemy:
+  - "[[Nero]]"
+  - "[[Salt Brah]]"
+clan: tempelhof_diskoord
+archive_presence: true
 ---
 
 ![[2898007d-2f44-49ee-b1dd-9cdc64ec21ab.png]]

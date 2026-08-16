@@ -2,15 +2,15 @@
 	"nodes":[
 		{"id":"47fac02167570242","type":"text","text":"# Taucherszene","x":-420,"y":-212,"width":343,"height":132},
 		{"id":"d5407e2dfe0b6e3c","type":"text","text":"# Aalbraten und Verschwörungen im Ministerium der Schnittlauch Reform","x":1245,"y":-240,"width":553,"height":220},
-		{"id":"a237066b7f4a10ed","type":"text","text":"# Museumsinsel","x":2194,"y":-209,"width":310,"height":149},
+		{"id":"a237066b7f4a10ed","type":"text","text":"# Museumsinsel\n\nHandlungsort: Konsortium Mitte. Siehe [[Clans of NeuBerlin.canvas]]","x":2194,"y":-209,"width":310,"height":149},
 		{"id":"f232046f631ce1e2","type":"text","text":"Saatbomben","x":1940,"y":-400,"width":250,"height":60},
 		{"id":"79a22581d9c9082f","type":"text","text":"Archäologische Fehldeutungen ","x":2224,"y":-400,"width":250,"height":60},
 		{"id":"54f00f7717145ba9","type":"text","text":"Aufzeichnungen von Vox 10","x":2530,"y":-400,"width":250,"height":60},
 		{"id":"39bae4b3b0735828","type":"text","text":"# Der Hirsch","x":2920,"y":-209,"width":340,"height":109},
 		{"id":"587824dd0b10934a","type":"text","text":"Tsunami, Atomkrieg","x":3217,"y":19,"width":246,"height":60},
 		{"id":"925c869b282b71f5","type":"text","text":"# Gojan und die Südflanke","x":3340,"y":-221,"width":500,"height":121},
-		{"id":"da0649c37299937b","type":"text","text":"**Candytron** wird gefunden und zu Deuterium gebracht","x":3500,"y":-29,"width":250,"height":108},
-		{"id":"01726b52925be66c","type":"text","text":"# Deuterium im KaDeWe","x":3960,"y":-204,"width":480,"height":104},
+		{"id":"da0649c37299937b","type":"text","text":"**[[Candytron]]** wird gefunden und zu Deuterium gebracht","x":3500,"y":-29,"width":250,"height":108},
+		{"id":"01726b52925be66c","type":"text","text":"# [[Salt Brah]] im KaDeWe","x":3960,"y":-204,"width":480,"height":104},
 		{"id":"54cd67552e303779","type":"text","text":"# Das Komitee","x":4600,"y":-211,"width":360,"height":111},
 		{"id":"8cc5ae25292847cf","type":"text","text":"# Zwischenstopp auf der EVERYTHING","x":266,"y":-198,"width":628,"height":138},
 		{"id":"8edd21c13a982f31","type":"text","text":"Mechanische Open-Source Kultur","x":330,"y":-461,"width":250,"height":62},
@@ -18,9 +18,9 @@
 		{"id":"e308b67c0eee0087","type":"text","text":"Siwoli","x":870,"y":-459,"width":250,"height":60},
 		{"id":"9cf9218593df1592","type":"text","text":"Das Fundbüro","x":50,"y":-459,"width":250,"height":60},
 		{"id":"989c2e74318bbbc6","type":"text","text":"# Ende Akt 1","x":5080,"y":-211,"width":340,"height":111,"color":"4"},
-		{"id":"b44cd16a1f12287a","type":"text","text":"Spasti und Exilium","x":1117,"y":240,"width":250,"height":60},
-		{"id":"909737d5cee819fb","type":"text","text":"Verschwörungen über Wolke 7000","x":1397,"y":242,"width":250,"height":60},
-		{"id":"55ccd0c626512981","type":"text","text":"Das VAWT und der Geiselsprung + Abtransport durch die EVERYTHING","x":1756,"y":242,"width":250,"height":118}
+		{"id":"b44cd16a1f12287a","type":"text","text":"[[Spasti]] und [[Exilium AG]]","x":1117,"y":240,"width":250,"height":60},
+		{"id":"55ccd0c626512981","type":"text","text":"Das VAWT und der Geiselsprung + Abtransport durch die EVERYTHING","x":1756,"y":242,"width":250,"height":118},
+		{"id":"909737d5cee819fb","type":"text","text":"Verschwörungen über [[wolke_7000.canvas]]","x":1397,"y":242,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"f97235e44fa96a4b","fromNode":"47fac02167570242","fromSide":"right","toNode":"8cc5ae25292847cf","toSide":"left"},

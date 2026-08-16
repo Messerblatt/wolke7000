@@ -1,6 +1,5 @@
 ---
 aliases:
   - Reverent Forevius
-tags:
-  - espiritus
 ---
+[[Espiritus.canvas]]

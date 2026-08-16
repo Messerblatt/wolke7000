@@ -1,14 +1,25 @@
 ---
-tags:
-  - nimbus
-  - himmelfahrtskommando
-  - neuberlin
+friend:
+  - "[[Spasti]]"
+  - "[[Ajax]]"
+  - "[[solo.png]]"
+  - "[[funky (dot) blend]]"
+  - "[[Ciao Von Bella]]"
+  - "[[Salt Brah]]"
+  - "[[Fibo]]"
+  - "[[Samsa]]"
+  - "[[Mia Von Schöneberg]]"
+enemy:
+clan: nimbus
+ship: NIMBUS
+archive_presence:
+aliases:
+  - Koko
 ---
+![[angel_2.png]]
 
 > [!abstract] Kurzprofil  
 > **Kokolores**, meist **Koko** genannt, ist Engel, Schatztaucherin und Initiatorin des [[Himmelfahrtskommando|Himmelfahrtskommandos]]. Sie zählt zu den frühesten Anhängerinnen von [[Wolke 7000]] und gilt innerhalb der [[NIMBUS-Crew]] als deren spirituelle Führungspersönlichkeit.
-
-![[angel_2.png]]
 
 
 ![[icon_angelpng.png]]
@@ -66,15 +77,16 @@ Für ihre Auftritte in der Dekantine versucht sie es lean-casual mit einem schwa
 
 Das Leben in NeuBerlin lebt voller Leben - High Heels für den Alltag sind da selten praktisch. Aber _wenn_ sie High-Heels trägt, wirkt es immer so, als würden die High-Heels einen ganz besonderen Anlass tragen, so als hätte Koko gleich 5 Geburtstage gleichzeitig. Wie man sich das konkret vorstellen soll, weiß ich auch nicht, aber was da oben an WOLKEN sind, unglaublich unglaublich.
 
-Manchmal klemmt sich Koko so ein silberfarbenes Pflaster auf ihren Nasenrücken, und dann glänzt das alles ein bisschen. Manchmal sind da federweiße Stulpen im Spiel, die bis zu ihren Ellbogen gehen, und wenn sie am Wasser ist, trägt sie Fußbänder, die an Flügel erinnern, genauso wie ihre Ohrringe, die aussehen wie Flügel.
+Manchmal klemmt sich Koko so ein silberfarbenes Pflaster auf ihren Nasenrücken. Manchmal sind da federweiße Stulpen im Spiel, die bis zu ihren Ellbogen gehen, und wenn sie am Wasser ist, trägt sie Fußbänder, die an Flügel erinnern, genauso wie ihre Ohrringe, die aussehen wie Flügel.
 
 Wenn die [[NIMBUS]] in Nacht-und Nebelfahrten durch die Wasserstraßen von NeuBerlin kreuzt und Licht braucht, wickelt Koko sich LED-Bänder um ihre Arme und Beine. Die Bänder leuchten weiß, und Koko ist dann sozusagen das Nachtlicht der Crew.
 
-Sie malt tribale Muster in ihr Gesicht, entlang der Schläfen und vorbei an ihrer Nase, doch manchmal sind es nur zwei weiße, breite Streifen unter ihren Augen, so ähnlich wie bei Footballspielern.
+Sie malt tribale Muster in ihr Gesicht, entlang der Schläfen und vorbei an ihrer Nase. Manchmal sind es nur zwei weiße, breite Streifen unter ihren Augen, so ähnlich wie bei Footballspielern.
 
-Manchmal hat sie keine Luft auf das alles und fährt zum [[Tempelhof Diskoord]], um über [[Vox]] nachzudenken, und über das, was er ihr sagte. Sie trägt dann ganz normale Klamotten, ein Shirt und eine Hose, und trotzdem ist sie schön.  
+Auf dem Deck der [[NIMBUS]] läuft sie meistens mit Barett-Mütze durch die Gegend. Für den _S T A T U S_. Sie verliert die Mütze ständig und findet irgendwie immer eine neue. 
 
-Auf dem Deck der [[NIMBUS]] läuft sie meistens mit Barett-Mütze durch die Gegend. Um Status zu symbolisieren. Sie verliert die Mütze ständig und findet irgendwie immer eine neue. 
+>[!quote] Koko über dieses eine Kleid
+>„Also … ich weiß nicht, ob das noch ein Kleid ist. Vielleicht hat sich da ein ganzer Vogelschwarm als Kleid verkleidet. Es sieht aus, als hätte jemand einer Wolke beigebracht, arrogant zu sein. Ich würde sie natürlich nur fragen, ob die Federn beim Fliegen helfen. Und ob man sie anfassen darf. Also die Federn.“
 
 ## Persönlichkeit
 
@@ -86,7 +98,10 @@ Ihre schusselige Art macht sie sympathisch. Sie ist witzig, bringt aber auch ein
 
 Kokolores gilt als sozial und sensibel. Sie erkennt emotionale Bedürfnisse, vermittelt zwischen Konfliktparteien und kann selbst fremde Gruppen kurzfristig zu gemeinschaftlichem Handeln bewegen.
 
-## Fähigkeiten
+
+### Hobbies
+
+Wolken fotografieren. Drachen steigen lassen. Stillgelegte Gebäude durchsuchen. Ziellos durch die Nacht segeln. Wettertagebuch führen (ihre Einträge vermischen Messwerte mit persönlichen Stimmungen). Kleidung (um)nähen. Zines schreiben über Wolken, gescheiterte Vorhaben und Dinge, die sie eigentlich studieren wollte. In manchen Nächsten sendet sie improvisierte Radiosendungen mit Musik und der Breaking News über ihr Zine - das niemals fertig wird - über einen schwachen Piratensender (sie weiß nicht, ob jemand zuhört). Kunstkurse belegen. Schatztauchen.
 
 ### Schatztauchen
 

@@ -1,7 +1,3 @@
----
-tags:
-  - exilium
----
 
 ![[imgs/characters/Nero/nero.png]]
 
@@ -56,11 +52,11 @@ Aus dem Schöneberg-Protokoll entstand die Theorie, Nero sei nicht der Kopf der 
 
 Am 3. Dezember liefen zwölf Versorgungsschiffe in den Hafen von Schöneberg ein. Ihre Ladungen waren ordnungsgemäß verzollt und die Gebühren bereits dem Bezirk zugeordnet. Lediglich die angegebenen Empfänger existierten nicht. Da die Schiffe den Hafen legal erreicht hatten und niemand ihre Ladung annahm, musste [[Mia Von Schöneberg]] für Liegeplätze, Entladung und Zwischenlagerung aufkommen. Eine Zurückweisung hätte wiederum gegen die von Schöneberg selbst erlassenen Versorgungsvorschriften verstoßen.
 
-Nero bezeichnet den Vorfall als „Experiment über Bürokratie“. Auf Nachfrage, was das Experiment ergeben habe, antwortet er, dass Regeln ausgesprochen zuverlässig arbeiten, solange niemand danach frage, wem sie nützen. Ob er die Schiffe tatsächlich entsandt hatte, konnte nie geklärt werden. Sicher war nur, dass Mia unabhängig von ihrer Entscheidung zahlen musste.
+Nero bezeichnet den Vorfall als „Experiment über Bürokratie“. Auf Nachfrage, was das Experiment ergeben habe, antwortet er, dass Regeln ausgesprochen zuverlässig arbeiten, solange niemand danach frage, wem sie nützen. Ob er die Schiffe tatsächlich entsandt hatte, konnte nie geklärt werden. Sicher war nur, dass Mia bezahlen musste.
 
 ### Die Fehlende Karte
 
-Im [[Marine-Archiv]] der Moabits hing jahrzehntelang die einzige vollständige Karte der Wasserstraßen von NeuBerlin. Eines Morgens fehlte darauf der gesamte Bereich um das [[Tempelhof Diskoord]].
+Im [[marine_archiv]] der Moabits hing jahrzehntelang die einzige vollständige Karte der Wasserstraßen von NeuBerlin. Eines Morgens fehlte darauf der gesamte Bereich um das [[Tempelhof Diskoord]].
 
 Zwei Tage später brannte derselbe Bereich des Diskoords nieder.
 
@@ -74,7 +70,7 @@ Vielleicht besteht genau darin sein eigentliches Manöver: Nero bringt NeuBerlin
 
 Er wird häufig in der Nähe von Rauchzeichen und Häuserbränden entdeckt. Grundsätzlich scheint ihm die Pyromanie eine Herzensangelegenheit zu sein. Ob er die Brände selbst legt oder indirekt mit ihnen zusammenhängt, schwebt mit gleicher Verschwommenheit durch das Narrativ wie die Versuche, seine Absichten zu verstehen.
 
-Dabei ist Nero ganz und gar nicht böse. Viel eher wirkt es so, als seien seine Schneisen der Verwüstung bloßer Zeitvertreib. Er begegnet seinen Mitmenschen auf Augenhöhe und hört aufmerksam zu, nur um dann in den Rauchwolken der nahegelegenen Häuserbrände zu verschwinden.
+Dabei ist Nero ganz und gar nicht böse. Viel eher wirkt es so, als seien seine Schneisen der Verwüstung bloßer Zeitvertreib. Er ist höflich, begegnet seinen Mitmenschen auf Augenhöhe und hört aufmerksam zu, nur um dann in den Rauchwolken der nahegelegenen Häuserbrände zu verschwinden.
 
 Es ist davon auszugehen, dass sein mysteriöses Auftreten Teil einer Verteidigungsstrategie ist. Sein Werdegang innerhalb der Exilium könnte ihn skeptisch gegenüber den vielen Menschen gemacht haben, die versuchten, ihn aus dem Amt zu stechen.
 

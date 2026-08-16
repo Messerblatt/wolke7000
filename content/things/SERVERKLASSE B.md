@@ -1,0 +1,1 @@
+[[Fibo]]'s persönlicher Laptop. Eine zu Bewusstsein erwachte und mit ~84.000 Computerviren infizierte IT-Katastrophe.

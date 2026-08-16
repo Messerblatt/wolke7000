@@ -1,9 +1,17 @@
 ---
-tags:
-  - nimbus
-  - himmelfahrtskommando
-  - neuberlin
-  - exilium
+enemy:
+  - "[[Ajax]]"
+  - "[[Gojan]]"
+  - "[[Nero]]"
+  - "[[Salt Brah]]"
+  - "[[Spasti]]"
+  - "[[Ciao Von Bella]]"
+  - "[[funky (dot) blend]]"
+  - "[[Mia Von Schöneberg]]"
+friend:
+  - "[[Fibo]]"
+  - "[[Kokolores]]"
+  - "[[Solo Mio]]"
 ---
 
 
@@ -139,15 +147,13 @@ Medizinische Untersuchungen zur genaueren Untersuchung seiner Schmerzresistenz l
 
 ### Faustkampf
 
-Spasti ist ein erfahrener und äußerst aggressiver Nahkämpfer.
-
-Sein Kampfstil folgt einem einfachen Prinzip:
+Spasti ist ein äußerst aggressiver Nahkämpfer. Sein Kampfstil folgt einem einfachen Prinzip:
 
 > **Solange auf das Ziel einschlagen, bis es aufhört, sich zu bewegen.**
 
 [[Fibo]] bezeichnet diese Methode als „rekursive Gewaltanwendung ohne Abbruchbedingung“.
 
-Typische Lösungsansätze seiner Faust-Methodik:
+Typische Lösungsansätze seiner Faust-Prinzips:
 
 | Problem                   | Spastis Lösung |
 | ------------------------- | -------------- |
@@ -188,7 +194,7 @@ Dennoch ergänzen sie sich bei Gefahren ausgezeichnet. [[Fibo]] weiß, dass Spas
 
 ### Die Clanführer NeuBerlins
 
-Die Clanführer NeuBerlins begegnen Spasti mit einer Mischung aus Angst und strategischer Höflichkeit. In Kriegsfragen gilt Spasti als eine der ersten Anlaufstellen. In Friedensfragen wird er hingegen nur selten konsultiert.
+Die Clanführer NeuBerlins begegnen Spasti mit einer Mischung aus Angst und strategischer Höflichkeit. In Kriegsfragen gilt Spasti als eine der ersten Anlaufstellen. In Friedensfragen wird er dagegen nie konsultiert.
 
 Mehrere Clanführer haben interne Regeln für Begegnungen mit ihm entwickelt:
 

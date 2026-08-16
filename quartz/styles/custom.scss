@@ -135,4 +135,77 @@ body a.internal-link {
     display: inline;
 }
 
-    
+
+/* ++++++++++++++++++++++++++++++++++++
+  Wolke-7000-Trennlinie
+  Markdown: ---
+  Ausgabe: <hr>
++++++++++++++++++++++++++++++++++++++++ */
+
+article hr {
+  --divider-symbol-width: 3.5rem;
+  --divider-symbol-gap: 4.75rem;
+  --divider-color: #ffffff;
+
+  display: block;
+  width: min(100%, 46rem);
+  height: 5.5rem;
+  margin: 3rem auto;
+
+  border: 0;
+  opacity: 0.72;
+
+  background:
+    /* linke Linie */
+    linear-gradient(
+      to right,
+      transparent,
+      var(--divider-color) 25%,
+      var(--divider-color)
+    )
+    left center /
+    calc(50% - var(--divider-symbol-gap)) 1px
+    no-repeat,
+
+    /* rechte Linie */
+    linear-gradient(
+      to left,
+      transparent,
+      var(--divider-color) 25%,
+      var(--divider-color)
+    )
+    right center /
+    calc(50% - var(--divider-symbol-gap)) 1px
+    no-repeat,
+
+    /* zentrales Wolke-7000-Symbol */
+    url("/static/hr.png")
+    center /
+    var(--divider-symbol-width) auto
+    no-repeat;
+
+  /*
+   * Grafik und Linien sind ursprünglich weiß.
+   * Im hellen Theme werden sie dadurch dunkel.
+   */
+  filter: invert(1);
+}
+
+/* Im Dark Mode bleiben Grafik und Linien weiß */
+html[saved-theme="dark"] article hr {
+  filter: none;
+  opacity: 0.82;
+}
+
+/* Etwas kompakter auf Smartphones */
+@media (max-width: 600px) {
+  article hr {
+    --divider-symbol-width: 3rem;
+    --divider-symbol-gap: 4rem;
+
+    width: 94%;
+    height: 4.75rem;
+    margin: 2.25rem auto;
+  }
+}
+

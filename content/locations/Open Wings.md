@@ -71,3 +71,105 @@ Die Nachrichten werden zwischen **Taubenschlägen** weitergereicht, die über ga
 Mitunter können Briefsendungen verloren gehen. Das tut der Brieftaube natürlich leid, denn sie hat ihr bestes gegeben. Trotzdem kannst du, um auf Nummer sicher zu gehen, mehrere Tauben mit der gleichen Nachricht losschicken (Sicherungskopien). Damit reduzierst du das Risiko einer verloren Briefsendung auf ein Minimum.
 
 ---
+
+## Das Taubennetz von EVERYTHING
+
+Jede größere Station besitzt mehrere Taubenschläge. Die dort gehaltenen Tauben gehören jeweils zu anderen Stationen:
+
+```
+Station Alexanderhafen
+
+12 Tauben → Wedding
+8 Tauben  → Kreuzberg
+5 Tauben  → Köpenick
+3 Tauben  → EVERYTHING Nord
+```
+
+Soll ein Päckchen von Köpenick nach Wedding, muss keine Taube beide Orte kennen:
+
+```
+Köpenick
+   │ Taube mit Heimatschlag Alexanderhafen
+   ▼
+Alexanderhafen
+   │ Taube mit Heimatschlag Wedding
+   ▼
+Wedding
+```
+
+Das Paket wird an jeder Station umgeladen. Die Tauben sind die **Leitungen**, die Schläge sind die **Router**, und Menschen oder mechanische Sortierwerke führen den Algorithmus aus.
+
+### Distance Vector: Jede Station kennt nur ihre Nachbarn
+
+
+Jede Station führt ein handgeschriebenes **Routenbuch**:
+
+|Ziel|Nächster Schlag|geschätzte Dauer|
+|---|---|---|
+|Wedding|Alexanderhafen|70 Minuten|
+|Spandau|Moabitdock|110 Minuten|
+|Köpenick|Treptower Schleuse|95 Minuten|
+
+Die Station muss nicht das gesamte Netz kennen. Sie fragt nur:
+
+> „Welcher meiner Nachbarn bringt das Paket dem Ziel voraussichtlich näher?“
+
+Das entspricht einem Distance-Vector-Verfahren, also einer verteilten Form von Bellman-Ford. Reale Routingprotokolle wie Babel bauen auf diesem Prinzip auf und ergänzen Mechanismen gegen Routenschleifen.
+
+In NeuBerlin könnten die Tabellen einmal täglich mit Kurierkarten aktualisiert werden. Ein Eintrag wäre beispielsweise:
+
+```
+WEDDING:
+über ALEX 70
+über MOABIT 55
+über WESTHAFEN 90
+```
+
+Problematisch wird es, wenn eine Station ausfällt und die anderen noch veraltete Informationen besitzen. Dann könnte ein Paket im Kreis geschickt werden. Daher braucht jeder Behälter einen **Hop-Zähler**: Nach beispielsweise sechs Umladungen wird er nicht weitergeschickt, sondern landet im Fundbüro der EVERYTHING
+
+
+### Link-State-Routing: die große Netzkarte
+
+Die reicheren Hauptstationen könnten nach dem Prinzip von OSPF arbeiten. Jede Station meldet regelmäßig:
+
+- welche Verbindungen offen sind,
+- wie viele Tauben bereitstehen,
+- welche Flugkorridore durch Sturm, Rauch oder Raubvögel gestört sind,
+- wie hoch die aktuelle Transportzeit ist.
+
+Aus diesen Meldungen wird eine vollständige Karte des Netzes erstellt. Danach berechnet jede Hauptstation selbst die günstigste Route. Link-State-Protokolle funktionieren genau nach diesem Grundprinzip: Die Knoten tauschen Zustandsinformationen aus und berechnen anschließend kürzeste Wege.
+
+In NeuBerlin könnte das vollkommen analog aussehen:
+
+- Jede Station stanzt ihren Zustand auf eine dünne Karte.
+- Rundflug-Tauben verteilen Kopien an alle Hauptstationen.
+- Kartografen stecken die Daten auf großen Messingtafeln um.
+- Gewichte werden mit verschiebbaren Marken aktualisiert.
+- Ein mechanischer Routenrechner oder Fibo selbst bestimmt die Wege.
+
+Das wäre langsamer als digitales Routing, aber erstaunlich robust.
+
+### Flooding: im Notfall an alle
+
+Bei einer Sturmflut, Epidemie oder einem Angriff wird eine Nachricht nicht gezielt geroutet. Jede Station schickt sie an **alle benachbarten Stationen**, die sie ihrerseits weiterverteilen.
+
+Das ist Flooding.
+
+Damit nicht dieselbe Nachricht endlos zirkuliert, erhält sie:
+
+- eine eindeutige Seriennummer,
+- einen Zeitstempel,
+- eine maximale Anzahl von Weiterleitungen.
+
+Die Station prüft: „Habe ich Nummer 7-114-B schon gesehen?“ Falls ja, wird sie nicht noch einmal verschickt.
+
+Das eignet sich für:
+
+- Evakuierungswarnungen
+- vermisste Schiffe
+- Wasserverseuchung
+- Feuer
+- Fahndungen der Sentinel Seven
+- öffentliche Aufrufe
+
+Der Nachteil: Flooding verbraucht sehr viele Tauben.

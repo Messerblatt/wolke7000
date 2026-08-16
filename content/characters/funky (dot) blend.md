@@ -1,9 +1,16 @@
 ---
-tags:
-  - himmelfahrtskommando
-  - neuberlin
-  - infinity
-  - diskoord
+friend:
+  - "[[Salt Brah]]"
+  - "[[Ciao Von Bella]]"
+  - "[[Fibo]]"
+  - "[[Kokolores]]"
+enemy:
+  - "[[Nero]]"
+clan: tempelhof_diskoord
+ship: INFINITY
+archive_presence: true
+aliases:
+  - Funky
 ---
 
 
@@ -58,7 +65,7 @@ Sie entwickelte mehrere Versionen, mit denen sich Engpässe zwischen [[Open Wing
 
 ## Persönlichkeit
 
-Funky gehört zu jenen Menschen, deren physische Größe in keinem nachvollziehbaren Verhältnis zu der Menge an Raum steht, die sie einnehmen. Sie ist, bewegt sich schnell und erscheint in Werkhallen häufig an Orten, an denen sie wenige Sekunden zuvor noch nicht gewesen sein kann. Niemand hat sie jemals eine Leiter vollständig hinaufsteigen sehen. Meistens taucht sie einfach da oben auf.
+Funky gehört zu jenen Menschen, deren physische Größe in keinem nachvollziehbaren Verhältnis zu der Menge an Raum steht, die sie einnehmen. Sie ist flink, bewegt sich schnell und erscheint in Werkhallen häufig an Orten, an denen sie wenige Sekunden zuvor noch nicht gewesen sein kann. Niemand hat sie jemals eine Leiter vollständig hinaufsteigen sehen. Meistens taucht sie einfach da oben auf.
 
 Ihre Kleidung ist funktional, aber nie zufällig. Werkzeugschlaufen, Handschuhe und aufblasbaren Gurte sind so angeordnet, dass sie beim Arbeiten nicht stören und auf dem Wasser treiben. An ihrem Gürtel hängt ein Kompass, ein Magazin aus Briefkapseln mit [[Open Wings]]-Motiv, sowie ein Werkzeug, dessen Funktion sie nur mit den Worten erklärt:
 

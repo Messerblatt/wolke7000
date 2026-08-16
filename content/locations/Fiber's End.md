@@ -2,6 +2,7 @@
 publish: false
 ---
 
+Luftschlachten mit [[wolke_7000.canvas]]
 
 **Fiber's End** ist ein autonomer Luftstaat und eine der ältesten Himmelsstädte der Nachflutzeit. Die Stadt besteht aus einem gewaltigen Verbund historischer Schiffswracks – darunter die **Titanic**, **Tricolor**, **Endurance**, **Wager**, **San José**, **Flor de la Mar** und zahlreiche weitere legendäre Schiffe –, die mithilfe unbekannter Auftriebstechnologien zu einer schwebenden Nekropole verbunden wurden. Fiber's End versteht sich als Bewahrerin der Vergangenheit und bezeichnet sich selbst als **„letzten Hafen der Geschichte“**.
 

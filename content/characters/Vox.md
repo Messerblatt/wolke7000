@@ -1,0 +1,1 @@
+Absturz südlich vom [[Tempelhof Diskoord]]. Wurde von [[Kokolores|Koko]] und [[Fibo]] gerettet

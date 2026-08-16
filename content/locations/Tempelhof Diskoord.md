@@ -1,4 +1,7 @@
-#neuberlin
+---
+status: operative
+---
+
 
 ![[icon_diskoord.jpg]]
 
@@ -12,9 +15,9 @@
 
 Der Tempelhofer See entstand, als die tieferliegenden Bereiche des ehemaligen Flugfeldes dauerhaft überflutet wurden. Die langen, geraden Achsen der Start- und Landebahnen bilden Schiffskorridore. Dadurch eignet sich der See hervorragend für Bootsrennen, Belastungstests und öffentliche Veranstaltungen.
 
-Die ehemaligen Hangars öffnen sich direkt zum Wasser. Boote können auf schwimmenden Plattformen in die Hallen gezogen, dort angehoben und anschließend über Schienensysteme zwischen Werkstätten verschoben werden. Die Architektur des Flughafens, ursprünglich für Flugzeuge ausgelegt, erwies sich als erstaunlich brauchbar für die neue maritime Infrastruktur von NeuBerlin.
+Die ehemaligen Hangars öffnen sich direkt zum Wasser. Boote können auf schwimmenden Plattformen in die Hallen gezogen, dort angehoben und anschließend über Schienensysteme zwischen Werkstätten verschoben werden. Die Architektur des Flughafens, ursprünglich für Flugzeuge ausgelegt, erwies sich als erstaunlich brauchbar für die neue maritime Infrastruktur von [[NeuBerlin]].
 
-> [!quote] Funky über das Diskoord
+> [!quote] [[funky (dot) blend|Funky]] über das Diskoord
 > „Früher sind hier Maschinen abgehoben. Heute hoffen wir, dass sie nicht absaufen.“
 
 # Veranstaltungen auf dem Tempelhofer See
@@ -22,7 +25,7 @@ Die ehemaligen Hangars öffnen sich direkt zum Wasser. Boote können auf schwimm
 Bootsrennen können das kulturelle Zentrum bilden, sollten aber nicht die einzige Nutzung sein. Der See eignet sich besonders für Veranstaltungen, die Technik, Gemeinschaft und Berliner Improvisationslust verbinden.
 
 
-Die Regatta des Diskoords ist ein beliebtes Rennen, bei dem nach wie vor Funky die unangefochtene Siegerin zahlreichere Austragungen ist. 
+Die Regatta des Diskoords ist ein beliebtes Rennen, bei dem nach wie vor [[funky (dot) blend|Funky]] die unangefochtene Siegerin zahlreichere Austragungen ist. 
 
 Jede Mannschaft erhält zu Beginn eine Kiste mit identischen Schrottteilen, einem kleinen Motor und einer begrenzten Menge Treibstoff. Innerhalb von sechs Stunden muss daraus ein fahrfähiges Boot entstehen.
 
@@ -34,7 +37,7 @@ Beim **Schleusenballett** bewegen sich Dutzende kleine Boote nach einer festgele
 Die Veranstaltung entstand ursprünglich als Koordinationsübung für Notfälle. Heute wird sie mit Musik, Licht und Rauch begleitet. Die Schiffsführer halten das Spektakel weiterhin für eine seriöse Ausbildungsmaßnahme.
 
 > [!note] Praktischer Nutzen  
-> Das Schleusenballett trainiert Funkdisziplin, Ausweichmanöver, Formationsfahrt und die schnelle Räumung blockierter Wasserwege. Es ist damit zugleich Fest, Manöver und kollektiver Beweis, dass NeuBerlin selbst dann organisiert sein kann, wenn es absichtlich chaotisch aussieht.
+> Das Schleusenballett trainiert Funkdisziplin, Ausweichmanöver, Formationsfahrt und die schnelle Räumung blockierter Wasserwege. Es ist damit zugleich Fest, Manöver und kollektiver Beweis, dass [[NeuBerlin]] selbst dann organisiert sein kann, wenn es absichtlich chaotisch aussieht.
 
 ## Die Nacht der tausend Laternen
 
@@ -48,9 +51,9 @@ Ponton-Polo ist eine Mischung aus Wasserball, Bootsrempelei und kollektivem Vers
 
 Während der **Treibstoffküche** treten Techniker gegeneinander an und versuchen, einen identischen Motor mit selbst zusammengestellten Kraftstoffmischungen möglichst effizient zu betreiben.
 
-Die Mischung muss vorher registriert werden. Zutaten wie „Geheimnis“, oder „Spasti hat gesagt, das geht“ werden vom Prüfungsausschuss nicht mehr akzeptiert.
+Die Mischung muss vorher registriert werden. Zutaten wie „Geheimnis“, oder „[[Spasti]] hat gesagt, das geht“ werden vom Prüfungsausschuss nicht mehr akzeptiert.
 
-funky.blend führt die Lagerlisten und entscheidet, welche Stoffe überhaupt auf das Gelände dürfen. Diese Funktion hat ihr inoffiziell den Titel **Hüterin der brennbaren Dinge** eingebracht.
+[[funky (dot) blend|Funky]] führt die Lagerlisten und entscheidet, welche Stoffe überhaupt auf das Gelände dürfen. Diese Funktion hat ihr inoffiziell den Titel **Hüterin der brennbaren Dinge** eingebracht.
 
 ## Der Charakter des Ortes
 
@@ -58,7 +61,7 @@ Das Diskoord sollte nicht aussehen wie eine saubere futuristische Werft. Es ist 
 
 Der Ort ist laut, offen und gesellschaftlich durchmischt. Kapitäne warten neben Lehrlingen, Open-Wings-Pfleger steigen mit Taubenkäfigen zwischen Treibstofffässern hindurch, und während auf dem See ein Rennen stattfindet, wird im Hintergrund bereits das nächste havarierte Versorgungsboot hereingeschleppt.
 
-> [!quote] funky.blend  
+> [!quote] [[funky (dot) blend|Funky]]
 > „Eine Werft ist ein Krankenhaus, nur dass die Patienten größer sind und weniger jammern. Meistens.“
 
-So erhält das Diskoord eine klare Rolle innerhalb NeuBerlins: Es ist die **mechanische Herzkammer der Wasserstadt**. Open Wings sitzt in seinem Turm, EVERYTHING liefert Material, und auf den Hellingen wird täglich verhindert, dass NeuBerlin langsam auseinanderfällt.
+So erhält das Diskoord eine klare Rolle innerhalb NeuBerlins: Es ist die **mechanische Herzkammer der Wasserstadt**. [[Open Wings]] sitzt in seinem Turm, [[EVERYTHING]] liefert Material, und auf den Hellingen wird täglich verhindert, dass [[NeuBerlin]] langsam auseinanderfällt.

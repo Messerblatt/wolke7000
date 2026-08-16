@@ -1,30 +1,29 @@
 ---
-tags:
-  - oxford
-  - neuberlin
-  - himmelfahrtskommando
-  - infinity
+friend:
+  - "[[funky (dot) blend]]"
+  - "[[Solo Mio]]"
+  - "[[Nero]]"
+enemy:
+  - "[[Ajax]]"
+clan: tempelhof_diskoord
+ship: INFINITY
+archive_presence: true
 ---
-
+![[ChatGPT Image Jul 31, 2026, 04_51_32 PM.png]]
 
 > [!abstract] Kurzprofil  
 > **Salt Brah** ist Gründer der [[Open Wings]] Foundation und Kapitän der **[[INFINITY]]**. Geboren und aufgewachsen während des Alsterkriegs von Hamburg_2, wurde die Öffentlichkeit durch seine illegalen Konzerte und Massenaufstände auf ihn aufmerksam. In NeuBerlin gehört er gemeinsam mit **[[Ciao Von Bella]]** und **funky.blend** zu den drei Administratoren des [[Tempelhof Diskoord]].
 > 
 > Salt Brah lehnt formale Hierarchien ab, übt jedoch aufgrund seines Charismas, seiner technischen Genialität und seiner völligen Abwesenheit vernünftiger Selbsterhaltung erheblichen Einfluss aus. Seine Erfindungen bewegen sich meist zwischen Kunstwerken und Waffen.
 
-
-![[ChatGPT Image Jul 31, 2026, 04_51_32 PM.png]]
-
-
-
 | Merkmal                | Beschreibung                                                                                                                                |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Name**               | Salt Brah                                                                                                                                   |
-| **Zugehörigkeit**      | [[Tempelhof Diskoord]], [[Himmelfahrtskommando]]                                                                                                    |
-| **Funktion**           | Kapitän der **[[INFINITY]]**, Gründer von [[Open Wings]]                                                                                            |
+| **Zugehörigkeit**      | [[Tempelhof Diskoord]], [[Himmelfahrtskommando]]                                                                                            |
+| **Funktion**           | Kapitän der **[[INFINITY]]**, Gründer von [[Open Wings]]                                                                                    |
 | **Herkunft**           | Hamburg_2                                                                                                                                   |
 | **Spezialgebiet(e)**   | Musik und Massenmobilisierung                                                                                                               |
-| **Wichtigster Besitz** | **[[INFINITY]]**                                                                                                                                |
+| **Wichtigster Besitz** | **[[INFINITY]]**                                                                                                                            |
 | **Erscheinungsbild**   | Schlank, drahtig und verwahrlost. Arbeitskleidung voller Kabel und Soundkarten, als wäre er gleichzeitig Musiker, Hacker und Werftarbeiter. |
 | **Größte Schwäche**    | Befehle                                                                                                                                     |
 | **Haltung**            | Wild, exzentrisch, genial                                                                                                                   |
@@ -43,13 +42,13 @@ Nach dem Vorfall sprayte ein Unbekannter den Satz **„A Brah KaDah Brah!“** a
 
 Seine Auftritte wurden in den folgenden Jahren zunehmend zu politischen Versammlungen. Salt sprach gegen Überwachung, lokale Oligarchien und jedwede Form von Autortität, was seinen Ruf als Anführer weiter festigte.
 
-Nach der Gründung NeuBerlins verließ Salt Hamburg_2. Öffentlich erklärte er, er wolle sich „von den Kakerlaken da oben“ distanzieren. Vermutlich reizte ihn jedoch vor allem die politische Offenheit der neuen Stadt. NeuBerlin war noch nicht in feste Verwaltungsformen gegossen, und die Wasserstraßen, Institutionen und sozialen Strukturen wurden täglich neu ausgehandelt. Möglicherweise hat Salt dies als Möglichkeit gesehen, im neu gegründeten Berlin eine für ihn vorteilhafte Machtposition zu ergattern.
+Nach der Gründung NeuBerlins verließ Salt Hamburg_2. Öffentlich erklärte er, er wolle sich „von den Kakerlaken da oben“ distanzieren. Vermutlich reizte ihn jedoch vor allem die politische Offenheit der neuen Stadt. NeuBerlin war noch nicht in feste Verwaltungsformen gegossen und sozialen Strukturen wurden täglich neu ausgehandelt. Möglicherweise hat Salt dies als Möglichkeit gesehen, im neu gegründeten Berlin eine für ihn vorteilhafte Machtposition zu ergattern.
 
 In Tempelhof beteiligte er sich am Aufbau des **[[Tempelhof Diskoord]]**, das sich unter ihm, [[Ciao von Bella]] und [[funky (dot) blend|Funky]] zur wichtigsten freien Werft und Reparaturinfrastruktur NeuBerlins entwickelte.
 
 Er gründete die **Open Wing Foundation**, die er vom Funkturm des Diskoords aus koordiniert, zudem ist er Kapitän der **[[INFINITY]]**, eines selbst gebauten Schiffes, dessen Bauteile größtenteils von den Sentinels geplündert wurden. 
 
-Sein Beitritt zum **[[Himmelfahrtskommando]]** begann mit einer Sammelbestellung von zehn [[Candytron|Candytron]], die aus unbekannten Gründen aus dem Himmel fielen. Innerhalb weniger Tage baute Salt das KaDeWe zu einer improvisierten Flaschenpost-Startrampe um, bei der er eine gigantische Glasflasche mit der Öffnung nach oben in das Dachgeschoss des Gebäudes einhing, die [[INFINITY]] auseinandernahm und innerhalb der Flasche neu zusammensetztze. Während der Montage des Candytrons an das Achterdeck der [[INFINITY]] kam es zu einer folgenreichen Zusammenkunft mit der [[NIMBUS]]-Crew, bei der sich Salt dem von [[Kokolores]] angedachtem Himmelfahrtskommandos anschloss.
+Sein Beitritt zum **[[Himmelfahrtskommando]]** begann mit einer Sammelbestellung von zehn [[Candytron|Candytrons]], die aus unbekannten Gründen aus dem Himmel fielen. Innerhalb weniger Tage baute Salt das KaDeWe zu einer improvisierten Flaschenpost-Startrampe um, bei der er eine gigantische Glasflasche mit der Öffnung nach oben in das Dachgeschoss des Gebäudes einhing, die [[INFINITY]] auseinandernahm und innerhalb der Flasche neu zusammensetztze. Während der Montage des Candytrons an das Achterdeck der [[INFINITY]] kam es zu einer folgenreichen Zusammenkunft mit der [[NIMBUS]]-Crew, bei der sich Salt dem von [[Kokolores]] angedachtem Himmelfahrtskommandos anschloss.
 
 ## Fähigkeiten
 
@@ -61,7 +60,7 @@ Dabei besitzen seine Instrumente selten eine eindeutige Funktion. Ein von ihm en
 
 ### Technische Improvisation
 
-Salt besitzt außergewöhnliches Verständnis für Elektronik, Akustik, Signalverarbeitung und mechanische Systeme. Anders als [[funky (dot) blend|Funky]], die präzise konstruiert und komplexe Modelle vorab prüft, arbeitet Salt intuitiv und experimentell. Er beginnt häufig mit einer Wirkung, die er erzielen möchte, und findet anschließend heraus, welche physikalischen Gesetze dafür ignoriert werden müssen.
+Salt besitzt außergewöhnliches Verständnis für Elektronik und Signalverarbeitung. Anders als [[funky (dot) blend|Funky]], die präzise konstruiert und komplexe Modelle vorab prüft, arbeitet Salt intuitiv und lernt _on the fly_. Er beginnt häufig mit einer Wirkung, die er erzielen möchte, und findet anschließend heraus, welche physikalischen Gesetze dafür ignoriert werden müssen.
 
 Seine Konstruktionen gelten als genial, schwer reproduzierbar und gefährlich. Meist sind sie mit Beschriftungen versehen, die auf die improvisierte Funktionsweise hindeuten, wie etwa: "NICHT BEIDE SCHALTER GLEICHZEITIG DRÜCKEN, AUSSER BEI POLIZEI"
 
@@ -73,7 +72,7 @@ Salt besitzt keine klassische Führungsdoktrin. Er erscheint einfach dort, wo Wi
 
 ### Kapitän der [[INFINITY]]
 
-Als Kapitän verbindet Salt strategische Kühnheit mit einer Geringschätzung für nautische Konventionen. Meist überlässt er Funky die präzisen Manöver und Waffensysteme, während [[Ciao von Bella]] als Beobachterin im Ausguck bleibt. Sein Beiträge als Kapitätn bestehen meist darin, ein Ziel vorzugeben und den Eskalationsgrad zu bestimmen.
+Als Kapitän verbindet Salt strategische Kühnheit mit einer Geringschätzung für nautische Konventionen. Meist überlässt er Funky die präzisen Manöver und Waffensysteme, während [[Ciao von Bella]] als Beobachterin im Ausguck bleibt. Sein Beiträge als Kapitän bestehen meist darin, ein Ziel vorzugeben und den Eskalationsgrad zu bestimmen.
 
 ## Beziehungen
 
@@ -117,6 +116,6 @@ Zu Beginn zeigt Salt wenig Interesse an [[Spasti]] und [[Fibo]] und betrachtet s
 [[Spasti]] interessiert Salt zunächst kaum, bis er dessen Fähigkeit beobachtet, unterschiedliche Kraftstoffe zu trinken und entsprechend verschiedene Formen von Feuer zu erzeugen. 
 
 > [!quote] Salt über [[Spasti]]  
-> „Er ist brennbar, wiederverwendbar und laut. Warum hat man mir das nicht früher gesagt?
+> „Er kann Feuer spucken? Warum hat man mir das nicht früher gesagt?
 
 [[Spasti]] bewundert Salts Hang zu Aufständen, versteht die politischen Hintergründe aber nur selten. Salt sieht darin kein Problem; nach seiner Erfahrung benötigen Revolutionen zwei Arten von Menschen: Die, die Manifeste schreiben, und die, die mit Tischen werfen. [[Spasti]] sei für die Tische zuständig.

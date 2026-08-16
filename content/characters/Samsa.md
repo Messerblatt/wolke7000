@@ -1,8 +1,17 @@
 ---
-tags:
-  - nimbus
-  - himmelfahrtskommando
-  - neuberlin
+friend:
+  - "[[Ajax]]"
+  - "[[Ciao Von Bella]]"
+  - "[[Fibo]]"
+  - "[[funky (dot) blend]]"
+  - "[[Gojan]]"
+  - "[[Kokolores]]"
+  - "[[Nero]]"
+  - "[[Samsa]]"
+  - "[[Admiral 7]]"
+  - "[[Solo Mio]]"
+  - "[[Spasti]]"
+clan: nimbus
 ---
 
 ![[samsa.png]]
@@ -41,7 +50,7 @@ tags:
 
 ## Biographie
 
-[[Ciao Von Bella]] entdeckte Samsa auf einem Schiffswrack, das im Hafen des [[Tempelhof Diskoord]] entlang der Ruinen trieb. Ciao brachte Samsa in einer ihre Voliere und brachte ihr die [[Open Wings]] Flugrouten bei, woraufhin Samsa für die besagte Foundation Einsätze flog. 
+[[Ciao Von Bella]] entdeckte Samsa auf einem Schiffswrack, das im Hafen des [[Tempelhof Diskoord]] entlang der Ruinen trieb. Ciao brachte Samsa in einer ihre Voliere und lehrte ihr die [[Open Wings]] Flugrouten, woraufhin Samsa für die besagte Foundation Einsätze flog. 
 
 Auf ihren etwa 500 Flügen für [[Open Wings]] wurden ihre mehrere Ehrenfedern verliehen: Die **Nebelfeder** für sichere Zustellung bei geringer Sicht, der **Goldene Schnabel** für ungewöhnlich hohe Durchschnittsgeschwindigkeit, sowie der **Krumme Kurs** für scheinbar absurde Umleitungen, durch die Samsa trotz hoher Gefahr den entsprechenden Brief doch noch unbeschädigt zustellen konnte. 
 

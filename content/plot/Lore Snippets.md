@@ -1,24 +1,24 @@
 
 
-## Tempelhof Diskoord
+## [[Tempelhof Diskoord]]
 
 ## Lore-Snippet: Die drei Tage ohne Diskoord
 
 Die Bedeutung der Werft wurde während der sogenannten **Drei Tage ohne Diskoord** sichtbar. Nach einem Brand in einem Treibstofflager mussten sämtliche Werkhallen evakuiert werden. Aus Sicherheitsgründen wurden auch die Kräne, Pumpen und Trockendocks abgeschaltet.
 
-Bereits am ersten Tag sammelten sich beschädigte Transportboote vor Tempelhof. Am zweiten Tag fehlten in mehreren Nachbarschaftskantinen frische Lieferungen, weil zwei Kühlkähne nicht auslaufen konnten. Am dritten Tag stellte EVERYTHING einen Teil seines Marktbetriebs ein, da zu viele Schuten auf Reparatur warteten.
+Bereits am ersten Tag sammelten sich beschädigte Transportboote vor Tempelhof. Am zweiten Tag fehlten in mehreren Nachbarschaftskantinen frische Lieferungen, weil zwei Kühlkähne nicht auslaufen konnten. Am dritten Tag stellte [[EVERYTHING]] einen Teil seines Marktbetriebs ein, da zu viele Schuten auf Reparatur warteten.
 
 Als die Werft wieder öffnete, lagen mehr als hundert Aufträge vor. Seitdem gilt der Satz:
 
-> **„NeuBerlin schwimmt. Tempelhof hält es dicht.“**
+> **„[[NeuBerlin]] schwimmt. Tempelhof hält es dicht.“**
 
 Die Drei Tage führten außerdem zur Gründung mehrerer kleiner Bezirkswerkstätten. Komplexe Reparaturen, Motorrevisionen und Rumpfumbauten blieben jedoch weiterhin Sache des Diskoords.
 
 ---
 
-## Lore-Snippet: funky.blend und die Lagerhallen
+## Lore-Snippet: [[funky (dot) blend|funky]].blend und die Lagerhallen
 
-funky.blend übernahm die Verwaltung der Treibstofflager ursprünglich nur vorübergehend, nachdem zwei Lagermeister gleichzeitig verschwunden waren. Einer tauchte später auf einem Hausboot in Spandau wieder auf. Der andere bestand darauf, nie Lagermeister gewesen zu sein.
+[[funky (dot) blend|funky]].blend übernahm die Verwaltung der Treibstofflager ursprünglich nur vorübergehend, nachdem zwei Lagermeister gleichzeitig verschwunden waren. Einer tauchte später auf einem Hausboot in Spandau wieder auf. Der andere bestand darauf, nie Lagermeister gewesen zu sein.
 
 Sie führte ein offenes Bestandsbuch ein, in dem jeder Zugang, jede Entnahme und jede Verunreinigung dokumentiert wurde. Weil das alte digitale Inventarsystem regelmäßig falsche Mengen meldete, kombinierte sie mechanische Füllstandsanzeigen, handschriftliche Tafeln und einfache lokale Sensoren.
 
@@ -26,7 +26,7 @@ Jede Halle erhielt eine eigene Farbe und einen eigenen Geruchscode. Biodiesel wu
 
 Der schwarze Kreis bedeutete offiziell **„Analyse ausstehend“**. Im Sprachgebrauch hieß er:
 
-> „Nicht trinken, Spasti.“
+> „Nicht trinken, [[Spasti]].“
 
 ---
 
@@ -34,7 +34,7 @@ Der schwarze Kreis bedeutete offiziell **„Analyse ausstehend“**. Im Sprachge
 
 Eine der bekanntesten Reparaturen des Diskoords betraf den Kantinenkahn **Bertha**, dessen Propellerwelle mitten im Winter brach. Wegen der starken Vereisung konnte das Schiff nicht bis Tempelhof geschleppt werden.
 
-funky.blend ließ daraufhin eine mobile Werkstatt aus drei Pontons zusammenbauen. Die Pontons wurden um den Kahn gelegt, miteinander verspannt und teilweise geflutet. Dadurch entstand ein provisorisches Schwimmdock, in dem das Heck der Bertha angehoben werden konnte.
+[[funky (dot) blend|funky]].blend ließ daraufhin eine mobile Werkstatt aus drei Pontons zusammenbauen. Die Pontons wurden um den Kahn gelegt, miteinander verspannt und teilweise geflutet. Dadurch entstand ein provisorisches Schwimmdock, in dem das Heck der Bertha angehoben werden konnte.
 
 Die Reparatur dauerte neunzehn Stunden. Die Kantine blieb währenddessen geöffnet und versorgte die Techniker mit Suppe. In späteren Darstellungen wird die Operation gern als Musterbeispiel NeuBerliner Kooperation beschrieben.
 
@@ -53,7 +53,7 @@ An jedem fertiggestellten Bauteil befindet sich eine kleine Plakette mit der Ent
 ```text
 Rudergetriebe THF-19
 
-Entwurf: funky.blend
+Entwurf: [[funky (dot) blend|Funky]]
 Verbessert: Mina, Moabit
 Abgedichtet: Ali, Neukölln
 Fluch überarbeitet: Werkhalle 4
@@ -69,7 +69,7 @@ Diese Praxis führte dazu, dass viele Boote NeuBerlins aus Generationen kleiner 
 
 Der Funkturm ist der ruhigste Ort des Diskoords. Während unten geschweißt, gehämmert und geflucht wird, befindet sich oben das zentrale Labor von Open Wing. Es besteht aus einem Kartentisch, mehreren Nachrichtenregistern, Wetterinstrumenten und den Zugängen zu den Taubenschlägen.
 
-Ciao von Bella bestand darauf, dass das Labor nicht größer wurde als nötig. Ihre Begründung lautete:
+[[Ciao von Bella]] bestand darauf, dass das Labor nicht größer wurde als nötig. Ihre Begründung lautete:
 
 > „Sobald ein Nachrichtendienst zu viel Platz hat, fängt er an, sich selbst für die Nachricht zu halten.“
 
@@ -81,7 +81,7 @@ Von dort aus werden Flugrouten aktualisiert, Störungen gemeldet und Transportan
 
 Der **Offene Reparaturtag** entstand nach einer besonders schweren Sturmsaison. Die Wartelisten des Diskoords waren so lang, dass die Stammbesatzung beschloss, sämtliche Eigentümer beschädigter Boote zur Mitarbeit zu verpflichten.
 
-Wer sein Boot repariert haben wollte, musste selbst schleifen, pumpen, tragen oder wenigstens kochen. Die Aktion war erfolgreich und wurde anschließend zur Tradition. Einmal im Monat öffnen sämtliche Hallen ihre Werkbänke für NeuBerlin.
+Wer sein Boot repariert haben wollte, musste selbst schleifen, pumpen, tragen oder wenigstens kochen. Die Aktion war erfolgreich und wurde anschließend zur Tradition. Einmal im Monat öffnen sämtliche Hallen ihre Werkbänke für [[NeuBerlin]].
 
 Am Eingang hängt bis heute ein Schild:
 
@@ -97,9 +97,9 @@ Der Tag dient nicht nur der Reparatur, sondern auch der Ausbildung. Viele späte
 ## funky.blend
 
 
-### Lore-Snippet: Die erste FLITZA
+### Lore-Snippet: Die erste [[SHARK Serie|FLITZA]]
 
-Die erste Version von FLITZA entstand nicht für ein Rennen, sondern für eine Wette. Ein Tempelhofer Bootsbauer behauptete, ein Fahrzeug mit motorradähnlicher Steuerung könne auf Wasser nicht stabil funktionieren. funky verschwand drei Wochen lang in einer Werkhalle und kehrte mit einem unfertigen Rumpf, zwei überhitzten Motoren und einem Modell zurück, das beim ersten Test beinahe durch das Hallentor fuhr.
+Die erste Version von [[SHARK Serie|FLITZA]] entstand nicht für ein Rennen, sondern für eine Wette. Ein Tempelhofer Bootsbauer behauptete, ein Fahrzeug mit motorradähnlicher Steuerung könne auf Wasser nicht stabil funktionieren. funky verschwand drei Wochen lang in einer Werkhalle und kehrte mit einem unfertigen Rumpf, zwei überhitzten Motoren und einem Modell zurück, das beim ersten Test beinahe durch das Hallentor fuhr.
 
 Der Prototyp gewann sein erstes Rennen, verlor dabei jedoch die linke Stabilisatorflosse und einen Teil des Sitzes. funky wertete den Versuch als Erfolg.
 
@@ -118,7 +118,7 @@ Wasserlage: Kann mich nicht erinnern
 
 ### Lore-Snippet: Die Kanonierin
 
-funky wurde Kanonierin der INFINITY, nachdem sie während eines Überfalls ein blockiertes Geschütz reparierte, neu ausrichtete und abfeuerte, bevor der damalige Schütze seine Fehlermeldung vollständig ausgesprochen hatte. Der Schuss traf nicht das angreifende Boot, sondern dessen Schleppleine. Dadurch löste sich die gesamte gestohlene Ladung und trieb zurück zur INFINITY.
+funky wurde Kanonierin der [[INFINITY]], nachdem sie während eines Überfalls ein blockiertes Geschütz reparierte, neu ausrichtete und abfeuerte, bevor der damalige Schütze seine Fehlermeldung vollständig ausgesprochen hatte. Der Schuss traf nicht das angreifende Boot, sondern dessen Schleppleine. Dadurch löste sich die gesamte gestohlene Ladung und trieb zurück zur [[INFINITY]].
 
 Auf die Frage, ob dies beabsichtigt gewesen sei, antwortete sie:
 
@@ -139,18 +139,18 @@ funkys Laudatio fällt gewöhnlich knapp aus:
 > „Sieht furchtbar aus. Würd ick sofort fahren.“
 
 
-#### Gemeinsame Szenen mit Fibo
+#### Gemeinsame Szenen mit [[Fibo]]
 
 ## Mögliche gemeinsame Szenen
 
 > [!example] Das Rennen  
-> Fibo behauptet, FLITZAs Steuerung sei bei hoher Geschwindigkeit instabil. funky fordert ihn auf, das Gegenteil praktisch zu beweisen, und setzt ihn hinter sich auf das Boot. Während des Rennens erklärt Fibo lautstark, warum jede Kurve physikalisch falsch ist. funky gewinnt.
+> [[Fibo]] behauptet, FLITZAs Steuerung sei bei hoher Geschwindigkeit instabil. funky fordert ihn auf, das Gegenteil praktisch zu beweisen, und setzt ihn hinter sich auf das Boot. Während des Rennens erklärt [[Fibo]] lautstark, warum jede Kurve physikalisch falsch ist. funky gewinnt.
 
 > [!example] Die beschädigte INFINITY  
-> Nach einem Angriff müssen beide gemeinsam eine tragende Sektion der INFINITY stabilisieren. Fibo berechnet die Belastung, funky entscheidet, welche Teile des Schiffes geopfert werden können. Zum ersten Mal streiten sie nicht darüber, wer recht hat, sondern darüber, wer das größere Risiko übernimmt.
+> Nach einem Angriff müssen beide gemeinsam eine tragende Sektion der [[INFINITY]] stabilisieren. Fibo berechnet die Belastung, funky entscheidet, welche Teile des Schiffes geopfert werden können. Zum ersten Mal streiten sie nicht darüber, wer recht hat, sondern darüber, wer das größere Risiko übernimmt.
 
 > [!example] Die Blender-Datei  
-> Fibo findet in funkys Modellbibliothek eine unvollendete Konstruktion, die auffällig viele seiner eigenen Designprinzipien übernimmt. Der Dateiname lautet `nicht_Fibo.blend`.
+> [[Fibo]] findet in funkys Modellbibliothek eine unvollendete Konstruktion, die auffällig viele seiner eigenen Designprinzipien übernimmt. Der Dateiname lautet `nicht_Fibo.blend`.
 
 > [!example] Das schlechte Kompliment  
 > funky betrachtet eine von Fibo gebaute Maschine lange und sagt schließlich: „Kannste lassen.“ Fibo ist tagelang ungewöhnlich guter Laune.
