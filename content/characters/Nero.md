@@ -34,9 +34,7 @@ So ist die Frage, welche Position er in den Ereignissen überhaupt einnimmt, bis
 
 In der Nacht zum 4. November 2121, die später als die „Nacht der vier Blamagen“ in die Chroniken einging, verschwanden sämtliche Vertragssiegel zwischen den Clans von NeuBerlin. Am folgenden Morgen lagen an ihrer Stelle äußerlich identische Fälschungen. Da sich nicht mehr zweifelsfrei feststellen ließ, welche Verträge noch gültig waren, mussten jahrelange Verhandlungen von Neuem eröffnet werden. 
 
-Nero erklärte später, er habe herausgefunden, wann die Clans sich an ihre Verträge erinnerten und wann nur an deren Stempel. Andere sahen darin einen Hinweis darauf, dass der Diebstahl nicht der eigentliche Zug gewesen war, sondern den Clanführern nur die Möglichkeit eröffnen sollte, Verträge zu fälschen. 
-
-Mit der Nacht der 4 Blamagen erhielt das Konzept "Vertragsfälschung" Einzug in die Verhandlungen der Clanführer, was eine potenzielle Einigung der Parteien weiter erschwerte.
+Nero erklärte später, er habe herausgefunden, wann die Clans sich an ihre Verträge erinnerten und wann nur an deren Stempel. Andere sahen darin einen Hinweis darauf, dass der Diebstahl nicht der eigentliche Zug gewesen war, sondern den Clanführern nur die Möglichkeit zeigte.
 
 ### Schöneberg Protokoll
 

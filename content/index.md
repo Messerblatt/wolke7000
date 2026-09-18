@@ -15,26 +15,26 @@ Das ist der Digital Garden von **Wolke 7000**, einem open-end und open-world ope
 
 ## Warum?
 
-Die bisher so naiven Umsetzungen von Solarpunk brachten mich dazu, einen besseren, nicht-naiven Ansatz zu wählen, und so konzipiere ich nun diese Welt, die unserer Welt neue Möglichkeiten und Lösungsansätze bietet, um Dystopien zu überwinden - ohne dabei auf Potatoe-Lovestories und wir-haben-uns-alle-lieb-Dogmatas zurückzugreifen.
+Die bisher so naiven Umsetzungen von Solarpunk brachten mich dazu, einen besseren, nicht-naiven Ansatz zu wählen, und so konzipiere ich nun diese Welt, die unserer Welt neue Möglichkeiten und Lösungsansätze bietet, um Dystopien zu überwinden.
 
 ## Die Lore
 
-Die Geschichte beginnt im Jahre 2126 in NeuBerlin. Durch Atomkriege und Klimakatastrophen ist die Welt am Untergehen. Der entfesselte Raubtierkapitalismus und die Schwarmdummheit der Menschen haben dafür gesorgt, dass die Menschheit das Fliegen verlernte. Dann crashen auch noch die letzten finanzierbaren Raumfahrtprojekte, und die Menschheit steht da, ohne Fluchttaxi ins All, hilflos im Archipel der letzten noch bewohnbaren Oasen der Erde.
+Die Geschichte beginnt im Jahre 2126 in [[NeuBerlin]]. Durch Atomkriege und Klimakatastrophen ist die Welt am Untergehen. Der entfesselte Raubtierkapitalismus und die Schwarmdummheit der Menschen haben dafür gesorgt, dass die Menschheit das Fliegen verlernte. Dann crashen auch noch die letzten finanzierbaren Raumfahrtprojekte, und die Menschheit steht da, ohne Fluchttaxi ins All, hilflos im Archipel der letzten noch bewohnbaren Oasen der Erde.
 
-NeuBerlin ist eine solche Oase, und hier beginnt die Geschichte.
+[[NeuBerlin]] ist eine solche Oase, und hier beginnt die Geschichte.
 
->[!tip] NeuBerlin
->NeuBerlin ist das alte Berlin, nur dass NeuBerlin halb unter Wasser versunken liegt und die Anarchie in der Stadt ausgebrochen ist. Boote und Schiffe sind die bevorzugten Transportmittel. 
+>[!tip] [[NeuBerlin]]
+>[[NeuBerlin]] ist das alte Berlin, nur dass [[NeuBerlin]] halb unter Wasser versunken liegt und die Anarchie in der Stadt ausgebrochen ist. Boote und Schiffe sind die bevorzugten Transportmittel. 
 
-Die Stadt wird von 4 Schleusen - eine pro Himmelsrichtung - mit Wasser versorgt, das durch strategische Bombeneinschläge in den umherliegenden Territorien zur Stadt bewegt wird. NeuBerlin ist bevölkert von einer Liga der außergewöhnlichen [[Characters Übersicht|Characters]].
+Die Stadt wird von 4 Schleusen - eine pro Himmelsrichtung - mit Wasser versorgt, das durch strategische Bombeneinschläge in den umherliegenden Territorien zur Stadt bewegt wird. [[NeuBerlin]] ist bevölkert von einer Liga der außergewöhnlichen [[Characters Übersicht|Characters]].
 
 ![[icon_openWing.png]]
 
 >[!info]
->Zu Open Wings gehts [[Open Wings|hier]].
+>Zu [[Open Wings]] gehts [[Open Wings|hier]].
 
 
-Das Internet, wie wir es kennen, wurde in NeuBerlin durch [[Open Wings]] ersetzt. Ein Hacker namens [[Salt Brah]] koordiniert die Brieftauben vom Funkturm des [[Tempelhof Diskoord]]. [[Ciao Von Bella]] und [[funky (dot) blend|Funky.blend]] kümmern sich darum, dass Brieftauben und Schiffe die Infrastruktur mit Informationen und Material der [[ships/EVERYTHING|EVERYTHING]] versorgen. Die EVERYTHING ist ein Meta-Schiff, und was das zu bedeuten hat, weiß ich auch noch nicht. 
+Das Internet, wie wir es kennen, wurde in [[NeuBerlin]] durch [[Open Wings]] ersetzt. Ein Hacker namens [[Salt Brah]] koordiniert die Brieftauben vom Funkturm des [[Tempelhof Diskoord]]. [[Ciao Von Bella]] und [[funky (dot) blend|Funky.blend]] kümmern sich darum, dass Brieftauben und Schiffe die Infrastruktur mit Informationen und Material der [[ships/EVERYTHING|EVERYTHING]] versorgen. Die [[EVERYTHING]] ist ein Meta-Schiff, und was das zu bedeuten hat, weiß ich auch noch nicht. 
 
 Die Saga beginnt.
 
@@ -48,16 +48,16 @@ In der Geschichte von Wolke 7000 spielt KI keine Rolle. Und naja weißt du, weil
 
 ## Was dich erwartet könnte
 
-| Bereich     | Inhalt                                                                |
-| ----------- | --------------------------------------------------------------------- |
-| NeuBerlin   | Eine halb versunkene, anarchische Wasserstadt                         |
-| Wolke 7000  | Fliegende Hochhausstadt über dem Atlantik                             |
-| Open Wings  | Ein Internet aus Brieftauben                                          |
-| Technologie | Solarpunk trifft Hackerkultur                                         |
-| Schiffe     | Von improvisierten Lastkähnen bis zu fliegenden Kreuzfahrtschiffen    |
-| Charaktere  | Helden, Spinner, Genies und Vollidioten                               |
-| Kultur      | Regenfeste, Running Gags und Stadtmythen                              |
-| Lore        | Geschichte, Religionen, Politik und Unsinn mit erstaunlich viel Logik |
+| Bereich        | Inhalt                                                                |
+| -------------- | --------------------------------------------------------------------- |
+| [[NeuBerlin]]  | Eine halb versunkene, anarchische Wasserstadt                         |
+| Wolke 7000     | Fliegende Hochhausstadt über dem Atlantik                             |
+| [[Open Wings]] | Ein Internet aus Brieftauben                                          |
+| Technologie    | Solarpunk trifft Hackerkultur                                         |
+| Schiffe        | Von improvisierten Lastkähnen bis zu fliegenden Kreuzfahrtschiffen    |
+| Charaktere     | Helden, Spinner, Genies und Vollidioten                               |
+| Kultur         | Regenfeste, Running Gags und Stadtmythen                              |
+| Lore           | Geschichte, Religionen, Politik und Unsinn mit erstaunlich viel Logik |
 
 
 ## Das Repo

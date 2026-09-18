@@ -2,7 +2,7 @@
 ![[icon_openWing.png]]
 
 
-Die **Open Wings** Foundation ist eine gemeinnützige Stiftung zur Nachrichtenübermittlung und Informationskoordination in NeuBerlin. Sie betreibt das gleichnamige Brieftaubennetz, das die Stadtteile sowie zahlreiche Außenposten der Wasserstraßen von NeuBerlin miteinander verbindet. Open Wingss gilt als eine der ältesten noch aktiven Institutionen der Stadt und wird als „Internet 1“ in die Geschichte von NeuBerlin eingehen. Anders als das "Internet 0" der Alten Welt transportiert Open Wings ausschließlich physische Nachrichtenkapseln. Die Stiftung verfolgt die Grundsätze der Freiheit, Überprüfbarkeit und Unabhängigkeit des Informationsaustausches. Open Wingss agiert unabhängig von zentraler Kontrolle und wird vom [[Tempelhof Diskoord]] koordiniert.
+Die **Open Wings** Foundation ist eine gemeinnützige Stiftung zur Nachrichtenübermittlung und Informationskoordination in NeuBerlin. Sie betreibt das gleichnamige Brieftaubennetz, das die Stadtteile sowie zahlreiche Außenposten der Wasserstraßen von NeuBerlin miteinander verbindet. Open Wings gilt als eine der ältesten noch aktiven Institutionen der Stadt und wird als „Internet 1“ in die Geschichte von NeuBerlin eingehen. Anders als das "Internet 0" der Alten Welt transportiert Open Wings ausschließlich physische Nachrichtenkapseln. Die Stiftung verfolgt die Grundsätze der Freiheit, Überprüfbarkeit und Unabhängigkeit des Informationsaustausches. Open Wingss agiert unabhängig von zentraler Kontrolle und wird vom [[Tempelhof Diskoord]] koordiniert.
 
 ### Geschichte
 
@@ -14,7 +14,7 @@ Auslöser war Salt Brahs zunehmende Frustration über den Zustand des Internets 
 
 Zusammen mit der Falknerin **Ciao Von Bella** wurde ein Taubenschwarm, bestehend aus NeuBerlin's schnellsten Tauben, zusammengestellt. Der erste Testflug am 12. Oktober 2109 verlief erfolgreich. 
 
-Hierbei wurde auch die Gelegenheit genutzt, die Vorgängerversion des Internet durch das Austragen eines Wettrenns zu blamieren: Um Punkt 12 Uhr wurden auf dem Dach des Tempelhofer Diskoords zeitgleich zwei identische Fassungen der Botschaft "FF" (die Initialen für "Flieg Frei" - das Motto der Open Wings Foundation) auf dem Weg geschickt: Die erste per klassischer E-Mail, die zweite per Open Wings Brieftaube. Die Botschaft wurde an einen Computer verschickt, der sich in der Dachzentrale von Schloss Schönhausen in NeuBerlin Pankow befandt. Um der Taube den Ort des Computers zu markieren, wurden zuvor entsprechende Flaggen auf dem Dach des Schlosses angebracht.
+Hierbei wurde auch die Gelegenheit genutzt, die Vorgängerversion des Internet durch das Austragen eines Wettrennens zu blamieren: Um Punkt 12 Uhr wurden auf dem Dach des Tempelhofer Diskoords zeitgleich zwei identische Fassungen der Botschaft "FF" (die Initialen für "Flieg Frei" - das Motto der Open Wings Foundation) auf dem Weg geschickt: Die erste per klassischer E-Mail, die zweite per Open Wings Brieftaube. Die Botschaft wurde an einen Computer verschickt, der sich in der Dachzentrale von Schloss Schönhausen in NeuBerlin Pankow befandt. Um der Taube den Ort des Computers zu markieren, wurden zuvor entsprechende Flaggen auf dem Dach des Schlosses angebracht.
 
 >[!info]
 > Diese 11,7 km lange Luftlinie konnte von der Brieftaube zuerst absolviert werden, womit Open Wings das Rennen gewann. Das Ansehen von Open Wings stieg dadurch erheblich.
@@ -25,7 +25,7 @@ In den darauffolgenden Jahren wurde Open Wings großflächig in NeuBerlin etabli
 
 ### Organisation
 
-Open Wings versteht sich ausdrücklich nicht als Postdienst, sondern als öffentliche Infrastruktur. Die Stiftung transportiert ausschließlich Briefe. Waren, Ersatzteile oder Lebensmittel werden grundsätzlich nicht durch Brieftauben befördert.
+Open Wings versteht sich ausdrücklich nicht als Postdienst, sondern als öffentliche Infrastruktur. Die Stiftung transportiert ausschließlich Briefe. Waren werden grundsätzlich nicht durch Brieftauben befördert.
 
 Stattdessen dient Open Wings als Kommunikationsschicht über dem Wasserverkehr der Stadt. Benötigt eine Werkstatt beispielsweise ein bestimmtes Ventil, wird zunächst eine Nachricht über Open Wings an den Material-Index der [[ships/EVERYTHING]] übermittelt. Dort wird geprüft, welcher Lastkahn den gesuchten Gegenstand führt und auf welchem Kanal er sich befindet. Erst danach macht sich ein Versorgungsboot auf den Weg.
 

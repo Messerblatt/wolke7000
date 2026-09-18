@@ -1,7 +1,5 @@
 # Wolke 7000
 
-![content/imgs/poster.png]
-
 Das ist das Quartz-Repo zum Digital Garden für Wolke 70000: https://wolke7000.com
 
 ## Quartz-Sponsors

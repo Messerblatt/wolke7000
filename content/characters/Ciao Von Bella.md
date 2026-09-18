@@ -100,7 +100,7 @@ Die Eule **Bora** ist Ciaos wichtigste Begleiterin für Nachtaufklärungen. Ciao
 
 ### Das Orakel
 
-Im siebten und letzten Buch der Wolke 7000 Saga wird Ciao zu der Überzeugung gelangen, der Nachwelt eine ungeheuer schwere Nachricht überbringen zu müssen. Mit dem Vorbereiten und Sammeln der Hinweise beginnt sie schon im ersten Buch der Wolke 7000 Saga. Stichwort: Außergewöhnliche Weitsicht.
+Im siebten und letzten Buch der Wolke 7000 Saga wird Ciao zu der Überzeugung gelangen, der Nachwelt eine ungeheuer schwere Nachricht überbringen zu müssen. Mit dem Vorbereiten und Sammeln der Hinweise beginnt sie schon im ersten Buch der Wolke 7000 Saga.
 
 [[Kokolores]] nimmt diese Überzeugung ernst und erkennt darin eine Parallele zu ihrem eigenen Glauben, Botschaften des Himmels hören zu können, und überredet Ciao dazu, als Kundschafterin dem Himmelfahrtskommandos zu helfen.
 
@@ -115,7 +115,7 @@ Im siebten und letzten Buch der Wolke 7000 Saga wird Ciao zu der Überzeugung ge
 
 Ciao und [[Kokolores]] verbindet eine enge Freundschaft, die auf einer ähnlichen Beziehung zum Himmel beruht. Häufig bittet [[Kokolores]] Ciao um Rat, bevor sie riskante Entscheidungen trifft.
 
-Ihre Gespräche finden oft am Rand der übrigen Mannschaft statt, auf Decks, Türmen oder Dächern. Sie reden wenig, betrachten denselben Himmel und kommen häufig unabhängig voneinander zu ähnlichen Schlüssen.
+Ihre Gespräche finden oft am Rand der übrigen Mannschaft statt, auf Decks, Türmen oder Dächern. Sie reden wenig, betrachten denselben Himmel und kommen unabhängig voneinander zu ähnlichen Schlüssen.
 
 > [!quote]  
 > **[[Kokolores]]:** „Der Himmel klingt heute anders.“  
@@ -123,7 +123,7 @@ Ihre Gespräche finden oft am Rand der übrigen Mannschaft statt, auf Decks, Tü
 
 ### Salt Brah
 
-Ciao verehrt [[Salt Brah]] weit stärker, als sie selbst zugeben würde. Ihr Respekt gegenüber seinem starken Charakter und seinem vulkanischen Ehrgeiz kann von Bewunderung bis zur Unterwerfung ausarten. Salt genießt ihre Verehrung sichtbar, obwohl er behauptet, keinen Personenkult zu wollen.
+Ciao verehrt [[Salt Brah]] weit stärker, als sie selbst zugeben würde. Ihr Respekt gegenüber seinem vulkanischen Charakter kann von Bewunderung bis zur Unterwerfung ausarten. Salt genießt ihre Verehrung sichtbar, obwohl er behauptet, keinen Personenkult zu wollen.
 
 ### Funky.blend
 

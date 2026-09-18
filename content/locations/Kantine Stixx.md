@@ -6,13 +6,13 @@ tags:
 ![[die_kantine.png]]
 
 >[!abstract] Kurzprofil
->_Die Kantine_ ist selbstredend _**die** Kantine_ von Neuberlin. Falls die Betonung nicht eindeutig genug war: Die Kantine ist _die_ Quelle, _**DIE**_ Quelle, in der Verschwörungstheorien über Wolke 7000 und [[Speiseplan der Kantine|Schöneberger Fischsuppe]] zusammenkommen; sowie alle hungrigen Menschen der Stadt; oder solche, die eh nichts zu tun haben. 
+>_Die Kantine_ ist selbstredend _**die** Kantine_ von Neuberlin. Falls die Betonung nicht eindeutig genug war: Die Kantine ist _die_ Quelle, _**DIE**_ Quelle, in der Verschwörungstheorien über Wolke 7000 und [[speisekarte|Schöneberger Fischsuppe]] zusammenkommen; sowie alle hungrigen Menschen der Stadt; oder solche, die eh nichts zu tun haben. 
 
 ## Fressen
 
 NeuBerlin geizt mit Strom wie sonstwas. So hat sich die Phrase "Wer allein kocht, hat entweder zu viel Strom oder keine Freunde." zur Plot-Engine des neuen Social-Eatings entwickelt. Naheliegend also, dass die Menschen von NeuBerlin es bevorzugen, lieber in den Kantinen von NeuBerlin für sich allein zu hocken und lustlos im Moabiter Muscheltopf zu stochern, anstatt Zuhause vor dem Bildschirm. Die Kantine Stixx befindet sich an den Docks zur Hermannstraße 90, drei Flaschenwürfe vom [[Tempelhof Diskoord]] entfernt.
 
-Hier der [[Speiseplan der Kantine]].
+Hier der [[speisekarte]].
 
 Für die Story erfüllt die Kantine einige Funktionen:
 - Schwarzes Brett für die "Most Wanteds"

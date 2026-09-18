@@ -74,6 +74,6 @@ Samsa gehört zu den schnellsten und zuverlässigsten Brieftauben von NeuBerlin.
 
 Mit Ausnahme von [[Salt Brah]] versteht Samsa sich vortrefflich mit allen Menschen NeuBerlins.
 
-Anders sieht die Sache mit Ciao's Adler **Levante** aus, der ihr Fressfeind ist. Obwohl gut erzogen und sogar als Eskortschutz für gefährdete Brieftauben im Einsatz - möchte Levante nur das eine: Samsa fressen.
+Anders sieht die Sache mit Ciao's Adler **Levante** aus, der ihr Fressfeind ist. Obwohl gut erzogen und sogar als Eskortschutz für gefährdete Brieftauben im Einsatz, möchte Levante nur das eine: Samsa fressen.
 
 Mit Sirocco - Ciao's Tauchvogel - und Bora - Ciao's Nachteule - unterhält Samsa ein erstaunlich gleichgültiges Verhältnis. Zwar betrachtet Bora die Brieftaube mit großen Interesse, während Samsa die Eule konsequent ignoriert. Sirocco hält beide Landvögel für unnötig trocken.

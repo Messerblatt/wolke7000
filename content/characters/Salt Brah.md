@@ -30,7 +30,7 @@ archive_presence: true
 
 ## Biographie
 
-Salt Brah wurde während des **Alsterkriegs von Hamburg_2** geboren. Über seine Familie ist wenig bekannt. Unzuverlässliche Quellen deuten zumindest darauf hin, dass er als Jugendlicher eine Klavierausbildung absolvierte und auffällige Sympathien für historische Verräter wie Judas, Brutus oder [[Nero]] zeigte.
+Salt Brah wurde während des **Alsterkriegs von Hamburg_2** geboren. Über seine Familie ist wenig bekannt. Unzuverlässige Quellen deuten zumindest darauf hin, dass er als Jugendlicher eine Klavierausbildung absolvierte und auffällige Sympathien für historische Verräter wie Judas, Brutus oder [[Nero]] zeigte.
 
 Seine ersten öffentlichen Auftritte in den verlassenen Lagerhallen von Hamburg_2 bestritt er mit gehackten Gameboys, die er an Gitarrenverstärker anschloss und auf 140 Dezibel aufdrehte.
 
@@ -66,13 +66,13 @@ Seine Konstruktionen gelten als genial, schwer reproduzierbar und gefährlich. M
 
 ### Rede und Massenmobilisierung
 
-Salt ist ein charismatischer Redner mit einem ausgeprägten Gespür für die Stimmung einer Menschenmenge. Er ist in der Lage, aus einer unzufriedenen Gruppe innerhalb weniger Minuten eine organisierte Protestbewegung zu formen.
+Brah ist ein mitreißender Redner mit einem ausgeprägten Gespür für die Stimmung einer Menschenmenge. Er ist in der Lage, aus einer unzufriedenen Gruppe innerhalb weniger Minuten eine organisierte Protestbewegung zu formen.
 
 Salt besitzt keine klassische Führungsdoktrin. Er erscheint einfach dort, wo Widerstand nötig ist, und verschwindet wieder, sobald seine neu konvertierten Rebellen anfangen, Schaden anzurichten.
 
 ### Kapitän der [[INFINITY]]
 
-Als Kapitän verbindet Salt strategische Kühnheit mit einer Geringschätzung für nautische Konventionen. Meist überlässt er Funky die präzisen Manöver und Waffensysteme, während [[Ciao von Bella]] als Beobachterin im Ausguck bleibt. Sein Beiträge als Kapitän bestehen meist darin, ein Ziel vorzugeben und den Eskalationsgrad zu bestimmen.
+Als Kapitän verbindet Salt strategische Kühnheit mit einer Geringschätzung für nautische Konventionen. Meist überlässt er Funky die präzisen Manöver und Waffensysteme, während [[Ciao von Bella]] als Beobachterin im Ausguck bleibt. Seine Beiträge als Kapitän bestehen meist darin, ein Ziel vorzugeben und den Eskalationsgrad zu bestimmen.
 
 ## Beziehungen
 
