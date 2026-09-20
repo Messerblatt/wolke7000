@@ -45,7 +45,7 @@ Jeden Sonntag ab Punkt neun Uhr vormittags assembliert ein Teil der Flotte auße
 
 ## Das Fundbüro
 
-![[everything_fundbüro.png]]
+![[everything_founding_office.png]]
 
 Das **Fundbüro** fungiert als organisatorische Zentrale der EVERYTHING. Es ist damit ungefähr das, was bei Edeka eine Zentrale, bei REWE ein Warenwirtschaftssystem und bei Aldi vermutlich eine sehr ernst dreinblickende Person mit Tabellen wäre.
 
