@@ -11,7 +11,7 @@ Das ist der Digital Garden von **Wolke 7000**, einem open-end und open-world ope
 
 ![[koko_third.png]]
 >[!info] 
->Zu den Characters gehts [[Characters Übersicht|hier]].
+>Zu den Characters gehts [[Characters Übersicht|hier]]
 
 ## Warum?
 
@@ -31,7 +31,7 @@ Die Stadt wird von 4 Schleusen - eine pro Himmelsrichtung - mit Wasser versorgt,
 ![[icon_openWing.png]]
 
 >[!info]
->Zu [[Open Wings]] gehts [[Open Wings|hier]].
+>Zu [[Open Wings]] gehts [[Open Wings|hier]]
 
 
 Das Internet, wie wir es kennen, wurde in [[NeuBerlin]] durch [[Open Wings]] ersetzt. Ein Hacker namens [[Salt Brah]] koordiniert die Brieftauben vom Funkturm des [[Tempelhof Diskoord]]. [[Ciao Von Bella]] und [[funky (dot) blend|Funky.blend]] kümmern sich darum, dass Brieftauben und Schiffe die Infrastruktur mit Informationen und Material der [[ships/EVERYTHING|EVERYTHING]] versorgen. Die [[EVERYTHING]] ist ein Meta-Schiff, und was das zu bedeuten hat, weiß ich auch noch nicht. 

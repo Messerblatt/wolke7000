@@ -1,5 +1,3 @@
-![[aquaponik-chatGPT.png]]
-
 
 Unter der Verantwortung von [[Mia Von Schöneberg]]
 
@@ -7,6 +5,7 @@ Fischbecken im Untergeschoss. Durch im Boden eingelassene Fenster können Besuch
 
 Cool wäre ein Kapitel, bei dem sich Figuren in der Kantine treffen, Verschwörungstheorien über Nero oder Wolke 7000 ersinnen, und dabei skeptische Blicke mit den Fischen im Boden austauschen. 
 
+Das Ministerium ist ein Aquaponik, und somit auch ein Marktplatz für Pflanzen, Gemüse, Obst, Kräuter, aber auch für Fisch und Meeresfrüchte. 
 
 # Name für Aquaponik
 

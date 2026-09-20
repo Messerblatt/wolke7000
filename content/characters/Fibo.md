@@ -32,7 +32,7 @@ ship: NIMBUS
 
 Fibo, geboren und aufgewachsen in NeuBerlin, bestritt seinen Lebensunterhalt lange Zeit als Ghostwriter für akademische Hochstapler. Seine Doktorarbeit für [[Okta⁸]] sorgt für ein folgenreiches Intermezzo, welches auf Wolke 7000 noch auszutragen ist.
 
-Obwohl etablierte Wissenschaftler auf seine tatsächliche Urheberschaft aufmerksam wurden, blieb Fibo der akademischen Welt fern. Bis heute versuchen Headhunter der letzten noch stehenden Universtäten, ihn für profitable Forschungsprojekte zu rekrutieren. Die Einladungen ignoriert Fibo ausnahmslos.
+Obwohl etablierte Wissenschaftler auf seine tatsächliche Urheberschaft aufmerksam wurden, blieb Fibo der akademischen Welt fern. Bis heute versuchen Headhunter der letzten noch stehenden Universitäten, ihn für profitable Forschungsprojekte zu rekrutieren. Die Einladungen ignoriert Fibo ausnahmslos.
 
 > [!note] Akademische Reputation  
 > Fibo besitzt keinen anerkannten Bildungsabschluss. Dennoch beruhen mehrere wissenschaftliche Karrieren indirekt auf seinen Texten, Berechnungen und Erfindungen.
@@ -72,7 +72,7 @@ Nach dem Verlust der A-Serie entwickelte Fibo ein Nachfolgemodell: [[SERVERKLASS
 
 Um zu verhindern, dass auch dieses System ein Bewusstsein entwickelt und sich seiner Kontrolle entzieht, infizierte er es absichtlich mit 84.000 verschiedenen Computerviren.
 
-Nach Fibo's Theorie müsste eine virale Verseuchung solchen Ausmaßes dazu führen, dass das System dauerhaft mit Selbstdiagnosen und internen Konflikten beschäftigt wird und somit keine Intention zur Flucht entwickeln kann.
+Nach Fibo's Theorie müsste eine virologische Verseuchung solchen Ausmaßes dazu führen, dass das System dauerhaft mit Selbstdiagnosen und internen Konflikten beschäftigt wird und somit keine Intention zur Flucht entwickeln kann.
 
 Ein nützlicher Nebeneffekt von B's Infektionen besteht darin, dass Fibo den Laptop als tickende Zeitbombe verwenden kann: Weil niemand es wagt, durch die Zerstörung von B die darin befindlichen 84.000 Computerviren freizusetzen und das Internet zu löschen, kann Fibo praktisch alles, jeden, jederzeit mit B verprügeln.
 

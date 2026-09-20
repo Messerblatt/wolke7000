@@ -2,7 +2,7 @@
 ![[icon_openWing.png]]
 
 
-Die **Open Wings** Foundation ist eine gemeinnützige Stiftung zur Nachrichtenübermittlung und Informationskoordination in NeuBerlin. Sie betreibt das gleichnamige Brieftaubennetz, das die Stadtteile sowie zahlreiche Außenposten der Wasserstraßen von NeuBerlin miteinander verbindet. Open Wings gilt als eine der ältesten noch aktiven Institutionen der Stadt und wird als „Internet 1“ in die Geschichte von NeuBerlin eingehen. Anders als das "Internet 0" der Alten Welt transportiert Open Wings ausschließlich physische Nachrichtenkapseln. Die Stiftung verfolgt die Grundsätze der Freiheit, Überprüfbarkeit und Unabhängigkeit des Informationsaustausches. Open Wingss agiert unabhängig von zentraler Kontrolle und wird vom [[Tempelhof Diskoord]] koordiniert.
+Die **Open Wings** Foundation ist eine gemeinnützige Stiftung zur Nachrichtenübermittlung und Informationskoordination in NeuBerlin. Sie betreibt das gleichnamige Brieftaubennetz, das die Stadtteile sowie zahlreiche Außenposten der Wasserstraßen von NeuBerlin miteinander verbindet. Open Wings gilt als eine der ältesten noch aktiven Institutionen der Stadt und wird als „Internet 1“ in die Geschichte von NeuBerlin eingehen. Anders als das "Internet 0" der Alten Welt transportiert Open Wings ausschließlich physische Nachrichtenkapseln. Die Stiftung verfolgt die Grundsätze der Freiheit, Überprüfbarkeit und Unabhängigkeit des Informationsaustausches. Open Wings agiert unabhängig von zentraler Kontrolle und wird vom [[Tempelhof Diskoord]] koordiniert.
 
 ### Geschichte
 
@@ -27,7 +27,7 @@ In den darauffolgenden Jahren wurde Open Wings großflächig in NeuBerlin etabli
 
 Open Wings versteht sich ausdrücklich nicht als Postdienst, sondern als öffentliche Infrastruktur. Die Stiftung transportiert ausschließlich Briefe. Waren werden grundsätzlich nicht durch Brieftauben befördert.
 
-Stattdessen dient Open Wings als Kommunikationsschicht über dem Wasserverkehr der Stadt. Benötigt eine Werkstatt beispielsweise ein bestimmtes Ventil, wird zunächst eine Nachricht über Open Wings an den Material-Index der [[ships/EVERYTHING]] übermittelt. Dort wird geprüft, welcher Lastkahn den gesuchten Gegenstand führt und auf welchem Kanal er sich befindet. Erst danach macht sich ein Versorgungsboot auf den Weg.
+Stattdessen dient Open Wings als Kommunikationsschicht über dem Wasserverkehr der Stadt. Benötigt eine Werkstatt beispielsweise ein bestimmtes Ventil, wird zunächst eine Nachricht über Open Wings an den Material-Index der [[ships/EVERYTHING|EVERYTHING]] übermittelt. Dort wird geprüft, welcher Lastkahn den gesuchten Gegenstand führt und auf welchem Kanal er sich befindet. Erst danach macht sich ein Versorgungsboot auf den Weg.
 
 Die Verbindung zwischen Open Wings und EVERYTHING gilt als eines der elementaren logistischen Systeme NeuBerlins und wird häufig mit dem Verhältnis zwischen Daten- und Transportnetzen der Alten Welt verglichen.
 
@@ -37,7 +37,7 @@ Open Wings genießt in NeuBerlin eine umfassende Akzeptanz und gilt als das bevo
 ## Die Brieftauben
 
 
-Brieftauben besitzen Magnet-Rezeptoren in Kopf und Schnabel, was sie für das Erdmagnetfeld sensibilisiert. Sie nutzen den Stand der Sonne  und eine innere Uhr, um Kurskorrekturen durchzuführen. Auch prägen Brieftauben sich Geruchsmuster ihrer Heimatregion ein; sie „riechen“ im übertragenen Sinne den Weg nach Hause. Dabei orientieren sie sich auch an Flussverläufe, Straßennetze, große Gebäude und farbliche Muster. Durch gezieltes Durchführen von Trainingsflügen war es Ciao Von Bella gelungen, den Open Wingss Brieftauben auch das Erkennen von Flaggen anzutrainieren.
+Brieftauben besitzen Magnet-Rezeptoren in Kopf und Schnabel, was sie für das Erdmagnetfeld sensibilisiert. Sie nutzen den Stand der Sonne  und eine innere Uhr, um Kurskorrekturen durchzuführen. Auch prägen Brieftauben sich Geruchsmuster ihrer Heimatregion ein; sie „riechen“ im übertragenen Sinne den Weg nach Hause. Dabei orientieren sie sich auch an Flussverläufe, Straßennetze, große Gebäude und farbliche Muster. Durch gezieltes Durchführen von Trainingsflügen war es Ciao Von Bella gelungen, den Open Wings Brieftauben auch das Erkennen von Flaggen anzutrainieren.
 
 In Experimenten finden Brieftauben **ihren Heimatschlag oft auf wenige Meter genau** – selbst aus hunderten Kilometern Entfernung.
 
