@@ -9,12 +9,10 @@ enemy:
   - "[[Salt Brah]]"
 clan: tempelhof_diskoord
 archive_presence: true
+template: full-width
 ---
 
 ![[2898007d-2f44-49ee-b1dd-9cdc64ec21ab.png]]
-
-
-![[ChatGPT Image Jul 31, 2026, 05_32_08 PM.png]]
 
 
 > [!abstract]  

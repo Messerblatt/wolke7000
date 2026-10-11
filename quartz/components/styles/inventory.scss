@@ -1,0 +1,113 @@
+.inventory {
+  position: relative;
+  width: 100%;
+}
+
+.inventory-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.6rem 0.8rem;
+
+  border: 1px solid var(--lightgray);
+  border-radius: 0.5rem;
+
+  background: var(--light);
+  color: var(--dark);
+
+  cursor: pointer;
+
+  font: inherit;
+
+  &:hover {
+    border-color: var(--secondary);
+  }
+}
+
+.inventory-icon {
+  font-size: 1.1rem;
+}
+
+.inventory-count {
+  margin-left: auto;
+
+  min-width: 1.5rem;
+  height: 1.5rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  background: var(--highlight);
+  font-size: 0.8rem;
+}
+
+.inventory-panel {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+
+  border: 1px solid var(--lightgray);
+  border-radius: 0.5rem;
+
+  background: var(--light);
+}
+
+.inventory-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 0.75rem;
+}
+
+.inventory-close,
+.inventory-remove {
+  border: 0;
+  background: transparent;
+
+  color: var(--gray);
+  cursor: pointer;
+
+  font-size: 1.2rem;
+
+  &:hover {
+    color: var(--dark);
+  }
+}
+
+.inventory-items {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inventory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.4rem 0.5rem;
+
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.inventory-empty {
+  margin: 0;
+
+  color: var(--gray);
+  font-style: italic;
+}
+
+pre.inventory-item-added {
+  outline: 2px solid var(--secondary);
+  transition: outline 150ms ease;
+}

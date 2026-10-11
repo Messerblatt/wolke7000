@@ -316,6 +316,12 @@ plugins:
     enabled: true
     options: {}
     order: 45
+  - source: github:Messerblatt/quartz-plugin-inventory
+    enabled: true
+    layout:
+      position: right
+      priority: 5
+      display: all
 layout:
   groups:
     toolbar:

@@ -13,6 +13,14 @@ friend:
   - "[[Kokolores]]"
   - "[[Solo Mio]]"
 ---
+```item
+5L Diesel
+```
+
+```kraftstoff
+10L Wasserstoff
+```
+
 
 
 > [!abstract] Kurzprofil  

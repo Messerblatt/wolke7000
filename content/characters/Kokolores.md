@@ -39,6 +39,38 @@ aliases:
 
 ## Kokolores 2
 
+```item
+Brille
+```
+
+```item
+Speisekarte
+```
+
+```item
+Kompass
+```
+
+```item
+Kompass
+```
+
+```item
+Kompass
+```
+
+```event
+Hallo Welt!
+```
+
+
+```secret
+7346559
+```
+
+
+
+
 ### Biographie
 
 Kokolores stammt aus ärmlichen Verhältnissen. Zu ihrer Familie unterhält sie keinen Kontakt mehr. Sie kennt ihre Angehörigen fast ausschließlich aus undeutlichen Kindheitserinnerungen, die im Laufe der Jahre mehr und mehr den Charakter ferner Träume angenommen haben.
@@ -69,7 +101,7 @@ Koko = Angel. Sie hat lange weiße Haare, die sie meistens zu zwei Zöpfen binde
 
 Wenn sie Ringe trägt, dann viele: Die Ringe haben lange Zacken. Koko kann sie als Krallen verwenden.
 
-Sie braucht keine Brille, trägt manchmal aber eine ganz bestimmte, "für den glasigen Blick", wie sie sagt: Modern, mit silbernem Gestell und rundlosen Gläsern. Das Gestell reflektiert stark und passt zu ihren Engelsflügeln. 
+Sie braucht keine Brille, trägt manchmal aber eine ganz bestimmte, "für den glasigen Blick", wie sie sagt: Modern, mit silbernem Gestell und rundlosen Gläsern. Das Gestell reflektiert stark und passt zu ihren Engelsflügeln.
 
 Für die Einsätze auf der [[NIMBUS]] sind die Flügel meistens im Weg, dann setzt sie sie ab. Setzt sie die Flügel wieder auf, steht sie meistens da und versucht auf teufelkommsonstwas die Flügel zu schlagen, was ihr bisher noch nicht gelingt.
 

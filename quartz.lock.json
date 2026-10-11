@@ -1,11 +1,26 @@
 {
   "version": "1.0.0",
   "plugins": {
+    "inventory": {
+      "source": {
+        "repo": "./quartz/components",
+        "name": "inventory"
+      },
+      "resolved": "/home/m6000/sync/obsidian-vaults/wolke7000_online/quartz/components",
+      "commit": "local",
+      "installedAt": "2026-10-09T18:47:37.691Z"
+    },
+    "quartz-plugin-inventory": {
+      "source": "github:Messerblatt/quartz-plugin-inventory",
+      "resolved": "https://github.com/Messerblatt/quartz-plugin-inventory.git",
+      "commit": "c6abc122d3f762a38f7e68fe973da71ae0ca7f95",
+      "installedAt": "2026-10-11T10:27:59.677Z"
+    },
     "unlisted-pages": {
       "source": "github:quartz-community/unlisted-pages",
       "resolved": "https://github.com/quartz-community/unlisted-pages.git",
-      "commit": "3a01e0cb208dd6ef3c7520963198cd2991c6742c",
-      "installedAt": "2026-08-06T09:53:34.242Z"
+      "commit": "e7bd3729703bd247fb578e88656cddd9df166452",
+      "installedAt": "2026-10-09T19:21:02.818Z"
     }
   }
 }
