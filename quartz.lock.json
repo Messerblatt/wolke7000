@@ -19,8 +19,8 @@
     "quartz-plugin-rucksack": {
       "source": "github:Messerblatt/quartz-plugin-rucksack",
       "resolved": "https://github.com/Messerblatt/quartz-plugin-rucksack.git",
-      "commit": "f5a43af0cd84703a91890be933c9cec8367da921",
-      "installedAt": "2026-10-11T16:11:48.226Z"
+      "commit": "cfdb66df380b42931d6b9f2520b29241f9e305f8",
+      "installedAt": "2026-10-12T18:35:31.057Z"
     },
     "unlisted-pages": {
       "source": "github:quartz-community/unlisted-pages",

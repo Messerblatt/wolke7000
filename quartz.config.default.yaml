@@ -4,6 +4,7 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
+  eventlogging: true
   analytics:
     provider: plausible
   locale: en-US

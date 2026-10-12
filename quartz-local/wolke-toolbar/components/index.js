@@ -314,13 +314,159 @@ const musicScript = `
 })();
 `
 
+/**
+ * Turn changes to rendered fenced blocks into a small, application-facing
+ * event stream. The item system can listen for the named events without
+ * knowing anything about DOM mutations:
+ *
+ *   document.addEventListener("item_placed", (event) => ...)
+ *
+ * A block's first non-empty line is its item name. When only the details of a
+ * block change, the name remains stable and the event still identifies the
+ * item. Replacing an item emits both sides of the exchange.
+ */
+const rucksackEventScript = `
+(function () {
+  const BLOCK_SELECTOR = "pre";
+  const tracked = new Map();
+  let observer;
+
+  function loggingEnabled() {
+    const setting = document.querySelector("[data-event-logging]")?.getAttribute("data-event-logging");
+    return setting === null || setting === undefined || setting === "true";
+  }
+
+  function contentOf(block) {
+    const code = block.querySelector("code");
+    return (code?.textContent ?? block.textContent ?? "")
+      .replace(/\\r\\n/g, "\\n")
+      .trim();
+  }
+
+  function nameOf(content) {
+    return content.split("\\n").map((line) => line.trim()).find(Boolean) ?? "";
+  }
+
+  function languageOf(block) {
+    return block.getAttribute("data-language")
+      ?? block.querySelector("[data-language]")?.getAttribute("data-language")
+      ?? "";
+  }
+
+  function emit(type, item, before, after, block) {
+    if (!item) return;
+
+    const detail = {
+      type,
+      item,
+      before,
+      after,
+      language: languageOf(block),
+      source: window.location.pathname,
+      timestamp: new Date().toISOString(),
+    };
+
+    document.dispatchEvent(new CustomEvent(type, { detail, bubbles: true }));
+    if (loggingEnabled()) console.log("[rucksack] emitted", detail);
+  }
+
+  function compare(block, previous) {
+    if (!document.contains(block)) return;
+
+    const current = contentOf(block);
+    if (current === previous) return;
+
+    const previousName = nameOf(previous);
+    const currentName = nameOf(current);
+
+    if (!current) {
+      emit("item_taken", previousName, previous, current, block);
+    } else if (!previous) {
+      emit("item_placed", currentName, previous, current, block);
+    } else if (currentName !== previousName) {
+      emit("item_taken", previousName, previous, current, block);
+      emit("item_placed", currentName, previous, current, block);
+    } else if (current.length > previous.length) {
+      emit("item_placed", currentName, previous, current, block);
+    } else {
+      emit("item_taken", previousName, previous, current, block);
+    }
+
+    tracked.set(block, current);
+  }
+
+  function prime() {
+    tracked.clear();
+    document.querySelectorAll(BLOCK_SELECTOR).forEach((block) => {
+      tracked.set(block, contentOf(block));
+    });
+  }
+
+  function changedBlocks(mutations) {
+    const blocks = new Set();
+
+    for (const mutation of mutations) {
+      const target = mutation.target.nodeType === Node.ELEMENT_NODE
+        ? mutation.target
+        : mutation.target.parentElement;
+      const block = target?.closest?.(BLOCK_SELECTOR);
+      if (block) blocks.add(block);
+
+      if (mutation.type === "childList") {
+        for (const node of mutation.addedNodes) {
+          if (node.nodeType !== Node.ELEMENT_NODE) continue;
+          if (node.matches(BLOCK_SELECTOR)) blocks.add(node);
+          node.querySelectorAll?.(BLOCK_SELECTOR).forEach((child) => blocks.add(child));
+        }
+      }
+    }
+
+    return blocks;
+  }
+
+  function start() {
+    if (observer) return;
+    prime();
+    observer = new MutationObserver((mutations) => {
+      for (const block of changedBlocks(mutations)) {
+        if (!tracked.has(block)) {
+          tracked.set(block, contentOf(block));
+          continue;
+        }
+        compare(block, tracked.get(block));
+      }
+    });
+    observer.observe(document.body, { subtree: true, childList: true, characterData: true });
+  }
+
+  function navigation() {
+    // SPA navigation replaces the document content rather than changing an
+    // existing item. Prime the new page so navigation itself emits nothing.
+    prime();
+  }
+
+  document.addEventListener("nav", navigation);
+  document.addEventListener("render", navigation);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start, { once: true });
+  } else {
+    start();
+  }
+})();
+`
+
 const WolkeToolbar = (opts) => {
   const options = { ...defaultOptions, ...(opts ?? {}) }
 
   const Component = (props) =>
     h(
       "div",
-      { class: "wolke-toolbar", role: "group", "aria-label": "Wolke 7000 controls" },
+      {
+        class: "wolke-toolbar",
+        role: "group",
+        "aria-label": "Wolke 7000 controls",
+        "data-event-logging": String(props.cfg?.eventlogging ?? true),
+      },
       options.title ? h("span", { class: "wolke-toolbar-title" }, options.title) : null,
       DarkmodeButton(),
       ReaderModeButton(),
@@ -330,7 +476,7 @@ const WolkeToolbar = (opts) => {
   Component.displayName = "WolkeToolbar"
   Component.css = [darkmodeCss, readermodeCss, toolbarCss].filter(Boolean).join("\n")
   Component.beforeDOMLoaded = [themeScript, readerScript].filter(Boolean).join("\n")
-  Component.afterDOMLoaded = musicScript
+  Component.afterDOMLoaded = [musicScript, rucksackEventScript].join("\n")
 
   return Component
 }

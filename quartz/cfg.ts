@@ -63,6 +63,8 @@ export interface GlobalConfiguration {
   enableSPA: boolean
   /** Whether to display Wikipedia-style popovers when hovering over links */
   enablePopovers: boolean
+  /** Whether item events emitted from changing fenced blocks are logged */
+  eventlogging: boolean
   /** Analytics mode */
   analytics: Analytics
   /** Glob patterns to not search */

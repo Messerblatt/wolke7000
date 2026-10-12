@@ -31,23 +31,18 @@ Speisekarte
 Kompass
 ```
 
-```item
-Kompass
-```
-
-```item
-Kompass
-```
-
 ```event
 Hallo Welt!
 ```
-
 
 ```secret
 7346559
 ```
 
+
+```item
+
+```
 
 
 
