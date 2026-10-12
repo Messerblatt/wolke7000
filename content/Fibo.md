@@ -43,6 +43,8 @@ Sie stahlen die [[NIMBUS]] von den Docks der südlichen Spandau-Gemeinde und bef
 
 Während einer von Fibo angestoßenen Entdeckungsmission in die südlichen Gewässer NeuBerlins trafen er und [[Kokolores]] auf [[Spasti]]. Dieser war gerade dabei, aus den Tunneln der [[Exilium AG]] an die Oberfläche zu steigen.
 
+Irgendwann später schenkt er Koko seinen [[Das Geschenk|Graph-Explorer]].
+
 ## Fähigkeiten
 
 ### Reverse Engineering
