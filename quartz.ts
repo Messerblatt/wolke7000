@@ -1,16 +1,11 @@
-import {
-  loadQuartzConfig,
-  loadQuartzLayout,
-} from "./quartz/plugins/loader/config-loader"
+import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 
 import { componentRegistry } from "./quartz/components/registry"
-// import Inventory from "./quartz/components/Inventory"
+import GameRuntime from "./quartz/game/component"
 
-/*componentRegistry.register(
-  "inventory",
-  Inventory,
-  "local",
-)*/
+// Registering the runtime here makes it part of Quartz's global component
+// resources without adding an invisible layout element to every page.
+componentRegistry.register("wolke-game-runtime", GameRuntime, "local")
 
 const config = await loadQuartzConfig()
 

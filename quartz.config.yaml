@@ -4,6 +4,7 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
+  eventlogging: true
   analytics:
     provider: google
     tagId: "G-TJM3526RLT"

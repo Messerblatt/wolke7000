@@ -31,6 +31,10 @@
           "type": "boolean",
           "description": "Enable hover popovers for links"
         },
+        "eventlogging": {
+          "type": "boolean",
+          "description": "Log item events emitted by changing fenced blocks"
+        },
         "locale": {
           "type": "string",
           "description": "Locale code for the site"

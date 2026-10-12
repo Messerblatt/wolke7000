@@ -320,7 +320,12 @@ const WolkeToolbar = (opts) => {
   const Component = (props) =>
     h(
       "div",
-      { class: "wolke-toolbar", role: "group", "aria-label": "Wolke 7000 controls" },
+      {
+        class: "wolke-toolbar",
+        role: "group",
+        "aria-label": "Wolke 7000 controls",
+        "data-event-logging": String(props.cfg?.eventlogging ?? true),
+      },
       options.title ? h("span", { class: "wolke-toolbar-title" }, options.title) : null,
       DarkmodeButton(),
       ReaderModeButton(),
