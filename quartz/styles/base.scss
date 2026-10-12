@@ -309,6 +309,10 @@ a {
   }
 }
 
+.search {
+  display: none;
+}
+
 // ============================================================================
 // Page Frame Overrides
 // ============================================================================
@@ -484,14 +488,19 @@ figure[data-rehype-pretty-code-figure] {
   & > pre {
     padding: 0;
   }
+
+  /* center code blocks that have a language */
+  &:has(> pre[data-language]) {
+    text-align: center;
+  }
 }
 
 pre {
+  border: 2px solid var(--background-modifier-border-focus);
   font-family: var(--codeFont);
   padding: 0 0.5rem;
   border-radius: 5px;
   overflow-x: auto;
-  border: 1px solid var(--lightgray);
   position: relative;
 
   &:has(> code.mermaid) {
@@ -499,14 +508,14 @@ pre {
   }
 
   & > code {
-    background: none;
+    /* same background as the page itself, so it adapts to light/dark mode */
+    background: var(--light);
     padding: 0;
     font-size: 0.85rem;
-    counter-reset: line;
-    counter-increment: line 0;
     display: grid;
     padding: 0.5rem 0;
     overflow-x: auto;
+    text-align: center;
 
     & [data-highlighted-chars] {
       background-color: var(--highlight);
@@ -517,30 +526,18 @@ pre {
       padding: 0 0.25rem;
       box-sizing: border-box;
       border-left: 3px solid transparent;
+      text-align: center;
 
       &[data-highlighted-line] {
         background-color: var(--highlight);
         border-left: 3px solid var(--secondary);
       }
-
-      &::before {
-        content: counter(line);
-        counter-increment: line;
-        width: 1rem;
-        margin-right: 1rem;
-        display: inline-block;
-        text-align: right;
-        color: rgba(115, 138, 148, 0.6);
-      }
     }
+  }
 
-    &[data-line-numbers-max-digits="2"] > [data-line]::before {
-      width: 2rem;
-    }
-
-    &[data-line-numbers-max-digits="3"] > [data-line]::before {
-      width: 3rem;
-    }
+  /* no clipboard buttons */
+  & > .clipboard-button {
+    display: none;
   }
 }
 
@@ -600,7 +597,7 @@ img {
   max-width: 100%;
   border-radius: 5px;
   margin: 1rem 0;
-  content-visibility: auto;
+  /* content-visibility: auto; */
 }
 
 p > img + em {

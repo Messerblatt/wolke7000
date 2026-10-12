@@ -82,6 +82,50 @@ body article h6 {
   font-size: var(--heading-h6-size);
 }
 
+/* ++++++++++++++++++++++++++++++++++++
+  Minimalistisches Leseerlebnis
+  Die Komponenten werden nur ausgeblendet.
+  Sie bleiben im DOM / in den Daten erhalten
+  und können jederzeit wieder sichtbar
+  gemacht werden.
+ +++++++++++++++++++++++++++++++++++++++ */
+
+/* Explorer (linke Sidebar) */
+.explorer,
+.explorer-toggle,
+.explorer-content,
+.explorer-ul {
+  display: none !important;
+}
+
+/* Backlinks (rechte Sidebar) */
+.backlinks {
+  display: none !important;
+}
+
+/* Table of Contents (rechte Sidebar) */
+.toc,
+.toc-header,
+.toc-content {
+  display: none !important;
+}
+
+/* Datum / Article Meta unter dem Titel */
+.content-meta {
+  display: none !important;
+}
+
+/* Breadcrumbs über dem Inhalt */
+.breadcrumb-container,
+.breadcrumb-element {
+  display: none !important;
+}
+
+/* Page Properties (Frontmatter-Panel) */
+.note-properties {
+  display: none !important;
+}
+
 /* Properties panel: align tags cleanly */
 .note-properties .note-properties-tags {
   display: inline-flex;
@@ -195,6 +239,24 @@ article hr {
 html[saved-theme="dark"] article hr {
   filter: none;
   opacity: 0.82;
+}
+
+/*
+ * Rucksack modal
+ *
+ * The modal lives inside `.left.sidebar`, which is `position: sticky` with
+ * `z-index: 0`. Together those two properties create a stacking context, so
+ * the modal's own `z-index: 99999` is resolved *inside* that context and can
+ * never paint above siblings of the sidebar (the centre column and the right
+ * sidebar, which appear later in the HTML). That is why the dialog was
+ * overdrawn.
+ *
+ * `z-index: auto` on the sticky sidebar keeps it stacking normally while
+ * removing the nesting, so the modal's z-index applies in the root context and
+ * wins against everything else on the page.
+ */
+.page .sidebar.left {
+  z-index: auto;
 }
 
 /* Etwas kompakter auf Smartphones */

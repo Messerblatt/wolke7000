@@ -62,6 +62,7 @@ plugins:
         light: github-light
         dark: github-dark
       keepBackground: false
+      clipboard: false
     order: 20
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
@@ -195,17 +196,35 @@ plugins:
   - source: "@quartz-community/folder-page"
     enabled: true
   - source: "@quartz-community/tag-page"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/explorer"
     enabled: true
     layout:
       position: left
       priority: 50
-  - source: "@quartz-community/graph"
+  - source: "./quartz-local/wolke-toolbar"
     enabled: true
+    options:
+      src: "/imgs/aleksander-vinter---highlander-single.mp3"
+      loop: true
+      volume: 0.35
     layout:
-      position: right
-      priority: 10
+      # sits directly under the <h2> page title and above the graph explorer
+      position: left
+      priority: 15
+      display: all
+  - source: "@quartz-community/graph"
+    enabled: false
+  - source: "./quartz-local/graph-spa"
+    enabled: true
+    options:
+      localGraph:
+        showTags: false
+      globalGraph:
+        showTags: false
+    layout:
+      position: left
+      priority: 30
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -240,13 +259,9 @@ plugins:
       position: left
       priority: 10
   - source: "@quartz-community/darkmode"
-    enabled: true
-    layout:
-      position: left
-      priority: 30
-      group: toolbar
+    enabled: false
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -316,11 +331,11 @@ plugins:
     enabled: true
     options: {}
     order: 45
-  - source: github:Messerblatt/quartz-plugin-inventory
+  - source: github:Messerblatt/quartz-plugin-rucksack
     enabled: true
     layout:
-      position: right
-      priority: 5
+      position: left
+      priority: 60
       display: all
 layout:
   groups:

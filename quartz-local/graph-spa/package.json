@@ -1,0 +1,42 @@
+{
+  "name": "graph-spa",
+  "version": "1.0.0",
+  "description": "Graph explorer that navigates via the Quartz SPA router instead of full page loads",
+  "type": "module",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "dependencies": {
+    "@quartz-community/graph": "^0.1.0"
+  },
+  "quartz": {
+    "name": "graph-spa",
+    "displayName": "Graph (SPA navigation)",
+    "description": "Same as the stock graph explorer, but node clicks morph the page via window.spaNavigate",
+    "version": "1.0.0",
+    "author": "Wolke 7000",
+    "category": "component",
+    "defaultOrder": 50,
+    "defaultEnabled": false,
+    "components": {
+      "GraphSpa": {
+        "displayName": "Graph (SPA navigation)",
+        "defaultPosition": "right",
+        "defaultPriority": 10
+      }
+    }
+  }
+}

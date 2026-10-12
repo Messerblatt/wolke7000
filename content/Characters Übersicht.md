@@ -78,7 +78,7 @@
 ![[solo.png]]
 
 > [!abstract] Kurzprofil  
-> [[Solo Mio]] ist Kapitän der [[ships/EVERYTHING|EVERYTHING]], Großhändler und Harpunenjäger. Maßgeblich an der Gründung NeuBerlins beteiligt, kennt er die Stadt wie seine Westentasche. Er kann heiße Ware am Zoll vorbeischieben und sehr schlecht singen. Zudem ist er Millionär.
+> [[Solo Mio]] ist Kapitän der [[EVERYTHING|EVERYTHING]], Großhändler und Harpunenjäger. Maßgeblich an der Gründung NeuBerlins beteiligt, kennt er die Stadt wie seine Westentasche. Er kann heiße Ware am Zoll vorbeischieben und sehr schlecht singen. Zudem ist er Millionär.
 
 ---
 

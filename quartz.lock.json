@@ -10,17 +10,23 @@
       "commit": "local",
       "installedAt": "2026-10-09T18:47:37.691Z"
     },
-    "quartz-plugin-inventory": {
-      "source": "github:Messerblatt/quartz-plugin-inventory",
-      "resolved": "https://github.com/Messerblatt/quartz-plugin-inventory.git",
-      "commit": "c6abc122d3f762a38f7e68fe973da71ae0ca7f95",
-      "installedAt": "2026-10-11T10:27:59.677Z"
+    "quartz-plugin-rucksack": {
+      "source": "github:Messerblatt/quartz-plugin-rucksack",
+      "resolved": "https://github.com/Messerblatt/quartz-plugin-rucksack.git",
+      "commit": "f5a43af0cd84703a91890be933c9cec8367da921",
+      "installedAt": "2026-10-11T16:11:48.226Z"
     },
     "unlisted-pages": {
       "source": "github:quartz-community/unlisted-pages",
       "resolved": "https://github.com/quartz-community/unlisted-pages.git",
       "commit": "e7bd3729703bd247fb578e88656cddd9df166452",
       "installedAt": "2026-10-09T19:21:02.818Z"
+    },
+    "wolke-toolbar": {
+      "source": "./quartz-local/wolke-toolbar",
+      "resolved": "/home/m6000/sync/obsidian-vaults/wolke7000_online/quartz-local/wolke-toolbar",
+      "commit": "local",
+      "installedAt": "2026-10-11T16:11:47.259Z"
     }
   }
 }

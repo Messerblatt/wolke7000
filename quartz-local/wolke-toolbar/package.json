@@ -1,0 +1,39 @@
+{
+  "name": "wolke-toolbar",
+  "version": "1.0.0",
+  "description": "Wolke 7000 control bar: dark mode, reader mode and background music",
+  "type": "module",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "quartz": {
+    "name": "wolke-toolbar",
+    "displayName": "Wolke Toolbar",
+    "description": "Bordered control bar bundling dark mode, reader mode and background music",
+    "version": "1.0.0",
+    "author": "Wolke 7000",
+    "category": "component",
+    "defaultOrder": 50,
+    "defaultEnabled": false,
+    "components": {
+      "WolkeToolbar": {
+        "displayName": "Wolke Toolbar",
+        "defaultPosition": "left",
+        "defaultPriority": 40
+      }
+    }
+  }
+}
