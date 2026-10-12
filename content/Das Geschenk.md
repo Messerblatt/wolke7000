@@ -1,8 +1,3 @@
+[[Fibo]]: "Hier. Das wollte ich schenken. Du könntest ihn gut gebrauchen!"
 
----
-graphLocked: true
----
-
-Fibo: "Hier. Das wollte ich schenken. Du könntest ihn gut gebrauchen!"
-
-HIER DEN Graph Explorer freischalten mit einem Klick es Users. 
+<span class="wolke-unlock-graph">**Klick**</span>

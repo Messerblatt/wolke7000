@@ -225,8 +225,6 @@ plugins:
     layout:
       position: left
       priority: 30
-      # Renders unless the page opts out via `graphLocked: true` in frontmatter.
-      condition: show-graph
   - source: "@quartz-community/search"
     enabled: true
     layout:

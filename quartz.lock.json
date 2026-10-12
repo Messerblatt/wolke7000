@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
   "plugins": {
+    "graph-spa": {
+      "source": "./quartz-local/graph-spa",
+      "resolved": "/home/m6000/sync/obsidian-vaults/wolke7000_online/quartz-local/graph-spa",
+      "commit": "local",
+      "installedAt": "2026-10-12T09:22:02.906Z"
+    },
     "inventory": {
       "source": {
         "repo": "./quartz/components",
