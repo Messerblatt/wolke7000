@@ -48,7 +48,15 @@ function migrateLegacyInventory(storage: GameStorage): GameState | null {
       })
       .filter((item): item is NonNullable<typeof item> => item !== null)
 
-    return { version: GAME_STATE_VERSION, items, blocks: [], unlockedChapters: [] }
+    return {
+      version: GAME_STATE_VERSION,
+      items,
+      wings: [],
+      discoveries: [],
+      blocks: [],
+      unlockedChapters: [],
+      visits: [],
+    }
   } catch {
     return null
   }

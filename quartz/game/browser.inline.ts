@@ -43,15 +43,20 @@ function handleItemEvent(event: Event) {
   const item = itemFromDetail(detail)
   if (!item) return
 
-  void game.execute({ type: event.type as "item_placed" | "item_taken", item }).then(() => {
-    if (typeof detail !== "object" || detail === null) return
-    const value = detail as Record<string, unknown>
-    if (typeof value.blockId !== "string" || typeof value.after !== "string") return
-    return game.execute({
-      type: "block_updated",
-      block: { id: value.blockId, content: value.after },
-    })
-  })
+  const value =
+    typeof detail === "object" && detail !== null ? (detail as Record<string, unknown>) : null
+  const blockId = typeof value?.blockId === "string" ? value.blockId : ""
+  const after = typeof value?.after === "string" ? value.after : ""
+  const updateBlock = blockId
+    ? game.execute({
+        type: "block_updated",
+        block: { id: blockId, content: after },
+      })
+    : Promise.resolve()
+
+  void updateBlock.then(() =>
+    game.execute({ type: event.type as "item_placed" | "item_taken", item }),
+  )
 }
 
 function emitItemEvent(type: "item_placed" | "item_taken", item: Record<string, unknown>) {
@@ -87,6 +92,77 @@ function blockItems(button: Element, after: string): Record<string, unknown>[] {
   }))
 }
 
+function stashItemBlock(block: Element): boolean {
+  if (!isItemBlock(block)) return false
+
+  const before = blockContent(block)
+  const lines = before
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+  if (lines.length === 0) return true
+
+  const blockId = blockIdFor(block)
+  const source = window.location.pathname
+  const items = lines.map((name, index) => ({
+    id: lines.length === 1 ? blockId : `${blockId}#item-${index}`,
+    name,
+    source,
+  }))
+  const snapshot = game.getSnapshot()
+  const alreadyStashed =
+    snapshot.blocks.some((saved) => saved.id === blockId && saved.content === "") ||
+    items.some((item) => snapshot.items.some((saved) => saved.id === item.id))
+
+  // A block may briefly be visible before navigation reconciliation restores
+  // its saved empty state. Never award it again in that window.
+  trackedBlocks.set(block, "")
+  ;(block.closest("figure") ?? block).remove()
+  if (alreadyStashed) {
+    void game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
+    return true
+  }
+
+  void (async () => {
+    // Persist the consumed source before adding the item. Subscribers can then
+    // never restore the source block between the two state updates.
+    await game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
+    for (const item of items) await game.execute({ type: "item_taken", item })
+  })().catch((error) => console.error("[wolke game] could not stash item", error))
+  return true
+}
+
+function collectWingsBlock(block: Element): boolean {
+  if (!isWingsBlock(block)) return false
+
+  const name = blockContent(block)
+  if (!name) return true
+
+  const blockId = blockIdFor(block)
+  const wing = {
+    id: blockId,
+    name,
+    source: window.location.pathname,
+  }
+  const snapshot = game.getSnapshot()
+  const alreadyCollected =
+    snapshot.blocks.some((saved) => saved.id === blockId && saved.content === "") ||
+    snapshot.wings.some((saved) => saved.id === blockId)
+
+  trackedBlocks.set(block, "")
+  ;(block.closest("figure") ?? block).remove()
+  if (alreadyCollected) {
+    void game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
+    return true
+  }
+
+  void (async () => {
+    await game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
+    await game.execute({ type: "wing_collected", wing })
+  })().catch((error) => console.error("[wolke game] could not collect wings", error))
+  return true
+}
+
 const syncedRucksackEntries = new Set<string>()
 const trackedBlocks = new Map<Element, string>()
 const silentRucksackRemovals = new Set<string>()
@@ -114,11 +190,31 @@ function blockName(content: string): string {
 }
 
 function blockLanguage(block: Element): string {
-  return (
+  const language =
     block.getAttribute("data-language") ??
-    block.querySelector("[data-language]")?.getAttribute("data-language") ??
-    ""
+    block.querySelector("[data-language]")?.getAttribute("data-language")
+  if (language) return language
+
+  const languageClass = Array.from(block.querySelector("code")?.classList ?? []).find((name) =>
+    name.startsWith("language-"),
   )
+  return languageClass?.slice("language-".length) ?? ""
+}
+
+function fenceLanguage(block: Element): string {
+  return blockLanguage(block).toLowerCase()
+}
+
+function isItemBlock(block: Element): boolean {
+  return fenceLanguage(block) === "item"
+}
+
+function isWingsBlock(block: Element): boolean {
+  return fenceLanguage(block) === "wings"
+}
+
+function isCollectibleBlock(block: Element): boolean {
+  return isItemBlock(block) || isWingsBlock(block)
 }
 
 function blockIdFor(block: Element): string {
@@ -133,10 +229,16 @@ function blockIdFor(block: Element): string {
 
 function primeBlocks() {
   trackedBlocks.clear()
-  for (const block of document.querySelectorAll("pre")) {
-    blockIdFor(block)
-    trackedBlocks.set(block, blockContent(block))
+  const pageBlocks = Array.from(document.querySelectorAll<Element>("pre"))
+  pageBlocks.forEach((block) => block.removeAttribute("data-wolke-block-id"))
+  const blocks: { id: string; content: string }[] = []
+  for (const block of pageBlocks) {
+    const id = blockIdFor(block)
+    const content = blockContent(block)
+    blocks.push({ id, content })
+    trackedBlocks.set(block, content)
   }
+  void game.execute({ type: "blocks_synchronized", blocks })
 }
 
 function inspectChangedBlocks(mutations: MutationRecord[]) {
@@ -169,7 +271,12 @@ function inspectChangedBlocks(mutations: MutationRecord[]) {
 
     const previousName = blockName(previous)
     const currentName = blockName(current)
-    const details = { before: previous, after: current, language: blockLanguage(block) }
+    const details = {
+      blockId: blockIdFor(block),
+      before: previous,
+      after: current,
+      language: blockLanguage(block),
+    }
     if (!current) {
       emitItemEvent("item_taken", { item: previousName, ...details })
     } else if (!previous) {
@@ -292,11 +399,16 @@ function writeBlockContent(block: Element, content: string) {
     block.append(code)
   }
 
+  if (!content) {
+    code.replaceChildren()
+    return
+  }
+
   code.replaceChildren(
     ...content.split("\n").map((line) => {
       const lineElement = document.createElement("span")
       lineElement.setAttribute("data-line", "")
-      lineElement.textContent = line || " "
+      lineElement.textContent = line
       return lineElement
     }),
   )
@@ -304,15 +416,20 @@ function writeBlockContent(block: Element, content: string) {
 
 function restoreSavedBlocks(snapshot: import("./core").GameState) {
   let changed = false
-  for (const block of document.querySelectorAll("pre")) {
+  const pageBlocks = Array.from(document.querySelectorAll<Element>("pre"))
+  pageBlocks.forEach((block) => blockIdFor(block))
+  for (const block of pageBlocks) {
     const saved = snapshot.blocks.find((candidate) => candidate.id === blockIdFor(block))
+    if (saved && !saved.content && isCollectibleBlock(block)) {
+      trackedBlocks.set(block, "")
+      ;(block.closest("figure") ?? block).remove()
+      changed = true
+      continue
+    }
     if (!saved || blockContent(block) === saved.content) continue
     writeBlockContent(block, saved.content)
     trackedBlocks.set(block, saved.content)
     changed = true
-    if (!saved.content) {
-      block.closest("figure")?.querySelector("[data-rucksack-toggle-block]")?.remove()
-    }
   }
 
   if (changed) {
@@ -477,6 +594,39 @@ function renderGameSnapshot(snapshot: import("./core").GameState) {
   restoreSavedBlocks(snapshot)
 }
 
+/**
+ * Read the `location` property of the current page out of the rendered
+ * frontmatter block.
+ *
+ * Quartz renders page frontmatter into `<details class="note-properties">` as a
+ * table of key/value rows, so that is the only place the value exists in the
+ * browser - the raw frontmatter never reaches the client. Matching on the key
+ * column (rather than taking the first row) matters: the table also lists
+ * generated properties such as `title` and `modified`, and pages commonly carry
+ * `clan` alongside `location`.
+ *
+ * Returns null for pages without a location - including canvas pages, which do
+ * not render a note-properties block at all.
+ */
+function currentLocation(): string | null {
+  for (const row of document.querySelectorAll("details.note-properties .note-properties-row")) {
+    const key = row.querySelector(".note-properties-key")?.textContent?.trim().toLowerCase()
+    if (key !== "location") continue
+    const value = row.querySelector(".note-properties-value")?.textContent?.trim()
+    if (!value) return null
+    // An explicitly empty property renders a placeholder instead of a value.
+    if (!value || value === "—" || row.querySelector(".note-properties-empty")) return null
+    return value
+  }
+  return null
+}
+
+function trackLocation() {
+  const location = currentLocation()
+  if (!location) return
+  void game.execute({ type: "location_visited", location, page: currentPage() })
+}
+
 let navigationTimer: number | undefined
 
 function reconcileNavigation() {
@@ -484,6 +634,7 @@ function reconcileNavigation() {
   renderGameSnapshot(game.getSnapshot())
   syncRucksackEntries()
   removeConsumedRucksackSources()
+  trackLocation()
 
   // The installed Rucksack component listens for window-level navigation
   // events. Quartz normally emits one, but browser-history traversal can
@@ -557,11 +708,15 @@ function onClick(event: Event) {
 
   // Keep the original item-copy mechanic backed by the shared runtime too.
   const copyButton = target.closest(".clipboard-button, .copy-button")
-  const code = copyButton
-    ?.closest("pre")
-    ?.querySelector("code.language-item, code[class*='language-item']")
-  const name = code?.textContent?.trim()
-  if (name) emitItemEvent("item_taken", { item: name, source: window.location.pathname })
+  const block = copyButton?.closest("pre") ?? copyButton?.closest("figure")?.querySelector("pre")
+  if (block && isItemBlock(block)) {
+    stashItemBlock(block)
+    return
+  }
+  if (block && isWingsBlock(block)) {
+    collectWingsBlock(block)
+    return
+  }
 }
 
 const runtimeFlags = window as Window & { __wolkeRuntimeInitialized?: boolean }
@@ -576,6 +731,7 @@ if (!runtimeFlags.__wolkeRuntimeInitialized) {
   document.addEventListener("dragend", onDragEnd)
   document.addEventListener("drop", onDrop)
 
+  primeBlocks()
   game.subscribe(renderGameSnapshot)
   document.addEventListener("nav", scheduleNavigationReconcile)
   document.addEventListener("nav:end", scheduleNavigationReconcile)
@@ -583,7 +739,6 @@ if (!runtimeFlags.__wolkeRuntimeInitialized) {
     window.addEventListener(event, scheduleNavigationReconcile)
   }
 
-  primeBlocks()
   const rucksackObserver = new MutationObserver((mutations) => {
     inspectChangedBlocks(mutations)
     syncRucksackEntries()

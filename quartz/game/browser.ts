@@ -1,9 +1,18 @@
 import { GameRuntime } from "./runtime"
-import type { GameCommand, GameState } from "./core"
+import type { GameCommand, GameItem, GameState, GameVisit, GameWing } from "./core"
 
 export interface Wolke {
   execute(command: GameCommand): Promise<void>
   getSnapshot(): GameState
+  readonly inventory: GameItem[]
+  readonly wings: GameWing[]
+  readonly discoveries: string[]
+  /** Locations the reader has discovered pages in, with discovery counts. */
+  readonly visits: GameVisit[]
+  /** Distinct pages discovered at a location. 0 when the location is unknown. */
+  getVisitCount(location: string): number
+  /** Timestamp of the most recent visit to a location, or null if unknown. */
+  getLastVisit(location: string): number | null
   subscribe(listener: (snapshot: GameState) => void): () => void
   reset(): Promise<void>
 }
@@ -87,6 +96,25 @@ export function getWolke(): Wolke {
   const wolke: Wolke = {
     execute: runtime.execute.bind(runtime),
     getSnapshot: runtime.getSnapshot.bind(runtime),
+    get inventory() {
+      return runtime.getSnapshot().items
+    },
+    get wings() {
+      return runtime.getSnapshot().wings
+    },
+    get discoveries() {
+      return runtime.getSnapshot().discoveries
+    },
+    get visits() {
+      return runtime.getSnapshot().visits
+    },
+    getVisitCount(location: string): number {
+      return runtime.getSnapshot().visits.find((visit) => visit.location === location)?.count ?? 0
+    },
+    getLastVisit(location: string): number | null {
+      return runtime.getSnapshot().visits.find((visit) => visit.location === location)
+        ?.lastVisitedAt ?? null
+    },
     subscribe: runtime.subscribe.bind(runtime),
     reset: async () => {
       await runtime.reset()

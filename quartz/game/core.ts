@@ -16,14 +16,45 @@ export type GameItem = {
   acquiredAt: number
 }
 
+export type GameWing = {
+  id: string
+  name: string
+  source: string
+  collectedAt: number
+}
+
+/**
+ * A location the reader has discovered pages in.
+ *
+ * `pages` is the set of distinct page slugs carrying that location, and is the
+ * source of truth: `count` is derived from it. Revisiting a page therefore
+ * never inflates the count - only genuinely new pages at that location do.
+ * `lastVisitedAt` still updates on every visit, so "when was the reader last
+ * here" stays answerable independently of discovery.
+ */
+export type GameVisit = {
+  location: string
+  pages: string[]
+  count: number
+  lastVisitedAt: number
+}
+
 export type GameState = {
   version: typeof GAME_STATE_VERSION
   items: GameItem[]
+  wings: GameWing[]
+  discoveries: string[]
   blocks: GameBlock[]
   unlockedChapters: string[]
+  visits: GameVisit[]
 }
 
 export type GameBlock = {
+  id: string
+  content: string
+}
+
+export type GameBlockInput = {
   id: string
   content: string
 }
@@ -37,18 +68,33 @@ export type ItemInput =
       quantity?: number
     }
 
+export type WingInput =
+  | string
+  | {
+      id?: string
+      name: string
+      source?: string
+    }
+
 export type GameCommand =
   | { type: "item_placed"; item: ItemInput }
   | { type: "item_taken"; item: ItemInput }
   | { type: "items_synchronized"; items: ItemInput[] }
-  | { type: "block_updated"; block: GameBlock }
+  | { type: "wing_collected"; wing: WingInput }
+  | { type: "discovery_unlocked"; discovery: string }
+  | { type: "blocks_synchronized"; blocks: GameBlockInput[] }
+  | { type: "block_updated"; block: GameBlockInput }
   | { type: "chapter_unlocked"; chapter: string }
+  | { type: "location_visited"; location: string; page: string }
 
 export const EMPTY_GAME_STATE: GameState = {
   version: GAME_STATE_VERSION,
   items: [],
+  wings: [],
+  discoveries: [],
   blocks: [],
   unlockedChapters: [],
+  visits: [],
 }
 
 function text(value: unknown): string {
@@ -91,7 +137,31 @@ export function normalizeItem(item: ItemInput, now = Date.now()): GameItem | nul
   }
 }
 
+export function wingId(wing: WingInput): string {
+  if (typeof wing === "string") return slug(wing)
+  return text(wing.id) || slug(wing.name)
+}
+
+export function normalizeWing(wing: WingInput, now = Date.now()): GameWing | null {
+  const input = typeof wing === "string" ? { name: wing } : wing
+  const name = text(input.name)
+  if (!name) return null
+
+  return {
+    id: wingId(wing),
+    name,
+    source: text(input.source),
+    collectedAt: now,
+  }
+}
+
 function sameItem(left: GameItem, right: ItemInput): boolean {
+  if (typeof right === "string") return slug(left.name) === slug(right)
+  if (text(right.id)) return left.id === text(right.id)
+  return slug(left.name) === slug(right.name)
+}
+
+function sameWing(left: GameWing, right: WingInput): boolean {
   if (typeof right === "string") return slug(left.name) === slug(right)
   if (text(right.id)) return left.id === text(right.id)
   return slug(left.name) === slug(right.name)
@@ -101,7 +171,35 @@ export function isGameState(value: unknown): value is GameState {
   if (typeof value !== "object" || value === null) return false
   const state = value as Partial<GameState>
   if (state.version !== GAME_STATE_VERSION) return false
-  if (!Array.isArray(state.items) || !Array.isArray(state.unlockedChapters)) return false
+  if (
+    !Array.isArray(state.items) ||
+    !Array.isArray(state.wings ?? []) ||
+    !Array.isArray(state.discoveries ?? []) ||
+    !Array.isArray(state.unlockedChapters) ||
+    !Array.isArray(state.visits ?? [])
+  ) {
+    return false
+  }
+
+  const visits = state.visits ?? []
+  if (
+    !visits.every(
+      (visit) =>
+        typeof visit === "object" &&
+        visit !== null &&
+        typeof (visit as GameVisit).location === "string" &&
+        Array.isArray((visit as GameVisit).pages) &&
+        (visit as GameVisit).pages.every((page) => typeof page === "string" && page.length > 0) &&
+        Number.isInteger((visit as GameVisit).count) &&
+        // `count` is derived from `pages`, so a mismatch means the row was
+        // hand-edited or written by an older build. Rejecting it keeps the
+        // invariant that the two can never drift apart.
+        (visit as GameVisit).count === (visit as GameVisit).pages.length &&
+        Number.isInteger((visit as GameVisit).lastVisitedAt),
+    )
+  ) {
+    return false
+  }
 
   const blocks = state.blocks ?? []
   if (
@@ -132,6 +230,20 @@ export function isGameState(value: unknown): value is GameState {
         item.quantity >= 1 &&
         Number.isInteger(item.acquiredAt),
     ) &&
+    (state.wings ?? []).every(
+      (wing) =>
+        typeof wing === "object" &&
+        wing !== null &&
+        typeof wing.id === "string" &&
+        wing.id.length > 0 &&
+        typeof wing.name === "string" &&
+        wing.name.length > 0 &&
+        typeof wing.source === "string" &&
+        Number.isInteger(wing.collectedAt),
+    ) &&
+    (state.discoveries ?? []).every(
+      (discovery) => typeof discovery === "string" && discovery.length > 0,
+    ) &&
     state.unlockedChapters.every((chapter) => typeof chapter === "string" && chapter.length > 0)
   )
 }
@@ -140,8 +252,16 @@ export function cloneState(state: GameState): GameState {
   return {
     version: GAME_STATE_VERSION,
     items: state.items.map((item) => ({ ...item })),
-    blocks: (state.blocks ?? []).map((block) => ({ ...block })),
+    wings: (state.wings ?? []).map((wing) => ({ ...wing })),
+    discoveries: [...(state.discoveries ?? [])],
+    blocks: (state.blocks ?? []).map((block) => ({ id: block.id, content: block.content })),
     unlockedChapters: [...state.unlockedChapters],
+    visits: (state.visits ?? []).map((visit) => ({
+      location: visit.location,
+      pages: [...visit.pages],
+      count: visit.count,
+      lastVisitedAt: visit.lastVisitedAt,
+    })),
   }
 }
 
@@ -157,6 +277,11 @@ export function validateCommand(command: unknown): asserts command is GameComman
   const candidate = command as Record<string, unknown>
   if (candidate.type === "chapter_unlocked") {
     if (!text(candidate.chapter)) throw new Error("A chapter name is required")
+    return
+  }
+
+  if (candidate.type === "discovery_unlocked") {
+    if (!text(candidate.discovery)) throw new Error("A discovery identifier is required")
     return
   }
 
@@ -176,6 +301,36 @@ export function validateCommand(command: unknown): asserts command is GameComman
     return
   }
 
+  if (candidate.type === "wing_collected") {
+    const wing = candidate.wing
+    if (typeof wing === "string" && text(wing)) return
+    if (
+      typeof wing === "object" &&
+      wing !== null &&
+      typeof (wing as { name?: unknown }).name === "string" &&
+      text((wing as { name: string }).name)
+    ) {
+      return
+    }
+    throw new Error("A wing name is required")
+  }
+
+  if (candidate.type === "blocks_synchronized") {
+    if (!Array.isArray(candidate.blocks)) throw new Error("Synchronized blocks must be an array")
+    for (const block of candidate.blocks) {
+      if (
+        typeof block !== "object" ||
+        block === null ||
+        typeof (block as { id?: unknown }).id !== "string" ||
+        !text((block as { id: string }).id) ||
+        typeof (block as { content?: unknown }).content !== "string"
+      ) {
+        throw new Error("A synchronized block must have an id and content")
+      }
+    }
+    return
+  }
+
   if (candidate.type === "block_updated") {
     const block = candidate.block
     if (
@@ -186,6 +341,18 @@ export function validateCommand(command: unknown): asserts command is GameComman
       typeof (block as { content?: unknown }).content !== "string"
     ) {
       throw new Error("A valid fenced block is required")
+    }
+    return
+  }
+
+  if (candidate.type === "location_visited") {
+    if (
+      typeof (candidate as { location?: unknown }).location !== "string" ||
+      !text((candidate as { location: string }).location) ||
+      typeof (candidate as { page?: unknown }).page !== "string" ||
+      !text((candidate as { page: string }).page)
+    ) {
+      throw new Error("A valid location and page are required")
     }
     return
   }
@@ -212,9 +379,40 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
   validateCommand(command)
   const next = cloneState(state)
 
+  if (command.type === "location_visited") {
+    const location = text(command.location)
+    const page = text(command.page)
+    if (!location || !page) return next
+
+    const index = next.visits.findIndex((visit) => visit.location === location)
+    if (index === -1) {
+      next.visits.push({ location, pages: [page], count: 1, lastVisitedAt: now })
+      return next
+    }
+
+    const existing = next.visits[index]
+    // Discovery is per distinct page: revisiting one refreshes the timestamp but
+    // must not raise the count. `count` is kept equal to pages.length so the two
+    // can never drift apart.
+    const pages = existing.pages.includes(page) ? [...existing.pages] : [...existing.pages, page]
+    next.visits[index] = {
+      location,
+      pages,
+      count: pages.length,
+      lastVisitedAt: now,
+    }
+    return next
+  }
+
   if (command.type === "chapter_unlocked") {
     const chapter = text(command.chapter)
     if (!next.unlockedChapters.includes(chapter)) next.unlockedChapters.push(chapter)
+    return next
+  }
+
+  if (command.type === "discovery_unlocked") {
+    const discovery = text(command.discovery)
+    if (!next.discoveries.includes(discovery)) next.discoveries.push(discovery)
     return next
   }
 
@@ -232,10 +430,25 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
     return next
   }
 
+  if (command.type === "wing_collected") {
+    const wing = normalizeWing(command.wing, now)
+    if (!wing) return next
+    if (!next.wings.some((entry) => sameWing(entry, command.wing))) next.wings.push(wing)
+    return next
+  }
+
+  if (command.type === "blocks_synchronized") {
+    for (const input of command.blocks) {
+      if (next.blocks.some((block) => block.id === input.id)) continue
+      next.blocks.push({ id: input.id, content: input.content })
+    }
+    return next
+  }
+
   if (command.type === "block_updated") {
     const index = next.blocks.findIndex((block) => block.id === command.block.id)
-    if (index === -1) next.blocks.push({ ...command.block })
-    else next.blocks[index] = { ...command.block }
+    if (index === -1) next.blocks.push({ id: command.block.id, content: command.block.content })
+    else next.blocks[index] = { id: command.block.id, content: command.block.content }
     return next
   }
 
