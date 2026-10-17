@@ -73,45 +73,73 @@ describe("game core", () => {
   test("counts discovered pages per location, not raw visits", () => {
     const first = applyCommand(
       EMPTY_GAME_STATE,
-      { type: "location_visited", location: "kreuzberg", page: "places/canteen-kreuzberg" },
+      {
+        type: "location_visited",
+        location: "kreuzberg",
+        clan: "kreuzberg",
+        page: "places/canteen-kreuzberg",
+      },
       1000,
     )
     assert.equal(first.visits[0]?.count, 1)
     assert.deepEqual(first.visits[0]?.pages, ["places/canteen-kreuzberg"])
+    assert.deepEqual(first.clans, { kreuzberg: 1 })
 
     // Revisiting the same page must refresh the timestamp but not the count.
     const revisited = applyCommand(
       first,
-      { type: "location_visited", location: "kreuzberg", page: "places/canteen-kreuzberg" },
+      {
+        type: "location_visited",
+        location: "kreuzberg",
+        clan: "kreuzberg",
+        page: "places/canteen-kreuzberg",
+      },
       2000,
     )
     assert.equal(revisited.visits[0]?.count, 1)
     assert.equal(revisited.visits[0]?.lastVisitedAt, 2000)
+    assert.deepEqual(revisited.clans, { kreuzberg: 1 })
 
     // A second, different page at the same location does count as a discovery.
     const second = applyCommand(
       revisited,
-      { type: "location_visited", location: "kreuzberg", page: "places/club-1" },
+      {
+        type: "location_visited",
+        location: "kreuzberg",
+        clan: "kreuzberg",
+        page: "places/club-1",
+      },
       3000,
     )
     assert.equal(second.visits[0]?.count, 2)
     assert.equal(second.visits.length, 1)
     assert.equal(second.visits[0]?.lastVisitedAt, 3000)
+    assert.deepEqual(second.clans, { kreuzberg: 2 })
+
+    const otherClan = applyCommand(
+      second,
+      { type: "location_visited", location: "neukölln", clan: "neukoelln", page: "places/club-2" },
+      4000,
+    )
+    assert.deepEqual(otherClan.clans, { kreuzberg: 2, neukoelln: 1 })
   })
 
   test("keeps locations apart and rejects a blank location", () => {
     const state = applyCommand(EMPTY_GAME_STATE, {
       type: "location_visited",
       location: "mitte",
+      clan: "mitte",
       page: "places/brandenburger-tor",
     })
     const other = applyCommand(state, {
       type: "location_visited",
       location: "kreuzberg",
+      clan: "kreuzberg",
       page: "places/canteen-kreuzberg",
     })
     assert.equal(other.visits.length, 2)
     assert.equal(other.visits.find((visit) => visit.location === "kreuzberg")?.count, 1)
+    assert.deepEqual(other.clans, { mitte: 1, kreuzberg: 1 })
 
     // A blank location is a programming error, not a no-op to swallow.
     assert.throws(
@@ -128,10 +156,8 @@ describe("game core", () => {
       }),
       false,
     )
-    assert.equal(
-      isGameState({ ...EMPTY_GAME_STATE, visits: [{ location: "mitte" }] }),
-      false,
-    )
+    assert.equal(isGameState({ ...EMPTY_GAME_STATE, visits: [{ location: "mitte" }] }), false)
+    assert.equal(isGameState({ ...EMPTY_GAME_STATE, clans: { kreuzberg: -1 } }), false)
   })
 
   test("recognizes only valid persisted states and clones snapshots", () => {

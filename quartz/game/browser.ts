@@ -9,8 +9,12 @@ export interface Wolke {
   readonly discoveries: string[]
   /** Locations the reader has discovered pages in, with discovery counts. */
   readonly visits: GameVisit[]
+  /** Distinct visited pages grouped by clan. */
+  readonly clans: Record<string, number>
   /** Distinct pages discovered at a location. 0 when the location is unknown. */
   getVisitCount(location: string): number
+  /** Distinct pages discovered for a clan. 0 when the clan is unknown. */
+  getClanVisitCount(clan: string): number
   /** Timestamp of the most recent visit to a location, or null if unknown. */
   getLastVisit(location: string): number | null
   subscribe(listener: (snapshot: GameState) => void): () => void
@@ -108,12 +112,20 @@ export function getWolke(): Wolke {
     get visits() {
       return runtime.getSnapshot().visits
     },
+    get clans() {
+      return runtime.getSnapshot().clans
+    },
     getVisitCount(location: string): number {
       return runtime.getSnapshot().visits.find((visit) => visit.location === location)?.count ?? 0
     },
+    getClanVisitCount(clan: string): number {
+      return runtime.getSnapshot().clans[clan] ?? 0
+    },
     getLastVisit(location: string): number | null {
-      return runtime.getSnapshot().visits.find((visit) => visit.location === location)
-        ?.lastVisitedAt ?? null
+      return (
+        runtime.getSnapshot().visits.find((visit) => visit.location === location)?.lastVisitedAt ??
+        null
+      )
     },
     subscribe: runtime.subscribe.bind(runtime),
     reset: async () => {

@@ -1,1 +1,0 @@
-ein Wäscheschiff mit vielen Waschmaschinen an Board. Zieht [[Die Treuhand|Treuhänder]] an, die für die Besatzung klauen. 

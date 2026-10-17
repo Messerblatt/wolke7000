@@ -595,23 +595,18 @@ function renderGameSnapshot(snapshot: import("./core").GameState) {
 }
 
 /**
- * Read the `location` property of the current page out of the rendered
- * frontmatter block.
+ * Read a property of the current page out of the rendered frontmatter block.
  *
  * Quartz renders page frontmatter into `<details class="note-properties">` as a
  * table of key/value rows, so that is the only place the value exists in the
  * browser - the raw frontmatter never reaches the client. Matching on the key
  * column (rather than taking the first row) matters: the table also lists
- * generated properties such as `title` and `modified`, and pages commonly carry
- * `clan` alongside `location`.
- *
- * Returns null for pages without a location - including canvas pages, which do
- * not render a note-properties block at all.
+ * generated properties such as `title` and `modified`.
  */
-function currentLocation(): string | null {
+function currentProperty(property: string): string | null {
   for (const row of document.querySelectorAll("details.note-properties .note-properties-row")) {
     const key = row.querySelector(".note-properties-key")?.textContent?.trim().toLowerCase()
-    if (key !== "location") continue
+    if (key !== property) continue
     const value = row.querySelector(".note-properties-value")?.textContent?.trim()
     if (!value) return null
     // An explicitly empty property renders a placeholder instead of a value.
@@ -621,10 +616,23 @@ function currentLocation(): string | null {
   return null
 }
 
+function currentLocation(): string | null {
+  return currentProperty("location")
+}
+
+function currentClan(): string | null {
+  return currentProperty("clan")
+}
+
 function trackLocation() {
   const location = currentLocation()
   if (!location) return
-  void game.execute({ type: "location_visited", location, page: currentPage() })
+  void game.execute({
+    type: "location_visited",
+    location,
+    clan: currentClan() ?? undefined,
+    page: currentPage(),
+  })
 }
 
 let navigationTimer: number | undefined

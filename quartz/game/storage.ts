@@ -56,6 +56,7 @@ function migrateLegacyInventory(storage: GameStorage): GameState | null {
       blocks: [],
       unlockedChapters: [],
       visits: [],
+      clans: {},
     }
   } catch {
     return null

@@ -490,9 +490,9 @@ figure[data-rehype-pretty-code-figure] {
   }
 
   /* center code blocks that have a language */
-  &:has(> pre[data-language]) {
+  /*&:has(> pre[data-language]) {
     text-align: center;
-  }
+  }*/
 }
 
 pre {
@@ -515,7 +515,7 @@ pre {
     display: grid;
     padding: 0.5rem 0;
     overflow-x: auto;
-    text-align: center;
+    /*text-align: center; */
 
     & [data-highlighted-chars] {
       background-color: var(--highlight);
@@ -526,18 +526,13 @@ pre {
       padding: 0 0.25rem;
       box-sizing: border-box;
       border-left: 3px solid transparent;
-      text-align: center;
+      /* text-align: center; */
 
       &[data-highlighted-line] {
         background-color: var(--highlight);
         border-left: 3px solid var(--secondary);
       }
     }
-  }
-
-  /* no clipboard buttons */
-  & > .clipboard-button {
-    display: none;
   }
 }
 
@@ -678,4 +673,18 @@ iframe.pdf {
   background: var(--secondary);
   transition: width 0.2s ease;
   z-index: 9999;
+}
+
+
+.btn-std {
+  border: 1px solid var(--background-modifier-border-focus) !important;
+  padding: 15px 20px 15px 20px !important;
+  border-radius: 100PX !important;
+  background-color: var(--background-modifier-border-focus) !important;
+  color: var(--background-primary) !important;
+  margin: 20px !important;
+  &:hover {
+    background-color: white;
+  }
+
 }

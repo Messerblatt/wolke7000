@@ -47,6 +47,8 @@ export type GameState = {
   blocks: GameBlock[]
   unlockedChapters: string[]
   visits: GameVisit[]
+  /** Number of distinct visited pages for each clan. */
+  clans: Record<string, number>
 }
 
 export type GameBlock = {
@@ -85,7 +87,7 @@ export type GameCommand =
   | { type: "blocks_synchronized"; blocks: GameBlockInput[] }
   | { type: "block_updated"; block: GameBlockInput }
   | { type: "chapter_unlocked"; chapter: string }
-  | { type: "location_visited"; location: string; page: string }
+  | { type: "location_visited"; location: string; page: string; clan?: string }
 
 export const EMPTY_GAME_STATE: GameState = {
   version: GAME_STATE_VERSION,
@@ -95,6 +97,7 @@ export const EMPTY_GAME_STATE: GameState = {
   blocks: [],
   unlockedChapters: [],
   visits: [],
+  clans: {},
 }
 
 function text(value: unknown): string {
@@ -181,6 +184,18 @@ export function isGameState(value: unknown): value is GameState {
     return false
   }
 
+  if (
+    state.clans !== undefined &&
+    (typeof state.clans !== "object" ||
+      state.clans === null ||
+      Array.isArray(state.clans) ||
+      !Object.entries(state.clans).every(
+        ([clan, count]) => clan.length > 0 && Number.isInteger(count) && count >= 0,
+      ))
+  ) {
+    return false
+  }
+
   const visits = state.visits ?? []
   if (
     !visits.every(
@@ -262,6 +277,7 @@ export function cloneState(state: GameState): GameState {
       count: visit.count,
       lastVisitedAt: visit.lastVisitedAt,
     })),
+    clans: { ...(state.clans ?? {}) },
   }
 }
 
@@ -354,6 +370,9 @@ export function validateCommand(command: unknown): asserts command is GameComman
     ) {
       throw new Error("A valid location and page are required")
     }
+    if (candidate.clan !== undefined && typeof candidate.clan !== "string") {
+      throw new Error("A clan must be a string")
+    }
     return
   }
 
@@ -382,7 +401,18 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
   if (command.type === "location_visited") {
     const location = text(command.location)
     const page = text(command.page)
+    const clan = text(command.clan)
     if (!location || !page) return next
+
+    // A page can be rendered more than once during SPA navigation. Clan
+    // counts follow the same distinct-page semantics as location counts.
+    const pageAlreadyVisited = next.visits.some((visit) => visit.pages.includes(page))
+    if (clan && !pageAlreadyVisited) {
+      const currentCount = Object.prototype.hasOwnProperty.call(next.clans, clan)
+        ? next.clans[clan]
+        : 0
+      next.clans[clan] = currentCount + 1
+    }
 
     const index = next.visits.findIndex((visit) => visit.location === location)
     if (index === -1) {

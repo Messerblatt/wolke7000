@@ -43,6 +43,74 @@ function notifyNav(url: FullSlug) {
 const cleanupFns: Set<(...args: any[]) => void> = new Set()
 window.addCleanup = (fn) => cleanupFns.add(fn)
 
+const PAGE_TRANSITION_DURATION = 240
+
+function startPageTransition() {
+  document.documentElement.classList.remove("page-transition-in")
+  document.documentElement.classList.add("page-transition-out")
+}
+
+function resetPageTransition() {
+  document.documentElement.classList.remove("page-transition-out", "page-transition-in")
+}
+
+function waitForPageFadeOut() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return Promise.resolve()
+  }
+
+  return new Promise<void>((resolve) => {
+    // Let the browser paint the exit state before replacing the page contents.
+    requestAnimationFrame(() => window.setTimeout(resolve, PAGE_TRANSITION_DURATION))
+  })
+}
+
+function finishPageTransition() {
+  const root = document.documentElement
+  root.classList.remove("page-transition-out")
+  root.classList.add("page-transition-in")
+  window.setTimeout(() => root.classList.remove("page-transition-in"), PAGE_TRANSITION_DURATION)
+}
+
+function waitForNextFrame() {
+  return new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+}
+
+async function positionPage(url: URL) {
+  const html = document.documentElement
+  const body = document.body
+  const previousHtmlScrollBehavior = html.style.scrollBehavior
+  const previousBodyScrollBehavior = body.style.scrollBehavior
+
+  // The stylesheet enables smooth scrolling globally. Disable it while placing
+  // a newly-morphed page so the entrance animation never reveals the movement.
+  html.style.scrollBehavior = "auto"
+  body.style.scrollBehavior = "auto"
+
+  try {
+    if (url.hash) {
+      const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
+      if (el) {
+        el.scrollIntoView({ behavior: "auto" })
+      } else {
+        html.scrollTop = 0
+        body.scrollTop = 0
+        window.scrollTo(0, 0)
+      }
+    } else {
+      html.scrollTop = 0
+      body.scrollTop = 0
+      window.scrollTo(0, 0)
+    }
+
+    // Give the browser a frame to commit the scroll position before revealing.
+    await waitForNextFrame()
+  } finally {
+    html.style.scrollBehavior = previousHtmlScrollBehavior
+    body.style.scrollBehavior = previousBodyScrollBehavior
+  }
+}
+
 function startLoading() {
   document.querySelector(".navigation-progress")?.remove()
   const loadingBar = document.createElement("div")
@@ -67,6 +135,8 @@ let p: DOMParser
 async function _navigate(url: URL, isBack: boolean = false) {
   isNavigating = true
   startLoading()
+  startPageTransition()
+  const fadeOut = waitForPageFadeOut()
   p = p || new DOMParser()
   const contents = await fetchCanonical(url)
     .then((res) => {
@@ -81,7 +151,18 @@ async function _navigate(url: URL, isBack: boolean = false) {
       window.location.assign(url)
     })
 
-  if (!contents) return
+  if (!contents) {
+    resetPageTransition()
+    return
+  }
+
+  await fadeOut
+
+  // Move to the top while the old page is already invisible. This prevents
+  // the new page from revealing a delayed scroll operation during its fade-in.
+  if (!isBack && !url.hash) {
+    await positionPage(url)
+  }
 
   // notify about to nav
   const event: CustomEventMap["prenav"] = new CustomEvent("prenav", { detail: {} })
@@ -110,15 +191,13 @@ async function _navigate(url: URL, isBack: boolean = false) {
   document.querySelector(".navigation-progress")?.remove()
   micromorph(document.body, html.body)
 
-  // scroll into place and add history
-  if (!isBack) {
-    if (url.hash) {
-      const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
-      el?.scrollIntoView()
-    } else {
-      window.scrollTo({ top: 0 })
-    }
+  // Anchor targets only exist after the new page has been morphed in.
+  if (!isBack && url.hash) {
+    await positionPage(url)
   }
+
+  // Start the entrance animation only after the new page is in position.
+  finishPageTransition()
 
   // now, patch head, re-executing scripts
   const elementsToRemove = document.head.querySelectorAll(":not([data-persist])")

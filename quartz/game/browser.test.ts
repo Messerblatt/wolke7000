@@ -20,6 +20,19 @@ describe("browser game accessor", () => {
 
       await first.execute({ type: "item_taken", item: "Brille" })
       assert.equal(second.getSnapshot().items[0]?.name, "Brille")
+      assert.equal(first.inventory[0]?.name, "Brille")
+
+      await first.execute({
+        type: "wing_collected",
+        wing: { id: "open-wings#block-0", name: "Treptow route", source: "/open-wings" },
+      })
+      assert.equal(first.wings[0]?.name, "Treptow route")
+
+      await first.execute({
+        type: "discovery_unlocked",
+        discovery: "admiral7-meta-awareness",
+      })
+      assert.equal(first.discoveries[0], "admiral7-meta-awareness")
     } finally {
       globalThis.window = previousWindow
     }

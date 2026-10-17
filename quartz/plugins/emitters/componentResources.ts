@@ -5,6 +5,8 @@ import { QuartzEmitterPlugin } from "../types"
 // @ts-ignore
 import spaRouterScript from "../../components/scripts/spa.inline"
 // @ts-ignore
+import typewriterScript from "../../components/scripts/typewriter.inline"
+// @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
@@ -83,6 +85,10 @@ async function joinScripts(scripts: string[]): Promise<string> {
 
 function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentResources) {
   const cfg = ctx.cfg.configuration
+
+  componentResources.beforeDOMLoaded.push(
+    `document.documentElement.classList.add("typewriter-enabled")`,
+  )
 
   // popovers
   if (cfg.enablePopovers) {
@@ -259,8 +265,10 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   }
 
   if (cfg.enableSPA) {
+    componentResources.afterDOMLoaded.push(typewriterScript)
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {
+    componentResources.afterDOMLoaded.push(typewriterScript)
     componentResources.afterDOMLoaded.push(`
       window.spaNavigate = (url, _) => window.location.assign(url)
       window.addCleanup = () => {}
