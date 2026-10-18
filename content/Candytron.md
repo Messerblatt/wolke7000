@@ -1,4 +1,4 @@
-> [!abstract] Kurzdefinition  
+ [!abstract] Kurzdefinition  
 > Der **Candytron** ist ein gekapseltes, schwenkbares Hybridtriebwerk von [[Wolke 7000]], das für die Umrüstung sehr verschiedener Wasserfahrzeuge zu Flugschiffen entwickelt wurde. Er erzeugt den Vortrieb; die umgebauten Segel und zusätzlichen Steuerflächen erzeugen den Auftrieb. Ohne ein ausreichend großes Flugsegelrigg macht der Candytron aus einem Schiff daher kein Flugzeug, sondern lediglich ein sehr schnelles Wrack.
 
 ## Kanonische Eckdaten

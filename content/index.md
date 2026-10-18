@@ -3,6 +3,8 @@ title: Wolke 7000
 publish: true
 tags:
 ---
+
+
 ![[poster_4.png]]
 
 
@@ -12,6 +14,14 @@ Das ist der Digital Garden von **Wolke 7000**, einem open-end und open-world ope
 ![[koko_third.png]]
 >[!info] 
 >Zu den Characters gehts [[Characters Übersicht|hier]]
+
+
+> [!info]
+> Visit the [[Canteen Kreuzberg]] to start the story. 
+
+
+
+
 
 ## Warum?
 

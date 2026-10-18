@@ -3,8 +3,10 @@ configuration:
   pageTitle: Wolke 7000
   pageTitleSuffix: ""
   enableSPA: true
-  enablePopovers: true
+  enablePopovers: false
   eventlogging: true
+  scrollClickFrequency: 100
+  scroll_exp: 100
   analytics:
     provider: google
     tagId: "G-TJM3526RLT"
@@ -63,7 +65,7 @@ plugins:
         light: github-light
         dark: github-dark
       keepBackground: false
-      clipboard: false
+      clipboard: true
     order: 20
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
@@ -206,9 +208,9 @@ plugins:
   - source: "./quartz-local/wolke-toolbar"
     enabled: true
     options:
-      src: "/imgs/aleksander-vinter---highlander-single.mp3"
+      src: "/audio/harbor-asmr.mp3"
       loop: true
-      volume: 0.35
+      volume: 1
     layout:
       # sits directly under the <h2> page title and above the graph explorer
       position: left
@@ -224,7 +226,7 @@ plugins:
       globalGraph:
         showTags: false
     layout:
-      position: left
+      position: right
       priority: 30
   - source: "@quartz-community/search"
     enabled: true
@@ -307,7 +309,7 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
@@ -333,7 +335,7 @@ plugins:
     options: {}
     order: 45
   - source: github:Messerblatt/quartz-plugin-rucksack
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 60

@@ -65,6 +65,10 @@ export interface GlobalConfiguration {
   enablePopovers: boolean
   /** Whether item events emitted from changing fenced blocks are logged */
   eventlogging: boolean
+  /** Play the scroll click once every N scroll events. */
+  scrollClickFrequency?: number
+  /** Award one experience point once every N scroll events. */
+  scroll_exp?: number
   /** Analytics mode */
   analytics: Analytics
   /** Glob patterns to not search */

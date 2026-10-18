@@ -3,8 +3,8 @@ import { DarkmodeButton, ReaderModeButton, MusicButton } from "./buttons.js"
 import { darkmodeCss, readermodeCss } from "./vendor.js"
 
 const defaultOptions = {
-  // slugified file name of content/imgs/Aleksander Vinter - Highlander Single.mp3
-  src: "/imgs/aleksander-vinter---highlander-single.mp3",
+  // slugified file name of content/audio/harbor-asmr.mp3
+  src: "/audio/harbor-asmr.mp3",
   loop: true,
   volume: 0.35,
   playLabel: "Musik abspielen",
@@ -181,9 +181,9 @@ const readerScript = `
  * Design notes:
  *
  *  - The player is a single controller instance for the whole browsing session,
- *    owning exactly one <audio> element that is appended to <body> with
- *    data-persist so the SPA's micromorph(document.body, ...) keeps it alive.
- *    That is what lets the soundtrack survive page changes.
+ *    owning exactly one <audio> element that lives outside <body>. The SPA
+ *    morphs document.body on navigation, so keeping the element on <html>
+ *    lets the soundtrack survive page changes.
  *
  *  - Click handling uses ONE delegated listener on `document`, attached once
  *    behind the singleton guard. The previous version bound a listener to each
@@ -208,17 +208,49 @@ const musicScript = `
   audio.loop = false;
   audio.setAttribute("data-persist", "");
   audio.style.display = "none";
-  document.body.appendChild(audio);
+  document.documentElement.appendChild(audio);
 
-  const state = { src: "", loop: true, volume: 0.35, playing: false, restarting: false };
+  const effects = new Set();
+  let muted = false;
+  const audioBus = window.__wolkeAudio = {
+    get muted() { return muted; },
+    play(src) {
+      const effect = new Audio(src);
+      effect.muted = muted;
+      effects.add(effect);
+      const cleanup = () => effects.delete(effect);
+      effect.addEventListener("ended", cleanup, { once: true });
+      effect.addEventListener("error", cleanup, { once: true });
+      const resume = effect.play();
+      if (resume && resume.catch) resume.catch(cleanup);
+      return effect;
+    },
+    setMuted(next) {
+      muted = Boolean(next);
+      audio.muted = muted;
+      for (const effect of effects) effect.muted = muted;
+    },
+  };
+
+  const state = {
+    src: "",
+    loop: true,
+    volume: 0.35,
+    playing: false,
+    restarting: false,
+    initialized: false,
+  };
   const player = window.__wolkeMusic = {
     audio,
     state,
     configure(opts) {
-      if (opts.src && opts.src !== state.src) {
-        state.src = opts.src;
-        audio.src = opts.src;
+      const src = opts.src ? new URL(opts.src, window.location.href).href : "";
+      if (src && src !== state.src) {
+        const wasPlaying = state.playing;
+        state.src = src;
+        audio.src = src;
         audio.load();
+        if (wasPlaying) this.play();
       }
       if (typeof opts.loop === "boolean") state.loop = opts.loop;
       if (typeof opts.volume === "number" && !Number.isNaN(opts.volume)) {
@@ -227,13 +259,20 @@ const musicScript = `
       }
     },
     play() {
+      audioBus.setMuted(false);
       state.playing = true;
       render();
       const resume = audio.play();
-      if (resume && resume.catch) resume.catch(() => {});
+      if (resume && resume.catch) {
+        resume.catch(() => {
+          state.playing = false;
+          render();
+        });
+      }
     },
     pause() {
       state.playing = false;
+      audioBus.setMuted(true);
       audio.pause();
       render();
     },
@@ -299,9 +338,15 @@ const musicScript = `
   // Re-read options and refresh the button state after each morph, but never
   // attach listeners here - that is the delegated handler's job.
   function refresh() {
+    if (!audio.isConnected) document.documentElement.appendChild(audio);
     const btn = document.querySelector("[data-wolke-music-toggle]");
     if (btn) player.configure(optionsFrom(btn));
-    render();
+    if (!state.initialized) {
+      state.initialized = true;
+      player.play();
+    } else {
+      render();
+    }
   }
 
   document.addEventListener("nav", refresh);

@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("/static/fonts/source-code-pro/SourceCodePro_VariableFont_wght.ttf")
-    format("truetype");
+  src: url("/static/fonts/source-code-pro/SourceCodePro_VariableFont_wght.ttf") format("truetype");
   font-weight: 200 900;
   font-style: normal;
   font-display: swap;
@@ -11,8 +10,7 @@
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("/static/fonts/source-code-pro/SourceCodePro_VariableFont_wght.ttf")
-    format("truetype");
+  src: url("/static/fonts/source-code-pro/SourceCodePro_VariableFont_wght.ttf") format("truetype");
   font-weight: 200 900;
   font-style: italic;
   font-display: swap;
@@ -20,15 +18,14 @@
 
 @font-face {
   font-family: "Wolke Title";
-  src: url("/static/fonts/page-title/Treamd.ttf")
-    format("truetype");
+  src: url("/static/fonts/page-title/Treamd.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --titleFont: "Wolke Title", "Source Code Pro", sans-serif;    
+  --titleFont: "Wolke Title", "Source Code Pro", sans-serif;
   --titleFont: "Source Code Pro", monospace;
   --headerFont: "Source Code Pro", monospace;
   --bodyFont: "Source Code Pro", monospace;
@@ -46,15 +43,18 @@
   --heading-h6-size: clamp(1.05rem, 1.5vw, 1.25rem);
 }
 
-
 .page-title,
 .page-title a {
   font-family: "Wolke Title";
   font-size: 3.75rem;
-
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Wolke Title";
 }
 
@@ -90,14 +90,6 @@ body article h6 {
   gemacht werden.
  +++++++++++++++++++++++++++++++++++++++ */
 
-/* Explorer (linke Sidebar) */
-.explorer,
-.explorer-toggle,
-.explorer-content,
-.explorer-ul {
-  display: none !important;
-}
-
 /* Backlinks (rechte Sidebar) */
 .backlinks {
   display: none !important;
@@ -112,17 +104,6 @@ body article h6 {
 
 /* Datum / Article Meta unter dem Titel */
 .content-meta {
-  display: none !important;
-}
-
-/* Breadcrumbs über dem Inhalt */
-.breadcrumb-container,
-.breadcrumb-element {
-  display: none !important;
-}
-
-/* Page Properties (Frontmatter-Panel) */
-.note-properties {
   display: none !important;
 }
 
@@ -173,12 +154,11 @@ body article h6 {
 }
 
 body a.internal-link {
-    background-color: transparent;
-    padding: 3px;
-    margin: 3px;
-    display: inline;
+  background-color: transparent;
+  padding: 3px;
+  margin: 3px;
+  display: inline;
 }
-
 
 /* ++++++++++++++++++++++++++++++++++++
   Wolke-7000-Trennlinie
@@ -201,32 +181,13 @@ article hr {
 
   background:
     /* linke Linie */
-    linear-gradient(
-      to right,
-      transparent,
-      var(--divider-color) 25%,
-      var(--divider-color)
-    )
-    left center /
-    calc(50% - var(--divider-symbol-gap)) 1px
-    no-repeat,
-
+    linear-gradient(to right, transparent, var(--divider-color) 25%, var(--divider-color)) left
+      center / calc(50% - var(--divider-symbol-gap)) 1px no-repeat,
     /* rechte Linie */
-    linear-gradient(
-      to left,
-      transparent,
-      var(--divider-color) 25%,
-      var(--divider-color)
-    )
-    right center /
-    calc(50% - var(--divider-symbol-gap)) 1px
-    no-repeat,
-
-    /* zentrales Wolke-7000-Symbol */
-    url("/static/hr.png")
-    center /
-    var(--divider-symbol-width) auto
-    no-repeat;
+    linear-gradient(to left, transparent, var(--divider-color) 25%, var(--divider-color)) right
+      center / calc(50% - var(--divider-symbol-gap)) 1px no-repeat,
+    /* zentrales Wolke-7000-Symbol */ url("/static/hr.png") center / var(--divider-symbol-width)
+      auto no-repeat;
 
   /*
    * Grafik und Linien sind ursprünglich weiß.
@@ -239,6 +200,109 @@ article hr {
 html[saved-theme="dark"] article hr {
   filter: none;
   opacity: 0.82;
+}
+
+/* Game fences are always black with bright text. The clipboard control stays
+   visible so item fences remain actionable. */
+.clipboard-button {
+  opacity: 1 !important;
+}
+
+.clipboard-button > svg {
+  display: none;
+}
+
+.clipboard-button::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("/imgs/ui/diamond.png") center / contain no-repeat;
+}
+
+pre[data-language],
+pre[data-language] > code {
+  background: #000000 !important;
+  border-color: #111111 !important;
+  color: #f5d76e !important;
+}
+
+pre[data-language] > code [data-line],
+pre[data-language] > code [data-line] * {
+  color: #f5d76e !important;
+}
+
+pre[data-language="wings"] > code [data-line],
+pre[data-language="wings"] > code [data-line] * {
+  color: #7dd3fc !important;
+}
+
+pre[data-language="item"] {
+  box-shadow: 0 0 0.9rem rgba(245, 215, 110, 0.45);
+}
+
+pre[data-language="wings"] {
+  box-shadow: 0 0 0.9rem rgba(125, 211, 252, 0.4);
+}
+
+/* Item pickup notifications */
+#wolke-item-toasts {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+
+  width: min(24rem, calc(100vw - 2rem));
+  pointer-events: none;
+}
+
+.wolke-item-toast {
+  max-width: 100%;
+  padding: 0.8rem 1rem;
+
+  border: 1px solid var(--background-secondary);
+  border-radius: 0.35rem;
+  background: var(--background-primary);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.35);
+  color: #333 !important;
+
+  font-family: var(--bodyFont);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+
+  /* animation: wolke-item-toast-in 180ms ease-out both; */
+}
+
+.wolke-item-toast-leaving {
+  /* animation: wolke-item-toast-out 180ms ease-in both; */
+}
+
+@keyframes wolke-item-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wolke-item-toast-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
 }
 
 /*
@@ -271,3 +335,57 @@ html[saved-theme="dark"] article hr {
   }
 }
 
+/* Fade the current page out before the SPA swaps it, then fade the new page in. */
+#quartz-root {
+  opacity: 1;
+}
+
+html.page-transition-out #quartz-root {
+  opacity: 0;
+  transition: opacity 240ms ease;
+}
+
+html.page-transition-out {
+  scroll-behavior: auto;
+}
+
+html.page-transition-in #quartz-root {
+  animation: quartz-page-fade-in 240ms ease both;
+}
+
+@keyframes quartz-page-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.page-transition-out #quartz-root {
+    transition-duration: 0s;
+  }
+
+  html.page-transition-in #quartz-root {
+    animation-duration: 0s;
+  }
+}
+
+/* Reveal page text one character at a time after each navigation. */
+.wolke-conditional[hidden] {
+  display: none !important;
+}
+
+html.typewriter-enabled:not(.typewriter-ready) #quartz-root {
+  visibility: hidden;
+}
+
+.typewriter-character {
+  visibility: hidden;
+}
+
+.typewriter-character.is-visible {
+  visibility: visible;
+}

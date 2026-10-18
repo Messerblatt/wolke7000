@@ -53,7 +53,7 @@ Jede Nachbarschaft unterhält **Taubenschläge**, vergleichbar mit den „Server
 
 Da Tauben nur _nach Hause_ fliegen können, sind Zwischenstationen nötig, Wie bei einer „Hop-by-Hop“-Übertragung im alten Internet. Um eine Nachricht beispielsweise von Treptow zum Prenzlauer Berg zu transportieren, müssen Tauben, die einen solchen Nachhauseweg nicht als Ganzes kennen, Zwischenstationen ansteuern, also ihren eigentlichen Heimatschlag. Hier wird die Nachricht an die nächste Brieftaube übergeben, und der nächste Taubenschlag wird angesteuert:
 
-```
+```wings
 Treptow → Kreuzberg → Neukölln → Prenzlauer Berg
 ```
 
@@ -76,7 +76,7 @@ Mitunter können Briefsendungen verloren gehen. Das tut der Brieftaube natürlic
 
 Jede größere Station besitzt mehrere Taubenschläge. Die dort gehaltenen Tauben gehören jeweils zu anderen Stationen:
 
-```
+```wings
 Station Alexanderhafen
 
 12 Tauben → Wedding
@@ -87,7 +87,7 @@ Station Alexanderhafen
 
 Soll ein Päckchen von Köpenick nach Wedding, muss keine Taube beide Orte kennen:
 
-```
+```wings
 Köpenick
    │ Taube mit Heimatschlag Alexanderhafen
    ▼
@@ -118,7 +118,7 @@ Das entspricht einem Distance-Vector-Verfahren, also einer verteilten Form von B
 
 In NeuBerlin könnten die Tabellen einmal täglich mit Kurierkarten aktualisiert werden. Ein Eintrag wäre beispielsweise:
 
-```
+```wings
 WEDDING:
 über ALEX 70
 über MOABIT 55

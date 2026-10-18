@@ -31,6 +31,20 @@
           "type": "boolean",
           "description": "Enable hover popovers for links"
         },
+        "eventlogging": {
+          "type": "boolean",
+          "description": "Log item events emitted by changing fenced blocks"
+        },
+        "scrollClickFrequency": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Play the scroll click once every N scroll events"
+        },
+        "scroll_exp": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Award one experience point once every N scroll events"
+        },
         "locale": {
           "type": "string",
           "description": "Locale code for the site"
