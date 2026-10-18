@@ -60,6 +60,14 @@ describe("game core", () => {
     assert.deepEqual(twice.discoveries, ["admiral7-meta-awareness"])
   })
 
+  test("increments experience for each exp event", () => {
+    const first = applyCommand(EMPTY_GAME_STATE, { type: "exp_gained" })
+    const second = applyCommand(first, { type: "exp_gained" })
+
+    assert.equal(first.exp, 1)
+    assert.equal(second.exp, 2)
+  })
+
   test("persists fenced-block content without changing inventory", () => {
     const updated = applyCommand(EMPTY_GAME_STATE, {
       type: "block_updated",

@@ -5,6 +5,8 @@ configuration:
   enableSPA: true
   enablePopovers: false
   eventlogging: true
+  scrollClickFrequency: 100
+  scroll_exp: 100
   analytics:
     provider: google
     tagId: "G-TJM3526RLT"
@@ -206,9 +208,9 @@ plugins:
   - source: "./quartz-local/wolke-toolbar"
     enabled: true
     options:
-      src: "/imgs/aleksander-vinter---highlander-single.mp3"
+      src: "/audio/harbor-asmr.mp3"
       loop: true
-      volume: 0.35
+      volume: 1
     layout:
       # sits directly under the <h2> page title and above the graph explorer
       position: left

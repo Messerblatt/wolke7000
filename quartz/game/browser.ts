@@ -7,6 +7,7 @@ export interface Wolke {
   readonly inventory: GameItem[]
   readonly wings: GameWing[]
   readonly discoveries: string[]
+  readonly exp: number
   /** Locations the reader has discovered pages in, with discovery counts. */
   readonly visits: GameVisit[]
   /** Distinct visited pages grouped by clan. */
@@ -52,6 +53,17 @@ function notifyItemPickedUp(command: GameCommand): void {
       },
     }),
   )
+}
+
+function notifyExperienceGained(command: GameCommand, runtime: GameRuntime): void {
+  if (command.type !== "exp_gained" || typeof window === "undefined") return
+  if (typeof window.dispatchEvent !== "function" || typeof CustomEvent === "undefined") return
+
+  const exp = runtime.getSnapshot().exp
+  window.dispatchEvent(new CustomEvent("wolke7000:exp-gained", { detail: { exp } }))
+  if (exp > 0 && exp % 5 === 0) {
+    window.dispatchEvent(new CustomEvent("wolke7000:level-up", { detail: { exp } }))
+  }
 }
 
 async function clearRucksackStorage(): Promise<void> {
@@ -119,6 +131,7 @@ export function getWolke(): Wolke {
     execute: async (command) => {
       await runtime.execute(command)
       notifyItemPickedUp(command)
+      notifyExperienceGained(command, runtime)
     },
     getSnapshot: runtime.getSnapshot.bind(runtime),
     get inventory() {
@@ -129,6 +142,9 @@ export function getWolke(): Wolke {
     },
     get discoveries() {
       return runtime.getSnapshot().discoveries
+    },
+    get exp() {
+      return runtime.getSnapshot().exp
     },
     get visits() {
       return runtime.getSnapshot().visits

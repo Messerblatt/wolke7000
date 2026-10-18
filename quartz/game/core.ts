@@ -49,6 +49,8 @@ export type GameState = {
   visits: GameVisit[]
   /** Number of distinct visited pages for each clan. */
   clans: Record<string, number>
+  /** Experience points earned by the player. */
+  exp: number
 }
 
 export type GameBlock = {
@@ -79,6 +81,7 @@ export type WingInput =
     }
 
 export type GameCommand =
+  | { type: "exp_gained" }
   | { type: "item_placed"; item: ItemInput }
   | { type: "item_taken"; item: ItemInput }
   | { type: "items_synchronized"; items: ItemInput[] }
@@ -98,6 +101,7 @@ export const EMPTY_GAME_STATE: GameState = {
   unlockedChapters: [],
   visits: [],
   clans: {},
+  exp: 0,
 }
 
 function text(value: unknown): string {
@@ -196,6 +200,8 @@ export function isGameState(value: unknown): value is GameState {
     return false
   }
 
+  if (state.exp !== undefined && (!Number.isInteger(state.exp) || state.exp < 0)) return false
+
   const visits = state.visits ?? []
   if (
     !visits.every(
@@ -278,6 +284,7 @@ export function cloneState(state: GameState): GameState {
       lastVisitedAt: visit.lastVisitedAt,
     })),
     clans: { ...(state.clans ?? {}) },
+    exp: state.exp ?? 0,
   }
 }
 
@@ -295,6 +302,8 @@ export function validateCommand(command: unknown): asserts command is GameComman
     if (!text(candidate.chapter)) throw new Error("A chapter name is required")
     return
   }
+
+  if (candidate.type === "exp_gained") return
 
   if (candidate.type === "discovery_unlocked") {
     if (!text(candidate.discovery)) throw new Error("A discovery identifier is required")
@@ -397,6 +406,11 @@ export function validateCommand(command: unknown): asserts command is GameComman
 export function applyCommand(state: GameState, command: GameCommand, now = Date.now()): GameState {
   validateCommand(command)
   const next = cloneState(state)
+
+  if (command.type === "exp_gained") {
+    next.exp += 1
+    return next
+  }
 
   if (command.type === "location_visited") {
     const location = text(command.location)

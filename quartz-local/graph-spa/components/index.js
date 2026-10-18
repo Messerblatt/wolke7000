@@ -17,8 +17,15 @@ import { Graph } from "@quartz-community/graph"
 const NAVIGATOR = `
 (function () {
   const go = (url) => {
+    const targetUrl = new URL(url, window.location.href);
+    const isAnotherPage = targetUrl.origin !== window.location.origin
+      || targetUrl.pathname !== window.location.pathname
+      || targetUrl.search !== window.location.search;
+    if (isAnotherPage) {
+      window.dispatchEvent(new CustomEvent("wolke7000:graph-navigate"));
+    }
     if (typeof window.spaNavigate === "function") {
-      window.spaNavigate(new URL(url, window.location.href));
+      window.spaNavigate(targetUrl);
       return true;
     }
     return false;

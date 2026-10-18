@@ -13,5 +13,10 @@ export declare global {
   interface Window {
     spaNavigate(url: URL, isBack: boolean = false)
     addCleanup(fn: (...args: any[]) => void)
+    __wolkeAudio?: {
+      readonly muted: boolean
+      play(src: string): HTMLAudioElement
+      setMuted(muted: boolean): void
+    }
   }
 }

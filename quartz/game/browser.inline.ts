@@ -594,11 +594,7 @@ function renderGameSnapshot(snapshot: import("./core").GameState) {
   restoreSavedBlocks(snapshot)
 }
 
-function showItemPickupToast(event: Event) {
-  const detail = (event as CustomEvent<{ name?: unknown; quantity?: unknown }>).detail
-  const name = typeof detail?.name === "string" ? detail.name.trim() : ""
-  if (!name) return
-
+function showToast(message: string) {
   let container = document.querySelector<HTMLElement>("#wolke-item-toasts")
   if (!container) {
     container = document.createElement("div")
@@ -611,9 +607,7 @@ function showItemPickupToast(event: Event) {
   const toast = document.createElement("div")
   toast.className = "wolke-item-toast"
   toast.setAttribute("role", "status")
-  const quantity =
-    typeof detail.quantity === "number" && detail.quantity > 1 ? ` ×${detail.quantity}` : ""
-  toast.textContent = `Aufgenommen: ${name}${quantity}`
+  toast.textContent = message
   container.append(toast)
 
   while (container.children.length > 5) {
@@ -624,6 +618,26 @@ function showItemPickupToast(event: Event) {
     toast.classList.add("wolke-item-toast-leaving")
     window.setTimeout(() => toast.remove(), 180)
   }, 3200)
+}
+
+function showItemPickupToast(event: Event) {
+  const detail = (event as CustomEvent<{ name?: unknown; quantity?: unknown }>).detail
+  const name = typeof detail?.name === "string" ? detail.name.trim() : ""
+  if (!name) return
+
+  const quantity =
+    typeof detail.quantity === "number" && detail.quantity > 1 ? ` ×${detail.quantity}` : ""
+  showToast(`Aufgenommen: ${name}${quantity}`)
+}
+
+function showLevelUpToast() {
+  showToast("Level up!")
+}
+
+function handleExperienceEvent() {
+  void game.execute({ type: "exp_gained" }).catch((error) => {
+    console.error("[wolke game] could not award experience", error)
+  })
 }
 
 /**
@@ -765,6 +779,8 @@ if (!runtimeFlags.__wolkeRuntimeInitialized) {
   document.addEventListener("item_placed", handleItemEvent)
   document.addEventListener("item_taken", handleItemEvent)
   window.addEventListener("wolke7000:item-picked-up", showItemPickupToast)
+  window.addEventListener("wolke7000:exp", handleExperienceEvent)
+  window.addEventListener("wolke7000:level-up", showLevelUpToast)
   document.addEventListener("click", onClick, true)
   document.addEventListener("dragstart", onDragStart)
   document.addEventListener("dragover", onDragOver)
