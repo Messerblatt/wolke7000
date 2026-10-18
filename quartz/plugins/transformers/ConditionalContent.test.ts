@@ -11,7 +11,9 @@ describe("conditional content transformer", () => {
       undefined as never,
       ':::requires{clan="kreuzberg", level="3"}\nHallo\n:::',
     )
-    const processor = unified().use(remarkParse).use(plugin.markdownPlugins!())
+    const processor = unified()
+      .use(remarkParse)
+      .use(plugin.markdownPlugins!({} as never))
     const tree = processor.runSync(processor.parse(source)) as unknown as {
       children: Array<{ data?: { hProperties?: Record<string, unknown> } }>
     }
@@ -28,7 +30,9 @@ describe("conditional content transformer", () => {
       undefined as never,
       ':::requires-item={item="ignition-chamber, stabilizing-fin"}\nUnlocked\n:::',
     )
-    const processor = unified().use(remarkParse).use(plugin.markdownPlugins!())
+    const processor = unified()
+      .use(remarkParse)
+      .use(plugin.markdownPlugins!({} as never))
     const tree = processor.runSync(processor.parse(source)) as unknown as {
       children: Array<{ data?: { hProperties?: Record<string, unknown> } }>
     }

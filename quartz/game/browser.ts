@@ -36,6 +36,24 @@ function browserStorage() {
   }
 }
 
+function notifyItemPickedUp(command: GameCommand): void {
+  if (command.type !== "item_taken" || typeof window === "undefined") return
+  if (typeof window.dispatchEvent !== "function" || typeof CustomEvent === "undefined") return
+
+  const item = command.item
+  const name = typeof item === "string" ? item.trim() : item.name.trim()
+  if (!name) return
+
+  window.dispatchEvent(
+    new CustomEvent("wolke7000:item-picked-up", {
+      detail: {
+        name,
+        quantity: typeof item === "string" ? undefined : item.quantity,
+      },
+    }),
+  )
+}
+
 async function clearRucksackStorage(): Promise<void> {
   try {
     localStorage.removeItem("quartz:rucksack")
@@ -98,7 +116,10 @@ export function getWolke(): Wolke {
 
   const runtime = new GameRuntime({ storage: browserStorage() })
   const wolke: Wolke = {
-    execute: runtime.execute.bind(runtime),
+    execute: async (command) => {
+      await runtime.execute(command)
+      notifyItemPickedUp(command)
+    },
     getSnapshot: runtime.getSnapshot.bind(runtime),
     get inventory() {
       return runtime.getSnapshot().items

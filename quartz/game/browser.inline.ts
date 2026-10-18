@@ -594,6 +594,38 @@ function renderGameSnapshot(snapshot: import("./core").GameState) {
   restoreSavedBlocks(snapshot)
 }
 
+function showItemPickupToast(event: Event) {
+  const detail = (event as CustomEvent<{ name?: unknown; quantity?: unknown }>).detail
+  const name = typeof detail?.name === "string" ? detail.name.trim() : ""
+  if (!name) return
+
+  let container = document.querySelector<HTMLElement>("#wolke-item-toasts")
+  if (!container) {
+    container = document.createElement("div")
+    container.id = "wolke-item-toasts"
+    container.setAttribute("aria-live", "polite")
+    container.setAttribute("aria-atomic", "false")
+    document.body.append(container)
+  }
+
+  const toast = document.createElement("div")
+  toast.className = "wolke-item-toast"
+  toast.setAttribute("role", "status")
+  const quantity =
+    typeof detail.quantity === "number" && detail.quantity > 1 ? ` ×${detail.quantity}` : ""
+  toast.textContent = `Aufgenommen: ${name}${quantity}`
+  container.append(toast)
+
+  while (container.children.length > 5) {
+    container.firstElementChild?.remove()
+  }
+
+  window.setTimeout(() => {
+    toast.classList.add("wolke-item-toast-leaving")
+    window.setTimeout(() => toast.remove(), 180)
+  }, 3200)
+}
+
 /**
  * Read a property of the current page out of the rendered frontmatter block.
  *
@@ -732,6 +764,7 @@ if (!runtimeFlags.__wolkeRuntimeInitialized) {
   runtimeFlags.__wolkeRuntimeInitialized = true
   document.addEventListener("item_placed", handleItemEvent)
   document.addEventListener("item_taken", handleItemEvent)
+  window.addEventListener("wolke7000:item-picked-up", showItemPickupToast)
   document.addEventListener("click", onClick, true)
   document.addEventListener("dragstart", onDragStart)
   document.addEventListener("dragover", onDragOver)
