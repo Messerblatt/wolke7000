@@ -60,7 +60,7 @@ const routesCss = `
 
 const WingsRoutes: QuartzComponent = () => (
   <section class="wolke-wings-routes" data-wolke-wings-routes>
-    <h3 class="wolke-wings-routes-title">Open Wings Routen</h3>
+    <h3 class="wolke-wings-routes-title">Open Wings Routes</h3>
     <div data-wolke-wings-routes-list />
   </section>
 )

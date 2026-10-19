@@ -5,6 +5,7 @@ import GameRuntime from "./quartz/game/component"
 import Experience from "./quartz/game/experience"
 import WingsRoutes from "./quartz/game/wings-routes"
 import Volier from "./quartz/game/volier"
+import Inventory from "./quartz/game/inventory"
 
 // Registering the runtime here makes it part of Quartz's global component
 // resources without adding an invisible layout element to every page.
@@ -32,6 +33,14 @@ componentRegistry.register("wolke-volier", Volier, "local", {
   version: "1.0.0",
   defaultPosition: "right",
   defaultPriority: 55,
+})
+componentRegistry.register("wolke-inventory", Inventory, "local", {
+  name: "wolke-inventory",
+  displayName: "Wolke Inventory",
+  description: "Displays items and letters.",
+  version: "1.0.0",
+  defaultPosition: "right",
+  defaultPriority: 50,
 })
 
 const config = await loadQuartzConfig()

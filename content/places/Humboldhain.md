@@ -1,8 +1,8 @@
 ---
-clan: kreuzberg
-location: goerlitzer-park
+location: humboldhain
 wings-hub: true
 class: place
+title: Humboldhain
 ---
 
 Ah, bist du schon unterwegs Richtung Zynismus, nur weil deine Freunde dich damals nicht beschützt haben?

@@ -16,6 +16,25 @@ export type GameItem = {
   acquiredAt: number
 }
 
+export type GameLetter = {
+  id: string
+  name: string
+  sender: string
+  recipient: string
+  destination: string
+  content: string
+  status: "sent" | "received"
+  createdAt: number
+  quantity: 1
+  pigeonId?: string
+}
+
+export type InventoryEntry = GameItem | GameLetter
+
+export type LetterInput = Omit<GameLetter, "status" | "createdAt" | "quantity"> & {
+  createdAt?: number
+}
+
 export type GameWing = {
   id: string
   name: string
@@ -63,9 +82,10 @@ export type Pigeon = {
   status: string
 }
 
-export type OpenWingsShip = {
-  id: string
-  locationId: string
+export type Ship = {
+  name: string
+  location: string
+  wingsHub: boolean
 }
 
 export type VolierClaims = {
@@ -74,11 +94,15 @@ export type VolierClaims = {
 }
 
 export const VOLIER_DAILY_LIMIT = 20
+export const PLAYER_VOLIER_CAPACITY = 3
 
-export const OPEN_WINGS_SHIPS: OpenWingsShip[] = [
-  { id: "everything-markthalle-9", locationId: "markthalle-9" },
-  { id: "everything-brandenburger-tor", locationId: "brandenburger-tor" },
-  { id: "everything-gasometer", locationId: "gasometer" },
+export const INITIAL_SHIPS: Ship[] = [
+  { name: "NIMBUS", location: "gasometer", wingsHub: true },
+  { name: "INFINITY", location: "die-maxista", wingsHub: true },
+  { name: "EVERYTHING", location: "berghain", wingsHub: true },
+  { name: "EVERYWHERE", location: "canteen-kreuzberg", wingsHub: true },
+  { name: "EVERYTIME", location: "brandenburger-tor", wingsHub: true },
+  { name: "FLITZA", location: "tempelhof-diskoord", wingsHub: false },
 ]
 
 export type GameState = {
@@ -93,10 +117,11 @@ export type GameState = {
   clans: Record<string, number>
   /** Experience points earned by the player. */
   exp: number
+  letters: GameLetter[]
   materialIndex: MaterialIndexEntry[]
   processedOpenWingsMessages: string[]
   pigeons: Pigeon[]
-  openWingsShips: OpenWingsShip[]
+  ships: Ship[]
   openWingsMessages: OpenWingsMessage[]
   volierClaims: VolierClaims
 }
@@ -130,6 +155,9 @@ export type WingInput =
 
 export type GameCommand =
   | { type: "exp_gained" }
+  | { type: "item_sold"; item: ItemInput }
+  | { type: "letter_sent"; letter: LetterInput; pigeonId: string }
+  | { type: "letter_received"; letter: LetterInput }
   | { type: "open_wings_message_received"; message: OpenWingsMessage }
   | { type: "pigeon_updated"; pigeon: Pigeon }
   | { type: "pigeons_claimed"; pigeonIds: string[]; date: string }
@@ -153,10 +181,11 @@ export const EMPTY_GAME_STATE: GameState = {
   visits: [],
   clans: {},
   exp: 0,
+  letters: [],
   materialIndex: [],
   processedOpenWingsMessages: [],
   pigeons: [],
-  openWingsShips: OPEN_WINGS_SHIPS.map((ship) => ({ ...ship })),
+  ships: INITIAL_SHIPS.map((ship) => ({ ...ship })),
   openWingsMessages: [],
   volierClaims: { date: "", count: 0 },
 }
@@ -262,6 +291,41 @@ function validPigeon(value: unknown): value is Pigeon {
   )
 }
 
+function validLetter(value: unknown): value is GameLetter {
+  if (typeof value !== "object" || value === null) return false
+  const letter = value as GameLetter
+  return (
+    text(letter.id).length > 0 &&
+    text(letter.name).length > 0 &&
+    text(letter.sender).length > 0 &&
+    text(letter.recipient).length > 0 &&
+    text(letter.destination).length > 0 &&
+    typeof letter.content === "string" &&
+    (letter.status === "sent" || letter.status === "received") &&
+    Number.isInteger(letter.createdAt) &&
+    letter.quantity === 1
+  )
+}
+
+function normalizeLetter(
+  letter: LetterInput,
+  status: GameLetter["status"],
+  now = Date.now(),
+): GameLetter {
+  return {
+    id: text(letter.id),
+    name: text(letter.name),
+    sender: text(letter.sender),
+    recipient: text(letter.recipient),
+    destination: text(letter.destination),
+    content: letter.content,
+    status,
+    createdAt: Number.isInteger(letter.createdAt) ? letter.createdAt! : now,
+    quantity: 1,
+    ...(letter.pigeonId ? { pigeonId: letter.pigeonId } : {}),
+  }
+}
+
 function validOpenWingsMessage(value: unknown): value is OpenWingsMessage {
   if (typeof value !== "object" || value === null) return false
   const message = value as OpenWingsMessage
@@ -315,9 +379,11 @@ export function isGameState(value: unknown): value is GameState {
 
   if (state.exp !== undefined && (!Number.isInteger(state.exp) || state.exp < 0)) return false
 
+  if (!Array.isArray(state.letters ?? []) || !(state.letters ?? []).every(validLetter)) return false
+
   const materialIndex = state.materialIndex ?? []
   const pigeons = state.pigeons ?? []
-  const openWingsShips = state.openWingsShips ?? OPEN_WINGS_SHIPS
+  const ships = state.ships ?? INITIAL_SHIPS
   const openWingsMessages = state.openWingsMessages ?? []
   if (
     !Array.isArray(materialIndex) ||
@@ -326,13 +392,14 @@ export function isGameState(value: unknown): value is GameState {
     !(state.processedOpenWingsMessages ?? []).every((messageId) => text(messageId).length > 0) ||
     !Array.isArray(pigeons) ||
     !pigeons.every(validPigeon) ||
-    !Array.isArray(openWingsShips) ||
-    !openWingsShips.every(
+    !Array.isArray(ships) ||
+    !ships.every(
       (ship) =>
         typeof ship === "object" &&
         ship !== null &&
-        text(ship.id).length > 0 &&
-        text(ship.locationId).length > 0,
+        text(ship.name).length > 0 &&
+        text(ship.location).length > 0 &&
+        typeof ship.wingsHub === "boolean",
     ) ||
     !Array.isArray(openWingsMessages) ||
     !openWingsMessages.every(validOpenWingsMessage) ||
@@ -424,10 +491,15 @@ export function cloneState(state: GameState): GameState {
     })),
     clans: { ...(state.clans ?? {}) },
     exp: state.exp ?? 0,
+    letters: (state.letters ?? []).map((letter) => ({ ...letter })),
     materialIndex: (state.materialIndex ?? []).map((entry) => ({ ...entry })),
     processedOpenWingsMessages: [...(state.processedOpenWingsMessages ?? [])],
-    pigeons: (state.pigeons ?? []).map((pigeon) => ({ ...pigeon })),
-    openWingsShips: (state.openWingsShips ?? OPEN_WINGS_SHIPS).map((ship) => ({ ...ship })),
+    pigeons: (state.pigeons ?? []).map((pigeon) => ({
+      ...pigeon,
+      currentLocation:
+        pigeon.currentLocation === "volier" ? "player-volier" : pigeon.currentLocation,
+    })),
+    ships: (state.ships ?? INITIAL_SHIPS).map((ship) => ({ ...ship })),
     openWingsMessages: (state.openWingsMessages ?? []).map((message) => ({
       ...message,
       payload: message.payload.map((entry) => ({ ...entry })),
@@ -452,6 +524,40 @@ export function validateCommand(command: unknown): asserts command is GameComman
   }
 
   if (candidate.type === "exp_gained") return
+
+  if (candidate.type === "item_sold") {
+    const item = candidate.item
+    if (
+      (typeof item === "string" && text(item)) ||
+      (typeof item === "object" && item !== null && text((item as { name?: unknown }).name))
+    ) {
+      return
+    }
+    throw new Error("An item name is required")
+  }
+
+  if (candidate.type === "letter_sent" || candidate.type === "letter_received") {
+    const letter = candidate.letter as Record<string, unknown> | null
+    if (
+      letter &&
+      typeof letter.id === "string" &&
+      text(letter.id) &&
+      typeof letter.name === "string" &&
+      text(letter.name) &&
+      typeof letter.sender === "string" &&
+      text(letter.sender) &&
+      typeof letter.recipient === "string" &&
+      text(letter.recipient) &&
+      typeof letter.destination === "string" &&
+      text(letter.destination) &&
+      typeof letter.content === "string" &&
+      typeof candidate.pigeonId === "string" &&
+      text(candidate.pigeonId)
+    ) {
+      return
+    }
+    throw new Error("A valid letter is required")
+  }
 
   if (candidate.type === "open_wings_message_received") {
     const message = candidate.message as Partial<OpenWingsMessage> | null
@@ -560,7 +666,11 @@ export function validateCommand(command: unknown): asserts command is GameComman
     return
   }
 
-  if (candidate.type !== "item_placed" && candidate.type !== "item_taken") {
+  if (
+    candidate.type !== "item_placed" &&
+    candidate.type !== "item_taken" &&
+    candidate.type !== "item_sold"
+  ) {
     throw new Error(`Unknown game command: ${String(candidate.type)}`)
   }
 
@@ -584,6 +694,38 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
 
   if (command.type === "exp_gained") {
     next.exp += 1
+    return next
+  }
+
+  if (command.type === "letter_sent") {
+    const pigeonIndex = next.pigeons.findIndex(
+      (pigeon) =>
+        pigeon.id === command.pigeonId &&
+        pigeon.status === "available" &&
+        pigeon.currentLocation === "player-volier",
+    )
+    if (pigeonIndex === -1) return next
+
+    const letter = {
+      ...normalizeLetter(command.letter, "sent", now),
+      pigeonId: command.pigeonId,
+    }
+    const existingIndex = next.letters.findIndex((existing) => existing.id === letter.id)
+    if (existingIndex === -1) next.letters.push(letter)
+    else next.letters[existingIndex] = letter
+    next.pigeons[pigeonIndex] = {
+      ...next.pigeons[pigeonIndex],
+      currentLocation: "in-flight",
+      status: "delivering",
+    }
+    return next
+  }
+
+  if (command.type === "letter_received") {
+    const letter = normalizeLetter(command.letter, "received", now)
+    const existingIndex = next.letters.findIndex((existing) => existing.id === letter.id)
+    if (existingIndex === -1) next.letters.push(letter)
+    else next.letters[existingIndex] = letter
     return next
   }
 
@@ -622,7 +764,13 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
 
   if (command.type === "pigeons_claimed") {
     const currentClaims = next.volierClaims.date === command.date ? next.volierClaims.count : 0
-    const remaining = VOLIER_DAILY_LIMIT - currentClaims
+    const currentVolierCount = next.pigeons.filter(
+      (pigeon) => pigeon.currentLocation === "player-volier",
+    ).length
+    const remaining = Math.min(
+      VOLIER_DAILY_LIMIT - currentClaims,
+      PLAYER_VOLIER_CAPACITY - currentVolierCount,
+    )
     if (remaining <= 0) return next
 
     const available = command.pigeonIds
@@ -631,12 +779,12 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
         (pigeon): pigeon is Pigeon =>
           pigeon !== undefined &&
           pigeon.status === "available" &&
-          pigeon.currentLocation === "volier",
+          pigeon.currentLocation === "tempelhof-diskoord",
       )
       .slice(0, remaining)
     for (const pigeon of available) {
       const index = next.pigeons.findIndex((current) => current.id === pigeon.id)
-      next.pigeons[index] = { ...pigeon, currentLocation: "player", status: "carried" }
+      next.pigeons[index] = { ...pigeon, currentLocation: "player-volier", status: "available" }
     }
     next.volierClaims = { date: command.date, count: currentClaims + available.length }
     return next

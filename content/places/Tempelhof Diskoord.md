@@ -2,13 +2,10 @@
 clan: schöneberg
 location: tempelhof-diskoord
 class: place
+title: Tempelhof Diskoord
 ---
 
-
-
 ![[icon_diskoord.jpg]]
-
-
 
 
 Das **Tempelhof Diskoord** ist die **mechanische Herzkammer der Wasserstadt**. [[Open Wings]] sitzt in seinem Turm, [[EVERYTHING]] liefert Material, und auf den Hellingen wird täglich verhindert, dass [[NeuBerlin]]
@@ -16,6 +13,7 @@ Das **Tempelhof Diskoord** ist die **mechanische Herzkammer der Wasserstadt**. [
 Das **Tempelhofer Diskoord** die größte freie Werft NeuBerlins. In den ehemaligen Flughafenhallen werden Boote gebaut, repariert, umgerüstet und notdürftig wieder schwimmfähig gemacht.
 
 Im ehemaligen Funkturm befindet sich die Schaltzentrale von [[Open Wings]].
+
 ## Open Wings Tower
 
 
@@ -28,18 +26,18 @@ Im ehemaligen Funkturm befindet sich die Schaltzentrale von [[Open Wings]].
 
 aktuelle Karten sämtlicher erreichbarer Schläge sowie Informationen über Sperrungen von Wasserwegen, eingestürzte Gebäude oder vorübergehend verlegte Stationen.
 
-## wings-hub available
+## Wings Hubs Available
 
 | Places                | Ships          |
 | --------------------- | -------------- |
-| [[Berghain]]          | [[EVERYTHING]] |
+| [[Teufelsberg]]       | [[EVERYTHING]] |
 | [[Brandenburger Tor]] | [[EVERYTIME]]  |
 | [[Canteen Kreuzberg]] | [[EVERYWHERE]] |
 | [[Die Maxista]]       | [[INFINITY]]   |
 | [[Gasometer]]         | [[NIMBUS]]     |
-| [[Goerlitzer Park]]   |                |
-| [[IKEA Tempelhof]]    |                |
-| [[Markthalle 9]]      |                |
+| [[Humboldhain]]       |                |
+| [[Viktoriapark]]      |                |
+| [[Mont Klamott]]      |                |
 
 
 ## Network Card

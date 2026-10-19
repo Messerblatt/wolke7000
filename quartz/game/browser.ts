@@ -1,12 +1,12 @@
 import { GameRuntime } from "./runtime"
 import type {
   GameCommand,
-  GameItem,
+  InventoryEntry,
+  GameLetter,
   GameState,
   GameVisit,
   GameWing,
   MaterialIndexEntry,
-  OpenWingsShip,
   OpenWingsMessage,
   Pigeon,
   VolierClaims,
@@ -15,13 +15,13 @@ import type {
 export interface Wolke {
   execute(command: GameCommand): Promise<void>
   getSnapshot(): GameState
-  readonly inventory: GameItem[]
+  readonly inventory: InventoryEntry[]
+  readonly letters: GameLetter[]
   readonly wings: GameWing[]
   readonly discoveries: string[]
   readonly exp: number
   readonly materialIndex: MaterialIndexEntry[]
   readonly pigeons: Pigeon[]
-  readonly openWingsShips: OpenWingsShip[]
   readonly openWingsMessages: OpenWingsMessage[]
   readonly volierClaims: VolierClaims
   /** Locations the reader has discovered pages in, with discovery counts. */
@@ -80,6 +80,13 @@ function notifyExperienceGained(command: GameCommand, runtime: GameRuntime): voi
   if (exp > 0 && exp % 5 === 0) {
     window.dispatchEvent(new CustomEvent("wolke7000:level-up", { detail: { exp } }))
   }
+}
+
+function notifyLetterSent(command: GameCommand, runtime: GameRuntime): void {
+  if (command.type !== "letter_sent" || typeof window === "undefined") return
+  const letter = runtime.getSnapshot().letters.find((entry) => entry.id === command.letter.id)
+  if (letter?.status !== "sent") return
+  window.dispatchEvent(new CustomEvent("wolke7000:letter-sent", { detail: letter }))
 }
 
 async function clearRucksackStorage(): Promise<void> {
@@ -148,10 +155,14 @@ export function getWolke(): Wolke {
       await runtime.execute(command)
       notifyItemPickedUp(command)
       notifyExperienceGained(command, runtime)
+      notifyLetterSent(command, runtime)
     },
     getSnapshot: runtime.getSnapshot.bind(runtime),
     get inventory() {
       return runtime.getSnapshot().items
+    },
+    get letters() {
+      return runtime.getSnapshot().letters
     },
     get wings() {
       return runtime.getSnapshot().wings
@@ -167,9 +178,6 @@ export function getWolke(): Wolke {
     },
     get pigeons() {
       return runtime.getSnapshot().pigeons
-    },
-    get openWingsShips() {
-      return runtime.getSnapshot().openWingsShips
     },
     get openWingsMessages() {
       return runtime.getSnapshot().openWingsMessages

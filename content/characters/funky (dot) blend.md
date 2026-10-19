@@ -27,7 +27,7 @@ clan: schöneberg
 | **Funktion**           | Kanonierin der [[INFINITY]], Schiffskonstrukteurin, Rennseglerin |
 | **Herkunft**           | [[NeuBerlin]]                                                |
 | **Spezialgebiet(e)**   | Blender, Ballistik, Elektrotechnik                           |
-| **Wichtigster Besitz** | [[SHARK Serie \| FLITZA]]                                    |
+| **Wichtigster Besitz** | [[FLITZA\| FLITZA]]                                    |
 | **Erscheinungsbild**   | Werkstattkleidung                                            |
 | **Größte Schwäche**    | Dramatik, schnelle Boote, Piratenwitze                       |
 | **Haltung**            | Frech, lustig, schlagfertig                                  |

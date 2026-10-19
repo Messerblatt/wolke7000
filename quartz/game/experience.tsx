@@ -5,7 +5,7 @@ import experienceScript from "./experience.inline.ts"
 
 const experienceCss = `
 .wolke-experience {
-  margin-top: 1rem;
+  margin: 0;
   padding: 0.8rem;
   border: 1px solid var(--lightgray);
   border-radius: 0.5rem;
@@ -18,7 +18,7 @@ const experienceCss = `
   align-items: baseline;
   justify-content: space-between;
   gap: 0.75rem;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.35rem;
 }
 
 .wolke-experience-title,
@@ -39,7 +39,7 @@ const experienceCss = `
 }
 
 .wolke-experience-bar {
-  height: 0.65rem;
+  height: 0.35rem;
   overflow: hidden;
   border: 1px solid var(--gray);
   border-radius: 999px;
@@ -55,10 +55,10 @@ const experienceCss = `
 }
 
 .wolke-experience-level {
-  margin-top: 0.55rem;
+  margin-top: 0;
   color: var(--secondary);
-  font-size: 0.8rem;
-  text-align: center;
+  font-size: 0.75rem;
+  text-align: right;
 }
 `
 
@@ -68,6 +68,9 @@ const Experience: QuartzComponent = () => (
       <span class="wolke-experience-title">EXP</span>
       <span class="wolke-experience-value" data-wolke-exp-value>
         0 EXP
+      </span>
+      <span class="wolke-experience-level" data-wolke-exp-level>
+        Level 0
       </span>
     </div>
     <div
@@ -80,9 +83,6 @@ const Experience: QuartzComponent = () => (
       aria-valuenow={0}
     >
       <div class="wolke-experience-fill" data-wolke-exp-fill />
-    </div>
-    <div class="wolke-experience-level" data-wolke-exp-level>
-      Level 0
     </div>
   </section>
 )

@@ -1,8 +1,8 @@
 ---
-clan: kreuzberg
-location: berghain
+location: teufelsberg
 wings-hub: true
 class: place
+title: Teufelsberg
 ---
 Liegt unter Wasser
 

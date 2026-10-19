@@ -97,7 +97,7 @@
 ![[funky_third.png]]
 
 > [!abstract] Kurzprofil  
-> [[funky (dot) blend|Funky]] ist Administratorin des [[Tempelhof Diskoord]], Kanonierin der [[INFINITY]], Konstrukteurin des Rennboots [[SHARK Serie |FLITZA]] und vermutlich die einzige Person NeuBerlins, die ein leckgeschlagenes Schiff gleichzeitig reparieren, beleidigen und in Blender rekonstruieren kann.
+> [[funky (dot) blend|Funky]] ist Administratorin des [[Tempelhof Diskoord]], Kanonierin der [[INFINITY]], Konstrukteurin des Rennboots [[FLITZA|FLITZA]] und vermutlich die einzige Person NeuBerlins, die ein leckgeschlagenes Schiff gleichzeitig reparieren, beleidigen und in Blender rekonstruieren kann.
 > 
 > Klein, flink und gerissen, verbindet sie außergewöhnliche räumliche Vorstellungskraft mit technischer Präzision, Berliner Schnauze und einer ausgeprägten Neigung, Piratenklischees so lange zu parodieren, bis niemand mehr weiß, wo die Parodie endet.
 

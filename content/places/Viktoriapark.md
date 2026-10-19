@@ -1,6 +1,5 @@
 ---
-clan: schöneberg
-location: ikea-tempelhof
+location: viktoriapark
 wings-hub: true
 class: place
 ---
@@ -8,3 +7,4 @@ class: place
 ```item
 candytron-heat-shield
 ```
+

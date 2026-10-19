@@ -25,19 +25,20 @@ const toolbarCss = `
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  margin: 0.75rem 0 1.25rem;
+  margin: 0;
+  justify-content: center;
   padding: 0.5rem 0.6rem;
   border: 1px solid var(--lightgray);
   border-radius: 0.9rem;
   background: color-mix(in srgb, var(--lightgray) 22%, transparent);
 }
 .wolke-toolbar-title {
+  display: none;
   font-family: var(--headerFont);
   font-size: 0.65rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gray);
-  margin-right: auto;
   padding-left: 0.35rem;
   white-space: nowrap;
 }

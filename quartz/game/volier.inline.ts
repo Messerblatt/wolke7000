@@ -1,5 +1,5 @@
 import { getWolke } from "./browser"
-import { VOLIER_DAILY_LIMIT } from "./core"
+import { PLAYER_VOLIER_CAPACITY, VOLIER_DAILY_LIMIT } from "./core"
 
 const game = getWolke()
 
@@ -15,40 +15,71 @@ function isTempelhof(): boolean {
   return window.location.pathname.toLowerCase().includes("tempelhof-diskoord")
 }
 
+function playerVolier() {
+  return game.pigeons.filter(
+    (pigeon) => pigeon.status === "available" && pigeon.currentLocation === "player-volier",
+  )
+}
+
 function renderVolier() {
   const root = document.querySelector<HTMLElement>("[data-wolke-volier]")
   if (!root) return
 
   const available = game.pigeons.filter(
-    (pigeon) => pigeon.status === "available" && pigeon.currentLocation === "volier",
+    (pigeon) => pigeon.status === "available" && pigeon.currentLocation === "player-volier",
   )
-  const count = root.querySelector<HTMLElement>("[data-wolke-volier-count]")
+  const stock = game.pigeons.filter(
+    (pigeon) => pigeon.status === "available" && pigeon.currentLocation === "tempelhof-diskoord",
+  )
   const list = root.querySelector<HTMLElement>("[data-wolke-volier-list]")
   const button = root.querySelector<HTMLButtonElement>("[data-wolke-get-wings]")
   const remaining = Math.max(
     0,
-    VOLIER_DAILY_LIMIT - (game.volierClaims.date === today() ? game.volierClaims.count : 0),
+    Math.min(
+      VOLIER_DAILY_LIMIT - (game.volierClaims.date === today() ? game.volierClaims.count : 0),
+      PLAYER_VOLIER_CAPACITY - available.length,
+    ),
   )
 
-  if (count) count.textContent = `${available.length} verfügbar`
   if (button) {
     button.hidden = !isTempelhof()
-    button.disabled = available.length === 0 || remaining === 0
+    button.disabled = stock.length === 0 || remaining === 0
     button.title = remaining === 0 ? "Daily Limit Reached" : "Get Wings"
   }
   if (!list) return
 
   list.replaceChildren()
-  const groups = new Map<string, typeof available>()
   for (const pigeon of available) {
-    const group = groups.get(pigeon.homeLoft) ?? []
-    group.push(pigeon)
-    groups.set(pigeon.homeLoft, group)
+    const icon = document.createElement("img")
+    icon.className = "wolke-volier-pigeon"
+    icon.src = "/imgs/ui/wings.png"
+    icon.alt = `Pigeon from ${pigeon.homeLoft}`
+    icon.title = `${pigeon.homeLoft} · ${pigeon.status}`
+    list.append(icon)
   }
-  for (const [homeLoft, pigeons] of groups) {
-    const row = document.createElement("li")
-    row.textContent = `${homeLoft}: ${pigeons.length} · available`
-    list.append(row)
+
+  renderSendSelections(root)
+}
+
+function renderSendSelections(root: HTMLElement) {
+  const letters = root.querySelector<HTMLSelectElement>("[data-wolke-letter-select]")
+  const wings = root.querySelector<HTMLSelectElement>("[data-wolke-wing-select]")
+  if (!letters || !wings) return
+
+  letters.replaceChildren()
+  for (const letter of game.letters.filter((entry) => entry.status === "received")) {
+    const option = document.createElement("option")
+    option.value = letter.id
+    option.textContent = `${letter.id} → ${letter.destination}`
+    letters.append(option)
+  }
+
+  wings.replaceChildren()
+  for (const pigeon of playerVolier()) {
+    const option = document.createElement("option")
+    option.value = pigeon.id
+    option.textContent = `${pigeon.id} · ${pigeon.homeLoft}`
+    wings.append(option)
   }
 }
 
@@ -59,13 +90,19 @@ function openDialog() {
   if (!root || !dialog || !select) return
 
   select.replaceChildren()
-  const available = game.pigeons.filter(
-    (pigeon) => pigeon.status === "available" && pigeon.currentLocation === "volier",
-  )
-  for (const homeLoft of [...new Set(available.map((pigeon) => pigeon.homeLoft))]) {
+  const config = (window as Window & { __wolkeOpenWingsConfig?: { dovecotes?: string[] } })
+    .__wolkeOpenWingsConfig
+  for (const homeLoft of config?.dovecotes ?? []) {
     const option = document.createElement("option")
+    const stock = game.pigeons.filter(
+      (pigeon) =>
+        pigeon.homeLoft === homeLoft &&
+        pigeon.status === "available" &&
+        pigeon.currentLocation === "tempelhof-diskoord",
+    ).length
     option.value = homeLoft
-    option.textContent = homeLoft
+    option.textContent = `${homeLoft} (${stock})`
+    option.disabled = stock === 0
     select.append(option)
   }
   dialog.showModal()
@@ -78,13 +115,16 @@ function claimWings() {
   const quantityInput = root?.querySelector<HTMLInputElement>("[data-wolke-volier-quantity]")
   if (!root || !dialog || !select || !quantityInput) return
 
-  const quantity = Math.max(1, Number.parseInt(quantityInput.value, 10) || 1)
+  const quantity = Math.min(
+    PLAYER_VOLIER_CAPACITY - playerVolier().length,
+    Math.max(1, Number.parseInt(quantityInput.value, 10) || 1),
+  )
   const ids = game.pigeons
     .filter(
       (pigeon) =>
         pigeon.homeLoft === select.value &&
         pigeon.status === "available" &&
-        pigeon.currentLocation === "volier",
+        pigeon.currentLocation === "tempelhof-diskoord",
     )
     .slice(0, quantity)
     .map((pigeon) => pigeon.id)
@@ -92,6 +132,33 @@ function claimWings() {
     void game.execute({ type: "pigeons_claimed", pigeonIds: ids, date: today() })
   }
   dialog.close()
+}
+
+function sendLetter() {
+  const root = document.querySelector<HTMLElement>("[data-wolke-volier]")
+  const dialog = root?.querySelector<HTMLDialogElement>("[data-wolke-volier-info-dialog]")
+  const letters = root?.querySelector<HTMLSelectElement>("[data-wolke-letter-select]")
+  const wings = root?.querySelector<HTMLSelectElement>("[data-wolke-wing-select]")
+  if (!root || !dialog || !letters || !wings || !letters.value || !wings.value) return
+
+  const letter = game.letters.find(
+    (entry) => entry.id === letters.value && entry.status === "received",
+  )
+  if (!letter) return
+  void game.execute({
+    type: "letter_sent",
+    pigeonId: wings.value,
+    letter,
+  })
+  dialog.close()
+}
+
+function showLetterSentToast() {
+  const toast = document.createElement("div")
+  toast.className = "wolke-letter-toast"
+  toast.textContent = "Letter sent"
+  document.body.append(toast)
+  window.setTimeout(() => toast.remove(), 2600)
 }
 
 function initializeVolier() {
@@ -103,6 +170,18 @@ function initializeVolier() {
   root.querySelector("[data-wolke-close-dialog]")?.addEventListener("click", () => {
     root.querySelector<HTMLDialogElement>("[data-wolke-volier-dialog]")?.close()
   })
+  root.querySelector("[data-wolke-volier-show-all]")?.addEventListener("click", () => {
+    root.querySelector<HTMLDialogElement>("[data-wolke-volier-info-dialog]")?.showModal()
+  })
+  root.querySelector("[data-wolke-volier-close-info]")?.addEventListener("click", () => {
+    root.querySelector<HTMLDialogElement>("[data-wolke-volier-info-dialog]")?.close()
+  })
+  root.querySelector("[data-wolke-send-letter]")?.addEventListener("click", sendLetter)
+  const flags = window as Window & { __wolkeLetterToastInitialized?: boolean }
+  if (!flags.__wolkeLetterToastInitialized) {
+    flags.__wolkeLetterToastInitialized = true
+    window.addEventListener("wolke7000:letter-sent", showLetterSentToast)
+  }
   window.addCleanup?.(game.subscribe(() => renderVolier()))
   renderVolier()
 }

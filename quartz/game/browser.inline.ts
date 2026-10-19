@@ -57,6 +57,47 @@ function itemFromDetail(
   return null
 }
 
+function letterValue(value: string): string {
+  const trimmed = value.trim()
+  const match = trimmed.match(/^\[\[(.+)\]\]$/)
+  return match?.[1]?.trim() ?? trimmed
+}
+
+function letterFromBlock(block: Element): import("./core").LetterInput | null {
+  const lines = blockContent(block)
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+  const id = lines.shift()
+  if (!id) return null
+
+  const fields: Record<string, string> = {}
+  let contentLines: string[] = []
+  let readingContent = false
+  for (const line of lines) {
+    const field = line.match(/^(from|recipient|destination|content):\s*(.*)$/i)
+    if (field) {
+      readingContent = field[1].toLowerCase() === "content"
+      if (readingContent) contentLines = [field[2]]
+      else fields[field[1].toLowerCase()] = letterValue(field[2])
+    } else if (readingContent) {
+      contentLines.push(line)
+    }
+  }
+
+  if (!fields.from || !fields.recipient || !fields.destination || !contentLines.join("\n").trim()) {
+    return null
+  }
+  return {
+    id,
+    name: id,
+    sender: fields.from,
+    recipient: fields.recipient,
+    destination: fields.destination,
+    content: contentLines.join("\n").trim(),
+  }
+}
+
 function handleItemEvent(event: Event) {
   const detail = (event as CustomEvent).detail
   const item = itemFromDetail(detail)
@@ -151,6 +192,27 @@ function stashItemBlock(block: Element): boolean {
   return true
 }
 
+function stashLetterBlock(block: Element): boolean {
+  if (!isLetterBlock(block)) return false
+  const letter = letterFromBlock(block)
+  if (!letter) return true
+
+  const blockId = blockIdFor(block)
+  const alreadyCollected = game.getSnapshot().letters.some((entry) => entry.id === letter.id)
+  trackedBlocks.set(block, "")
+  ;(block.closest("figure") ?? block).remove()
+  if (alreadyCollected) {
+    void game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
+    return true
+  }
+
+  void (async () => {
+    await game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
+    await game.execute({ type: "letter_received", letter })
+  })().catch((error) => console.error("[wolke game] could not stash letter", error))
+  return true
+}
+
 function collectWingsBlock(block: Element): boolean {
   if (!isWingsBlock(block)) return false
 
@@ -228,12 +290,16 @@ function isItemBlock(block: Element): boolean {
   return fenceLanguage(block) === "item"
 }
 
+function isLetterBlock(block: Element): boolean {
+  return fenceLanguage(block) === "letter"
+}
+
 function isWingsBlock(block: Element): boolean {
   return fenceLanguage(block) === "wings"
 }
 
 function isCollectibleBlock(block: Element): boolean {
-  return isItemBlock(block) || isWingsBlock(block)
+  return isItemBlock(block) || isLetterBlock(block) || isWingsBlock(block)
 }
 
 function blockIdFor(block: Element): string {
@@ -287,6 +353,13 @@ function inspectChangedBlocks(mutations: MutationRecord[]) {
       continue
     }
     if (current === previous) continue
+
+    // Only item fences participate in the generic mutation-based item event
+    // stream. Letters and wings have explicit pickup handlers.
+    if (!isItemBlock(block)) {
+      trackedBlocks.set(block, current)
+      continue
+    }
 
     const previousName = blockName(previous)
     const currentName = blockName(current)
@@ -784,6 +857,10 @@ function onClick(event: Event) {
   const block = copyButton?.closest("pre") ?? copyButton?.closest("figure")?.querySelector("pre")
   if (block && isItemBlock(block)) {
     stashItemBlock(block)
+    return
+  }
+  if (block && isLetterBlock(block)) {
+    stashLetterBlock(block)
     return
   }
   if (block && isWingsBlock(block)) {

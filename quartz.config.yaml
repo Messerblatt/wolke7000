@@ -90,8 +90,8 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: right
-      priority: 30
+      position: left
+      priority: 40
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -238,6 +238,11 @@ plugins:
     layout:
       position: right
       priority: 45
+  - source: "wolke-inventory"
+    enabled: true
+    layout:
+      position: right
+      priority: 50
   - source: "wolke-volier"
     enabled: true
     layout:

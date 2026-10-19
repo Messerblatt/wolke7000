@@ -3,6 +3,7 @@ clan: schöneberg
 location: gasometer
 wings-hub: true
 class: place
+title: Gasometer
 ---
 Unter der Verantwortung von [[Mia Von Schöneberg]]
 

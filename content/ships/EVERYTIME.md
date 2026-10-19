@@ -1,11 +1,36 @@
 ---
-location: "[[Markthalle 9]]"
+location: "[[Mont Klamott]]"
 ship: "[[EVERYTIME]]"
 wings-hub: true
 class: ship
 ---
+Solo Mio's captaining Ship
+
+```letter
+husonaut-56
+from: [[Solo Mio]]
+recipient: [[Mia]]
+destination: [[die-maxista]]
+content: Willste den 4. Pfau jetzt noch auf die Rechnung nehmen? In zehn Minuten ist es zu spät.
+```
+
+```wings
+send(letter-id, location)
+```
+
 
 ## Material Index
+
+
+Also: Bestellung aus den Places kommt bei der EVERYTIME rein. Wir checken den Index. Bestellung auf Lager? -> Post an EVERYWHERE, bitte aus dem Lager holen und an folgende Adresse schicken.
+
+EVERYWHERE disponiert und liefert, gleichzeitig Post an EVERYTIME: Disposition buchen.
+
+
+
+## Lost and Found
+
+
 
 
 ## Dovecote

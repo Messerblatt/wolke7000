@@ -1,8 +1,3 @@
----
-aliases:
-  - FLITZA
----
-## FLITZA
 
 ![[shark_1_1.png]]
 

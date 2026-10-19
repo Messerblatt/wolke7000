@@ -1,6 +1,4 @@
 ---
-friend:
-enemy:
 clan: schöneberg
 archive_presence: true
 template: full-width

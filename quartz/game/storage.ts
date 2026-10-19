@@ -1,7 +1,7 @@
 import {
   EMPTY_GAME_STATE,
   GAME_STATE_VERSION,
-  OPEN_WINGS_SHIPS,
+  INITIAL_SHIPS,
   cloneState,
   isGameState,
   normalizeItem,
@@ -59,10 +59,11 @@ function migrateLegacyInventory(storage: GameStorage): GameState | null {
       visits: [],
       clans: {},
       exp: 0,
+      letters: [],
       materialIndex: [],
       processedOpenWingsMessages: [],
       pigeons: [],
-      openWingsShips: OPEN_WINGS_SHIPS.map((ship) => ({ ...ship })),
+      ships: INITIAL_SHIPS.map((ship) => ({ ...ship })),
       openWingsMessages: [],
       volierClaims: { date: "", count: 0 },
     }

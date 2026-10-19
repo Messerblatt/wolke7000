@@ -1,6 +1,7 @@
 ---
 wings-hub: true
 class: ship
+location: tempelhof-diskoord
 ---
 
 

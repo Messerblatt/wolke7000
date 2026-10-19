@@ -10,29 +10,28 @@ function renderRoutes() {
   if (!list) return
   list.replaceChildren()
 
-  const messages = game.openWingsMessages
-  if (messages.length === 0) {
+  const letters = game.letters.filter((letter) => letter.status === "sent")
+  if (letters.length === 0) {
     const empty = document.createElement("p")
     empty.className = "wolke-wings-routes-empty"
-    empty.textContent = "Keine Meldungen"
+    empty.textContent = "No messages"
     list.append(empty)
     return
   }
 
-  for (const message of [...messages].reverse()) {
+  for (const letter of [...letters].reverse()) {
     const route = document.createElement("article")
     route.className = "wolke-wings-route"
 
     const title = document.createElement("strong")
-    title.textContent = `${message.sender} → ${message.destination}`
+    title.textContent = `${letter.sender} → ${letter.destination}`
 
     const metadata = document.createElement("dl")
     const fields: [string, string][] = [
-      ["Status", "Meldung empfangen"],
-      ["Zeit vergangen", "—"],
-      ["~ verbleibend", "—"],
-      ["Meldung", message.messageId],
-      ["Revision", String(message.revision)],
+      ["Status", "In flight"],
+      ["Time elapsed", "—"],
+      ["~ time left", "—"],
+      ["Letter", letter.id],
     ]
     for (const [label, value] of fields) {
       const term = document.createElement("dt")

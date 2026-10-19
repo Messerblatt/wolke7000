@@ -310,6 +310,21 @@ pre[data-language="wings"] {
   display: none !important;
 }
 
+/* Wolke dashboard headings use the same interface font as the rest of the UI. */
+.explorer .title-button,
+.explorer h3,
+.graph h3,
+.wolke-wings-routes h3,
+.wolke-inventory h3,
+.wolke-volier h3 {
+  font-family: var(--headerFont);
+}
+
+/* Keep the explorer tree but remove its desktop heading toggle. */
+.desktop-explorer.explorer-toggle.title-button {
+  display: none !important;
+}
+
 /*
  * Rucksack modal
  *

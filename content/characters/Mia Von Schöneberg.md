@@ -1,6 +1,8 @@
 ---
 clan: schöneberg
 ship: MS_JOHANNA
+aliases:
+  - Mia
 ---
 ![[mia_3.png]]
 

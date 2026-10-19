@@ -8,15 +8,15 @@ features:
   - id: graph-view
     kind: ui
     selectors: [".graph"]
-    unlock: { exp: 2 }
+    unlock: { exp: 0 }
   - id: explorer
     kind: ui
     selectors: [".explorer"]
-    unlock: { exp: 1 }
+    unlock: { exp: 0 }
   - id: properties
     kind: ui
     selectors: [".note-properties"]
-    unlock: { exp: 5 }
+    unlock: { exp: 0 }
   - id: wolke-toolbar
     kind: ui
     selectors: [".wolke-toolbar"]
@@ -24,7 +24,7 @@ features:
   - id: exp-progress
     kind: ui
     selectors: ["[data-wolke-experience]"]
-    unlock: { exp: 1 }
+    unlock: { exp: 0 }
   - id: wings-routes
     kind: ui
     selectors: ["[data-wolke-wings-routes]"]
@@ -36,37 +36,37 @@ features:
   - id: breadcrumbs
     kind: ui
     selectors: [".breadcrumb-container"]
-    unlock: { exp: 15 }
+    unlock: { exp: 0 }
   - id: table-of-contents
     kind: ui
     selectors: [".toc"]
-    unlock: { exp: 5 }
+    unlock: { exp: 0 }
 
   # Content paths can be pages or folders ending in /**.
   - id: samsa
     kind: content
     paths: ["characters/Samsa", "Samsa"]
-    unlock: { exp: 10 }
+    unlock: { exp: 0 }
   - id: open-wings
     kind: content
     paths: ["Open Wings"]
-    unlock: { exp: 1 }
+    unlock: { exp: 0 }
   - id: nimbus
     kind: content
     paths: ["NIMBUS"]
-    unlock: { exp: 20 }
+    unlock: { exp: 0 }
   - id: infinity
     kind: content
     paths: ["INFINITY"]
-    unlock: { exp: 30 }
+    unlock: { exp: 0 }
   - id: everything
     kind: content
     paths: ["EVERYTHING"]
-    unlock: { exp: 1 }
+    unlock: { exp: 0 }
   - id: kokos-vault
     kind: content
     paths: ["koko's vault/**"]
-    unlock: { exp: 50 }
+    unlock: { exp: 0 }
 
   # Add more callout specifiers here without changing the runtime.
   - id: callout-faq

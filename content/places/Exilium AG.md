@@ -1,5 +1,6 @@
 ---
 publish: false
+title: Exilium AG
 ---
 ## 🤡 <- You
 
@@ -10,12 +11,13 @@ Your pathetic little attempt at circumventing the meta garnered interest in our 
 
 ---
 
-"Nero? Just 20 minutes ago he invited us to his office. He said his doors are open, but upon our factual inspection we realized that his doors are closed."
+"Nero? Just 20 minutes ago he invited us to his office. He said his doors are open, but upon our factual inspection we realized that his doors are very very closed."
 
 "Seems like someone is 301-redirecting the truth here. Three exemplars of causation are considered, one of them smeels like poo-pee. Hint: **You** smell like poo-pee"
 
-- Nero
-- The door
-- who is Kokolores?
+- "No! **YOU** smell like poo-pee!!"
+
+
+
 
 
