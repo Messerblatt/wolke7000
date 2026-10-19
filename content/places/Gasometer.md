@@ -13,6 +13,8 @@ candytron-control-board
 
 
 
+
+
 Fischbecken im Untergeschoss. Durch im Boden eingelassene Fenster können Besucher der Kantine die Fische beobachten.
 
 Cool wäre ein Kapitel, bei dem sich Figuren in der Kantine treffen, Verschwörungstheorien über Nero oder Wolke 7000 ersinnen, und dabei skeptische Blicke mit den Fischen im Boden austauschen. 

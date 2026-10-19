@@ -39,6 +39,48 @@ export type GameVisit = {
   lastVisitedAt: number
 }
 
+export type MaterialIndexEntry = {
+  componentId: string
+  quantity: number
+  shipId: string
+  locationId: string
+  updatedAt: number
+  revision: number
+}
+
+export type OpenWingsMessage = {
+  messageId: string
+  sender: string
+  destination: string
+  revision: number
+  payload: MaterialIndexEntry[]
+}
+
+export type Pigeon = {
+  id: string
+  homeLoft: string
+  currentLocation: string
+  status: string
+}
+
+export type OpenWingsShip = {
+  id: string
+  locationId: string
+}
+
+export type VolierClaims = {
+  date: string
+  count: number
+}
+
+export const VOLIER_DAILY_LIMIT = 20
+
+export const OPEN_WINGS_SHIPS: OpenWingsShip[] = [
+  { id: "everything-markthalle-9", locationId: "markthalle-9" },
+  { id: "everything-brandenburger-tor", locationId: "brandenburger-tor" },
+  { id: "everything-gasometer", locationId: "gasometer" },
+]
+
 export type GameState = {
   version: typeof GAME_STATE_VERSION
   items: GameItem[]
@@ -51,6 +93,12 @@ export type GameState = {
   clans: Record<string, number>
   /** Experience points earned by the player. */
   exp: number
+  materialIndex: MaterialIndexEntry[]
+  processedOpenWingsMessages: string[]
+  pigeons: Pigeon[]
+  openWingsShips: OpenWingsShip[]
+  openWingsMessages: OpenWingsMessage[]
+  volierClaims: VolierClaims
 }
 
 export type GameBlock = {
@@ -82,6 +130,9 @@ export type WingInput =
 
 export type GameCommand =
   | { type: "exp_gained" }
+  | { type: "open_wings_message_received"; message: OpenWingsMessage }
+  | { type: "pigeon_updated"; pigeon: Pigeon }
+  | { type: "pigeons_claimed"; pigeonIds: string[]; date: string }
   | { type: "item_placed"; item: ItemInput }
   | { type: "item_taken"; item: ItemInput }
   | { type: "items_synchronized"; items: ItemInput[] }
@@ -102,6 +153,12 @@ export const EMPTY_GAME_STATE: GameState = {
   visits: [],
   clans: {},
   exp: 0,
+  materialIndex: [],
+  processedOpenWingsMessages: [],
+  pigeons: [],
+  openWingsShips: OPEN_WINGS_SHIPS.map((ship) => ({ ...ship })),
+  openWingsMessages: [],
+  volierClaims: { date: "", count: 0 },
 }
 
 function text(value: unknown): string {
@@ -174,6 +231,62 @@ function sameWing(left: GameWing, right: WingInput): boolean {
   return slug(left.name) === slug(right.name)
 }
 
+function materialIndexKey(entry: MaterialIndexEntry): string {
+  return `${entry.shipId}::${entry.componentId}`
+}
+
+function validMaterialIndexEntry(value: unknown): value is MaterialIndexEntry {
+  if (typeof value !== "object" || value === null) return false
+  const entry = value as MaterialIndexEntry
+  return (
+    text(entry.componentId).length > 0 &&
+    Number.isInteger(entry.quantity) &&
+    entry.quantity >= 0 &&
+    text(entry.shipId).length > 0 &&
+    text(entry.locationId).length > 0 &&
+    Number.isInteger(entry.updatedAt) &&
+    entry.updatedAt >= 0 &&
+    Number.isInteger(entry.revision) &&
+    entry.revision >= 0
+  )
+}
+
+function validPigeon(value: unknown): value is Pigeon {
+  if (typeof value !== "object" || value === null) return false
+  const pigeon = value as Pigeon
+  return (
+    text(pigeon.id).length > 0 &&
+    text(pigeon.homeLoft).length > 0 &&
+    text(pigeon.currentLocation).length > 0 &&
+    text(pigeon.status).length > 0
+  )
+}
+
+function validOpenWingsMessage(value: unknown): value is OpenWingsMessage {
+  if (typeof value !== "object" || value === null) return false
+  const message = value as OpenWingsMessage
+  return (
+    text(message.messageId).length > 0 &&
+    text(message.sender).length > 0 &&
+    text(message.destination).length > 0 &&
+    Number.isInteger(message.revision) &&
+    message.revision >= 0 &&
+    Array.isArray(message.payload) &&
+    message.payload.every(validMaterialIndexEntry)
+  )
+}
+
+function validVolierClaims(value: unknown): value is VolierClaims {
+  if (typeof value !== "object" || value === null) return false
+  const claims = value as VolierClaims
+  return (
+    typeof claims.date === "string" &&
+    Number.isInteger(claims.count) &&
+    claims.count >= 0 &&
+    claims.count <= VOLIER_DAILY_LIMIT
+  )
+}
+
 export function isGameState(value: unknown): value is GameState {
   if (typeof value !== "object" || value === null) return false
   const state = value as Partial<GameState>
@@ -201,6 +314,32 @@ export function isGameState(value: unknown): value is GameState {
   }
 
   if (state.exp !== undefined && (!Number.isInteger(state.exp) || state.exp < 0)) return false
+
+  const materialIndex = state.materialIndex ?? []
+  const pigeons = state.pigeons ?? []
+  const openWingsShips = state.openWingsShips ?? OPEN_WINGS_SHIPS
+  const openWingsMessages = state.openWingsMessages ?? []
+  if (
+    !Array.isArray(materialIndex) ||
+    !materialIndex.every(validMaterialIndexEntry) ||
+    !Array.isArray(state.processedOpenWingsMessages ?? []) ||
+    !(state.processedOpenWingsMessages ?? []).every((messageId) => text(messageId).length > 0) ||
+    !Array.isArray(pigeons) ||
+    !pigeons.every(validPigeon) ||
+    !Array.isArray(openWingsShips) ||
+    !openWingsShips.every(
+      (ship) =>
+        typeof ship === "object" &&
+        ship !== null &&
+        text(ship.id).length > 0 &&
+        text(ship.locationId).length > 0,
+    ) ||
+    !Array.isArray(openWingsMessages) ||
+    !openWingsMessages.every(validOpenWingsMessage) ||
+    !validVolierClaims(state.volierClaims ?? { date: "", count: 0 })
+  ) {
+    return false
+  }
 
   const visits = state.visits ?? []
   if (
@@ -285,6 +424,15 @@ export function cloneState(state: GameState): GameState {
     })),
     clans: { ...(state.clans ?? {}) },
     exp: state.exp ?? 0,
+    materialIndex: (state.materialIndex ?? []).map((entry) => ({ ...entry })),
+    processedOpenWingsMessages: [...(state.processedOpenWingsMessages ?? [])],
+    pigeons: (state.pigeons ?? []).map((pigeon) => ({ ...pigeon })),
+    openWingsShips: (state.openWingsShips ?? OPEN_WINGS_SHIPS).map((ship) => ({ ...ship })),
+    openWingsMessages: (state.openWingsMessages ?? []).map((message) => ({
+      ...message,
+      payload: message.payload.map((entry) => ({ ...entry })),
+    })),
+    volierClaims: { ...(state.volierClaims ?? { date: "", count: 0 }) },
   }
 }
 
@@ -304,6 +452,33 @@ export function validateCommand(command: unknown): asserts command is GameComman
   }
 
   if (candidate.type === "exp_gained") return
+
+  if (candidate.type === "open_wings_message_received") {
+    const message = candidate.message as Partial<OpenWingsMessage> | null
+    if (validOpenWingsMessage(message)) {
+      return
+    }
+    throw new Error("A valid Open Wings message is required")
+  }
+
+  if (candidate.type === "pigeon_updated") {
+    if (validPigeon(candidate.pigeon)) return
+    throw new Error("A valid pigeon is required")
+  }
+
+  if (candidate.type === "pigeons_claimed") {
+    const pigeonIds = candidate.pigeonIds
+    if (
+      Array.isArray(pigeonIds) &&
+      pigeonIds.length > 0 &&
+      pigeonIds.every((id) => typeof id === "string" && text(id)) &&
+      typeof candidate.date === "string" &&
+      /^\d{4}-\d{2}-\d{2}$/.test(candidate.date)
+    ) {
+      return
+    }
+    throw new Error("A valid pigeon claim is required")
+  }
 
   if (candidate.type === "discovery_unlocked") {
     if (!text(candidate.discovery)) throw new Error("A discovery identifier is required")
@@ -409,6 +584,61 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
 
   if (command.type === "exp_gained") {
     next.exp += 1
+    return next
+  }
+
+  if (command.type === "open_wings_message_received") {
+    const message = command.message
+    if (next.processedOpenWingsMessages.includes(message.messageId)) return next
+
+    next.processedOpenWingsMessages.push(message.messageId)
+    next.openWingsMessages.push({
+      ...message,
+      payload: message.payload.map((entry) => ({ ...entry })),
+    })
+    for (const entry of message.payload) {
+      const incomingEntry = {
+        ...entry,
+        revision: Math.max(entry.revision, message.revision),
+      }
+      const existingIndex = next.materialIndex.findIndex(
+        (current) => materialIndexKey(current) === materialIndexKey(incomingEntry),
+      )
+      if (existingIndex === -1) {
+        next.materialIndex.push(incomingEntry)
+      } else if (incomingEntry.revision > next.materialIndex[existingIndex].revision) {
+        next.materialIndex[existingIndex] = incomingEntry
+      }
+    }
+    return next
+  }
+
+  if (command.type === "pigeon_updated") {
+    const existingIndex = next.pigeons.findIndex((pigeon) => pigeon.id === command.pigeon.id)
+    if (existingIndex === -1) next.pigeons.push({ ...command.pigeon })
+    else next.pigeons[existingIndex] = { ...command.pigeon }
+    return next
+  }
+
+  if (command.type === "pigeons_claimed") {
+    const currentClaims = next.volierClaims.date === command.date ? next.volierClaims.count : 0
+    const remaining = VOLIER_DAILY_LIMIT - currentClaims
+    if (remaining <= 0) return next
+
+    const available = command.pigeonIds
+      .map((id) => next.pigeons.find((pigeon) => pigeon.id === id))
+      .filter(
+        (pigeon): pigeon is Pigeon =>
+          pigeon !== undefined &&
+          pigeon.status === "available" &&
+          pigeon.currentLocation === "volier",
+      )
+      .slice(0, remaining)
+    for (const pigeon of available) {
+      const index = next.pigeons.findIndex((current) => current.id === pigeon.id)
+      next.pigeons[index] = { ...pigeon, currentLocation: "player", status: "carried" }
+    }
+    next.volierClaims = { date: command.date, count: currentClaims + available.length }
     return next
   }
 

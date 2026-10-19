@@ -68,6 +68,83 @@ describe("game core", () => {
     assert.equal(second.exp, 2)
   })
 
+  test("applies Open Wings messages idempotently and only accepts newer revisions", () => {
+    const first = applyCommand(EMPTY_GAME_STATE, {
+      type: "open_wings_message_received",
+      message: {
+        messageId: "ow-88431",
+        sender: "everything-gasometer",
+        destination: "brandenburger-tor",
+        revision: 7,
+        payload: [
+          {
+            componentId: "candytron-guide-fin",
+            quantity: 3,
+            shipId: "everything-gasometer",
+            locationId: "gasometer",
+            updatedAt: 1792396842000,
+            revision: 7,
+          },
+        ],
+      },
+    })
+    const stale = applyCommand(first, {
+      type: "open_wings_message_received",
+      message: {
+        messageId: "ow-88430",
+        sender: "everything-gasometer",
+        destination: "brandenburger-tor",
+        revision: 6,
+        payload: [
+          {
+            componentId: "candytron-guide-fin",
+            quantity: 1,
+            shipId: "everything-gasometer",
+            locationId: "gasometer",
+            updatedAt: 1792396841000,
+            revision: 6,
+          },
+        ],
+      },
+    })
+    const duplicate = applyCommand(stale, {
+      type: "open_wings_message_received",
+      message: {
+        messageId: "ow-88431",
+        sender: "everything-gasometer",
+        destination: "brandenburger-tor",
+        revision: 7,
+        payload: [],
+      },
+    })
+
+    assert.equal(stale.materialIndex[0]?.quantity, 3)
+    assert.equal(stale.materialIndex[0]?.revision, 7)
+    assert.equal(duplicate.materialIndex[0]?.quantity, 3)
+    assert.deepEqual(duplicate.processedOpenWingsMessages, ["ow-88431", "ow-88430"])
+  })
+
+  test("updates pigeon records", () => {
+    const updated = applyCommand(EMPTY_GAME_STATE, {
+      type: "pigeon_updated",
+      pigeon: {
+        id: "ow-samsa-071",
+        homeLoft: "brandenburger-tor",
+        currentLocation: "player",
+        status: "carried",
+      },
+    })
+
+    assert.deepEqual(updated.pigeons, [
+      {
+        id: "ow-samsa-071",
+        homeLoft: "brandenburger-tor",
+        currentLocation: "player",
+        status: "carried",
+      },
+    ])
+  })
+
   test("persists fenced-block content without changing inventory", () => {
     const updated = applyCommand(EMPTY_GAME_STATE, {
       type: "block_updated",

@@ -228,6 +228,21 @@ plugins:
     layout:
       position: right
       priority: 30
+  - source: "wolke-experience"
+    enabled: true
+    layout:
+      position: right
+      priority: 40
+  - source: "wolke-wings-routes"
+    enabled: true
+    layout:
+      position: right
+      priority: 45
+  - source: "wolke-volier"
+    enabled: true
+    layout:
+      position: right
+      priority: 55
   - source: "@quartz-community/search"
     enabled: true
     layout:

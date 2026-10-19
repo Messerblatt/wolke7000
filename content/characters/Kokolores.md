@@ -5,7 +5,7 @@ tags:
   - angel
 ship: NIMBUS
 ---
-![[koko-3.jpg]]
+![[angel_2.png]]
 
 
 ```item
@@ -24,8 +24,6 @@ kompass
 
 >[!note]- The 5th October 2125
 >Als [[Vox]] am 05. Oktober 2125 mit seinem Flugzeug in den südlichen Außenbezirken von [[NeuBerlin]] abstürzte, organisierte Kokolores eine ungewöhnliche Bergungsmission. Zusammen mit [[Fibo]] rettete sie [[Vox]] aus dem Untergehenden Flugzeug und brachte ihn an Deck der [[NIMBUS]], wo [[Vox]] in Sterbensworten von einer gewissen "Wolke 7000" sprach. [[Vox]] wurde per Seebestattung der Nordflanke von NeuBerlin überlassen.
-
-
 
 
 
@@ -60,6 +58,10 @@ Auf dem Deck der [[NIMBUS]] läuft sie meistens mit Barett-Mütze durch die Gege
 
 >[!quote] Koko über dieses eine Kleid
 >„Also … ich weiß nicht, ob das noch ein Kleid ist. Vielleicht hat sich da ein ganzer Vogelschwarm als Kleid verkleidet. Es sieht aus, als hätte jemand einer Wolke beigebracht, arrogant zu sein. Ich würde sie natürlich nur fragen, ob die Federn beim Fliegen helfen. Und ob man sie anfassen darf. Also die Federn.“
+
+![[imagine-beatrix.canvas]]
+
+
 
 ## Persönlichkeit
 

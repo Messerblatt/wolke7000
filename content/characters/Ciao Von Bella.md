@@ -1,12 +1,6 @@
 ---
 friend:
-  - "[[Salt Brah]]"
-  - "[[funky (dot) blend]]"
-  - "[[Kokolores]]"
-  - "[[Samsa]]"
 enemy:
-  - "[[Nero]]"
-  - "[[Salt Brah]]"
 clan: schöneberg
 archive_presence: true
 template: full-width

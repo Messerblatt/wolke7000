@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"68824d24ee623ee0","type":"file","file":"imgs/locations/Exilium_Triumvirat/entry.png","x":224,"y":-400,"width":267,"height":400},
+		{"id":"7c3476793ff9f029","type":"file","file":"imgs/locations/Neuberlin/kantine-nur-heisse-luft.jpg","x":520,"y":-400,"width":320,"height":400},
+		{"id":"d9cf57434cad240b","type":"file","file":"imgs/characters/Nero/nero_third.png","x":224,"y":20,"width":400,"height":200},
+		{"id":"ac3a0a05b5e48793","type":"file","file":"imgs/locations/Neuberlin/kantine.jpg","x":640,"y":20,"width":336,"height":400},
+		{"id":"6805c975e06f85d1","type":"file","file":"imgs/locations/Neuberlin/kantine.jpg","x":224,"y":240,"width":336,"height":400},
+		{"id":"d5394253f0c7facc","type":"file","file":"imgs/characters/Nero/olya-anufrieva-002.jpg","x":-40,"y":-400,"width":230,"height":400}
+	],
+	"edges":[]
+}

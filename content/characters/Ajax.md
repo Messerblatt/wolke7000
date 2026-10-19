@@ -1,6 +1,6 @@
 ---
-location: görlitzer park
-clan: mitte
+location: "[[Brandenburger Tor]]"
+clan: kreuzberg
 ---
 
 

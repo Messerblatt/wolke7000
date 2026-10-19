@@ -1,5 +1,16 @@
 import { GameRuntime } from "./runtime"
-import type { GameCommand, GameItem, GameState, GameVisit, GameWing } from "./core"
+import type {
+  GameCommand,
+  GameItem,
+  GameState,
+  GameVisit,
+  GameWing,
+  MaterialIndexEntry,
+  OpenWingsShip,
+  OpenWingsMessage,
+  Pigeon,
+  VolierClaims,
+} from "./core"
 
 export interface Wolke {
   execute(command: GameCommand): Promise<void>
@@ -8,6 +19,11 @@ export interface Wolke {
   readonly wings: GameWing[]
   readonly discoveries: string[]
   readonly exp: number
+  readonly materialIndex: MaterialIndexEntry[]
+  readonly pigeons: Pigeon[]
+  readonly openWingsShips: OpenWingsShip[]
+  readonly openWingsMessages: OpenWingsMessage[]
+  readonly volierClaims: VolierClaims
   /** Locations the reader has discovered pages in, with discovery counts. */
   readonly visits: GameVisit[]
   /** Distinct visited pages grouped by clan. */
@@ -145,6 +161,21 @@ export function getWolke(): Wolke {
     },
     get exp() {
       return runtime.getSnapshot().exp
+    },
+    get materialIndex() {
+      return runtime.getSnapshot().materialIndex
+    },
+    get pigeons() {
+      return runtime.getSnapshot().pigeons
+    },
+    get openWingsShips() {
+      return runtime.getSnapshot().openWingsShips
+    },
+    get openWingsMessages() {
+      return runtime.getSnapshot().openWingsMessages
+    },
+    get volierClaims() {
+      return runtime.getSnapshot().volierClaims
     },
     get visits() {
       return runtime.getSnapshot().visits

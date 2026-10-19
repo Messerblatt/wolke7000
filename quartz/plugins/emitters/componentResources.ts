@@ -15,6 +15,8 @@ import itemAudioScript from "../../components/scripts/item-audio.inline"
 // @ts-ignore
 import levelAudioScript from "../../components/scripts/level-audio.inline"
 // @ts-ignore
+import unlocksScript from "../../game/unlocks.inline"
+// @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
@@ -23,6 +25,8 @@ import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
 import { componentRegistry } from "../../components/registry"
+import { loadUnlockConfig } from "../../game/unlock-config"
+import { loadOpenWingsConfig } from "../../game/open-wings-config"
 import {
   googleFontHref,
   googleFontSubsetHref,
@@ -279,6 +283,13 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     document.documentElement.dataset.wolkeScrollExp = ${JSON.stringify(cfg.scroll_exp ?? 100)}
     ${scrollAudioScript}
   `
+  const unlocksWithConfig = `
+    window.__wolkeUnlockConfig = ${JSON.stringify(loadUnlockConfig())}
+    ${unlocksScript}
+  `
+  const openWingsWithConfig = `
+    window.__wolkeOpenWingsSeed = ${JSON.stringify(loadOpenWingsConfig().pigeons)}
+  `
 
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(typewriterScript)
@@ -286,6 +297,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
     componentResources.afterDOMLoaded.push(levelAudioScript)
+    componentResources.afterDOMLoaded.push(openWingsWithConfig)
+    componentResources.afterDOMLoaded.push(unlocksWithConfig)
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {
     componentResources.afterDOMLoaded.push(typewriterScript)
@@ -293,6 +306,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
     componentResources.afterDOMLoaded.push(levelAudioScript)
+    componentResources.afterDOMLoaded.push(openWingsWithConfig)
+    componentResources.afterDOMLoaded.push(unlocksWithConfig)
     componentResources.afterDOMLoaded.push(`
       window.spaNavigate = (url, _) => window.location.assign(url)
       window.addCleanup = () => {}

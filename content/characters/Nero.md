@@ -1,5 +1,5 @@
 ---
-clan: kreuzberg
+clan: exilium
 ---
 
 
@@ -53,7 +53,7 @@ map-that-doesnt-exist
 
 ### The Missing Map
 
-For decades, the only complete map of the waterways of New Berlin hung in the [[marine_archiv]] of the Moabit district. One morning, the entire area surrounding the [[Tempelhof Diskoord]] was missing from it.
+For decades, the only complete map of the waterways of New Berlin hung in the [[Sentinel]] of the Moabit district. One morning, the entire area surrounding the [[Tempelhof Diskoord]] was missing from it.
 
 Two days later, that same part of the Diskoord burned to the ground.
 

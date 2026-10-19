@@ -305,6 +305,11 @@ pre[data-language="wings"] {
   }
 }
 
+/* Progression-locked UI must stay hidden even when component styles set display. */
+[data-wolke-locked] {
+  display: none !important;
+}
+
 /*
  * Rucksack modal
  *
