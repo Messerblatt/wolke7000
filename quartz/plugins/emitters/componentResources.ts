@@ -23,6 +23,7 @@ import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
 import { componentRegistry } from "../../components/registry"
+import { loadOpenWingsConfig } from "../../game/open-wings-config"
 import {
   googleFontHref,
   googleFontSubsetHref,
@@ -279,6 +280,9 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     document.documentElement.dataset.wolkeScrollExp = ${JSON.stringify(cfg.scroll_exp ?? 100)}
     ${scrollAudioScript}
   `
+  const openWingsWithConfig = `
+    window.__wolkeOpenWingsConfig = ${JSON.stringify(loadOpenWingsConfig())}
+  `
 
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(typewriterScript)
@@ -286,6 +290,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
     componentResources.afterDOMLoaded.push(levelAudioScript)
+    componentResources.afterDOMLoaded.push(openWingsWithConfig)
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {
     componentResources.afterDOMLoaded.push(typewriterScript)
@@ -293,6 +298,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
     componentResources.afterDOMLoaded.push(levelAudioScript)
+    componentResources.afterDOMLoaded.push(openWingsWithConfig)
     componentResources.afterDOMLoaded.push(`
       window.spaNavigate = (url, _) => window.location.assign(url)
       window.addCleanup = () => {}

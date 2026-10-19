@@ -1,0 +1,65 @@
+# Open Wings seed data. The source stock is held at Tempelhof until claimed
+# into the player's volier.
+dovecotes:
+  - berghain
+  - brandenburger-tor
+  - canteen-kreuzberg
+  - clans-of-neuberlin
+  - gasometer
+  - goerlitzer-park
+  - ikea-tempelhof
+  - markthalle-9
+  - ministerium-der-schnittlauch-reform
+  - tempelhof-diskoord
+
+pigeons:
+  - id: ow-berghain-001
+    quantity: 3
+    homeLoft: berghain
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-brandenburger-tor-001
+    quantity: 3
+    homeLoft: brandenburger-tor
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-canteen-kreuzberg-001
+    quantity: 3
+    homeLoft: canteen-kreuzberg
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-clans-neuberlin-001
+    quantity: 3
+    homeLoft: clans-of-neuberlin
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-gasometer-001
+    quantity: 3
+    homeLoft: gasometer
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-goerlitzer-park-001
+    quantity: 3
+    homeLoft: goerlitzer-park
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-ikea-tempelhof-001
+    quantity: 3
+    homeLoft: ikea-tempelhof
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-markthalle-9-001
+    quantity: 3
+    homeLoft: markthalle-9
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-ministerium-001
+    quantity: 3
+    homeLoft: ministerium-der-schnittlauch-reform
+    currentLocation: tempelhof-diskoord
+    status: available
+  - id: ow-tempelhof-diskoord-001
+    quantity: 3
+    homeLoft: tempelhof-diskoord
+    currentLocation: tempelhof-diskoord
+    status: available

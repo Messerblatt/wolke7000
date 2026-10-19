@@ -2,6 +2,23 @@ import { getWolke } from "./browser"
 
 const game = getWolke()
 
+function seedOpenWingsPigeons() {
+  const seed =
+    (
+      window as Window & {
+        __wolkeOpenWingsConfig?: {
+          pigeons?: { id: string; homeLoft: string; currentLocation: string; status: string }[]
+        }
+      }
+    ).__wolkeOpenWingsConfig?.pigeons ?? []
+  const known = new Set(game.pigeons.map((pigeon) => pigeon.id))
+  for (const pigeon of seed) {
+    if (known.has(pigeon.id)) continue
+    known.add(pigeon.id)
+    void game.execute({ type: "pigeon_updated", pigeon })
+  }
+}
+
 function itemFromDetail(
   detail: unknown,
 ): { name: string; source: string; id?: string; quantity?: number } | null {
@@ -792,6 +809,7 @@ if (!runtimeFlags.__wolkeRuntimeInitialized) {
   game.subscribe(renderGameSnapshot)
   document.addEventListener("nav", scheduleNavigationReconcile)
   document.addEventListener("nav:end", scheduleNavigationReconcile)
+  document.addEventListener("nav", seedOpenWingsPigeons)
   for (const event of ["popstate", "hashchange", "pageshow"] as const) {
     window.addEventListener(event, scheduleNavigationReconcile)
   }
@@ -806,5 +824,6 @@ if (!runtimeFlags.__wolkeRuntimeInitialized) {
   if (document.body) {
     rucksackObserver.observe(document.body, { childList: true, subtree: true })
     syncRucksackEntries()
+    seedOpenWingsPigeons()
   }
 }

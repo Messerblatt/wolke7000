@@ -1,10 +1,22 @@
 import { GameRuntime } from "./runtime"
-import type { GameCommand, GameItem, GameState, GameVisit, GameWing } from "./core"
+import type {
+  GameCommand,
+  GameLetter,
+  GameState,
+  GameVisit,
+  GameWing,
+  InventoryEntry,
+  Pigeon,
+  VolierClaims,
+} from "./core"
 
 export interface Wolke {
   execute(command: GameCommand): Promise<void>
   getSnapshot(): GameState
-  readonly inventory: GameItem[]
+  readonly inventory: InventoryEntry[]
+  readonly letters: GameLetter[]
+  readonly pigeons: Pigeon[]
+  readonly volierClaims: VolierClaims
   readonly wings: GameWing[]
   readonly discoveries: string[]
   readonly exp: number
@@ -135,7 +147,17 @@ export function getWolke(): Wolke {
     },
     getSnapshot: runtime.getSnapshot.bind(runtime),
     get inventory() {
-      return runtime.getSnapshot().items
+      const snapshot = runtime.getSnapshot()
+      return [...snapshot.items, ...snapshot.letters]
+    },
+    get letters() {
+      return runtime.getSnapshot().letters
+    },
+    get pigeons() {
+      return runtime.getSnapshot().pigeons
+    },
+    get volierClaims() {
+      return runtime.getSnapshot().volierClaims
     },
     get wings() {
       return runtime.getSnapshot().wings

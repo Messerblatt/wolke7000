@@ -16,6 +16,33 @@ export type GameItem = {
   acquiredAt: number
 }
 
+export type GameLetter = {
+  id: string
+  name: string
+  sender: string
+  recipient: string
+  content: string
+  status: "sent" | "received"
+  createdAt: number
+  quantity: 1
+}
+
+export type InventoryEntry = GameItem | GameLetter
+
+export type Pigeon = {
+  id: string
+  homeLoft: string
+  currentLocation: string
+  status: string
+}
+
+export type VolierClaims = {
+  date: string
+  count: number
+}
+
+export const VOLIER_DAILY_LIMIT = 20
+
 export type GameWing = {
   id: string
   name: string
@@ -51,6 +78,9 @@ export type GameState = {
   clans: Record<string, number>
   /** Experience points earned by the player. */
   exp: number
+  letters: GameLetter[]
+  pigeons: Pigeon[]
+  volierClaims: { date: string; count: number }
 }
 
 export type GameBlock = {
@@ -80,8 +110,22 @@ export type WingInput =
       source?: string
     }
 
+export type LetterInput = {
+  id: string
+  name: string
+  sender: string
+  recipient: string
+  content: string
+  createdAt?: number
+}
+
 export type GameCommand =
   | { type: "exp_gained" }
+  | { type: "item_sold"; item: ItemInput }
+  | { type: "letter_sent"; letter: LetterInput }
+  | { type: "letter_received"; letter: LetterInput }
+  | { type: "pigeon_updated"; pigeon: Pigeon }
+  | { type: "pigeons_claimed"; pigeonIds: string[]; date: string }
   | { type: "item_placed"; item: ItemInput }
   | { type: "item_taken"; item: ItemInput }
   | { type: "items_synchronized"; items: ItemInput[] }
@@ -102,6 +146,9 @@ export const EMPTY_GAME_STATE: GameState = {
   visits: [],
   clans: {},
   exp: 0,
+  letters: [],
+  pigeons: [],
+  volierClaims: { date: "", count: 0 },
 }
 
 function text(value: unknown): string {
@@ -174,6 +221,46 @@ function sameWing(left: GameWing, right: WingInput): boolean {
   return slug(left.name) === slug(right.name)
 }
 
+function validPigeon(value: unknown): value is Pigeon {
+  if (typeof value !== "object" || value === null) return false
+  const pigeon = value as Pigeon
+  return Boolean(
+    text(pigeon.id) && text(pigeon.homeLoft) && text(pigeon.currentLocation) && text(pigeon.status),
+  )
+}
+
+function validLetter(value: unknown): value is GameLetter {
+  if (typeof value !== "object" || value === null) return false
+  const letter = value as GameLetter
+  return Boolean(
+    text(letter.id) &&
+    text(letter.name) &&
+    text(letter.sender) &&
+    text(letter.recipient) &&
+    typeof letter.content === "string" &&
+    (letter.status === "sent" || letter.status === "received") &&
+    Number.isInteger(letter.createdAt) &&
+    letter.quantity === 1,
+  )
+}
+
+function normalizeLetter(
+  letter: LetterInput,
+  status: GameLetter["status"],
+  now = Date.now(),
+): GameLetter {
+  return {
+    id: text(letter.id),
+    name: text(letter.name),
+    sender: text(letter.sender),
+    recipient: text(letter.recipient),
+    content: letter.content,
+    status,
+    createdAt: Number.isInteger(letter.createdAt) ? letter.createdAt! : now,
+    quantity: 1,
+  }
+}
+
 export function isGameState(value: unknown): value is GameState {
   if (typeof value !== "object" || value === null) return false
   const state = value as Partial<GameState>
@@ -201,6 +288,22 @@ export function isGameState(value: unknown): value is GameState {
   }
 
   if (state.exp !== undefined && (!Number.isInteger(state.exp) || state.exp < 0)) return false
+
+  if (
+    !Array.isArray(state.letters ?? []) ||
+    !(state.letters ?? []).every(validLetter) ||
+    !Array.isArray(state.pigeons ?? []) ||
+    !(state.pigeons ?? []).every(validPigeon) ||
+    (state.volierClaims !== undefined &&
+      (typeof state.volierClaims !== "object" ||
+        state.volierClaims === null ||
+        typeof state.volierClaims.date !== "string" ||
+        !Number.isInteger(state.volierClaims.count) ||
+        state.volierClaims.count < 0 ||
+        state.volierClaims.count > VOLIER_DAILY_LIMIT))
+  ) {
+    return false
+  }
 
   const visits = state.visits ?? []
   if (
@@ -285,6 +388,9 @@ export function cloneState(state: GameState): GameState {
     })),
     clans: { ...(state.clans ?? {}) },
     exp: state.exp ?? 0,
+    letters: (state.letters ?? []).map((letter) => ({ ...letter })),
+    pigeons: (state.pigeons ?? []).map((pigeon) => ({ ...pigeon })),
+    volierClaims: { ...(state.volierClaims ?? { date: "", count: 0 }) },
   }
 }
 
@@ -304,6 +410,56 @@ export function validateCommand(command: unknown): asserts command is GameComman
   }
 
   if (candidate.type === "exp_gained") return
+
+  if (candidate.type === "item_sold") {
+    const item = candidate.item
+    if (
+      (typeof item === "string" && text(item)) ||
+      (typeof item === "object" && item !== null && text((item as { name?: unknown }).name))
+    ) {
+      return
+    }
+    throw new Error("An item name is required")
+  }
+
+  if (candidate.type === "letter_sent" || candidate.type === "letter_received") {
+    const letter = candidate.letter
+    const value = letter as Record<string, unknown> | null
+    if (
+      typeof letter === "object" &&
+      letter !== null &&
+      typeof value?.id === "string" &&
+      text(value.id) &&
+      typeof value.name === "string" &&
+      text(value.name) &&
+      typeof value.sender === "string" &&
+      text(value.sender) &&
+      typeof value.recipient === "string" &&
+      text(value.recipient) &&
+      typeof value.content === "string"
+    ) {
+      return
+    }
+    throw new Error("A valid letter is required")
+  }
+
+  if (candidate.type === "pigeon_updated") {
+    if (validPigeon(candidate.pigeon)) return
+    throw new Error("A valid pigeon is required")
+  }
+
+  if (candidate.type === "pigeons_claimed") {
+    if (
+      Array.isArray(candidate.pigeonIds) &&
+      candidate.pigeonIds.length > 0 &&
+      candidate.pigeonIds.every((id) => typeof id === "string" && text(id)) &&
+      typeof candidate.date === "string" &&
+      /^\d{4}-\d{2}-\d{2}$/.test(candidate.date)
+    ) {
+      return
+    }
+    throw new Error("A valid pigeon claim is required")
+  }
 
   if (candidate.type === "discovery_unlocked") {
     if (!text(candidate.discovery)) throw new Error("A discovery identifier is required")
@@ -385,7 +541,11 @@ export function validateCommand(command: unknown): asserts command is GameComman
     return
   }
 
-  if (candidate.type !== "item_placed" && candidate.type !== "item_taken") {
+  if (
+    candidate.type !== "item_placed" &&
+    candidate.type !== "item_taken" &&
+    candidate.type !== "item_sold"
+  ) {
     throw new Error(`Unknown game command: ${String(candidate.type)}`)
   }
 
@@ -409,6 +569,41 @@ export function applyCommand(state: GameState, command: GameCommand, now = Date.
 
   if (command.type === "exp_gained") {
     next.exp += 1
+    return next
+  }
+
+  if (command.type === "letter_sent" || command.type === "letter_received") {
+    const status = command.type === "letter_sent" ? "sent" : "received"
+    const letter = normalizeLetter(command.letter, status, now)
+    const existingIndex = next.letters.findIndex((existing) => existing.id === letter.id)
+    if (existingIndex === -1) next.letters.push(letter)
+    else next.letters[existingIndex] = letter
+    return next
+  }
+
+  if (command.type === "pigeon_updated") {
+    const existingIndex = next.pigeons.findIndex((pigeon) => pigeon.id === command.pigeon.id)
+    if (existingIndex === -1) next.pigeons.push({ ...command.pigeon })
+    else next.pigeons[existingIndex] = { ...command.pigeon }
+    return next
+  }
+
+  if (command.type === "pigeons_claimed") {
+    const currentCount = next.volierClaims.date === command.date ? next.volierClaims.count : 0
+    const available = command.pigeonIds
+      .map((id) => next.pigeons.find((pigeon) => pigeon.id === id))
+      .filter(
+        (pigeon): pigeon is Pigeon =>
+          pigeon !== undefined &&
+          pigeon.status === "available" &&
+          pigeon.currentLocation === "tempelhof-diskoord",
+      )
+      .slice(0, Math.max(0, VOLIER_DAILY_LIMIT - currentCount))
+    for (const pigeon of available) {
+      const index = next.pigeons.findIndex((current) => current.id === pigeon.id)
+      next.pigeons[index] = { ...pigeon, currentLocation: "player-volier", status: "available" }
+    }
+    next.volierClaims = { date: command.date, count: currentCount + available.length }
     return next
   }
 

@@ -78,6 +78,47 @@ describe("game core", () => {
     assert.equal(updated.items.length, 0)
   })
 
+  test("moves Tempelhof pigeons into the player's volier", () => {
+    const seeded = {
+      ...EMPTY_GAME_STATE,
+      pigeons: [
+        {
+          id: "ow-berghain-001",
+          homeLoft: "berghain",
+          currentLocation: "tempelhof-diskoord",
+          status: "available",
+        },
+      ],
+    }
+    const claimed = applyCommand(seeded, {
+      type: "pigeons_claimed",
+      pigeonIds: ["ow-berghain-001"],
+      date: "2026-10-19",
+    })
+
+    assert.equal(claimed.pigeons[0]?.currentLocation, "player-volier")
+    assert.equal(claimed.pigeons[0]?.status, "available")
+    assert.equal(claimed.volierClaims.count, 1)
+  })
+
+  test("stores letters and removes sold items", () => {
+    const withItem = applyCommand(EMPTY_GAME_STATE, { type: "item_taken", item: "Kompass" })
+    const sold = applyCommand(withItem, { type: "item_sold", item: "Kompass" })
+    const withLetter = applyCommand(sold, {
+      type: "letter_received",
+      letter: {
+        id: "letter-1",
+        name: "A message from Solo Mio",
+        sender: "solo-mio",
+        recipient: "player",
+        content: "Welcome.",
+      },
+    })
+
+    assert.deepEqual(sold.items, [])
+    assert.equal(withLetter.letters[0]?.name, "A message from Solo Mio")
+  })
+
   test("counts discovered pages per location, not raw visits", () => {
     const first = applyCommand(
       EMPTY_GAME_STATE,

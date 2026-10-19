@@ -58,6 +58,9 @@ function migrateLegacyInventory(storage: GameStorage): GameState | null {
       visits: [],
       clans: {},
       exp: 0,
+      letters: [],
+      pigeons: [],
+      volierClaims: { date: "", count: 0 },
     }
   } catch {
     return null

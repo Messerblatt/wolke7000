@@ -262,11 +262,14 @@ export async function loadQuartzConfig(
   }
 
   const enabledEntries = json.plugins.filter((e) => e.enabled)
+  const pluginEntries = enabledEntries.filter(
+    (entry) => componentRegistry.get(extractPluginName(entry.source))?.source !== "local",
+  )
   const manifests = new Map<string, PluginManifest>()
 
   // Ensure all plugins are installed and collect native deps
   const allNativeDeps = new Map<string, Map<string, string>>()
-  for (const entry of enabledEntries) {
+  for (const entry of pluginEntries) {
     try {
       const gitSpec = parsePluginSource(entry.source)
       if (gitSpec.npmPackage) {
@@ -290,7 +293,7 @@ export async function loadQuartzConfig(
   }
 
   // Collect manifests (requires native deps to be installed first)
-  for (const entry of enabledEntries) {
+  for (const entry of pluginEntries) {
     try {
       const manifest = await getManifest(entry.source)
       if (manifest) {
@@ -306,7 +309,7 @@ export async function loadQuartzConfig(
   }
 
   // Validate dependencies
-  const validation = validateDependencies(enabledEntries, manifests)
+  const validation = validateDependencies(pluginEntries, manifests)
   for (const warning of validation.warnings) {
     console.warn(styleText("yellow", `⚠`) + ` ${warning}`)
   }
@@ -325,7 +328,7 @@ export async function loadQuartzConfig(
   const emitters: { entry: PluginJsonEntry; manifest: PluginManifest | undefined }[] = []
   const pageTypes: { entry: PluginJsonEntry; manifest: PluginManifest | undefined }[] = []
 
-  for (const entry of enabledEntries) {
+  for (const entry of pluginEntries) {
     const manifest = manifests.get(sourceKey(entry.source))
     const category = manifest?.category
     // Resolve processing categories: for array categories (e.g. ["transformer", "pageType", "component"]),
