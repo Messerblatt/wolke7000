@@ -1,6 +1,8 @@
 ---
 clan: kreuzberg
 location: goerlitzer-park
+wings-hub: true
+class: place
 ---
 
 Ah, bist du schon unterwegs Richtung Zynismus, nur weil deine Freunde dich damals nicht beschützt haben?

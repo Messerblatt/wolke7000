@@ -1,12 +1,10 @@
 ---
 clan: kreuzberg
 location: berghain
+wings-hub: true
+class: place
 ---
 Liegt unter Wasser
-
-
-
-
 
 
 ```item

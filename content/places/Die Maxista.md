@@ -1,4 +1,9 @@
-
+---
+clan: schöneberg
+location: die-maxista
+wings-hub: true
+class: place
+---
 
 
 ```

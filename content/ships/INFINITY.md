@@ -1,5 +1,13 @@
+---
+wings-hub: true
+class: ship
+---
+
+
 > [!abstract] Kurzdefinition  
 > Die **F_INFINITY** ist ein bewaffneter Hochleistungs-Trimaran für Wasser- und Himmelsfahrt. Je ein vollständiger [[Candytron]] sitzt achtern in jedem Außenrumpf. Der Hauptrumpf enthält die Dockgasse für Funkys Speedboat **FLITZA**. Die INFINITY ist schneller und wendiger als die übrigen Schiffe des Himmelfahrtskommandos, besitzt aber nur leichte Selbstverteidigungsbewaffnung.
+
+## Volier
 
 
 ## Daten
@@ -28,3 +36,6 @@
 |Standard-Reisefahrt|**165 km/h IAS**|
 |Flottenfahrt|**145 km/h IAS**|
 |strukturelle Höchstfahrt|**225 km/h IAS**|
+
+
+## Volier

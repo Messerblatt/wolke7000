@@ -1,6 +1,7 @@
 ---
 clan: schöneberg
 location: tempelhof-diskoord
+class: place
 ---
 
 
@@ -27,7 +28,18 @@ Im ehemaligen Funkturm befindet sich die Schaltzentrale von [[Open Wings]].
 
 aktuelle Karten sämtlicher erreichbarer Schläge sowie Informationen über Sperrungen von Wasserwegen, eingestürzte Gebäude oder vorübergehend verlegte Stationen.
 
+## wings-hub available
 
+| Places                | Ships          |
+| --------------------- | -------------- |
+| [[Berghain]]          | [[EVERYTHING]] |
+| [[Brandenburger Tor]] | [[EVERYTIME]]  |
+| [[Canteen Kreuzberg]] | [[EVERYWHERE]] |
+| [[Die Maxista]]       | [[INFINITY]]   |
+| [[Gasometer]]         | [[NIMBUS]]     |
+| [[Goerlitzer Park]]   |                |
+| [[IKEA Tempelhof]]    |                |
+| [[Markthalle 9]]      |                |
 
 
 ## Network Card

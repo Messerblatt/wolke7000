@@ -8,15 +8,15 @@ features:
   - id: graph-view
     kind: ui
     selectors: [".graph"]
-    unlock: { exp: 20 }
+    unlock: { exp: 2 }
   - id: explorer
     kind: ui
     selectors: [".explorer"]
-    unlock: { exp: 15 }
+    unlock: { exp: 1 }
   - id: properties
     kind: ui
     selectors: [".note-properties"]
-    unlock: { exp: 25 }
+    unlock: { exp: 5 }
   - id: wolke-toolbar
     kind: ui
     selectors: [".wolke-toolbar"]
@@ -50,7 +50,7 @@ features:
   - id: open-wings
     kind: content
     paths: ["Open Wings"]
-    unlock: { exp: 15 }
+    unlock: { exp: 1 }
   - id: nimbus
     kind: content
     paths: ["NIMBUS"]

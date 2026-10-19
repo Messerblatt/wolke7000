@@ -1,6 +1,8 @@
 ---
 location: "[[Markthalle 9]]"
 ship: "[[EVERYTIME]]"
+wings-hub: true
+class: ship
 ---
 
 ## Material Index

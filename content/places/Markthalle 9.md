@@ -1,6 +1,8 @@
 ---
 clan: kreuzberg
 location: markthalle-9
+wings-hub: true
+class: place
 ---
 
 
