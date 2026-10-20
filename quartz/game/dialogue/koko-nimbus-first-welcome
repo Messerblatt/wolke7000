@@ -1,0 +1,23 @@
+---
+id: koko-nimbus-first-welcome
+type: dialogue
+character: koko
+start: intro
+---
+
+# intro
+
+**Koko**
+
+Oh! Hi.
+
+You haven't been here before, have you?
+
+-> ask-name
+    Who are you?
+
+-> look-around
+    What is this place?
+
+-> awkward
+    Uh... hello.

@@ -93,14 +93,10 @@ async function positionPage(url: URL) {
       if (el) {
         el.scrollIntoView({ behavior: "auto" })
       } else {
-        html.scrollTop = 0
-        body.scrollTop = 0
-        window.scrollTo(0, 0)
+        positionPageWithoutHash(url, html, body)
       }
     } else {
-      html.scrollTop = 0
-      body.scrollTop = 0
-      window.scrollTo(0, 0)
+      positionPageWithoutHash(url, html, body)
     }
 
     // Give the browser a frame to commit the scroll position before revealing.
@@ -109,6 +105,30 @@ async function positionPage(url: URL) {
     html.style.scrollBehavior = previousHtmlScrollBehavior
     body.style.scrollBehavior = previousBodyScrollBehavior
   }
+}
+
+function positionPageWithoutHash(url: URL, html: HTMLElement, body: HTMLElement): void {
+  if (isRisePage(url)) scrollToPageBottom(html, body)
+  else scrollToPageTop(html, body)
+}
+
+function isRisePage(url: URL): boolean {
+  const pathname = url.pathname.replace(/\/+$/, "").toLowerCase()
+  return pathname.endsWith("/rise") || pathname.endsWith("/rise.html")
+}
+
+function scrollToPageTop(html: HTMLElement, body: HTMLElement): void {
+  html.scrollTop = 0
+  body.scrollTop = 0
+  window.scrollTo(0, 0)
+}
+
+function scrollToPageBottom(html: HTMLElement, body: HTMLElement): void {
+  const pageHeight = Math.max(html.scrollHeight, body.scrollHeight)
+  const bottom = Math.max(0, pageHeight - window.innerHeight)
+  html.scrollTop = bottom
+  body.scrollTop = bottom
+  window.scrollTo(0, bottom)
 }
 
 function startLoading() {
@@ -158,8 +178,9 @@ async function _navigate(url: URL, isBack: boolean = false) {
 
   await fadeOut
 
-  // Move to the top while the old page is already invisible. This prevents
-  // the new page from revealing a delayed scroll operation during its fade-in.
+  // Place the destination at its configured start position while the old page
+  // is already invisible. RISE starts at the bottom; all other pages start at
+  // the top.
   if (!isBack && !url.hash) {
     await positionPage(url)
   }
@@ -191,8 +212,11 @@ async function _navigate(url: URL, isBack: boolean = false) {
   document.querySelector(".navigation-progress")?.remove()
   micromorph(document.body, html.body)
 
-  // Anchor targets only exist after the new page has been morphed in.
-  if (!isBack && url.hash) {
+  // Position the new page after it has been morphed in. Anchor targets only
+  // exist now; RISE is the sole page that intentionally opens at the bottom.
+  if (url.hash && !isBack) {
+    await positionPage(url)
+  } else if (!url.hash) {
     await positionPage(url)
   }
 
@@ -274,6 +298,18 @@ function createRouter() {
 }
 
 createRouter()
+
+if (!window.location.hash) {
+  void positionPage(new URL(window.location.toString()))
+  window.addEventListener(
+    "load",
+    () => {
+      if (!window.location.hash) void positionPage(new URL(window.location.toString()))
+    },
+    { once: true },
+  )
+}
+
 notifyNav(getFullSlug(window))
 
 if (!customElements.get("route-announcer")) {

@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "fs"
 import { resolve } from "path"
 import { parse } from "yaml"
-import type { Pigeon } from "./core"
+import type { Pigeon } from "./runtime/core"
 
 export type OpenWingsConfig = {
   pigeons: Pigeon[]

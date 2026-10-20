@@ -6,11 +6,53 @@ import experienceScript from "./experience.inline.ts"
 const experienceCss = `
 .wolke-experience {
   margin: 0;
+  cursor: pointer;
   padding: 0.8rem;
   border: 1px solid var(--lightgray);
   border-radius: 0.5rem;
   background: var(--light);
   color: var(--darkgray);
+  box-shadow: #ffe100 0px 19px 38px, #ffe100 0px 15px 12px;
+  
+}
+
+.wolke-experience:hover {
+  border-color: var(--secondary);
+}
+
+.wolke-experience.is-level-up {
+  background: #ffe13c;
+  color: #fff;
+  animation: wolke-experience-level-wiggle 10s ease-in-out infinite;
+}
+
+.wolke-experience.is-level-up .wolke-experience-title,
+.wolke-experience.is-level-up .wolke-experience-value,
+.wolke-experience.is-level-up .wolke-experience-level {
+  color: #fff;
+}
+
+@keyframes wolke-experience-level-wiggle {
+  0%,
+  92%,
+  100% {
+    transform: rotate(0deg);
+  }
+  94% {
+    transform: rotate(-1deg) translateX(-1px);
+  }
+  96% {
+    transform: rotate(1deg) translateX(1px);
+  }
+  98% {
+    transform: rotate(-0.5deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wolke-experience.is-level-up {
+    animation: none;
+  }
 }
 
 .wolke-experience-header {

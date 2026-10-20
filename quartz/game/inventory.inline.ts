@@ -1,4 +1,4 @@
-import { getWolke } from "./browser"
+import { getWolke } from "./runtime/browser"
 
 const game = getWolke()
 

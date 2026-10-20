@@ -1,103 +1,301 @@
-Implement a small browser-side game runtime for wolke7000.com,
-integrated into this existing Quartz codebase.
+Implement a reusable rain-effect system for the Wolke 7000 Quartz website.
 
-First inspect the repository:
-- Read applicable AGENTS.md instructions.
-- Determine the installed Quartz version and its actual script-loading,
-  component registration, and navigation lifecycle.
-- Locate existing inventory, chapter-unlocking, persistence, and game
-  state logic.
-- Follow existing conventions. Do not assume current online Quartz
-  documentation matches this repository.
+Context:
+- The website is built with Quartz 5.
+- It already has a browser-side Wolke Runtime.
+- The goal is atmospheric rain falling across the viewport to make locations feel more alive.
+- This is not “rain on glass” yet. For this sprint, implement visible falling raindrops moving diagonally across the screen.
+- Keep it lightweight and framework-free. Prefer plain DOM + CSS.
+- The effect must work correctly with Quartz SPA navigation and must not create duplicate intervals/listeners.
+Desired architecture:
+Wolke Runtime
+     ↓
+Weather / Ambient Effects
+     ↓
+Rain Controller
+     ↓
+persistent DOM overlay
+     ↓
+dynamically spawned raindrops
 
-Goal
-Create one shared runtime per browser window, accessible through
-window.wolkeGame. It must survive Quartz SPA navigation without being
-reinitialized. Keep the game logic independent of the browser so it can
-later run on a server.
+Create a small API such as:
+wolke.weather.startRain({
+  intensity: 0.6,
+  wind: -0.3,
+})
 
-Architecture
-Use a dedicated folder such as quartz/game/, adapted to this repository:
+wolke.weather.stopRain()
 
-- core.ts:
-  GameState and GameCommand types, validation, and pure state transitions.
-  No window, DOM, storage, network, or Quartz dependencies.
+intensity should be normalized roughly from 0 to 1.
 
-- runtime.ts:
-  Owns authoritative game state and exposes:
-    execute(command): Promise<void>
-    getSnapshot(): GameState
-    subscribe(listener): unsubscribe function
+wind should control horizontal drift. Negative values mean rain drifting left, positive values right.
 
-  Commands update state through the core.
-  Subscribers receive state snapshots.
-  Callers must not be able to mutate internal state through returned
-  snapshots, initial-state references, or subscription callbacks.
+The implementation should be modular and not hardcoded to one specific page.
 
-- browser.ts:
-  Declares the TypeScript type for window.wolkeGame and provides an
-  idempotent getGame() accessor that creates or returns the shared runtime.
-  Access window only in browser execution, never during the Quartz build.
+Suggested structure:
+wolke-runtime/
+  weather/
+    rain.ts
+    weather.ts
+    weather.scss
 
-- storage.ts, if persistence already exists or is needed:
-  Loads and saves versioned player progress.
-  Validate saved data and handle malformed or unavailable storage.
-  Preserve existing progress and storage keys where possible.
+Adapt paths to the existing project structure.
 
-Integration
-Include the runtime through Quartz's existing browser-script mechanism.
-A component with an inline browser entry script may be appropriate;
-confirm this against the installed version.
+Requirements:
+1. Create one persistent rain root, mounted only once:
+<div id="wolke-rain"></div>
 
-Place the loader on all pages that need game functionality.
-Initialization must not depend on accidental script ordering.
-Separate bundles must still resolve to the same window.wolkeGame instance.
+It should be created programmatically if it does not already exist.
 
-Page components should:
-1. Render the current snapshot when mounted.
-2. Subscribe to future updates.
-3. Unsubscribe and remove DOM handlers through Quartz's cleanup lifecycle.
+Do not create a second root when Quartz navigates between pages.
+2. The overlay should cover the viewport:
+#wolke-rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
 
-Keep the runtime alive across SPA navigation. Reattach page-specific
-bindings without accumulating listeners.
+3. Raindrops should be lightweight DOM elements:
+<div class="wolke-raindrop"></div>
 
-State ownership
-Shared facts such as collected items and unlocked chapters belong to the
-runtime. UI details such as panel visibility and animation progress remain
-local to components.
+They should spawn above the viewport and animate downward.
+4. Base raindrop styling should use a narrow vertical gradient:
+.wolke-raindrop {
+  position: absolute;
+  top: -10vh;
+  width: 1px;
+  height: 60px;
 
-Use commands to request actions, state to represent lasting facts, and
-events only where needed for transient effects such as sounds or notices.
-Evaluate progression rules centrally, rather than distributing them
-across event listeners.
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(220, 235, 255, 0.55)
+  );
 
-Scope
-Implement the runtime and migrate one existing coherent mechanic,
-preferably item collection and its immediate consumers.
+  animation-name: wolke-rain-fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
 
-Do not invent game mechanics, perform a broad rewrite, add a service
-worker, introduce a backend, or add a state-management dependency unless
-the repository demonstrates a concrete need.
+5. Use CSS custom properties for horizontal wind drift.
+Example:
+.wolke-raindrop {
+  --rain-drift: -12vw;
+}
 
-Future server migration
-Keep core rules environment-independent.
-Keep execute() asynchronous from the start.
-Components should depend on the runtime's public interface so a future
-remote client can replace local execution.
+@keyframes wolke-rain-fall {
+  from {
+    transform:
+      translate3d(0, -10vh, 0)
+      rotate(10deg);
+  }
 
-Verification
-Run the repository's relevant build and checks.
-Verify:
-- Repeated initialization returns the same instance.
-- Snapshots cannot mutate internal state.
-- Newly mounted components display existing progress immediately.
-- SPA navigation preserves state and does not duplicate subscriptions.
-- Persistence, if implemented, survives reloads and handles invalid data.
+  to {
+    transform:
+      translate3d(
+        var(--rain-drift),
+        120vh,
+        0
+      )
+      rotate(10deg);
+  }
+}
 
-Add focused tests for meaningful state and lifecycle behavior where the
-repository supports them.
+6. Raindrops should vary randomly in:
+   - horizontal start position
+   - length
+   - opacity
+   - width
+   - fall duration
+   - wind drift
+Use two rough depth classes:
 
-Deliver the implementation, then summarize:
-- Files changed and the runtime's loading path.
-- Which mechanic was migrated.
-- Verification performed and any unresolved limitations.
+Far rain:
+thin
+faint
+short
+slower
+
+Near rain:
+thicker
+brighter
+longer
+faster
+
+This is important so the effect does not look like identical CSS lines.
+7. Example spawn logic:
+function spawnRaindrop() {
+  const root = ensureRainRoot()
+  const drop = document.createElement("div")
+
+  drop.className = "wolke-raindrop"
+
+  const depth = Math.random()
+
+  drop.style.left = `${Math.random() * 100}vw`
+
+  if (depth < 0.6) {
+    drop.style.width = "1px"
+    drop.style.height = `${20 + Math.random() * 40}px`
+    drop.style.opacity = `${0.1 + Math.random() * 0.2}`
+    drop.style.animationDuration =
+      `${900 + Math.random() * 700}ms`
+  } else {
+    drop.style.width = "2px"
+    drop.style.height = `${60 + Math.random() * 100}px`
+    drop.style.opacity = `${0.35 + Math.random() * 0.35}`
+    drop.style.animationDuration =
+      `${400 + Math.random() * 400}ms`
+  }
+
+  root.appendChild(drop)
+
+  drop.addEventListener(
+    "animationend",
+    () => drop.remove(),
+    { once: true }
+  )
+}
+
+Adapt this rather than copying blindly if the existing codebase has better conventions.
+8. startRain() must not create duplicate spawn timers.
+Calling:
+startRain()
+startRain()
+startRain()
+
+must still result in only one active rain loop.
+9. stopRain() should:
+   - stop spawning new drops
+   - optionally allow existing drops to finish naturally
+   - expose a clean state so rain can be restarted later
+10. Intensity should determine spawn frequency.
+Example concept:
+const delay =
+  maxDelay - intensity * intensityRange
+
+Rough behavior:
+0.2 → drizzle
+0.5 → normal rain
+0.9 → storm
+
+Do not spawn an absurd number of DOM elements.
+
+Keep performance in mind.
+11. Wind should affect each drop with slight random variation.
+Example:
+const drift =
+  baseWind +
+  randomVariation
+
+Then:
+drop.style.setProperty(
+  "--rain-drift",
+  `${drift}vw`
+)
+
+12. Add a small controller object, roughly:
+type RainOptions = {
+  intensity?: number
+  wind?: number
+}
+
+class RainController {
+  start(options?: RainOptions): void
+  stop(): void
+  setIntensity(value: number): void
+  setWind(value: number): void
+  isActive(): boolean
+}
+
+Expose it through the Wolke Runtime rather than as random globals.
+
+Preferred API:
+wolke.weather.rain.start(...)
+wolke.weather.rain.stop()
+
+or:
+wolke.weather.startRain(...)
+wolke.weather.stopRain()
+
+Choose whichever fits the existing runtime architecture better.
+13. Quartz SPA compatibility:
+    - inspect how the existing project handles the Quartz nav event
+    - do not re-register duplicate listeners on every navigation
+    - the rain root should remain stable
+    - weather state should survive page navigation unless the game logic explicitly changes it
+14. Prepare for location-driven weather, but do not overbuild it.
+The weather API should make this possible later:
+if (locationId === "tempelhofer-diskoord") {
+  wolke.weather.startRain({
+    intensity: 0.35,
+    wind: -0.2,
+  })
+}
+
+and:
+if (locationId === "teufelsberg") {
+  wolke.weather.startRain({
+    intensity: 0.8,
+    wind: -0.7,
+  })
+}
+
+Do not hardcode those location rules into the rain renderer itself.
+15. Think carefully about z-index.
+Preferred visual stack:
+background
+↓
+rain
+↓
+main content / cards / dialogue
+
+The rain should usually look like it is part of the world behind the readable interface, not like scratches placed directly over all text.
+
+If the current Quartz layout makes that difficult, document the stacking-context issue before forcing a brittle z-index hack.
+16. Respect reduced-motion settings.
+Add:
+@media (prefers-reduced-motion: reduce) {
+  #wolke-rain {
+    display: none;
+  }
+}
+
+or an equivalent runtime check.
+17. No canvas or WebGL in this sprint.
+Plain DOM + CSS only.
+18. Do not implement rain-on-glass droplets, collisions, splashes, sound, lightning, puddles, or particle pooling yet.
+Keep this sprint limited to:
+falling rain
+variable depth
+variable wind
+controllable intensity
+clean start/stop API
+Quartz SPA compatibility
+
+19. Add a temporary development trigger or debug method so I can test:
+wolke.weather.startRain({
+  intensity: 0.7,
+  wind: -0.4,
+})
+
+and:
+wolke.weather.stopRain()
+
+directly from the browser console or an existing debug interface.
+20. Before implementing, inspect:
+    - the current Wolke Runtime structure
+    - where global client-side scripts are mounted
+    - existing Quartz SPA navigation handling
+    - existing CSS/z-index structure
+    - whether a persistent runtime root already exists
+First report:
+- which files you intend to create/change
+- where the rain root will live
+- how the timer lifecycle will work
+- how this integrates with the existing runtime
+
+
+ONE IMPORTAN THING: don’t attach rain initialization to every page’s component render. Weather is global runtime state, not page content.
+

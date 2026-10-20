@@ -1,0 +1,18 @@
+# Canvas content revealed by player level. Add node IDs here as dreams.canvas grows.
+canvas: dreams.canvas
+levels:
+  - level: 1
+    nodes:
+      - 31aad7fa1d639e43
+      - e366cbbf3facc33c
+      - 011c24fff06a7664
+  - level: 2
+    nodes:
+      - 2fb0ac0ca797eae8
+      - d73c96f274c36947
+      - 4e1241d76309c5df
+  - level: 3
+    nodes:
+      - f53391a104de1b4d
+      - ab9124e2091026f0
+      - 80a0c77050f63c9a

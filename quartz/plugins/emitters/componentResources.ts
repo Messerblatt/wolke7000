@@ -15,6 +15,9 @@ import itemAudioScript from "../../components/scripts/item-audio.inline"
 // @ts-ignore
 import levelAudioScript from "../../components/scripts/level-audio.inline"
 // @ts-ignore
+import experienceUnlocksScript from "../../game/experience-unlocks.inline"
+// @ts-ignore
+// @ts-ignore
 import unlocksScript from "../../game/unlocks.inline"
 // @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
@@ -27,6 +30,7 @@ import { normalizeResource } from "../../util/resources"
 import { componentRegistry } from "../../components/registry"
 import { loadUnlockConfig } from "../../game/unlock-config"
 import { loadOpenWingsConfig } from "../../game/open-wings-config"
+import { loadExperienceUnlockConfig } from "../../game/experience-unlocks-config"
 import {
   googleFontHref,
   googleFontSubsetHref,
@@ -290,6 +294,10 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   const openWingsWithConfig = `
     window.__wolkeOpenWingsSeed = ${JSON.stringify(loadOpenWingsConfig().pigeons)}
   `
+  const experienceUnlocksWithConfig = `
+    window.__wolkeExperienceUnlocks = ${JSON.stringify(loadExperienceUnlockConfig())}
+    ${experienceUnlocksScript}
+  `
 
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(typewriterScript)
@@ -297,6 +305,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
     componentResources.afterDOMLoaded.push(levelAudioScript)
+    componentResources.afterDOMLoaded.push(experienceUnlocksWithConfig)
     componentResources.afterDOMLoaded.push(openWingsWithConfig)
     componentResources.afterDOMLoaded.push(unlocksWithConfig)
     componentResources.afterDOMLoaded.push(spaRouterScript)
@@ -306,6 +315,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
     componentResources.afterDOMLoaded.push(levelAudioScript)
+    componentResources.afterDOMLoaded.push(experienceUnlocksWithConfig)
     componentResources.afterDOMLoaded.push(openWingsWithConfig)
     componentResources.afterDOMLoaded.push(unlocksWithConfig)
     componentResources.afterDOMLoaded.push(`

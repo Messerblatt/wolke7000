@@ -1,5 +1,5 @@
-import { getWolke } from "./browser"
-import { PLAYER_VOLIER_CAPACITY, VOLIER_DAILY_LIMIT } from "./core"
+import { getWolke } from "./runtime/browser"
+import { PLAYER_VOLIER_CAPACITY, VOLIER_DAILY_LIMIT } from "./runtime/core"
 
 const game = getWolke()
 

@@ -4,85 +4,90 @@ aliases:
 tags:
   - angel
 ship: NIMBUS
+music:
 ---
-![[angel_2.png]]
 
+:::epiphany
+![[angel_3.png]]
 
 ```item
-kompass
+🤍
 ```
 
->[!note]- About
->Kokolores stammt aus ärmlichen Verhältnissen. Zu ihrer Familie unterhält sie keinen Kontakt mehr. Sie kennt ihre Angehörigen fast ausschließlich aus undeutlichen Kindheitserinnerungen, die im Laufe der Jahre mehr und mehr den Charakter ferner Träume angenommen haben.
-
-> [!note]- Crew
-> Zusammen mit [[Fibo]] und [[Spasti]], die zu dritt die [[NIMBUS]]-Crew bilden, verdient sie Geld mit dem Bergen von Schätzen, die sie meistens auf der [[EVERYTHING|EVERYTHING]] verkauft. Obwohl die [[NIMBUS]] offiziell über keinen Kapitän verfügt, ist es häufig Kokolores, die einen Kurs vorschlägt - meistens zu den Wolken -, und die Crew zu immer neuen Unternehmungen überredet.
-
-> [!note]- Samsas Bedeutung  
-> [[Samsa]] ist nicht nur ein Begleittier. Die Taube kann Nachrichten über weite Distanzen transportieren und Informationen aus Gebieten übermitteln, die für Menschen nur schwer erreichbar sind.
+:::
 
 
->[!note]- The 5th October 2125
->Als [[Vox]] am 05. Oktober 2125 mit seinem Flugzeug in den südlichen Außenbezirken von [[NeuBerlin]] abstürzte, organisierte Kokolores eine ungewöhnliche Bergungsmission. Zusammen mit [[Fibo]] rettete sie [[Vox]] aus dem Untergehenden Flugzeug und brachte ihn an Deck der [[NIMBUS]], wo [[Vox]] in Sterbensworten von einer gewissen "Wolke 7000" sprach. [[Vox]] wurde per Seebestattung der Nordflanke von NeuBerlin überlassen.
+:::requires-level={level="3"}
+
+## Vox 21 - His last flight
+
+The wreck lies on the lock of [[Tempelhof Diskoord|Tempelhof]]. That [[Vox]] told me of all people about Cloud 7000. Sees it as a stroke of fate and the call to launch an expedition to heaven.
+
+Shortly receiving messages from up there. First I ignore, may clouds force to their castle. [[Fibo]] say: "That's Kokolores." But the messages are louder, louder, Koko is finding it very difficult to ignore.
+
+Ships can fly, because I. To the place where Vox has returned. Dead. So we're in this together.
+
+:::
+
+
+> [!note]- My Truth 🤍
+> Kokolores comes from a poor background. She no longer has any contact with her family. She knows her relatives almost exclusively from vague childhood memories, which over the years have increasingly taken on the character of distant dreams.
+
+
+> [!note]- My Friends 😍
+> [[Fibo]], [[Spasti]] and [[Koko]]. May the former two be forever and forever. We made it somehow. No con, now whom form the [[NIMBUS]] crew, she earns money, wouldnt be true without you, which she mostly sells on [[EVERYTHING|EVERYTHING]]. I can't wait to become obese. Because friends do this all the time.
+
+
+> [!note]- My Humbleness 🗝️ 
+> 
+
+
+> [!note]- My Genius 🤘
+> I am empathetic, sensitive and dreamy. I am good diplomat, but because I always jump head first into clouds, she sometimes loses the plot in the middle of ... uhmm. What?
 
 
 
-Das Wrack befindet sich auf der Schleuse des [[Tempelhof Diskoord]], wo Koko häufig hinfährt, um Wolken zu fotografieren und zu beschreiben, und nachzudenken. Das Wrack ist für sie eine Art Schrein, mit dem sie einen fast schon religiösen Zugang hat. Dass [[Vox]] ausgerechnet ihr von Wolke 7000 erzählte, betrachtet sie als Fügung des Schicksals und dem Ruf, eine Expedition in den Himmel zu starten.
 
-Kurz darauf empfängt Koko Botschaften aus dem Himmel. Zuerst ignoriert sie diese, auch weil [[Fibo]] immer sagt: "Das ist doch Kokolores." Doch die Botschaften werden immer lauter und es fällt Koko immer schwerer, sie zu ignorieren.
+## Appearance
 
-Seit dem Vorfall mit [[Vox]] wird Koko von vielen Bewohnern NeuBerlins mit einer Mischung aus Bewunderung, Misstrauen und Aberglauben betrachtet.
-
-
-## Erscheinungsbild
-
-Koko = Angel. Sie hat lange weiße Haare, die sie meistens zu zwei Zöpfen bindet und mit silberglänzenden Spangen festmacht. Manchmal trägt sie ihre Haare offen und macht, was sie will. 
-
-Wenn sie Ringe trägt, dann viele: Die Ringe haben lange Zacken. Koko kann sie als Krallen verwenden.
-
-Sie braucht keine Brille, trägt manchmal aber eine ganz bestimmte, "für den glasigen Blick", wie sie sagt: Modern, mit silbernem Gestell und rundlosen Gläsern. Das Gestell reflektiert stark und passt zu ihren Engelsflügeln.
-
-Für die Einsätze auf der [[NIMBUS]] sind die Flügel meistens im Weg, dann setzt sie sie ab. Setzt sie die Flügel wieder auf, steht sie meistens da und versucht auf teufelkommsonstwas die Flügel zu schlagen, was ihr bisher noch nicht gelingt.
-
-Für ihre Auftritte in der Dekantine versucht sie es lean-casual mit einem schwarzen Mantel und Sonnenbrille, manchmal auch eine Augenbinde statt Sonnenbrille, denn wir sind in NeuBerlin im Jahre 2126, und von den Kriegen im Süden schaut man lieber weg. Koko will cool sein, aber als Engel wirkt sie in den Augen der Society immer ein bisschen sonderbar, fast so, als würde man sie stets in Begleitung von Fragezeichen sehen.
-
-Das Leben in NeuBerlin lebt voller Leben - High Heels für den Alltag sind da selten praktisch. Aber _wenn_ sie High-Heels trägt, wirkt es immer so, als würden die High-Heels einen ganz besonderen Anlass tragen, so als hätte Koko gleich 5 Geburtstage gleichzeitig. Wie man sich das konkret vorstellen soll, weiß ich auch nicht, aber was da oben an WOLKEN sind, unglaublich unglaublich.
-
-Manchmal klemmt sich Koko so ein silberfarbenes Pflaster auf ihren Nasenrücken. Manchmal sind da federweiße Stulpen im Spiel, die bis zu ihren Ellbogen gehen, und wenn sie am Wasser ist, trägt sie Fußbänder, die an Flügel erinnern, genauso wie ihre Ohrringe, die aussehen wie Flügel.
-
-Wenn die [[NIMBUS]] in Nacht-und Nebelfahrten durch die Wasserstraßen von NeuBerlin kreuzt und Licht braucht, wickelt Koko sich LED-Bänder um ihre Arme und Beine. Die Bänder leuchten weiß, und Koko ist dann sozusagen das Nachtlicht der Crew.
-
-Sie malt tribale Muster in ihr Gesicht, entlang der Schläfen und vorbei an ihrer Nase. Manchmal sind es nur zwei weiße, breite Streifen unter ihren Augen, so ähnlich wie bei Footballspielern.
-
-Auf dem Deck der [[NIMBUS]] läuft sie meistens mit Barett-Mütze durch die Gegend. Für den _S T A T U S_. Sie verliert die Mütze ständig und findet irgendwie immer eine neue. 
-
->[!quote] Koko über dieses eine Kleid
->„Also … ich weiß nicht, ob das noch ein Kleid ist. Vielleicht hat sich da ein ganzer Vogelschwarm als Kleid verkleidet. Es sieht aus, als hätte jemand einer Wolke beigebracht, arrogant zu sein. Ich würde sie natürlich nur fragen, ob die Federn beim Fliegen helfen. Und ob man sie anfassen darf. Also die Federn.“
-
-![[imagine-beatrix.canvas]]
+Koko = Angel. She has long white hair, which she usually ties into two pigtails and secures with shiny silver clips. Sometimes she wears her hair down and does whatever she wants.
 
 
+> [!quote] Koko über dieses eine Kleid
+> "Well... I don't know if that's still a dress. Maybe a whole flock of birds dressed up as a dress. It looks like someone taught a cloud to be arrogant. Of course I would just ask if the feathers help you fly. And if you can touch them. So the feathers."
+
+
+---
+
+:::requires-item={item="🤍", 4}
+
+"I love that car."
+
+![[volta.png]]
+
+
+[[Fibo|I have no idea what just happened]]
+
+🧚
+
+:::
+
+
+---
 
 ## Persönlichkeit
 
-Kokolores ist empathisch, sensibel und verträumt. Ihr Feingefühl macht sie zu einer guten Diplomatin, doch weil sie den Kopf ständig in den Wolken hat, verliert sie manchmal mitten im Satz den Plot.
 
-Sie neigt zu Spoonerismen, wobei sie die Anfangsbuchstaben zweier benachbarter Wörter vertauscht. Überhaupt stolpert ihr sprachlicher Ausdruck häufig über den Sinn der entsprechenden Wörter, wie z.B. in: "Niemand ist so jetzt wie hier."
 
-Ihre schusselige Art macht sie sympathisch. Sie ist witzig, bringt aber auch einen leichten Anflug von Berliner Coolness mit. Als exzessive Tagträumerin verliert sie sich mitten in Gesprächen in inneren Bildern. Für Außenstehende wirkt sie dann abwesend.
+She is prone to Spoonerisms, where she swaps the first letters of two adjacent words. In general, their linguistic expression often stumbles over the meaning of the corresponding words, such as: "Nobody is like this now."
 
-Kokolores gilt als sozial und sensibel. Sie erkennt emotionale Bedürfnisse, vermittelt zwischen Konfliktparteien und kann selbst fremde Gruppen kurzfristig zu gemeinschaftlichem Handeln bewegen.
+Her scatterbrained nature makes her likeable. She's funny, but also brings a touch of Berlin cool. As an excessive daydreamer, she loses herself in inner images in the middle of conversations. To outsiders she then seems absent.
 
+Kokolores is considered social and sensitive. It recognizes emotional needs, mediates between conflicting parties and can even persuade foreign groups to take collective action at short notice.
 
 ### Hobbies
 
-Wolken fotografieren. Drachen steigen lassen. Stillgelegte Gebäude durchsuchen. Ziellos durch die Nacht segeln. Wettertagebuch führen (ihre Einträge vermischen Messwerte mit persönlichen Stimmungen). Kleidung (um)nähen. Zines schreiben über Wolken, gescheiterte Vorhaben und Dinge, die sie eigentlich studieren wollte. In manchen Nächsten sendet sie improvisierte Radiosendungen mit Musik und der Breaking News über ihr Zine - das niemals fertig wird - über einen schwachen Piratensender (sie weiß nicht, ob jemand zuhört). Kunstkurse belegen. Schatztauchen.
-
-### Schatztauchen
-
-Gewässer sind Kokolores’ bevorzugtes Territorium. Die überfluteten Bezirke NeuBerlins kennt sie wie ihre Westentasche.
-
-Sie besitzt einen außergewöhnlich langen Atem und eine hohe Widerstandsfähigkeit gegen Kälte.
+Photograph clouds. Fly a kite. Search disused buildings. Sailing aimlessly through the night. Keep a weather diary (your entries mix measurements with personal moods). Sewing (re)sewing clothes. Zines write about clouds, failed ventures and things she actually wanted to study. In some episodes, she broadcasts impromptu radio shows with music and breaking news about her zine - which is never finished - over a weak pirate radio station (she doesn't know if anyone is listening). Take art courses. Treasure diving.
 
 ### Epiphanie
 
@@ -100,19 +105,3 @@ Im direkten Handgemenge ist Kokolores vergleichsweise schwach. Sie verfügt wede
 Sie verlässt sich auf Verhandlungen, Ablenkungen, oder der Durchschlagskraft ihrer Crew.
 
 Ihre eigentliche Stärke liegt darin, Kämpfe zu verhindern oder andere dazu zu bringen, für sie einzutreten.
-
-## Beziehungen
-
-### Fibo
-
-[[Fibo]] ist einer ihrer engsten Vertrauten. Er begegnet ihren spirituellen Überzeugungen mit Skepsis und versucht häufig, ihre Erlebnisse rational zu erklären.
-
-Fibo hegt romantische Gefühle für Kokolores, befindet sich aber in der Friendzone.
-
-### Spasti
-
-Ihre Beziehung zu [[Spasti]] beruht vor allem auf Loyalität und gegenseitigem Schutz.
-
-Spasti akzeptiert Kokolores’ Autorität nahezu bedingungslos. Während Kokolores ihn emotional stabilisiert und ihm Orientierung gibt, schützt [[Spasti]] sie in Situationen, in denen Diplomatie nicht mehr ausreicht.
-
-Ihre Verbindung besitzt Elemente einer para-romantischen Beziehung, ohne eindeutig definiert zu sein.

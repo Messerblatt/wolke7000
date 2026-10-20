@@ -1,5 +1,5 @@
-import { getWolke } from "./browser"
-import type { GameState } from "./core"
+import { getWolke } from "./runtime/browser"
+import type { GameState } from "./runtime/core"
 import type { UnlockCondition, UnlockConfig, UnlockFeature } from "./unlock-config"
 
 type UnlockWindow = Window & {

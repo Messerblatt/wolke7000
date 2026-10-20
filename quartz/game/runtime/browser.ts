@@ -1,4 +1,5 @@
 import { GameRuntime } from "./runtime"
+import { createWeatherRuntime, type WeatherRuntime } from "../weather/weather"
 import type {
   GameCommand,
   InventoryEntry,
@@ -34,6 +35,7 @@ export interface Wolke {
   getClanVisitCount(clan: string): number
   /** Timestamp of the most recent visit to a location, or null if unknown. */
   getLastVisit(location: string): number | null
+  readonly weather: WeatherRuntime
   subscribe(listener: (snapshot: GameState) => void): () => void
   reset(): Promise<void>
 }
@@ -203,6 +205,7 @@ export function getWolke(): Wolke {
         null
       )
     },
+    weather: createWeatherRuntime(),
     subscribe: runtime.subscribe.bind(runtime),
     reset: async () => {
       await runtime.reset()

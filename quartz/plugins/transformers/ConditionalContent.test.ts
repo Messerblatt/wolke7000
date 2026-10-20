@@ -41,4 +41,42 @@ describe("conditional content transformer", () => {
     assert.equal(properties?.["data-condition-type"], "requires-item")
     assert.equal(properties?.["data-condition-value"], "ignition-chamber, stabilizing-fin")
   })
+
+  test("accepts the shorthand item quantity", () => {
+    const plugin = ConditionalContent()
+    const source = plugin.textTransform!(
+      undefined as never,
+      ':::requires-item={item="heart", 5}\nUnlocked\n:::',
+    )
+    const processor = unified()
+      .use(remarkParse)
+      .use(plugin.markdownPlugins!({} as never))
+    const tree = processor.runSync(processor.parse(source)) as unknown as {
+      children: Array<{ data?: { hProperties?: Record<string, unknown> } }>
+    }
+    const properties = tree.children[0]?.data?.hProperties
+
+    assert.equal(properties?.["data-condition-type"], "requires-item")
+    assert.equal(properties?.["data-condition-value"], "heart")
+    assert.equal(properties?.["data-condition-quantity"], "5")
+  })
+
+  test("accepts level-only conditions", () => {
+    const plugin = ConditionalContent()
+    const source = plugin.textTransform!(
+      undefined as never,
+      ':::requires-level={level="3"}\nUnlocked\n:::',
+    )
+    const processor = unified()
+      .use(remarkParse)
+      .use(plugin.markdownPlugins!({} as never))
+    const tree = processor.runSync(processor.parse(source)) as unknown as {
+      children: Array<{ data?: { hProperties?: Record<string, unknown> } }>
+    }
+    const properties = tree.children[0]?.data?.hProperties
+
+    assert.equal(properties?.["data-condition-type"], "requires-level")
+    assert.equal(properties?.["data-condition-value"], "")
+    assert.equal(properties?.["data-condition-level"], "3")
+  })
 })

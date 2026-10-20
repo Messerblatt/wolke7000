@@ -9,7 +9,10 @@ tags:
 
 
 
-## [[the-fallen-angel|Start Game]] 
+This time, we'll start our dialogue system different. We need a state-machine first. Every character of wolke7000 will uses his state-machine 
+
+
+## [[NIMBUS|Start Game]] 
 
 
 ---
@@ -18,7 +21,46 @@ tags:
 
 
 >[!tip]
-> [[Kokolores]] watches the clouds
+> You havent visited [[Kokolores]] on the NIMBUS yet. 
+
+
+
+Let's take a different approach of making dialogue happen in wolke7000. Let's add character states to our runtime, one state per character: Ajax, Ciao, Fibo, Funky, Gojan, Koko, Mia, Nero, Brah, Solo, Spasti.
+
+Each state follows the structure:
+
+```
+characters.koko = {
+  relationship: 4,
+  metPlayer: true,
+  flags: {
+    hasBeenVisited: false,
+    trustsPlayer: true,
+  }
+}
+```
+
+We want to trigger worldEvents, like "player-entered-nimbus" and let the runtime ask "has player been here before"?
+
+If no: 
+
+```
+start koko-nimbus-first-welcome
+mark NIMBUS visited
+inform Koko/Fibo/Spasti state
+```
+
+Please extend worldEvents for places and Ships. 
+
+
+
+
+---
+
+
+
+
+
 
 
 

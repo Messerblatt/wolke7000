@@ -675,16 +675,14 @@ iframe.pdf {
   z-index: 9999;
 }
 
-
 .btn-std {
   border: 1px solid var(--background-modifier-border-focus) !important;
   padding: 15px 20px 15px 20px !important;
-  border-radius: 100PX !important;
+  border-radius: 100px !important;
   background-color: var(--background-modifier-border-focus) !important;
   color: var(--background-primary) !important;
   margin: 20px !important;
   &:hover {
     background-color: white;
   }
-
 }

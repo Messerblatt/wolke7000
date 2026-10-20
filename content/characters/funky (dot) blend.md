@@ -5,10 +5,10 @@ aliases:
   - Funky
 clan: schöneberg
 ---
+![[BOOT.jpg]]
 
 
-![[funky_2.png]]
-
+_"Jaja, Foils. Alle wollen fliegen, bis se det erste Mal ’nen Kühlschrank im Wasser treffen."_
 
 
 > [!abstract] Brief Profile

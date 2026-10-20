@@ -693,7 +693,8 @@ function showToast(message: string) {
     container.id = "wolke-item-toasts"
     container.setAttribute("aria-live", "polite")
     container.setAttribute("aria-atomic", "false")
-    document.body.append(container)
+    const rightSidebar = document.querySelector<HTMLElement>(".sidebar.right")
+    ;(rightSidebar ?? document.body).append(container)
   }
 
   const toast = document.createElement("div")
