@@ -1,5 +1,9 @@
 import { GameRuntime } from "./runtime"
-import { createWeatherRuntime, type WeatherRuntime } from "../weather/weather"
+import { ActionExecutor } from "./action-executor"
+import { ConditionEvaluator, type InventoryReader } from "./condition-evaluator"
+import { createInitialGameState } from "./game-state"
+import { EventEngine } from "./event-engine"
+import { nimbusFirstArrival } from "../events/nimbusFirstArrival"
 import type {
   GameCommand,
   InventoryEntry,
@@ -35,7 +39,7 @@ export interface Wolke {
   getClanVisitCount(clan: string): number
   /** Timestamp of the most recent visit to a location, or null if unknown. */
   getLastVisit(location: string): number | null
-  readonly weather: WeatherRuntime
+  readonly events: EventEngine
   subscribe(listener: (snapshot: GameState) => void): () => void
   reset(): Promise<void>
 }
@@ -53,6 +57,32 @@ function browserStorage() {
   } catch {
     return null
   }
+}
+
+function createEventEngine(runtime: GameRuntime): EventEngine {
+  const state = createInitialGameState()
+  const inventory: InventoryReader & {
+    add(itemId: string): Promise<void>
+    remove(itemId: string): Promise<void>
+  } = {
+    async has(itemId) {
+      return runtime.getSnapshot().items.some((item) => item.id === itemId || item.name === itemId)
+    },
+    async add(itemId) {
+      await runtime.execute({ type: "item_taken", item: itemId })
+    },
+    async remove(itemId) {
+      await runtime.execute({ type: "item_sold", item: itemId })
+    },
+  }
+
+  const events = new EventEngine(
+    state,
+    new ConditionEvaluator(state, inventory),
+    new ActionExecutor(state, inventory),
+  )
+  events.register(nimbusFirstArrival)
+  return events
 }
 
 function notifyItemPickedUp(command: GameCommand): void {
@@ -152,6 +182,7 @@ export function getWolke(): Wolke {
   if (window.wolke) return window.wolke
 
   const runtime = new GameRuntime({ storage: browserStorage() })
+  const events = createEventEngine(runtime)
   const wolke: Wolke = {
     execute: async (command) => {
       await runtime.execute(command)
@@ -205,7 +236,7 @@ export function getWolke(): Wolke {
         null
       )
     },
-    weather: createWeatherRuntime(),
+    events,
     subscribe: runtime.subscribe.bind(runtime),
     reset: async () => {
       await runtime.reset()

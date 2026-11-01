@@ -4,20 +4,21 @@ aliases:
 tags:
   - angel
 ship: NIMBUS
-music:
+location: canteen-kreuzberg
 ---
 
-:::epiphany
-![[angel_3.png]]
 
-```item
-🤍
-```
-
-:::
+![[angel_2.png]]
 
 
-:::requires-level={level="3"}
+
+Emphatisch, sensibel und verträumt. Eine gute Diplomatin, wäre sie nur nicht so oft mit dem Kopf in Wolke 7000.
+
+
+
+
+
+
 
 ## Vox 21 - His last flight
 
@@ -25,25 +26,14 @@ The wreck lies on the lock of [[Tempelhof Diskoord|Tempelhof]]. That [[Vox]] tol
 
 Shortly receiving messages from up there. First I ignore, may clouds force to their castle. [[Fibo]] say: "That's Kokolores." But the messages are louder, louder, Koko is finding it very difficult to ignore.
 
-Ships can fly, because I. To the place where Vox has returned. Dead. So we're in this together.
+Ships can fly, because I. To the place where Vox has returned. Dead. Alive.
 
-:::
+## Background
 
-
-> [!note]- My Truth 🤍
+> [!note] Truth
 > Kokolores comes from a poor background. She no longer has any contact with her family. She knows her relatives almost exclusively from vague childhood memories, which over the years have increasingly taken on the character of distant dreams.
 
 
-> [!note]- My Friends 😍
-> [[Fibo]], [[Spasti]] and [[Koko]]. May the former two be forever and forever. We made it somehow. No con, now whom form the [[NIMBUS]] crew, she earns money, wouldnt be true without you, which she mostly sells on [[EVERYTHING|EVERYTHING]]. I can't wait to become obese. Because friends do this all the time.
-
-
-> [!note]- My Humbleness 🗝️ 
-> 
-
-
-> [!note]- My Genius 🤘
-> I am empathetic, sensitive and dreamy. I am good diplomat, but because I always jump head first into clouds, she sometimes loses the plot in the middle of ... uhmm. What?
 
 
 
@@ -59,24 +49,7 @@ Koko = Angel. She has long white hair, which she usually ties into two pigtails 
 
 ---
 
-:::requires-item={item="🤍", 4}
-
-"I love that car."
-
-![[volta.png]]
-
-
-[[Fibo|I have no idea what just happened]]
-
-🧚
-
-:::
-
-
----
-
 ## Persönlichkeit
-
 
 
 She is prone to Spoonerisms, where she swaps the first letters of two adjacent words. In general, their linguistic expression often stumbles over the meaning of the corresponding words, such as: "Nobody is like this now."

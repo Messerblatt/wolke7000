@@ -1,6 +1,7 @@
 ---
 clan:
 ship: NIMBUS
+location: canteen-kreuzberg
 ---
 
 

@@ -1,9 +1,9 @@
 ---
-ship: INFINITY
 archive_presence: true
 aliases:
   - Funky
-clan: schöneberg
+location: tempelhof-diskoord
+ship: INFINITY
 ---
 ![[BOOT.jpg]]
 

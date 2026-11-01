@@ -128,70 +128,6 @@ function emitItemEvent(type: "item_placed" | "item_taken", item: Record<string, 
   }
 }
 
-function blockItems(button: Element, after: string): Record<string, unknown>[] {
-  const block = button.closest("pre") ?? button.closest("figure")?.querySelector("pre")
-  const name = button.getAttribute("data-rucksack-name")?.trim()
-  if (!block || !name) return []
-
-  const lines = blockContent(block)
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean)
-  const id = button.getAttribute("data-rucksack-toggle-block") ?? undefined
-  const blockId = block.dataset.wolkeBlockId ?? blockIdFor(block)
-  return lines.map((line, index) => ({
-    item: {
-      id: index === 0 ? id : undefined,
-      name: line,
-      source: window.location.pathname,
-    },
-    blockId,
-    before: blockContent(block),
-    after,
-    language: blockLanguage(block),
-  }))
-}
-
-function stashItemBlock(block: Element): boolean {
-  if (!isItemBlock(block)) return false
-
-  const before = blockContent(block)
-  const lines = before
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean)
-  if (lines.length === 0) return true
-
-  const blockId = blockIdFor(block)
-  const source = window.location.pathname
-  const items = lines.map((name, index) => ({
-    id: lines.length === 1 ? blockId : `${blockId}#item-${index}`,
-    name,
-    source,
-  }))
-  const snapshot = game.getSnapshot()
-  const alreadyStashed =
-    snapshot.blocks.some((saved) => saved.id === blockId && saved.content === "") ||
-    items.some((item) => snapshot.items.some((saved) => saved.id === item.id))
-
-  // A block may briefly be visible before navigation reconciliation restores
-  // its saved empty state. Never award it again in that window.
-  trackedBlocks.set(block, "")
-  ;(block.closest("figure") ?? block).remove()
-  if (alreadyStashed) {
-    void game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
-    return true
-  }
-
-  void (async () => {
-    // Persist the consumed source before adding the item. Subscribers can then
-    // never restore the source block between the two state updates.
-    await game.execute({ type: "block_updated", block: { id: blockId, content: "" } })
-    for (const item of items) await game.execute({ type: "item_taken", item })
-  })().catch((error) => console.error("[wolke game] could not stash item", error))
-  return true
-}
-
 function stashLetterBlock(block: Element): boolean {
   if (!isLetterBlock(block)) return false
   const letter = letterFromBlock(block)
@@ -261,15 +197,6 @@ function blockContent(block: Element): string {
   return (code?.textContent ?? block.textContent ?? "").trim()
 }
 
-function blockName(content: string): string {
-  return (
-    content
-      .split("\n")
-      .map((line) => line.trim())
-      .find(Boolean) ?? ""
-  )
-}
-
 function blockLanguage(block: Element): string {
   const language =
     block.getAttribute("data-language") ??
@@ -286,10 +213,6 @@ function fenceLanguage(block: Element): string {
   return blockLanguage(block).toLowerCase()
 }
 
-function isItemBlock(block: Element): boolean {
-  return fenceLanguage(block) === "item"
-}
-
 function isLetterBlock(block: Element): boolean {
   return fenceLanguage(block) === "letter"
 }
@@ -299,7 +222,7 @@ function isWingsBlock(block: Element): boolean {
 }
 
 function isCollectibleBlock(block: Element): boolean {
-  return isItemBlock(block) || isLetterBlock(block) || isWingsBlock(block)
+  return isLetterBlock(block) || isWingsBlock(block)
 }
 
 function blockIdFor(block: Element): string {
@@ -354,33 +277,6 @@ function inspectChangedBlocks(mutations: MutationRecord[]) {
     }
     if (current === previous) continue
 
-    // Only item fences participate in the generic mutation-based item event
-    // stream. Letters and wings have explicit pickup handlers.
-    if (!isItemBlock(block)) {
-      trackedBlocks.set(block, current)
-      continue
-    }
-
-    const previousName = blockName(previous)
-    const currentName = blockName(current)
-    const details = {
-      blockId: blockIdFor(block),
-      before: previous,
-      after: current,
-      language: blockLanguage(block),
-    }
-    if (!current) {
-      emitItemEvent("item_taken", { item: previousName, ...details })
-    } else if (!previous) {
-      emitItemEvent("item_placed", { item: currentName, ...details })
-    } else if (currentName !== previousName) {
-      emitItemEvent("item_taken", { item: previousName, ...details })
-      emitItemEvent("item_placed", { item: currentName, ...details })
-    } else if (current.length > previous.length) {
-      emitItemEvent("item_placed", { item: currentName, ...details })
-    } else {
-      emitItemEvent("item_taken", { item: previousName, ...details })
-    }
     trackedBlocks.set(block, current)
   }
 }
@@ -801,27 +697,6 @@ function onClick(event: Event) {
   const target = event.target
   if (!(target instanceof Element)) return
 
-  // Capture the Rucksack state before its own button handler toggles it.
-  const rucksackButton = target.closest("[data-rucksack-toggle-block]")
-  if (rucksackButton) {
-    const isStashed = rucksackButton.getAttribute("aria-pressed") === "true"
-    const parkedBlock =
-      rucksackButton.closest("pre") ?? rucksackButton.closest("figure")?.querySelector("pre")
-    const originalContent = parkedBlock ? blockContent(parkedBlock) : ""
-    const items = blockItems(rucksackButton, isStashed ? originalContent : "")
-    if (items.length > 0) {
-      const blockId = rucksackButton.getAttribute("data-rucksack-toggle-block")
-      if (blockId) {
-        if (isStashed) syncedRucksackEntries.delete(blockId)
-        else syncedRucksackEntries.add(blockId)
-      }
-      for (const item of items) {
-        emitItemEvent(isStashed ? "item_placed" : "item_taken", item)
-      }
-    }
-    return
-  }
-
   const rucksackRemove = target.closest("[data-rucksack-remove-entry]")
   if (rucksackRemove) {
     const entry = rucksackRemove.closest("[data-rucksack-slug]")
@@ -856,10 +731,6 @@ function onClick(event: Event) {
   // Keep the original item-copy mechanic backed by the shared runtime too.
   const copyButton = target.closest(".clipboard-button, .copy-button")
   const block = copyButton?.closest("pre") ?? copyButton?.closest("figure")?.querySelector("pre")
-  if (block && isItemBlock(block)) {
-    stashItemBlock(block)
-    return
-  }
   if (block && isLetterBlock(block)) {
     stashLetterBlock(block)
     return

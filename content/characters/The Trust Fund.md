@@ -5,10 +5,10 @@ aliases:
   - Lord Relax a Lot
   - Klimmbimm Jimmy Tim
   - Earn Hard
-  - Superzahl 6
   - Treuhand
   - Die Treuhand
 clan: schöneberg
+location: maxista
 ---
 > [!abstract]
 > The **Treuhand** is an organization founded by homeless people, alcoholics, and opportunistic property owners, whose stated goal is to steal from the rich and give the stolen goods to the poor. The founder of the Treuhand is Mia Von Schöneberg

@@ -8,20 +8,38 @@ title: Tempelhof Diskoord
 ![[icon_diskoord.jpg]]
 
 
+## Über den Ort
+
+population
+daily activity
+important characters
+conflicts
+resources
+
+## Geschichte
+
 Das **Tempelhof Diskoord** ist die **mechanische Herzkammer der Wasserstadt**. [[Open Wings]] sitzt in seinem Turm, [[EVERYTHING]] liefert Material, und auf den Hellingen wird täglich verhindert, dass [[NeuBerlin]]
 
 Das **Tempelhofer Diskoord** die größte freie Werft NeuBerlins. In den ehemaligen Flughafenhallen werden Boote gebaut, repariert, umgerüstet und notdürftig wieder schwimmfähig gemacht.
 
 Im ehemaligen Funkturm befindet sich die Schaltzentrale von [[Open Wings]].
 
+## Visual Identity
+
+sound
+smell
+
+
+---
+
 ## Open Wings Tower
 
 
-
+...
 ## The Hangars
 
 
-
+...
 ## Dovecote
 
 aktuelle Karten sämtlicher erreichbarer Schläge sowie Informationen über Sperrungen von Wasserwegen, eingestürzte Gebäude oder vorübergehend verlegte Stationen.
@@ -30,14 +48,11 @@ aktuelle Karten sämtlicher erreichbarer Schläge sowie Informationen über Sper
 
 | Places                | Ships          |
 | --------------------- | -------------- |
-| [[Teufelsberg]]       | [[EVERYTHING]] |
-| [[Brandenburger Tor]] | [[EVERYTIME]]  |
-| [[Canteen Kreuzberg]] | [[EVERYWHERE]] |
-| [[Die Maxista]]       | [[INFINITY]]   |
-| [[Gasometer]]         | [[NIMBUS]]     |
-| [[Humboldhain]]       |                |
-| [[Viktoriapark]]      |                |
-| [[Mont Klamott]]      |                |
+| [[Canteen Kreuzberg]] | [[EVERYTHING]] |
+| [[Die Maxista]]       | [[EVERYTIME]]  |
+|                       | [[EVERYWHERE]] |
+|                       | [[INFINITY]]   |
+|                       | [[NIMBUS]]     |
 
 
 ## Network Card

@@ -1,51 +1,29 @@
 ---
-clan: schöneberg
-location: die-maxista
+location: maxista
 wings-hub: true
 class: place
-title: Die Maxista
 ---
+## Über den Ort
+
+population
+daily activity
+important characters
+conflicts
+resources
+
+## Geschichte
+
+...
+
+## Visual Identity
 
 
-```
-officially-certified-chive-stalk
-```
 
-```
-overlength-chive-exemption
-```
+sound
+smell
 
-```
-form-sr-12b-provisional-herb-neutrality
-```
 
-```
-ministry-of-chive-reform-official-seal
-```
-
-```
-golden-chive-scissors
-```
-
-```
-ministerial-chive-sample
-```
-
-```
-reformed-chives
-```
-
-```
-properly-bundled-certificate
-```
-
-```
-provisional-chive-height-gauge
-```
-
-```
-mias-official-chive-record
-```
+---
 
 
 ## Dovecote

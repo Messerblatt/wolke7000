@@ -496,8 +496,8 @@ export async function loadQuartzConfig(
   // Import built-in plugins
   const builtinPlugins = await import("../index")
   const builtinTransformers: unknown[] = [
-    builtinPlugins.ConditionalContent(),
-    builtinPlugins.EpiphanyCallout(),
+    // builtinPlugins.ConditionalContent(),
+    // builtinPlugins.EpiphanyCallout(),
   ]
   const builtinEmitters = [
     builtinPlugins.ComponentResources(),

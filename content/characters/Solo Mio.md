@@ -1,6 +1,6 @@
 ---
-clan:
 ship: EVERYTHING
+location: maxista
 ---
 
 ![[solo.png]]

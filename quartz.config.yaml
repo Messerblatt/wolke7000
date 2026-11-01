@@ -217,37 +217,28 @@ plugins:
       priority: 15
       display: all
   - source: "@quartz-community/graph"
+    # Graph is rendered by the graph-spa wrapper below.
     enabled: false
   - source: "./quartz-local/graph-spa"
     enabled: true
     options:
       localGraph:
-        showTags: false
+        showTags: true
       globalGraph:
-        showTags: false
+        showTags: true
     layout:
       position: right
       priority: 30
   - source: "wolke-experience"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 40
-  - source: "wolke-wings-routes"
-    enabled: false
-    layout:
-      position: right
-      priority: 45
   - source: "wolke-inventory"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 50
-  - source: "wolke-volier"
-    enabled: false
-    layout:
-      position: right
-      priority: 55
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -354,12 +345,6 @@ plugins:
     enabled: true
     options: {}
     order: 45
-  - source: github:Messerblatt/quartz-plugin-rucksack
-    enabled: false
-    layout:
-      position: left
-      priority: 60
-      display: all
 layout:
   groups:
     toolbar:

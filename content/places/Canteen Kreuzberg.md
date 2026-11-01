@@ -6,9 +6,22 @@ class: place
 title: Canteen Kreuzberg
 ---
 
-Maybe it's about time to consider the greatest [[Exilium AG|301 redirect]] of your life? Get yourself out of yourself! 
+## Über den Ort
 
-Just kidding. I'm decoying myself away from the experience I had.
+population
+daily activity
+important characters
+conflicts
+resources
 
-[[Kokolores|Holy]]
+## Geschichte
+
+...
+
+## Visual Identity
+
+
+
+sound
+smell
 

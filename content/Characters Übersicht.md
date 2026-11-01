@@ -43,12 +43,11 @@
 >[[Nero]] ist vermutlich Drahtzieher der [[Exilium AG]]. Seine Gewohnheit, mit gleicher Pathologie zu lügen wie mit Überraschungseffekten aufzutauchen und zu verschwinden, macht ihn schwer einschätzbar. Man weiß so gut wie gar nichts über ihn; ein Umstand, der ihm großes Vergnügen bereitet. [[Fibo]] bezeichnet ihn als **404er**. [[Spasti]] verfällt bei Situationen, in denen Nero erscheint, in sonderbare Traumatas, die vermutlich mit seiner Vergangenheit im Exilium in Zusammenhang steht.
 
 ---
-## [[Ajax]]
+## [[Komissar Richtig]]
 
-![[ajax_third.png]]
-
->[!abstract] Kurzprofil
->[[Ajax]] ist ex Marineangehöriger und Leiter des **Marine-Archivs von NeuBerlin**. Nach einer schweren Schulterverletzung während der Alsterkriege wurde er nach NeuBerlin versetzt und übernahm dort faktisch die Führung des Archivs, nachdem seine Vorgänger ausschieden und die Zentralverwaltung verschwand. Er ist Veteran, Überlebenskünstler und Ausbilder jüngerer Kapitäne; und ein Mann, der nicht müde wird, über inkompetentes Management zu schimpfen.
+> [!abstract]  
+> **Kripo-Beamter, bis auf Weiteres im Vor-Ruhestand.**  
+> Auf der Suche nach seiner nicht-existenten Pension. Mitglied des [[Konsortium Mitte]]. Offizieller Status: ungeklärt. Inoffizieller Status: sehr ungehalten.
 
 ---
 
@@ -63,8 +62,6 @@
 ---
 
 ## [[Gojan]]
-
-![[gojan_third.png]]
 
 > [!abstract] Kurzprofil
 > [[Gojan]] ist Tsunami-Fänger, Inhaber der NeuBerliner Wasserwerke und einer der drei Epiphanen der Saga. Mit 27 Jahren bereits zum Helden erklärt, ist er ein vom Generationenkrieg zermürbter Rebell. Während [[Admiral 7]] die Nachwelt zum Richter über die Gegenwart erhebt, hat Gojan aus dessen Jahrtausendimperativ eine praktische Lebensaufgabe gemacht: Er will eine Zukunft errichten, die sich nicht länger vor der Vergangenheit verbeugen muss.
@@ -116,10 +113,9 @@
 ## [[Joyce]]
 
 
+Later...
+
 ---
-
-## Ab dem 2. Teil: 
-
 
 ## [[T1ng Trebuchet]]
 
@@ -127,14 +123,6 @@
 
 ---
 ## [[Sam 3]]
-
-
----
-## [[Fünfblut]]
-
-
----
-## [[Trance La Lotta]]
 
 
 ---
@@ -146,23 +134,7 @@
 
 
 ---
-## [[9Dr]]
-
-
----
-## [[Bischof Bosom]]
-
-
 
 ## [[Beatrix Von Burg]]
 
 
-## [[Sayu Fujihara]]
-
-
----
-
-
-## Ab dem 4. Teil:
-
-## Fiber's End

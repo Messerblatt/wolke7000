@@ -1,15 +1,12 @@
 ---
 clan: Kreuzberg
+location: exilium
 ---
+> [!abstract] Kurzprofil
+> [[Gojan]] ist Tsunami-Fänger, Inhaber der NeuBerliner Wasserwerke und einer der drei Epiphanen der Saga. Mit 27 Jahren bereits zum Helden erklärt, ist er ein vom Generationenkrieg zermürbter Rebell. Während [[Admiral 7]] die Nachwelt zum Richter über die Gegenwart erhebt, hat Gojan aus dessen Jahrtausendimperativ eine praktische Lebensaufgabe gemacht: Er will eine Zukunft errichten, die sich nicht länger vor der Vergangenheit verbeugen muss.
 
 
 _„Die Toten hatten ihre Gegenwart. Ich sehe nicht ein, warum sie auch noch unsere bekommen sollen.“_
-
-
-[[speisekarte]]
-
-[[Michaelangelo]]
-
 
 Gojan ist für [[Die Wasserwerke]] von [[NeuBerlin]] verantwortlich: Das Konglomerat der Pumpen reguliert die Wassermassen entlang der 4 Flanken von [[NeuBerlin]]. 
 
@@ -32,12 +29,12 @@ Gojan misstraut deshalb dem moralischen Freispruch der Vorfahren. Jede Epoche, m
 
 Von dieser Überzeugung getrieben, will Gojan die Spuren früherer Generationen aus den Archiven NeuBerlins tilgen. Die nächste Generation soll ihre eigenen Idole hervorbringen, statt unter dem historischen Gewicht der Alten aufzuwachsen. Errungenschaften sollen nach ihrem Nutzen beurteilt werden, nicht nach dem Glanz der Namen, die an ihnen haften. Darin liegt Gojans praktische Auslegung der Deppenklausel: Niemand hat Anspruch auf Verehrung, bloß weil er rechtzeitig genug gestorben ist.
 
-Sein Vorhaben enthält einen Widerspruch, den [[Ajax]] ihm mit großer Ausdauer vorhält: Wer die Fehler der Vergangenheit auslöscht, befreit die Zukunft nicht von ihnen, sondern nimmt ihr nur die Beweismittel. Gojan erwidert darauf, Archive seien keine Erinnerung, sondern Mausoleen mit alphabetischer Sortierung.
+Sein Vorhaben enthält einen Widerspruch, den [[Komissar Richtig]] ihm mit großer Ausdauer vorhält: Wer die Fehler der Vergangenheit auslöscht, befreit die Zukunft nicht von ihnen, sondern nimmt ihr nur die Beweismittel. Gojan erwidert darauf, Archive seien keine Erinnerung, sondern Mausoleen mit alphabetischer Sortierung.
 
-> [!question] [[Ajax]]’ Einwand
+> [!question] [[Komissar Richtig]]’ Einwand
 > Wenn Gojan alle Spuren der Alten tilgt: Befreit er die Zukunft – oder verurteilt er sie dazu, dieselben Fehler ohne Vorwarnung zu wiederholen?
 
-[[Ajax]] kannte Gojans Eltern persönlich. Er versuchte Gojan zu erklären, dass die schwierigen Umstände ihrer Zeit das Scheitern des Kleinen Betriebswechsels verursacht hätten. Gojan hörte darin lediglich die älteste Ausrede der Welt: Man hätte ja gern das Richtige getan, aber leider sei gerade Gegenwart gewesen.
+[[Komissar Richtig]] kannte Gojans Eltern persönlich. Er versuchte Gojan zu erklären, dass die schwierigen Umstände ihrer Zeit das Scheitern des Kleinen Betriebswechsels verursacht hätten. Gojan hörte darin lediglich die älteste Ausrede der Welt: Man hätte ja gern das Richtige getan, aber leider sei gerade Gegenwart gewesen.
 
 Der Streit eskalierte. Gojan warf mehrere Regale des Archivs um und beschloss anschließend, Tsunamis zu fangen. So kehrte er an die Südflanke zurück.
  
@@ -98,8 +95,8 @@ Seine Loyalität ist dennoch an ein strenges Urteil gebunden. Wer die Zukunft ve
 > „Ein Kompromiss mit dem Untergang heißt nur, dass man sich auf die Hälfte des Untergangs geeinigt hat.“
 
 
-> [!quote] Über [[Ajax]]
-> „[[Ajax]] bewahrt jeden Fehler sorgfältig auf. Falls die Zukunft vergessen sollte, woran sie scheitern soll.“
+> [!quote] Über [[Komissar Richtig]]
+> „[[Komissar Richtig]] bewahrt jeden Fehler sorgfältig auf. Falls die Zukunft vergessen sollte, woran sie scheitern soll.“
 
 > [!quote] Über [[Salt Brah]]
 > „Er verwechselt Widerstand mit Lautstärke. Das passiert häufig bei Männern, die vom Meer gelernt haben, aber nur die Brandung verstehen.“

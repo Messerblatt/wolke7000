@@ -1,27 +1,11 @@
 ---
 ship: NIMBUS
+location: canteen-kreuzberg
 ---
-- Angekokelte Benzinflasche.
-- Kerosinprobe.
-- Brennstoffetikett mit „nicht trinken“.
-- Feuerzeug mit acht Sicherheitswarnungen.
-- Metallstück mit Zahnabdruck.
-- Halbe Warnweste.
-- „Nicht anzünden“-Schild. Angebrannt.
-- Spasti-Zertifikat „vorläufig ungefährlich“. Abgelaufen.
-
 
 
 
 Über Spastis frühe Kindheit ist nur wenig bekannt. Eltern und Lehrer sollen ihn gleichermaßen verschmäht haben. Spasti selbst spricht nur selten über seine Vergangenheit. Wird er danach gefragt, gibt er widersprüchliche Antworten. So behauptet er unter anderem, von Wölfen, streikenden Hafenarbeitern oder defekten Getränkeautomaten großgezogen worden zu sein.
-
-:::requires-item{item="diesel"}
-
-Lass uns [[Nero]] auf ein kleines Stell-dich-ein herausfordern
-
-:::
-
-
 
 > [!quote] Spasti über seine Kindheit  
 > „Ich hatte eine normale Kindheit. Die anderen waren das Problem.“
@@ -208,3 +192,19 @@ So erscheint sein Name häufig auf Hauswänden. Mehrere Parolen werden ihm zuges
 > „Tür zu? Revolution.“
 
 [[Fibo]] vermutet, dass Spastis Anhänger ihn für wesentlich philosophischer halten, als er tatsächlich ist. Spasti empfindet das als Kompliment.
+
+
+## Items
+
+- Angekokelte Benzinflasche.
+- Kerosinprobe.
+- Brennstoffetikett mit „nicht trinken“.
+- Feuerzeug mit acht Sicherheitswarnungen.
+- Metallstück mit Zahnabdruck.
+- Halbe Warnweste.
+- „Nicht anzünden“-Schild. Angebrannt.
+- Spasti-Zertifikat „vorläufig ungefährlich“. Abgelaufen.
+
+
+
+

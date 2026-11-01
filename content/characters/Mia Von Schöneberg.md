@@ -3,16 +3,9 @@ clan: schöneberg
 ship: MS_JOHANNA
 aliases:
   - Mia
+location: maxista
 ---
 ![[mia_3.png]]
-
-
-
-```item
-peacock-feather
-```
-
-:::requires-item{item="peacock-feather"}
 
 ## Peacocks
 
@@ -23,13 +16,6 @@ The **Insulaner in Schöneberg** is her domain—and also home to a number of pe
 Mia does not explicitly deny this—which, in her case, usually implies that the truth is either incredibly dull or extremely expensive.> [!quote]
 > “Solo and I exchange nothing but cultural goods. What exactly constitutes ‘culture’ is something we decide only after the delivery arrives.”
 
-:::
-
-```item
-peacock-ring
-```
-
-:::requires-item={item="peacock-ring"}
 
 ## Peacock Ring
 
@@ -62,38 +48,10 @@ Her true talent emerges whenever groups threaten to fall apart. Mia recognizes w
 
 The result is that everyone starts working together again—and no one knows why.
 
-:::
-
-
-```item
-fragment-of-the-stolen-crown
-```
-
-
-:::requires-item{item="fragment-of-the-stolen-crown"}
-
 
 ## The Stolen Crown
 
 In the year 2114, she pulled off a clandestine operation to steal the nobility’s crown. The exact sequence of events remains unclear, as everyone involved subsequently either stayed silent, lied, or claimed they couldn’t remember—which, at court, amounts to roughly the same thing in terms of evidence. What is certain is that Mia later gifted the crown to the mysterious **Lord Relax a Lot** and, in the process, established [[The Trust Fund]].
-
-:::
-
-```item
-schoeneberg-invitation-card
-```
-
-:::requires-item{item="invitation-card"}
-
-To Do
-:::
-
-```item
-rooftop-rave-champagne-label
-```
-
-
-:::requires-item{item="rooftop-rave-champagne-label"}
 
 ## The Socialite
 
@@ -102,30 +60,6 @@ Upon her arrival in New Berlin, she promptly took charge of Schöneberg—a dist
 From this milieu, a new elite evolved—though Mia publicly rejects the term "elite," preferring instead to call them **"people with options."**
 > [!quote]
 > "You can recognize an elite by the fact that they claim not to be one."
-
-:::
-
-
-```item
-broken-sunglasses
-```
-
-```item
-ministerial-hairpin
-```
-
-
-:::requires-item{item=""}
-
-:::
-
-
-```item
-treuhand-chip
-```
-
-
-:::requires-item{item="treuhand-chip"}
 
 ## Rumors
 
@@ -136,30 +70,11 @@ Whenever a conversation veers in that direction, Mia executes a rhetorical maneu
 > [!quote]
 > “My childhood? Oh, please. We’re currently discussing *your* decisions.”
 
-:::
-
-
-```item
-ankle-monitor-service-log
-```
-
-
-:::requires-item{item="ankle-monitor-service-log"}
 
 ## Tracked and Persecuted
 The nobility’s tribunal sentenced Mia to lifelong exile in New Berlin. A tracking device on her ankle has monitored her real-time location ever since; should she cross the designated boundaries, the [[Sentinel 7]] units are alerted.
 
 Mia refers to the device as "jewelry with an administrative inferiority complex."
-
-:::
-
-
-```item
-paraglider-carabiner
-```
-
-
-:::requires-item{item="paraglider-carabiner"}
 
 ## On Fibo's Spiral
 
@@ -182,27 +97,8 @@ Mia values ​​Fibo’s intelligence precisely because he rarely tries to show
 > Whenever Mia von Schöneberg begins a sentence with the phrase **“Just between us,”** there are at least twelve people within a three-meter radius who will go on to repeat it to others.
 > 
 
-:::
-
-
-```item
-stamp-from-beatrix
-```
-
-:::requires-item{item="stamp-from-beatrix"}
-
 ## Beatrix Von Burg
 Her fear that her sister, [[Beatrix Von Burg]], is—alongside Admiral 7—continuing to advance the interests of the nobility in the heavens is one of the primary reasons she joined the [[Ascension Command]]. Mia often describes Beatrix as “a woman of impeccable taste, yet one who draws appallingly incorrect conclusions.”
-
-:::
-
-
-```item
-mias-of-course-business-card
-```
-
-
-:::requires-item{item="mias-of-course-business-card"}
 
 ## Of Course!
 
@@ -210,11 +106,6 @@ Mia is known for being exceptionally well-connected. Whether her title, **"Von S
 
 > [!quote]
 > "Of course the *'Von'* is genuine. The more interesting question would be whether the nobility itself is genuine."
-
-:::
-
-
-
 
 ## Personality
 

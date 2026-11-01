@@ -2,6 +2,8 @@
 clan: schöneberg
 archive_presence: true
 template: full-width
+location: tempelhof-diskoord
+ship: INFINITY
 ---
 
 ![[2898007d-2f44-49ee-b1dd-9cdc64ec21ab.png]]

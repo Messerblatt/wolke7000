@@ -1,7 +1,7 @@
 ---
 wings-hub: true
 class: ship
-location: ikea-tempelhof
+locationId: nimbus
 ---
 
 ## Volier

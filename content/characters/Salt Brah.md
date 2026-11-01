@@ -1,17 +1,9 @@
 ---
-clan: schöneberg
 ship: INFINITY
 archive_presence: true
+location: tempelhof-diskoord
 ---
-- Modifizierter Game Boy.
-- Feedback-Kanonen-Kondensator.
-- Gitarrenplektrum aus Leiterplatte.
-- 140-dB-Messprotokoll.
-- Mini-Bassbock.
-- Applausmaschinen-Taster.
-- „Aufstandsglocke“-Klöppel.
-- Ohrstöpsel. Extrem wertvoll im Kontext.
-- Kabel, das laut Salt „mehr Haltung als Signal“ überträgt.
+
 
 
 Salt Brah wurde während des **Alsterkriegs von Hamburg_2** geboren. Über seine Familie ist wenig bekannt. Unzuverlässige Quellen deuten zumindest darauf hin, dass er als Jugendlicher eine Klavierausbildung absolvierte und auffällige Sympathien für historische Verräter wie Judas, Brutus oder [[Nero]] zeigte.
@@ -103,3 +95,19 @@ Zu Beginn zeigt Salt wenig Interesse an [[Spasti]] und [[Fibo]] und betrachtet s
 > „Er kann Feuer spucken? Warum hat man mir das nicht früher gesagt?
 
 [[Spasti]] bewundert Salts Hang zu Aufständen, versteht die politischen Hintergründe aber nur selten. Salt sieht darin kein Problem; nach seiner Erfahrung benötigen Revolutionen zwei Arten von Menschen: Die, die Manifeste schreiben, und die, die mit Tischen werfen. [[Spasti]] sei für die Tische zuständig.
+
+
+
+## Items
+
+- Modifizierter Game Boy.
+- Feedback-Kanonen-Kondensator.
+- Gitarrenplektrum aus Leiterplatte.
+- 140-dB-Messprotokoll.
+- Mini-Bassbock.
+- Applausmaschinen-Taster.
+- „Aufstandsglocke“-Klöppel.
+- Ohrstöpsel. Extrem wertvoll im Kontext.
+- Kabel, das laut Salt „mehr Haltung als Signal“ überträgt.
+
+

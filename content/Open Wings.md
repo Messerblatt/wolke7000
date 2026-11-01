@@ -53,11 +53,6 @@ Jede Nachbarschaft unterhält **Taubenschläge**, vergleichbar mit den „Server
 
 Da Tauben nur _nach Hause_ fliegen können, sind Zwischenstationen nötig, Wie bei einer „Hop-by-Hop“-Übertragung im alten Internet. Um eine Nachricht beispielsweise von Treptow zum Prenzlauer Berg zu transportieren, müssen Tauben, die einen solchen Nachhauseweg nicht als Ganzes kennen, Zwischenstationen ansteuern, also ihren eigentlichen Heimatschlag. Hier wird die Nachricht an die nächste Brieftaube übergeben, und der nächste Taubenschlag wird angesteuert:
 
-```wings
-Treptow → Kreuzberg → Neukölln → Prenzlauer Berg
-```
-
-
 Dabei gilt: 1 Abschnitt = 1 Taube.
 
 ---
@@ -76,31 +71,11 @@ Mitunter können Briefsendungen verloren gehen. Das tut der Brieftaube natürlic
 
 Jede größere Station besitzt mehrere Taubenschläge. Die dort gehaltenen Tauben gehören jeweils zu anderen Stationen:
 
-```wings
-Station Alexanderhafen
-
-12 Tauben → Wedding
-8 Tauben  → Kreuzberg
-5 Tauben  → Köpenick
-3 Tauben  → EVERYTHING Nord
-```
-
 Soll ein Päckchen von Köpenick nach Wedding, muss keine Taube beide Orte kennen:
-
-```wings
-Köpenick
-   │ Taube mit Heimatschlag Alexanderhafen
-   ▼
-Alexanderhafen
-   │ Taube mit Heimatschlag Wedding
-   ▼
-Wedding
-```
 
 Das Paket wird an jeder Station umgeladen. Die Tauben sind die **Leitungen**, die Schläge sind die **Router**, und Menschen oder mechanische Sortierwerke führen den Algorithmus aus.
 
 ### Distance Vector: Jede Station kennt nur ihre Nachbarn
-
 
 Jede Station führt ein handgeschriebenes **Routenbuch**:
 
@@ -117,13 +92,6 @@ Die Station muss nicht das gesamte Netz kennen. Sie fragt nur:
 Das entspricht einem Distance-Vector-Verfahren, also einer verteilten Form von Bellman-Ford. Reale Routingprotokolle wie Babel bauen auf diesem Prinzip auf und ergänzen Mechanismen gegen Routenschleifen.
 
 In NeuBerlin könnten die Tabellen einmal täglich mit Kurierkarten aktualisiert werden. Ein Eintrag wäre beispielsweise:
-
-```wings
-WEDDING:
-über ALEX 70
-über MOABIT 55
-über WESTHAFEN 90
-```
 
 Problematisch wird es, wenn eine Station ausfällt und die anderen noch veraltete Informationen besitzen. Dann könnte ein Paket im Kreis geschickt werden. Daher braucht jeder Behälter einen **Hop-Zähler**: Nach beispielsweise sechs Umladungen wird er nicht weitergeschickt, sondern landet im Fundbüro der EVERYTHING
 

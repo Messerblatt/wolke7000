@@ -1,21 +1,26 @@
 const SCRUNCH_URL = "/audio/scrunch.mp3"
 const WHOOP_URL = "/audio/whoop.mp3"
+const NAVIGATION_VOLUME = 0.2
 
 function playScrunch() {
   if (window.__wolkeAudio) {
-    window.__wolkeAudio.play(SCRUNCH_URL)
+    const scrunch = window.__wolkeAudio.play(SCRUNCH_URL)
+    scrunch.volume = NAVIGATION_VOLUME
     return
   }
   const scrunch = new Audio(SCRUNCH_URL)
+  scrunch.volume = NAVIGATION_VOLUME
   void scrunch.play().catch(() => {})
 }
 
 function playWhoop() {
   if (window.__wolkeAudio) {
-    window.__wolkeAudio.play(WHOOP_URL)
+    const whoop = window.__wolkeAudio.play(WHOOP_URL)
+    whoop.volume = NAVIGATION_VOLUME
     return
   }
   const whoop = new Audio(WHOOP_URL)
+  whoop.volume = NAVIGATION_VOLUME
   void whoop.play().catch(() => {})
 }
 
