@@ -14,7 +14,7 @@ Fashion
 Religion / belief
 Law: Clans sorgen unabhängig von staatlicher Gewalt für Sicherheit. Nachbarschaftspolizei. 
 
-Polizei praktisch irrelevant. [[Komissar Richtig]] bemüht sich um Wiederherstellung der amtlichen Würde, muss aber mit der Bürokratie von NeuBerlin kämpfen.
+The police are practically irrelevant. [[Commissioner Richtig]] strives to restore official dignity, but finds himself battling the bureaucracy of New Berlin.
 
 Crime
 Media
@@ -35,3 +35,19 @@ RULE: Anything essential should have a manual fallback.
 RULE: Transport is constrained by water, wind, maintenance, and information delay.
 RULE: Old Berlin is reused rather than erased.
 
+
+
+## Clans von NeuBerlin
+
+Reinickendorfer Nordbund
+Pankower Freischar
+Prenzlauer Höhenbund
+Marzahner Plattenflotte
+Lichtenberger Stahlstaffel
+Köpenicker Stromgeschwader
+Kreuzberger Kaperbund
+Neuköllner Freihafen
+Konsortium Mitte
+Schöneberg Archipel
+Allianz Steglitz-Zehlendorf
+Spandauer Bollwerk

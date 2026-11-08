@@ -5,32 +5,30 @@ aliases:
 location: tempelhof-diskoord
 ship: INFINITY
 ---
-![[BOOT.jpg]]
+![[imgs/characters/funky/funky_2.png]]
 
 
-_"Jaja, Foils. Alle wollen fliegen, bis se det erste Mal ’nen Kühlschrank im Wasser treffen."_
+>[!quote] 
+> "Yeah, yeah—foils. Everyone wants to fly, until the first time they hit a 'fridge' in the water."
+
+> [!abstract] Profile
+> **Funky.blend** is the administrator of the [[Tempelhof Diskoord]], gunner on the [[INFINITY]], designer of the [[SHARK Series |FLITZA]] racing boat, and presumably the only person in Neu Berlin who can simultaneously repair, insult, and reconstruct a leaky ship in Blender.
 
 
-> [!abstract] Brief Profile
-> **Funky.blend** is the administrator of the [[Tempelhof Diskoord]], gunner on the [[INFINITY]], designer of the [[SHARK Series |FLITZA]] racing boat, and presumably the only person in NeuBerlin who can simultaneously repair, insult, and reconstruct a leaky ship in Blender.
->
-> Quick-witted and resourceful, she combines extraordinary spatial imagination with technical precision, a Berlin-style bluntness, and a pronounced tendency to parody pirate clichés until no one knows where the parody ends.
-
-
-> [!quote] [[Kokolores]] on Funky.blend
+> [!quote] [[Kokolores]] on Funky
 > “She sails as if she wants to prove to the horizon that it’s too slow.”
 
-| Merkmal                | Beschreibung                                                 |
-| ---------------------- | ------------------------------------------------------------ |
-| **Name**               | **Funky.blend**                                              |
-| **Zugehörigkeit**      | [[Tempelhof Diskoord]]; [[Himmelfahrtskommando]]             |
-| **Funktion**           | Kanonierin der [[INFINITY]], Schiffskonstrukteurin, Rennseglerin |
-| **Herkunft**           | [[NeuBerlin]]                                                |
-| **Spezialgebiet(e)**   | Blender, Ballistik, Elektrotechnik                           |
-| **Wichtigster Besitz** | [[FLITZA\| FLITZA]]                                    |
-| **Erscheinungsbild**   | Werkstattkleidung                                            |
-| **Größte Schwäche**    | Dramatik, schnelle Boote, Piratenwitze                       |
-| **Haltung**            | Frech, lustig, schlagfertig                                  |
+| Merkmal                       | Beschreibung                                                  |
+| ----------------------------- | ------------------------------------------------------------- |
+| **Name**                      | **Funky.blend**                                               |
+| **Affiliation**               | [[Tempelhof Diskoord]]; [[Suicide Squad]]              |
+| **Job(s)**                    | Gunner on the [[INFINITY]], ship designer, competitive sailor |
+| **Origin**                    | [[Neu Berlin]]                                                |
+| **Area(s) of specialization** | Blender, ballistics, electrical engineering                   |
+| **Wichtigster Besitz**        | [[FLITZA\| FLITZA]]                                           |
+| **Erscheinungsbild**          | Workshop clothing                                             |
+| **Weaknesses**                | Drama, fast boats, pirate jokes                               |
+| **Attitude**                  | Cheeky, funny, quick-witted                                   |
 ## Biography
 
 Funky learned 3D modeling as a child on a makeshift computer whose graphics card would dim the workshop lights every time it rendered an image.
@@ -39,7 +37,7 @@ Her name came from an early project file called “Funky.blend”—a Blender fi
 
 Together with [[Ciao Von Bella]] and [[Salt Brah]], Funky.blend forms the administration of the [[Tempelhof Diskoord]]. She coordinates the workshops, carries out repairs, and keeps [[Spasti]] from looting the fuel depot. Her hands-on management style is considered highly unpredictable and, to outsiders, unnecessarily offensive.
 
-> [!quote] Funky on management
+> [!quote] Funky on Management
 > “Order is when everyone knows where that part is. Bureaucracy is when there are three forms for it and the thing’s still missing.”
 
 Funky is notorious for walking past other people’s boats right before the start of a boat race, tapping the hull once with her finger, and saying:
@@ -52,7 +50,7 @@ Participants often withdraw from the race as a result.
 
 Funky made significant contributions to the **network topology** of the [[Open Wings]] flight routes. Funky insisted that the information network could not be viewed independently of the real city. A message locating a spare part would be useless if the only available boat were currently sitting unsailed in the [[Tempelhof Diskoord]].
 
-She developed several versions that could simulate bottlenecks between [[Open Wings]], [[EVERYTHING|EVERYTHING]], and the boat fleets of NeuBerlin. The 3D simulations were technically outstanding and visually filled with little sharks devouring blocked routes.
+She developed several versions that could simulate bottlenecks between [[Open Wings]], [[EVERYTHING|EVERYTHING]], and the boat fleets of Neu Berlin. The 3D simulations were technically outstanding and visually filled with little sharks devouring blocked routes.
 
 ## Personality
 
@@ -85,7 +83,7 @@ She creates digital models of damaged vessels, simulates modifications, and desi
 
 FLITZA is built so low to the water that at high speeds it gives the impression of an out-of-control sea serpent. Funky leans far forward while driving and moves with the boat, causing FLITZA to look almost like a shark in tight turns—one that has set its sights on devouring the racers ahead of it.
 
-The [[INFINITY]]—the ship of the Tempelhof Diskoords—has a special docking rail at the stern that allows FLITZA to be picked up or set down while the ship is moving slowly. Funky calls this maneuver **“shark parking”**. Other crew members call it “please give us a heads-up this time.”
+The [[INFINITY]] the ship of the Tempelhof Diskoords—has a special docking rail at the stern that allows FLITZA to be picked up or set down while the ship is moving slowly. Funky calls this maneuver **“shark parking”**. Other crew members call it “please give us a heads-up this time.”
 
 On the [[INFINITY]], Funky.blend is the **gunner**. She likes to refer to the weapon systems themselves as “technical opinion amplifiers.”
 
@@ -137,7 +135,7 @@ Funky regularly challenges [[Salt Brah|Salt Brah’s]] leadership, often asking 
 
 [[Salt Brah]], in turn, views Funky as a necessary counterbalance. He sets goals; she confronts him with material costs and logistics. When Funky says, after a long argument, “We can do it,” this is considered a unanimous decision within the Diskoord.
 ### Ciao Von Bella
-Funky and [[Ciao Von Bella]] complement each other more clearly than any other member of the [[Himmelfahrtskommando]]. Where Ciao defuses conflicts, Funky sets boundaries. In dangerous situations, both are surprisingly lost without the other.
+Funky and [[Ciao Von Bella]] complement each other more clearly than any other member of the [[Suicide Squad]]. Where Ciao defuses conflicts, Funky sets boundaries. In dangerous situations, both are surprisingly lost without the other.
 
 > [!quote]
 > **Ciao:** “You can’t solve every conflict with a wrench.”

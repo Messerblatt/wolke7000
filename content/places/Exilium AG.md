@@ -4,7 +4,7 @@ title: Exilium AG
 location: exilium
 ---
 
-## Über den Ort
+## About the Place
 
 population
 daily activity
@@ -12,13 +12,11 @@ important characters
 conflicts
 resources
 
-## Geschichte
+## History
 
 ...
 
 ## Visual Identity
-
-
 
 sound
 smell

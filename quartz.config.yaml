@@ -230,7 +230,7 @@ plugins:
       position: right
       priority: 30
   - source: "wolke-experience"
-    enabled: false
+    enabled: true
     layout:
       position: right
       priority: 40
@@ -298,8 +298,8 @@ plugins:
     enabled: true
     options:
       links:
-        Impressum: impressum
-        Datenschutz: Datenschutzerklaerung
+        Imprint: imprint
+        Data Privacy: privacy
     layout:
       position: footer
       priority: 50

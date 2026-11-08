@@ -2,6 +2,16 @@
 location: exilium
 ---
 
+![[imgs/characters/Nero/nero_third.png]]
+
+>[!warning]
+>page needs redrafting
+
+
+>[!abstract] Profile
+>[[Nero]] is presumably the mastermind behind [[Exilium AG]]. His habit of lying with pathological intensity, combined with his tendency to appear and vanish with startling suddenness, makes him difficult to read. Virtually nothing is known about him—a fact that brings him great amusement. [[Fibo]] refers to him as a **"404."** Whenever Nero appears, [[Spasti]] falls into a state of peculiar trauma, likely linked to his own past within Exilium.
+
+
 
 >[!note]- The Schöneberg Protocol 
 >The so-called **"Schöneberg Protocol"** led to a stalemate in the talks between Schöneberg and Moabit: [[Mia von Schöneberg]] received a document—a "wing"—purportedly signed by [[Komissar Richtig]], which claimed that Moabit was planning to nationalize Schöneberg. [[Komissar Richtig]] immediately denounced the document as a forgery. Before both sides could conduct a joint investigation into the incident, they received a confession from Nero, in which he took responsibility for the forged letter.
@@ -10,13 +20,13 @@ location: exilium
 >
 >This left it unclear not only _who_ had authored the original letter, but also whether Nero had been falsely accused, had falsely accused himself, or simply intended for **both possibilities** to coexist. Mia and [[Komissar Richtig]] found themselves compelled to offer mutual assurances, even though neither had demonstrably harmed the other. The Schöneberg Protocol forced the parties from Schöneberg and Moabit into weeks of arduous negotiations that ultimately led _nowhere_.
 >
->The **Schöneberg Protocol** gave rise to the theory that _Nero was not the mastermind behind these events, but merely a figurehead in a larger conspiracy_. His forged confession, in particular, was interpreted as a sign that [[Exilium AG]] had already established a foothold in NeuBerlin—manipulating their supposed puppet master just as they were manipulating all other parties involved.
+>The **Schöneberg Protocol** gave rise to the theory that _Nero was not the mastermind behind these events, but merely a figurehead in a larger conspiracy_. His forged confession, in particular, was interpreted as a sign that [[Exilium AG]] had already established a foothold in Neu Berlin—manipulating their supposed puppet master just as they were manipulating all other parties involved.
 
 
 >[!warning]- Nero and Exilium AG
-> Only [[Exilium AG]] signed the agreement. Nero is considered the mastermind behind it. His sightings in NeuBerlin—accompanied by conflicting witness accounts—fuel the suspicion that Exilium was never actually dismantled, contrary to what [[Spasti]] continues to claim. A more plausible theory is that Exilium simply vanished from plain sight and relocated its headquarters to NeuBerlin, remaining undetected. Furthermore, Nero’s efforts to establish a new system of governance among the largely autonomous clans bear his unmistakable hallmark: after every round of negotiations, the parties involved find themselves in a worse position than before.
+> Only [[Exilium AG]] signed the agreement. Nero is considered the mastermind behind it. His sightings in Neu Berlin—accompanied by conflicting witness accounts—fuel the suspicion that Exilium was never actually dismantled, contrary to what [[Spasti]] continues to claim. A more plausible theory is that Exilium simply vanished from plain sight and relocated its headquarters to Neu Berlin, remaining undetected. Furthermore, Nero’s efforts to establish a new system of governance among the largely autonomous clans bear his unmistakable hallmark: after every round of negotiations, the parties involved find themselves in a worse position than before.
 > 
-> The attacks that ultimately triggered the clan wars in NeuBerlin are attributed to Nero. He has personally confirmed these allegations on several occasions, only to retract them later. This highlights the difficulty of accurately reconstructing the true sequence of events surrounding the attacks: Nero’s confession prompted investigations that became mired in contradictory evidence and were eventually abandoned.
+> The attacks that ultimately triggered the clan wars in Neu Berlin are attributed to Nero. He has personally confirmed these allegations on several occasions, only to retract them later. This highlights the difficulty of accurately reconstructing the true sequence of events surrounding the attacks: Nero’s confession prompted investigations that became mired in contradictory evidence and were eventually abandoned.
 
 ---
 

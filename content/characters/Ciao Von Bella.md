@@ -6,51 +6,49 @@ location: tempelhof-diskoord
 ship: INFINITY
 ---
 
-![[2898007d-2f44-49ee-b1dd-9cdc64ec21ab.png]]
+![[ciao_wide.png]]
 
 
-> [!abstract]  
+> [!abstract] Profile
 > **Ciao Von Bella** is a falconer, the administrator of **Tempelhof Diskoord**, and one of the leading figures of the Open Wings Foundation. She is considered calm, far-sighted, and hard to fool. Anyone who mistreats a carrier pigeon will quickly learn that Ciao’s wrath knows no bounds.
 
-| Merkmal                | Beschreibung                               |
-| ---------------------- | ------------------------------------------ |
-| **Name**               | Ciao von Bella                             |
-| **Zugehörigkeit**      | Tempelhofer Diskoord, [[Himmelfahrtskommando]] |
-| **Funktion**           | Falknerin, Beraterin                       |
-| **Herkunft**           | Tiroler Alpen                              |
-| **Spezialgebiete**     | Luftaufklärung                             |
-| **Wichtigster Besitz** | Levante, Sirocco, Bora                     |
-| **Erscheinungsbild**   | Falknerin                                  |
-| **Größte Schwäche**    | Idealisierung, Tierquäler                  |
-| **Haltung**            | Weise, Weitsichtig, Ruhig                  |
+| Feature                        | Description                         |
+| ------------------------------ | ----------------------------------- |
+| **Name**                       | Ciao von Bella                      |
+| **Affiliation**                | Tempelhofer Diskoord, Suicide Squad |
+| **Role**                       | Falconer, Advisor                   |
+| **Origin**                     | Tyrolean Alps                       |
+| **Areas of Expertise**         | Aerial reconnaissance               |
+| **Most Important Possessions** | Levante, Sirocco, Bora              |
+| **Appearance**                 | Falconer                            |
+| **Greatest Weakness**          | Idealization, animal abusers        |
+| **Demeanor**                   | Wise, farsighted, calm              |
 
 ## Biography
 
 Ciao spent her childhood in the outposts of Tyrol, where she grew up under traumatic conditions due to the nuclear wars raging at the time. From an early age, and out of necessity, she learned falconry so she could communicate via carrier pigeons between the devastated outposts and stay in touch with her family.
 
-Driven by her desire to lead a peaceful and self-determined life—but also because the nuclear wars were spreading further north—Ciao fled to New Berlin.
+Driven by her desire to lead a peaceful and self-determined life —— but also because the nuclear wars were spreading further north —— Ciao fled to New Berlin.
 
 
-> [!quote] Ciao about her childhood  
-> “The devices were always state-of-the-art—until the power went out. The birds were always old-fashioned—until they were the only ones still working.”
+> [!quote] Ciao about Pigeons
+> “Pigeons were always old-fashioned —— until they were the only ones still working.”
 
-Shortly after her arrival, she met [[Salt Brah]] and Funky.blend there and helped establish [[Open Wings]]. The famous Open Wings experiment, in which she pitted a carrier pigeon against an email, was her idea. The pigeon reached the destination first, which significantly boosted Ciao’s reputation in NeuBerlin.
+Shortly after her arrival, she met [[Salt Brah]] and [[funky (dot) blend|Funky]] and helped establish [[Open Wings]]. The famous Open Wings experiment, in which she pitted a carrier pigeon against an email, was her idea. The pigeon reached the destination first, which significantly boosted Ciao’s reputation in Neu Berlin.
 
 The launch of [[Open Wings]] was a success, and [[Salt Brah]], recognizing untapped potential in her due to her difficult past, appointed her to the administration of [[Tempelhof Diskoord]].
 
-She can usually be found on the rooftops of NeuBerlin, where she tends to dovecotes and aviaries.
+She can usually be found on the rooftops of Neu Berlin, where she tends to dovecotes and aviaries.
 
 ## Personality
 
 Ciao likes animals more than people, which she openly admits. Nevertheless, Ciao is not some unworldly recluse; in fact, she’s almost too trusting around people. Her calm demeanor leads many to underestimate her, but her mood changes abruptly as soon as animals are threatened. Open Wing customers who treat pigeons roughly get to see a different side of Ciao.
 
-**Can you illustrate this other side with one or more examples?**
-
 
 > [!warning] Unofficial Open Wing rule
-> Anyone who hits a pigeon first loses access to the network and then their balance.
+> Anyone who hits a pigeon first loses access to the network and then their will to live.
 
-Ciao is of limited use in a brawl. She possesses neither Funky’s technical aggressiveness nor Spasti’s physical power. However, her tremendous foresight and strategic acumen make her indispensable as an advisor. To better assess missions, she relies on her three companions: Levante the eagle, Sirroco the cormorant, and Bora the owl.
+Ciao possesses neither Funky’s technical aggressiveness nor Spasti’s physical power. However, her tremendous foresight and strategic acumen make her indispensable as an advisor. To better assess missions, she relies on her three companions: [[Ciao Von Bella#Levante|Levante]] the eagle, [[Ciao Von Bella#Sirocco|Sirocco]] the cormorant, and [[Ciao Von Bella#Bora|Bora]] the owl.
 
 With her foresight, Ciao is one of the few characters who can see through the political maneuvers of [[Beatrix Von Burg]]. Ciao feels strong sympathy for Von Burg and even admires her for her aristocratic refinement.
 
@@ -60,7 +58,7 @@ With her foresight, Ciao is one of the few characters who can see through the po
 
 Ciao has mastered the handling of flying creatures to an extraordinary degree.
 
-For reasons unknown, Ciao is a favorite landing spot for crows. Occasionally, Ciao uses them for petty theft and side gigs.
+For reasons unknown, Ciao is a favorite landing spot for crows. Occasionally, Ciao uses them for theft and side gigs.
 
 Seagulls also frequently show up unannounced at Ciao’s. Because seagulls react sensitively to ship movements, Ciao can use their behavior to derive a sort of early-warning system for ship movements in the wider territory.
 
@@ -105,7 +103,7 @@ In the seventh and final book of the Cloud 7000 saga, Ciao comes to the realizat
 
 Ciao and [[Kokolores]] share a close friendship based on a similar connection to the sky. [[Kokolores]] often asks Ciao for advice before making risky decisions.
 
-Their conversations often take place on the outskirts of the rest of the crew—on decks, towers, or rooftops. They speak little, gazing at the same sky and independently reaching similar conclusions.
+Their conversations often take place on the outskirts of the rest of the crew —— on decks, towers, or rooftops. They speak little, gazing at the same sky and independently reaching similar conclusions.
 
 
 > [!quote]

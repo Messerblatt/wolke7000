@@ -10,6 +10,10 @@ import typewriterScript from "../../components/scripts/typewriter.inline"
 import navigationAudioScript from "../../components/scripts/navigation-audio.inline"
 // @ts-ignore
 import itemAudioScript from "../../components/scripts/item-audio.inline"
+// @ts-ignore
+import scrollAudioScript from "../../components/scripts/scroll-audio.inline"
+// @ts-ignore
+import experienceAudioScript from "../../components/scripts/experience-audio.inline"
 
 // @ts-ignore
 import experienceUnlocksScript from "../../game/experience-unlocks.inline"
@@ -271,17 +275,29 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     `)
   }
 
+  const scrollAudioWithConfig = `
+    document.documentElement.dataset.wolkeScrollClickFrequency = ${JSON.stringify(
+      cfg.scrollClickFrequency ?? 5,
+    )}
+    document.documentElement.dataset.wolkeScrollExp = ${JSON.stringify(cfg.scroll_exp ?? 100)}
+    ${scrollAudioScript}
+  `
+
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(typewriterScript)
+    componentResources.afterDOMLoaded.push(scrollAudioWithConfig)
+    componentResources.afterDOMLoaded.push(experienceAudioScript)
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
-    
+
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {
     componentResources.afterDOMLoaded.push(typewriterScript)
+    componentResources.afterDOMLoaded.push(scrollAudioWithConfig)
+    componentResources.afterDOMLoaded.push(experienceAudioScript)
     componentResources.afterDOMLoaded.push(navigationAudioScript)
     componentResources.afterDOMLoaded.push(itemAudioScript)
-    
+
     componentResources.afterDOMLoaded.push(`
       window.spaNavigate = (url, _) => window.location.assign(url)
       window.addCleanup = () => {}

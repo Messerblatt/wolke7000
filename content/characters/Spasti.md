@@ -2,209 +2,197 @@
 ship: NIMBUS
 location: canteen-kreuzberg
 ---
+> [!abstract] Brief Profile
+> [[Spasti]] is a troublemaker, anarchist, arsonist, and close-quarters combatant for [[NIMBUS]]. He drinks fuel, can breathe fire, and has a knack for abruptly ending political debates with well-placed blows. How his body withstands such strain remains a scientific mystery. [[Fibo]] describes him as a “biochemical impossibility,” a “walking engine failure,” or “proof that reason does not exist.”
+
+Little is known about Spasti’s early childhood. It is said that both his parents and his teachers spurned him. Spasti himself rarely speaks about his past; when asked, he provides contradictory accounts—claiming, for instance, to have been raised by wolves, striking dockworkers, or malfunctioning vending machines.
+
+> [!quote] Spasti on his childhood
+> “I had a normal childhood. The others were the problem.”
+
+After being turned away from virtually every public educational institution, Spasti signed on with [[Exilium AG]]. The company operated an extensive network of underground facilities beneath the southern districts of New Berlin. Although working conditions were notoriously abysmal, Spasti thrived amidst the psychological terror fostered by Exilium.
+
+His enthusiasm, however, lasted only until he realized that the chaos at Exilium actually followed a hierarchical structure. Rejecting any form of social order, Spasti responded by instigating a mutiny. While he had no concrete plan beyond creating chaos, he later claimed that the entire endeavor had been “militarily well-thought-out.”
+
+[[Fibo]] considers it more likely that Spasti simply began to scream, and that the subsequent events took on a momentum of their own.> [!info] Presumed Sequence of the Mutiny
+>
+> 1. Spasti insulted a superior.
+> 2. The superior alerted other superiors.
+> 3. Spasti insulted them, too.
+> 4. Someone opened a fuel depot.
+> 5. _Infinite chaos._
 
 
+Spasti gives a different account of the mutiny every time he talks about it. In one version, it lasted three days; in another, only seven seconds. Once, he claimed that the leadership had been killed by his "revolutionary aura." Another time, he admitted to hitting them with a pipe.
 
-Über Spastis frühe Kindheit ist nur wenig bekannt. Eltern und Lehrer sollen ihn gleichermaßen verschmäht haben. Spasti selbst spricht nur selten über seine Vergangenheit. Wird er danach gefragt, gibt er widersprüchliche Antworten. So behauptet er unter anderem, von Wölfen, streikenden Hafenarbeitern oder defekten Getränkeautomaten großgezogen worden zu sein.
+It was probably the pipe.
 
-> [!quote] Spasti über seine Kindheit  
-> „Ich hatte eine normale Kindheit. Die anderen waren das Problem.“
+He left the underground facilities and climbed up through a utility shaft into the southern territories of New Berlin. Shortly after emerging, he encountered [[Kokolores]] and [[Fibo]], who were out on an expedition.
 
-Nachdem ihm nahezu alle öffentlichen Einrichtungen die Einschulung verwiesen haben, heuerte Spasti bei der [[Exilium AG]] an. Das Unternehmen betrieb ein weitverzweigtes System aus unterirdischen Anlagen unter den südlichen Bezirken NeuBerlins. Die Arbeitsbedingungen galten als miserabel, doch ging Spasti im Psychoterror der Exilium regelrecht auf.
+[[Fibo]] initially mistook Spasti for a toxic industrial accident, whereas [[Kokolores]] recognized him as a disoriented but deeply loyal human being. She told him about the messages from Cloud 7000 and her conviction that they had been chosen by the sky. Spasti was immediately impressed and swore eternal loyalty to [[NIMBUS]].
 
-Seine Begeisterung hielt jedoch nur so lange an, bis ihm auffiel, dass das Chaos der Exilium einer hierarchischen Struktur folgte. Spasti, der jegliche Form gesellschaftlicher Ordnung ablehnt, reagierte darauf mit einer Meuterei. Einen konkreten Plan, außer dem Stiften von Chaos, verfolgte er dabei nicht, behauptet später jedoch, alles sei „militärisch durchdacht“ gewesen.
+Whether he actually understood what Cloud 7000 was didn't matter.
 
-[[Fibo]] hält es für wahrscheinlicher, dass Spasti lediglich angefangen habe zu schreien und die Ereignisse anschließend eine Eigendynamik entwickelten.
-
-> [!info] Vermutlicher Ablauf der Meuterei
-> 
-> 1. Spasti beleidigte einen Vorgesetzten
-> 2. Der Vorgesetzte alarmierte weitere Vorgesetzte
-> 3. Spasti beleidigte auch diese
-> 4. Irgendjemand öffnete ein Treibstofflager
-> 5. _Chaos Unendlichkeit_
+> [!quote] Spasti on [[Kokolores]]
+> "If the sky picked Koko, it must have had a reason. The sky is very big, after all."
 
 
-Spasti schildert die Meuterei bei jeder Gelegenheit anders. In einer Version dauerte es drei Tage, in einer anderen nur sieben Sekunden. Einmal behauptete er, die Führungsebene sei von seiner „revolutionären Aura“ getötet worden. Ein anderes Mal gab er zu, sie mit einem Rohr geschlagen zu haben.
+Since then, he has accompanied [[NIMBUS]] as an arsonist and enforcer.
 
-Wahrscheinlich war es das Rohr.
+## Personality
 
-Er verließ die unterirdischen Anlagen und stieg durch einen Versorgungsschacht in den südlichen Territorien NeuBerlins auf. Kurz nach seinem Auftauchen begegnete er [[Kokolores]] und [[Fibo]], die sich auf einer Entdeckungsreise befanden.
+Spasti is a fiery anarchist—in both the political and the literal sense. He despises state authority and almost every form of advertising. He views personalized advertisements as a declaration of war.
 
-[[Fibo]] hielt Spasti zunächst für einen toxischen Industrieunfall, [[Kokolores]] hingegen erkannte in ihm einen orientierungslosen, aber zutiefst loyalen Menschen. Sie erzählte ihm von den Botschaften der Wolke 7000 und ihrer Überzeugung, vom Himmel auserwählt worden zu sein. Spasti war sofort beeindruckt und schwor der [[NIMBUS]] ewige Loyalität.
-
-Ob er verstand, was Wolke 7000 war, spielte dabei keine Rolle.
-
-> [!quote] Spasti über [[Kokolores]]
-> „Wenn der Himmel Koko ausgesucht hat, wird er schon wissen, warum. Der Himmel ist sehr groß.“
+He often compounds charges of theft by beating up his accusers, burning their files, or—perceiving the courthouse itself as yet another power structure—lashing out against it.> [!quote] Spasti’s Theory of Property
+> “Property entails an obligation—the obligation to carry it away.”
 
 
-Seitdem begleitet er die [[NIMBUS]] als Brandstifter und Schläger.
+In New Berlin, Spasti is feared for his aggressive behavior. He does not merely react to provocations; he frequently initiates conflicts on his own accord.
 
-## Persönlichkeit
+His conduct is reminiscent of a wartime prime minister from history, suddenly transported into an era of peace—a situation he perceives as an intolerable, poorly conceived blunder.
 
-Spasti ist ein flammender Anarchist – sowohl im politischen als auch im wörtlichen Sinn. Er verachtet staatliche Autorität und nahezu jede Form von Werbung. Personalisierte Anzeigen betrachtet er als Kriegserklärung.
+> [!warning] Peace-Induced Boredom
+> The more peaceful his surroundings, the more likely it is that Spasti will stir up tension himself.
 
-Anklagen wegen Diebstahls verschlimmert er häufig dadurch, dass er die Ankläger verprügelt, ihre Akten verbrennt oder das Gerichtsgebäude für eine weitere Machtstruktur hält und auf sie einschlägt.
+Multi-stage plans quickly overwhelm him—especially if they contain terms like “subsequently,” “if necessary,” or “do not strike immediately.”
 
-> [!quote] Spastis Theorie des Eigentums
-> „Eigentum verpflichtet – zum Wegtragen.“
+However, his cognitive limitations do not render him entirely incapable; he possesses a sharp, practical intuition. He identifies dangers rapidly, has an uncanny knack for gauging people’s loyalty, and often finds solutions in chaotic situations that would strike more “intelligent” individuals as utterly absurd.
 
+Things become problematic when technical matters are involved. Door handles, in particular, pose a significant challenge for him.
 
-Spasti ist in NeuBerlin wegen seines aggressiven Verhaltens gefürchtet. Dabei reagiert er nicht nur auf Provokationen, sondern sucht Konflikte häufig aus eigener Initiative.
+> [!danger] Door Handles
+> For reasons unknown, Spasti is unable to grasp the causal relationship between a door handle and the door to which it belongs.
 
-Sein Verhalten ähnelt dem eines historischen Kriegspremiers, der in eine friedliche Epoche versetzt wurde und diese Situation als unzumutbare Fehlplanung empfindet.
+[[Fibo]] attempted to explain the mechanics of a door handle to him several times. After the fourth attempt, Spasti became convinced that doors are, in fact, “tiny, authoritarian border regimes.”
 
-> [!warning] Friedensbedingte Langeweile  
-> Je friedlicher die Umgebung, desto wahrscheinlicher ist es, dass Spasti selbst für Spannungen sorgt.
+Ever since, he has preferred using windows.
 
-Mehrstufige Pläne überfordern ihn schnell, besonders wenn sie Wörter enthalten wie „anschließend“, „gegebenenfalls“ oder „nicht sofort zuschlagen“.
+Despite his aggression, Spasti is emotionally accessible and capable of a childlike form of affection. He defends those he trusts without a moment’s hesitation. His loyalty is absolute—at times irrational, and often more dangerous than the very threat he seeks to protect others from. His way of offering comfort usually consists of sitting down next to the person in distress, wordlessly offering them something to eat, or asking if he should hit someone on their behalf.
 
-Seine kognitiven Schwierigkeiten machen ihn jedoch nicht grundsätzlich unfähig, denn er besitzt eine ausgeprägte praktische Intuition. Er erkennt Gefahren schnell, kann Menschen erstaunlich gut nach ihrer Loyalität beurteilen und findet in chaotischen Situationen oft Lösungen, die intelligenteren Personen zu absurd erscheinen würden.
+## Abilities
 
-Problematisch wird es bei technischen Zusammenhängen. Besonders Türklinken stellen ihn vor erhebliche Herausforderungen.
+When Spasti becomes angry, his body temperature rises visibly. First, his skin begins to steam. Then, his hair and clothing start to smolder in various spots, before his entire body bursts into flames. The flames do not appear to cause him any pain.
 
-> [!danger] Türklinken  
-> Aus unerfindlichen Gründen ist Spasti nicht in der Lage, das kausale Verhältnis zwischen einer Türklinke und der dazugehörigen Tür zu erfassen.
+Spasti can consume almost any known type of fuel without suffering immediate health consequences. He explains the process quite simply:
 
-[[Fibo]] versuchte mehrfach, ihm die Mechanik einer Türklinke zu erklären. Nach dem vierten Versuch entwickelte Spasti die Überzeugung, Türen seien „kleine autoritäre Grenzregimes“. 
-
-Seitdem bevorzugt er Fenster.
-
-Trotz seiner Aggressivität ist Spasti emotional zugänglich und besitzt eine kindlich Form der Zuneigung. Menschen, denen er vertraut, verteidigt er ohne Zögern. Seine Loyalität ist absolut, manchmal irrational und häufig gefährlicher als die Bedrohung, vor der er beschützen möchte.
-
-Seine Form des Trostes besteht meist darin, sich neben die betroffene Person zu setzen, ihr wortlos etwas zu essen anzubieten oder zu fragen, ob er jemanden für sie schlagen soll.
-
-## Fähigkeiten
-
-Wenn Spasti wütend wird, steigt seine Körpertemperatur sichtbar an. Zunächst beginnt seine Haut zu dampfen. Anschließend glimmen Haare und Kleidung an einzelnen Stellen, bevor sein gesamter Körper in Flammen aufgeht. Die Flammen scheinen ihm selbst keine Schmerzen zu bereiten.
-
-Spasti kann nahezu alle bekannten Kraftstoffe trinken, ohne unmittelbar gesundheitliche Schäden zu erleiden. Spasti selbst erklärt den Vorgang ganz einfach damit:
-
-> „Sprit geht rein. Feuer kommt raus. Dazwischen ist Privatsache.“
+> "Fuel goes in. Fire comes out. What happens in between is a private matter."
 
 
-> [!warning] Geschmacksvorlieben  
-> Spasti bewertet Kraftstoffe nicht nur nach ihrer Kampfwirkung, sondern auch nach Geschmack. Diesel bezeichnet er als „erdig“, Kerosin als „ehrlich“ und Biodiesel als „Salat für Motoren“.
+> [!warning] Taste Preferences
+> Spasti evaluates fuels not only by their combat effectiveness but also by their taste. He describes diesel as "earthy," kerosene as "honest," and biodiesel as "salad for engines."
 
-Die Eigenschaften seines Feuerodems verändern sich abhängig vom verwendeten Kraftstoff.
+The characteristics of his fiery breath change depending on the fuel used.
 
-| Kraftstoff                         | Verhalten                        | Stärken                                                      | Schwächen                                   |
+| Fuel                               | Behavior                         | Strengths                                                    | Weaknesses                                  |
 | ---------------------------------- | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------- |
-| **Diesel**                         | Träge, zäh und klebrig           | Brennt lange weiter und setzt Oberflächen dauerhaft in Brand | Kurze Reichweite, schwer entzündbar         |
-| **Biodiesel Algenöl**              | Ruhig und gleichmäßig            | Wenig Rauch, vergleichsweise gut kontrollierbar              | Geringere Hitze                             |
-| **Benzin**                         | Explosiv und schnell             | Gewaltige Stichflamme                                        | Schnell verbraucht, schwer kontrollierbar   |
-| **Bioethanol**                     | Ruhige, kaum sichtbare Flamme    | Wird von Gegnern leicht übersehen                            | Geringere Wärmestrahlung                    |
-| **Wasserstoff**                    | Flimmernde Hitzeschlieren        | Extrem heiß, fast unsichtbar                                 | Sehr kurzer Strahl, schwierig zu zielen     |
-| **Ammoniak**                       | Übel riechender Feuernebel       | Verbindet Hitze mit reizenden Dämpfen                        | Brennt schlecht und muss vorgemischt werden |
-| **Methan**                         | Weich und breit                  | Erfasst große Flächen                                        | Geringe Durchschlagskraft                   |
-| **Acetylen**                       | Gebündelt wie ein Schneidbrenner | Kann Metall und dünnen Stahl schneiden                       | Extrem instabil                             |
-| **Holzgas**                        | Funkenreich und flackernd        | Glühende Partikel setzen Dächer und Stoffe in Brand          | Geringere Hitze                             |
-| **Terpentin**                      | Klebrige Feuerfontäne            | Haftet an Oberflächen                                        | Starke Rauchentwicklung                     |
-| **Pyrolyseöl**                     | Schwerer Flammenregen            | Geeignet für Belagerungen und Flächenangriffe                | Erzeugt dichte Rußwolken                    |
-| **Kerosin**                        | Gleichmäßiger, langer Strahl     | Große Reichweite                                             | Erfordert hohen Druck                       |
-| **Pflanzenöl**                     | Langsam und ölig                 | Bildet einen brennenden Film auf Wasser                      | Schwer zu entzünden                         |
-| **Raketentreibstoff**              | Schockartig und extrem hell      | Enorme Rückstoß- und Zerstörungswirkung                      | Spasti fliegt häufig selbst mit             |
-| **Lampentran**                     | Langsam, stinkend und tropfend   | Brennt auch bei feuchter Umgebung lange                      | Der Geruch bleibt tagelang                  |
-| **Zuckeralkohol**                  | Kurze, knisternde Feuerstöße     | Gut zur Ablenkung                                            | Spasti bekommt danach Schluckauf            |
+| **Diesel**                         | Sluggish, viscous, and sticky    | Burns for a long time and keeps surfaces ignited             | Short range, difficult to ignite            |
+| **Biodiesel (Algae Oil)**          | Calm and steady                  | Produces little smoke, relatively easy to control            | Lower heat                                  |
+| **Gasoline**                       | Explosive and rapid              | Massive burst of flame                                       | Consumed quickly, hard to control           |
+| **Bioethanol**                     | Calm, barely visible flame       | Easily overlooked by opponents                               | Lower radiant heat                          |
+| **Hydrogen**                       | Shimmering heat haze             | Extremely hot, nearly invisible                             | Very short-range stream, difficult to aim   |
+| **Ammonia**                        | Foul-smelling mist of fire       | Combines heat with irritating vapors                         | Burns poorly and requires premixing |
+| **Methane**                        | Soft and broad                   | Covers large areas                                           | Low penetrating power                      |
+| **Acetylene**                      | Focused, like a cutting torch    | Capable of cutting through metal and thin steel              | Extremely unstable                         |
+| **Wood gas**                       | Spark-filled and flickering      | Glowing particles set roofs and fabrics ablaze               | Lower heat output                          |
+| **Turpentine**                     | Sticky fountain of fire          | Adheres to surfaces                                          | Produces heavy smoke                       |
+| **Pyrolysis oil**                  | Heavy, cascading rain of fire    | Suitable for sieges and area attacks                         | Generates dense clouds of soot             |
+| **Kerosene**                       | Steady, long-reaching stream     | Long range                                                   | Requires high pressure                     |
+| **Vegetable oil**                  | Slow-burning and oily            | Forms a burning film on water                                | Difficult to ignite                        |
+| **Rocket fuel**                    | Explosive and blindingly bright  | Enormous recoil and destructive force                        | The idiot often ends up flying along with it |
+| **Lamp oil (whale/fish oil)**      | Slow, foul-smelling, and dripping| Burns for a long time, even in damp environments              | The stench lingers for days                |
+| **Sugar alcohol**                  | Short, crackling bursts of fire  | Effective for creating distractions                          | Gives the idiot the hiccups afterward       |
 
-### Schmerzresistenz
+### Pain Resistance
 
-Er scheint kaum oder gar keinen körperlichen Schmerz zu empfinden. Selbst extreme Temperaturen beeinträchtigen ihn deutlich weniger als ein gesunder Mensch annehmen würde.
+He appears to feel little to no physical pain. Even extreme temperatures affect him far less than one would expect for a healthy human being.
 
-Medizinische Untersuchungen zur genaueren Untersuchung seiner Schmerzresistenz lehnt er stets mit Worten wie „Das ist Polizeiverhör mit Geräten“ ab.
+He consistently refuses any medical examinations intended to investigate his pain resistance more closely, dismissing them with remarks such as, "That’s just a police interrogation using equipment."
+> [!danger] Risk of Injury
+> Being free from pain does not mean being invulnerable. Spasti can sustain injuries, yet he might only notice them once a body part ceases to function properly.
 
-> [!danger] Verletzungsrisiko  
-> Schmerzfreiheit bedeutet nicht Unverwundbarkeit. Spasti kann verletzt werden, bemerkt die Verletzung jedoch möglicherweise erst, wenn ein Körperteil nicht mehr ordnungsgemäß funktioniert.
+### Fisticuffs
 
-### Faustkampf
+Spasti is an extremely aggressive close-quarters combatant. His fighting style follows a simple principle:
 
-Spasti ist ein äußerst aggressiver Nahkämpfer. Sein Kampfstil folgt einem einfachen Prinzip:
+> **Keep hitting the target until it stops moving.**
 
-> **Solange auf das Ziel einschlagen, bis es aufhört, sich zu bewegen.**
+[[Fibo]] refers to this method as "recursive application of force with no termination condition."
 
-[[Fibo]] bezeichnet diese Methode als „rekursive Gewaltanwendung ohne Abbruchbedingung“.
+Typical applications of his "fist-first" philosophy:
 
-Typische Lösungsansätze seiner Faust-Prinzips:
+| Problem                   | Spasti’s Solution |
+| ------------------------- | ----------------- |
+| Locked door               | Hit it            |
+| Hostile barricade         | Hit it            |
+| Uncooperative sentry      | Hit it            |
+| Broken device             | Hit it            |
+| Functional device         | Hit it            |
+| Political stalemate       | Hit it            |
+| Unknown machine           | Hit it            |
+| Warning sign              | Hit it            |
 
-| Problem                   | Spastis Lösung |
-| ------------------------- | -------------- |
-| Verschlossene Tür         | Draufschlagen  |
-| Feindliche Barrikade      | Draufschlagen  |
-| Unkooperativer Wachposten | Draufschlagen  |
-| Kaputtes Gerät            | Draufschlagen  |
-| Funktionierendes Gerät    | Draufschlagen  |
-| Politische Pattsituation  | Draufschlagen  |
-| Unbekannte Maschine       | Draufschlagen  |
-| Warnschild                | Draufschlagen  |
+### Intimidation
 
-### Einschüchterung
+Furthermore, Spasti has a natural talent for instilling fear. His physical appearance—combined with the fact that he could burst into flames at any moment—always lends significant weight to his side during negotiations.
 
-Zudem besitzt Spasti eine natürliche Begabung, Angst auszulösen. Seine körperliche Erscheinung und die Möglichkeit, jederzeit in Flammen aufzugehen, verhelfen ihm in Verhandlungen stets zu schlagkräftigen Effekten.
+[[Kokolores]] occasionally uses this trait strategically: while she negotiates with clan leaders, Spasti stands silently behind her, demonstratively drinking from a gasoline canister. In many cases, this significantly accelerates the process of reaching a consensus.
 
-[[Kokolores]] nutzt diese Eigenschaft gelegentlich strategisch: Während sie mit Clanführern verhandelt, steht Spasti schweigend hinter ihr und trinkt demonstrativ aus einem Benzinkanister. In vielen Fällen beschleunigt dies die Konsensbildung erheblich.
-
-## Beziehungen
+## Relationships
 
 ### Kokolores
 
-[[Kokolores]] ist Spastis wichtigste Vertrauensperson.
+[[Kokolores]] is the person Spasti trusts most.
 
-Er glaubt an ihre Verbindung zu Wolke 7000, ohne Beweise zu verlangen. Ihre Überzeugung, eine Auserwählte des Himmels zu sein, erscheint ihm vollkommen plausibel.
+He believes in her connection to "Cloud 7000" without ever asking for proof. Her conviction that she is one chosen by the heavens strikes him as entirely plausible.
 
-Meist genügt ein bestimmter Blick, eine ruhige Berührung oder die Erinnerung daran, dass ein brennender Clanführer für die Verhandlungen „ungünstig“ wäre.
+Usually, a specific look, a calm touch, or a reminder that a clan leader who is currently on fire would be “inconvenient” for the negotiations is enough.
 
-Seine Zuneigung zu ihr besitzt para-romantische Züge, bleibt jedoch undefiniert. Spasti selbst scheint keinen klaren Unterschied zwischen Liebe, Loyalität und dem Wunsch zu erkennen, jeden ihrer Feinde zu verprügeln.
+His affection for her has quasi-romantic undertones, yet it remains undefined. Spasti himself does not seem to draw a clear distinction between love, loyalty, and the desire to beat up every one of her enemies.
 
 ### Fibo
 
-Zwischen Spasti und [[Fibo]] besteht eine intensive Hassfreundschaft.
+There exists an intense "love-hate" relationship between Spasti and [[Fibo]].
 
-[[Fibo]] hält Spasti für irrational, zerstörerisch und intellektuell kaum belastbar. Spasti betrachtet [[Fibo]] als schwach und unnötig wortreich.
+[[Fibo]] considers Spasti to be irrational, destructive, and intellectually limited. Spasti, in turn, views [[Fibo]] as weak and unnecessarily long-winded.
 
-Dennoch ergänzen sie sich bei Gefahren ausgezeichnet. [[Fibo]] weiß, dass Spasti ihn beschützen wird. Spasti weiß, dass [[Fibo]] beinahe jedes Problem reparieren kann, das Spasti zuvor verursacht hat.
+Nevertheless, they complement each other perfectly when facing danger. [[Fibo]] knows that Spasti will protect him, while Spasti knows that [[Fibo]] can fix almost any problem that Spasti has managed to cause.
 
-### Die Clanführer NeuBerlins
+### The Clan Leaders of New Berlin
 
-Die Clanführer NeuBerlins begegnen Spasti mit einer Mischung aus Angst und strategischer Höflichkeit. In Kriegsfragen gilt Spasti als eine der ersten Anlaufstellen. In Friedensfragen wird er dagegen nie konsultiert.
+The clan leaders of New Berlin treat Spasti with a mixture of fear and strategic politeness. When it comes to matters of war, Spasti is one of the first people they turn to; in times of peace, however, he is never consulted.
 
-Mehrere Clanführer haben interne Regeln für Begegnungen mit ihm entwickelt:
+Several clan leaders have established internal rules for any encounters with him:
 
-1. **KEINE** Werbung in Sichtweite.
-2. **KEINE** Titel mit "Chief" o.Ä. verwenden.
-3. **KEINE** verschlossenen Türen zwischen Spasti und dem Ausgang.
-4. **KEINE** Diskussionen über Eigentumsrecht
-5. [[Kokolores]] informieren, bevor das Gespräch beginnt.
+1. **NO** advertising within sight.
+2. **NO** use of titles like "Chief" or similar.
+3. **NO** closed doors between Spasti and the exit.
+4. **NO** discussions regarding property rights.
+5. Inform [[Kokolores]] before the conversation begins.
 
+## Public Perception
 
-## Öffentliche Wahrnehmung
+Spasti is one of the best-known and most controversial figures in New Berlin. He enjoys a cult status, particularly among young anarchists.
 
-Spasti zählt zu den bekanntesten und umstrittensten Persönlichkeiten NeuBerlins. Besonders unter jungen Anarchisten genießt er Kultstatus.
+His name frequently appears scrawled on the sides of buildings. Several slogans are attributed to him—even though he never actually said, or even understood, most of them.
 
-So erscheint sein Name häufig auf Hauswänden. Mehrere Parolen werden ihm zugeschrieben, obwohl er die meisten davon weder gesagt noch verstanden hat.
+> [!quote] Slogans attributed to Spasti
+>
+> "No gods, no masters, no advertising."
+> "Beneath every cobblestone lies a pipe."
+> "Property entails an obligation—the obligation to be carried away."
+> "Another world is possible. This one can go."
+> "Door closed? Revolution."
 
-> [!quote] Spasti's zugeschriebene Parolen
-> 
-> „Kein Gott, kein Staat, keine Werbung
-> „Unter jedem Pflaster liegt ein Rohr.“    
-> „Eigentum verpflichtet – zum Wegtragen.“
-> „Eine andere Welt ist möglich. Die hier kann weg.“
-> „Tür zu? Revolution.“
-
-[[Fibo]] vermutet, dass Spastis Anhänger ihn für wesentlich philosophischer halten, als er tatsächlich ist. Spasti empfindet das als Kompliment.
+[[Fibo]] suspects that Spasti’s followers perceive him as being far more philosophical than he actually is. Spasti takes that as a compliment.
 
 
 ## Items
 
-- Angekokelte Benzinflasche.
-- Kerosinprobe.
-- Brennstoffetikett mit „nicht trinken“.
-- Feuerzeug mit acht Sicherheitswarnungen.
-- Metallstück mit Zahnabdruck.
-- Halbe Warnweste.
-- „Nicht anzünden“-Schild. Angebrannt.
-- Spasti-Zertifikat „vorläufig ungefährlich“. Abgelaufen.
-
-
-
-
+- Singed gasoline bottle.
+- Kerosene sample.
+- Fuel label reading "do not drink."
+- Lighter with eight safety warnings.
+- Piece of metal with a tooth mark.
+- Half of a high-visibility vest.
+- "Do not ignite" sign. Scorched.
+- Spasti certificate: "provisionally harmless." Expired.

@@ -7,14 +7,15 @@ aliases:
   - Earn Hard
   - Treuhand
   - Die Treuhand
+  - Trust Fund
 clan: schöneberg
 location: maxista
 ---
-> [!abstract]
-> The **Treuhand** is an organization founded by homeless people, alcoholics, and opportunistic property owners, whose stated goal is to steal from the rich and give the stolen goods to the poor. The founder of the Treuhand is Mia Von Schöneberg
+> [!abstract] Profile
+> The **Trust Fund** is an organization founded by homeless people, alcoholics, and opportunistic property owners, whose stated goal is to steal from the rich and give it to the poor. The founder of the Treuhand is [[Mia Von Schöneberg]].
 
 >[!quote]
->The Treuhand is officially the only organization worth billions whose treasurer keeps the books in pawn tickets.
+>The Trust Fund is officially the only organization worth billions but whose treasurer keeps the books in pawn tickets.
 
 
 Its founding was triggered by [[Mia Von Schöneberg]] and her theft of the crown.
@@ -23,31 +24,22 @@ When Mia stole the crown from a museum in Hamburg_2, she gave it to the first ho
 
 Overwhelmed by the sheer joy of this billion-dollar gift, Relax rounded up his three homeless friends—Klimmbimm Jimmy Tim, Earn Hard, and Superzahl 6—in an abandoned fish market and announced the founding of the Treuhand. The inaugural meeting lasted eleven minutes. Nine of those were spent trying to open a bottle without a bottle opener. The minutes of the founding meeting are written on the back of a wet fish sandwich wrapper and are considered lost, although Earn Hard claims he’s sleeping on them.
 
-The Trust’s goal—following in the footsteps of Mia’s supposedly altruistic act—is to steal from the rich and give what is stolen to the poor. In doing so, it draws on Mia’s personal interpretation of Karl Marx: value only grows when it is set in motion. Whether Marx actually said that is of no interest to anyone. Mia therefore calls the theft of the crown **applied Marxism**. The trustees logically refer to their raids as **value movements** and call themselves **logisticians of the class struggle**.
+The Trust’s goal —— following in the footsteps of Mia’s supposedly altruistic act —— is to steal from the rich and give what is stolen to the poor. In doing so, it draws on Mia’s personal interpretation of Karl Marx: value only grows when it is set in motion. Whether Marx actually said that is of no interest to anyone. Mia therefore calls the theft of the crown **applied Marxism**. The trustees logically refer to their raids as **value movements** and call themselves **logisticians of the class struggle**.
 
 Ever since then, the Trust has been on the hunt for billionaires. However, they don’t define wealth solely in terms of money. They also steal gold-plated faucets, private weather machines, rare wines, custom-made shoes, art collections, and, on one occasion, a shipowner’s favorite armchair. The armchair was given to a poor man who didn’t want it. Since then, it has stood in the headquarters and is considered the first failed attempt at redistribution.
 
-All four trustees are alcoholics and are therefore limited in their mental, physical, and—above all—organizational abilities. Although they own an asset worth billions in the form of the crown, they are constantly in financial trouble. The crown can neither be sold discreetly nor pawned at a harbor bar. It therefore wanders back and forth between a bucket, a cooler, and Relax’s head. Occasionally, it serves as a bottle holder. No one is allowed to call it a treasure; according to the bylaws, it is **restricted funds**.
+All four trustees are alcoholics and are therefore limited in their mental, physical, and —— above all —— organizational abilities. Although they own an asset worth billions in the form of the crown, they are constantly in financial trouble. The crown can neither be sold discreetly nor pawned at a harbor bar. It therefore wanders back and forth between a bucket, a cooler, and Relax’s head. Occasionally, it serves as a bottle holder. No one is allowed to call it a treasure; according to the bylaws, it is **restricted funds**.
 
 The Trust operates without a fixed hierarchy, without bookkeeping, and without dry clothes. Decisions are made by acclamation. In the event of a tie, the decision rests with whoever can still stand. To the outside world, however, it presents itself with the gravitas of a time-honored institution. Its letters bear a crookedly stamped seal and end with the phrase:
 
-  
-
+>[!quote]
 > Held in trust, squandered in solidarity.
 
-  
-
-## Lord Relax a Lot
-
-  
+## Sir Relax a Lot
 
 Founder, chairman, and self-proclaimed Scottish landowner of the Trust. Relax is exceptionally lazy. Sometimes he drifts for weeks on a raft through the waterways of New Berlin without noticeably changing his position. When passersby poke him with a stick to check if he’s still alive, he snatches the stick from their hand and declares that this constitutes a violation of the boundaries of his Scottish estate.
 
-  
-
-Relax likes to insist that, as the owner of the crown, he is theoretically a billionaire—which is actually true. In practice, he owes money to several cafeterias and doesn’t own a single pair of dry socks. He does not respond to further inquiries. He fundamentally considers movement to be an overrated precursor to exhaustion and delegates even the act of delegating.
-
-  
+Relax likes to insist that, as the owner of the crown, he is theoretically a billionaire —— which is actually true. In practice, he owes money to several cafeterias and doesn’t own a single pair of dry socks. He does not respond to further inquiries. He fundamentally considers movement to be an overrated precursor to exhaustion and delegates even the act of delegating.
 
 Within the trust, he is responsible for **strategy and horizontal positioning**. His greatest talent lies in making it impossible to distinguish between genuine unconsciousness and complete refusal to work.
 ## Klimmbimm Jimmy Tim
@@ -56,7 +48,7 @@ Klimmbimm prefers to steal things that shine. Whether they’re valuable is seco
 
 He calls himself the **Curator of Movable Assets** and regards every pants pocket as a miniature museum. He generously gives away his loot, but often regrets it just a few minutes later and then tries to trade it back for something shinier. Within the Trust, he is responsible for procurement, aesthetics, and the unintentional triggering of alarm systems.
 
-He sincerely loves the crown. He accepts that it is meant to belong to all the poor—as long as it sits on his head as often as possible.
+He sincerely loves the crown. He accepts that it is meant to belong to all the poor —— as long as it sits on his head as often as possible.
 
 ## Earn Hard
 
@@ -72,7 +64,7 @@ Superzahl 6 is a passionate lottery player and, unfortunately, friends with Earn
 
 He interprets numbers on ship hulls, water levels, and tin cans as messages from fate. Before every heist, he picks six lucky numbers, the tactical purpose of which remains completely unclear. Once, he correctly predicted a changing of the guard because the time happened to be written on his lottery ticket. Ever since, he’s been considered the oracle of the Trust.
 
-Supernumber 6 is the friendliest—and possibly the most dangerous—of the four: He would give away his last coat and then steal a billionaire’s jacket, because the universe apparently wants to balance things out. Within the Trust, he is responsible for probabilities, fate, and hopeless cases.
+Supernumber 6 is the friendliest —— and possibly the most dangerous ——of the four: He would give away his last coat and then steal a billionaire’s jacket, because the universe apparently wants to balance things out. Within the Trust, he is responsible for probabilities, fate, and hopeless cases.
 
 ## Appearance and Modus Operandi
 

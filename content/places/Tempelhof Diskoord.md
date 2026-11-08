@@ -5,6 +5,9 @@ class: place
 title: Tempelhof Diskoord
 ---
 
+>[!warning]
+>page needs redrafting
+
 ![[icon_diskoord.jpg]]
 
 
@@ -18,9 +21,9 @@ resources
 
 ## Geschichte
 
-Das **Tempelhof Diskoord** ist die **mechanische Herzkammer der Wasserstadt**. [[Open Wings]] sitzt in seinem Turm, [[EVERYTHING]] liefert Material, und auf den Hellingen wird täglich verhindert, dass [[NeuBerlin]]
+Das **Tempelhof Diskoord** ist die **mechanische Herzkammer der Wasserstadt**. [[Open Wings]] sitzt in seinem Turm, [[EVERYTHING]] liefert Material, und auf den Hellingen wird täglich verhindert, dass [[Neu Berlin]]
 
-Das **Tempelhofer Diskoord** die größte freie Werft NeuBerlins. In den ehemaligen Flughafenhallen werden Boote gebaut, repariert, umgerüstet und notdürftig wieder schwimmfähig gemacht.
+Das **Tempelhofer Diskoord** die größte freie Werft Neu Berlins. In den ehemaligen Flughafenhallen werden Boote gebaut, repariert, umgerüstet und notdürftig wieder schwimmfähig gemacht.
 
 Im ehemaligen Funkturm befindet sich die Schaltzentrale von [[Open Wings]].
 
@@ -66,7 +69,7 @@ Melde regelmäßig:
 
 Aus diesen Meldungen wird eine vollständige Karte des Netzes erstellt. Danach berechnet jede Hauptstation selbst die günstigste Route. Link-State-Protokolle funktionieren genau nach diesem Grundprinzip: Die Knoten tauschen Zustandsinformationen aus und berechnen anschließend kürzeste Wege.
 
-In NeuBerlin könnte das vollkommen analog aussehen:
+In Neu Berlin könnte das vollkommen analog aussehen:
 
 - Jede Station stanzt ihren Zustand auf eine dünne Karte.
 - Rundflug-Tauben verteilen Kopien an alle Hauptstationen.

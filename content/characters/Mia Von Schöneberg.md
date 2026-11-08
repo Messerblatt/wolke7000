@@ -5,13 +5,19 @@ aliases:
   - Mia
 location: maxista
 ---
-![[mia_3.png]]
+![[imgs/characters/MiaVonSchöneberg/mia_3.png]]
 
+
+>[!warning]
+>Page needs redrafting
+
+> [!abstract] Profile
+> [[Mia Von Schöneberg]] is an exile, a socialite, and a minister heading a government department—the very name of which reveals that [[Neu Berlin]] long ago ceased to feel any shame regarding sensible administrative structures. Following the theft of the nobility’s crown, she was banished for life to Neu Berlin, where she took charge of the **Ministry of Chive Reform**. Her rooftop raves are considered mandatory social engagements for anyone who is important, wishes to appear important, or at the very least owns a peacock.
+> 
 ## Peacocks
 
-Her particular weakness for peacocks is well known. Under normal circumstances, this would merely be an eccentric preference; however, in NeuBerlin, status symbols are treated with the same gravity that other places reserve for basic food staples. A full-grown peacock can compel people to abandon perfectly rational choices in favor of a bird that mostly just stands around, looking as though evolution had completely forgotten the concept of “a little bit less.”
+Her particular weakness for peacocks is well known. Under normal circumstances, this would merely be an eccentric preference; however, in Neu Berlin, status symbols are treated with the same gravity that other places reserve for basic food staples. A full-grown peacock can compel people to abandon perfectly rational choices in favor of a bird that mostly just stands around, looking as though evolution had completely forgotten the concept of “a little bit less.”
 
-The **Insulaner in Schöneberg** is her domain—and also home to a number of peacocks that is statistically difficult to explain. Where she acquires these animals is the subject of much speculation. One particularly persistent theory suggests she has an arrangement with [[Solo Mio]], in which peacocks are traded for services that go unspoken.
 
 Mia does not explicitly deny this—which, in her case, usually implies that the truth is either incredibly dull or extremely expensive.> [!quote]
 > “Solo and I exchange nothing but cultural goods. What exactly constitutes ‘culture’ is something we decide only after the delivery arrives.”
@@ -120,7 +126,7 @@ She takes the social rituals of her lineage seriously enough to have mastered th
 >
 > **On power:** “You know you have power when, suddenly, everyone claims they’ve always liked you.”
 >
-> **On NeuBerlin:** “The city didn’t sink. It simply lowered its priorities.”
+> **On Neu Berlin:** “The city didn’t sink. It simply lowered its priorities.”
 >
 > **On bad parties:** “There were plenty of interesting people there. Unfortunately, not all at the same time.”
 >

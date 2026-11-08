@@ -4,130 +4,122 @@ clan: kreuzberg
 age: "52"
 role:
 ---
-> [!abstract]  
-> **Kripo-Beamter, bis auf Weiteres im Vor-Ruhestand.**  
-> Auf der Suche nach seiner nicht-existenten Pension. Mitglied des [[Clans of NeuBerlin.canvas|Konsortium Mitte]]. Offizieller Status: ungeklärt. Inoffizieller Status: sehr ungehalten.
+> [!abstract] Profile
+> **Criminal Investigation Department (CID) officer, in pre-retirement until further notice.** Currently searching for his non-existent pension. Member of the Consortium Mitte. Official status: unresolved. Unofficial status: highly displeased.
+
+Detective Richtig is a former officer with the Berlin Criminal Investigation Department—the kind of man who would view the total collapse of the state order as nothing more than an administrative hiccup.
+
+The collapse of state authority and public order literally [[VISION#Neu Berlin as a Water City|ended up underwater]]. Yet, in his own view, the detective is still rightfully owed his long-overdue reward; and so, he embarks on what is arguably his most complicated case yet: **His Pension**.
+
+> [!quote]
+> **"The state may be gone, but it had better not take my pension with it when it vanished."**
+
+## Biography
+
+Detective Richtig was born in Berlin on January 12, 2074. Following his police training, he joined the Criminal Investigation Department, where he found himself handling cases that increasingly centered on the disintegration of Germany.
+
+At the turn of the century, "Old Berlin" descended into civil war. During this period, Richtig’s investigations included a focus on [[Salt Brah]], whom he identified as one of the key instigators and catalysts behind the political unrest.
+
+Just as Detective Richtig prepared to enter retirement, he discovered that the Federal Republic of Germany no longer existed—leaving no government agency responsible for his pension. Other administrative offices were reportedly relocated to Potsdam, but no one knows *which* Potsdam.
+
+Consequently, his pension claim **cannot be processed to completion**. Ever since, the detective has been pursuing what is likely his most difficult case of all: **Mission Pension**.
+
+## Personality
+
+Detective Richtig possesses the dark humor of a man who has spent too much time dealing with people convinced that they could improve their situation through legal counsel.
+
+To outsiders, his dark humor can come across as cold. He typically makes a dry remark, holds his gaze on the other person for two seconds too long, and then leaves it up to them to decide whether or not it was a joke.
+
+> [!quote]
+> **"He’s only dead once the doctor has signed off on it. Until then, he’s just remarkably quiet."**
 
 
-Kommissar Richtig ist ex-Beamter der Berliner Kriminalpolizei und einer jener Menschen, die selbst den Untergang staatlicher Ordnung für ein administratives Problem halten.
+Due to his professional background, Richtig often slips into "investigator mode"—taking a sudden, intense interest in windows and asking questions whose purpose only becomes clear later on.
 
-Der Untergang der behördlichen Hoheit von Staat und Ordnung fiel buchstäblich [[VISION#NeuBerlin als Wasserstadt|ins Wasser]]. Die längst überfällige Pension steht dem Kommissar nach eigener Auffassung aber noch zu. So begibt der Komissar sich auf seinen bisher kompliziertesten Fall: Seine **Mission Pension**.
+## The Pension
 
-> [!quote]  
-> **"Der Staat ist weg, aber mit meiner Pension macht er besser nicht den Abflug."**
+For him, the pension has long since transcended its monetary value: **it’s a matter of principle.**
 
-## Biografie
+Having spent three decades ensuring—on behalf of the state—that laws, deadlines, and due diligence were upheld, he now demands the same level of rigor from the state in return. The fact that the state no longer exists is, in the detective’s view, a poor excuse.
 
-Kommissar Richtig wurde am 12. Januar 2074 in Berlin geboren. Nach seiner Ausbildung bei der Polizei wechselte er zur Kriminalpolizei und damit zu Fällen, die zunehmend den Untergang Deutschlands in den Fokus stellten.
+> [!quote]
+> **"If the Federal Republic had time to collapse, it certainly had time to finalize my paperwork."**
 
-Zur Jahrhundertwende versank Alt-Berlin in Bürgerkriegen. Während dieser Zeit ermittelte Richtig unter anderem gegen [[Salt Brah]], den er als einen der Drahtzieher und Beschleuniger der politischen Unruhen betrachtete.
+He maintains a massive lever-arch file regarding his pension claims, labeled **"The Evidence."** The folder contains copies of lost originals, as well as originals of lost copies. It also holds correspondence from defunct government agencies—alongside letters from agencies that haven’t yet ceased to exist, explaining why the defunct agencies are the ones responsible for his case.
 
-Als Kommissar Richtig sich anschickt, in den Ruhestand einzutreten, stellt sich heraus, dass die Bundesrepublik Deutschland nicht mehr existiert, und somit auch keine Behörde für seine Pension zuständig ist. Weitere Direktionen wurden nach Potsdam verlegt, doch niemand weiß, in welches Potsdam.
+If one interprets the "evidence" broadly enough, one might conclude that this file proves not only the detective’s entitlement to a pension but also the collapse of the Federal Republic of Germany itself. The search for his pension leads Richtig through the entire administrative apparatus of New Berlin. In the process, he encounters a bureaucratic nightmare that perpetuates the drawbacks of old administrative systems, even though their benefits have long since vanished.> [!quote]
+> **“The agency says it’s not responsible? I’d like that in writing.”**
 
-Seine Pension kann daher **nicht abschließend bearbeitet werden**. Seitdem führt der Komissar unter der **Mission Pension** seinen wahrscheinlich schwierigsten Fall überhaupt.
+Detective Richtig has come to view the odyssey of securing his pension much like a criminal investigation. Somewhere within this labyrinth of departments that all claim "it’s not our responsibility," Richtig is convinced there exists a person, a server, a filing cabinet—or at the very least, a somewhat credible Excel spreadsheet—that proves he is owed money.
 
-## Persönlichkeit
+## Appearance
 
-Kommissar Richtig besitzt den schwarzen Humor eines Mannes, der zu lange mit Menschen kooperiert hat, die überzeugt sind, ihre Situation mit juristischem Beistand zu verbessern.
+Detective Richtig wears nondescript civilian clothing. As he makes his way through the administrative offices of Neu Berlin, he looks for all the world like an applicant who has spent months trying to correct a housing benefit claim—which, in a way, is not entirely inaccurate.
 
-Sein schwarzer Humor kann auf Außenstehende kalt wirken. Meistens sagt er etwas Trockenes, schaut sein Gegenüber zwei Sekunden zu lange an und überlässt ihm anschließend die Entscheidung, ob es ein Witz war.
+His attire is practical, dark, and inconspicuous. Even in the sweltering summer heat of Neu Berlin, he wears long-sleeved tops and long trousers.
 
-> [!quote]  
-> **"Tot isser erst, wenn der Arzt unterschrieben hat. Vorher ist nur auffällig ruhig."**
+Hidden beneath his clothing, on his left shoulder, is an old scar from the Alster Wars—a souvenir from [[Salt Brah]]. It is one of the few visible remnants of a past far more violent than his current existence—spent navigating waiting-room queue numbers and bureaucratic case officers—would suggest.
 
-
-Berufsbedingt fällt Richtig oft in den **Ermittlermodus**: Er interessiert sich dann ganz besonders für Fenster und stellt Fragen, deren Sinn sich erst später erschließt.
-
-## Die Pension
-
-Seine Pension hat den Wert des Geldes längst überschritten: **Es geht um das Prinzip**.
-
-Nachdem er drei Jahrzehnte lang im Namen des Staates für die Einhaltung von Gesetzen, Fristen und Sorgfaltspflichten sorgte, verlangt er dasselbe nun vom Staat. Dass der Staat nicht mehr existiert, empfindet der Komissar als eine billige Ausrede.
-
-> [!quote]  
-> **„Wenn die Bundesrepublik Zeit hatte unterzugehen, hatte sie auch Zeit, meinen Bescheid fertigzumachen.“**
-
-Über seine Pensionsansprüche führt er einen gigantischen Leitz-Ordner mit dem Aufdruck **"Die Beweislage"**. Der Ordner enthält Kopien verlorener Originale, sowie Originale verlorener Kopien. Auch Briefe untergegangener Behörden sowie Briefe noch-nicht-untergegangener Behörden, die erklären, warum untergegangene Behörden zuständig seien, sind Teil des Konvolutes.
-
-Legt man die Beweislast etwas aus, könnte man zu dem Entschluss gelangen, der Leitz-Ordner beweise nicht nur den Pensionsanspruch des Kommissars, sondern auch den Untergang der Bundesrepublik Deutschland.
-
-Die Suche nach seiner Pension führt Richtig durch den gesamten Verwaltungsapparat NeuBerlins. Dabei begegnet er einem bürokratischen Alptraum, der die Nachteile alter Verwaltungssysteme aufrecht erhält, obwohl die Vorteile längst verschwunden sind.
-
-> [!quote]  
-> **„Die Behörde sagt, sie sei nicht zuständig? Das hätte ich gerne schriftlich.“**
-
-Kommissar Richtig betrachtet diese Odyssee seiner Pension zunehmend wie einen Kriminalfall. Irgendwo im Labyrinth der nicht verantwortlichen Stellen, davon ist Richtig überzeugt, befindet sich eine Person, ein Server, ein Aktenschrank oder zumindest eine halbwegs glaubwürdige Excel-Tabelle, die beweist, dass ihm Geld zusteht.
-
-## Erscheinungsbild
-
-Komissar Richtig trägt unscheinbare Zivilkleidung. Auf seinen Wegen durch NeuBerliner Amtsstuben wirkt er wie ein Antragssteller, der seit Monaten versucht, seinen Wohngeldantrag zu korrigieren. Was teilweise sogar stimmt.
-
-Seine Kleidung ist praktisch, dunkel und unauffällig. Selbst bei den stechenden Sommertemperaturen NeuBerlins trägt er langärmlige Oberteile und lange Hosen.
-
-Unter der Kleidung verbirgt sich an seiner linken Schulter eine alte Narbe aus den Alsterkriegen. Sie stammt von [[Salt Brah]]. Die Narbe ist eines der wenigen sichtbaren Zeugnisse einer Vergangenheit, die erheblich gewalttätiger war, als sein heutiges Dasein zwischen Wartenummern und Sachbearbeitern vermuten lässt.
-
-Seine alte Dienstmarke trägt und zeigt er weiterhin häufig, und stiftet unbeabsichtigte Verwirrungen: Die Dienstmarke bestätigt eindeutig, dass Kommissar Richtig Beamter einer Institution ist, die nicht mehr existiert.
+He still frequently carries and displays his old service badge, which often leads to unintended confusion: the badge clearly identifies Detective Richtig as an official of an institution that no longer exists.
 
 
-> [!quote]  
-> **„Die Marke ist echt. Dass die Behörde nicht mehr existiert, liegt außerhalb meines Zuständigkeitsbereichs.“**
+> [!quote]
+> **“The badge is genuine. The fact that the agency no longer exists is outside my jurisdiction.”**
 
 
-Außerdem trägt er einen Revolver am Gürtel.
-
-## Beziehungen
+He also carries a revolver on his belt.
+## Relationships
 
 ### Salt Brah
 
-Zwischen [[Salt Brah]] und Kommissar Richtig besteht eine Feindschaft mit institutionellen Charakter. Während Richtigs aktiver Zeit, also der Alsterkriegs-Zeit, ermittelte er gegen den Brah, und holte sich in dem Zusammenhang eine üble Verletzung an der Schulter zu.
+There is an institutionalized enmity between [[Salt Brah]] and Commissioner Richtig. During Richtig’s active service—specifically during the Alster War—he investigated the Brah, sustaining a severe shoulder injury in the process.
 
-Brah hält den Kommissar für ein Fossil. Der Komissar hält Brah für Ungeziefer. Beide würden diese Beschreibung vermutlich akzeptieren.
+Brah considers the Commissioner a relic; the Commissioner views Brah as vermin. Both would likely accept these characterizations.
 
-> [!quote]  
-> **"Brah hat Überzeugungen. Das macht ihn anstrengend im Verhör."**
+> [!quote]
+> **"Brah has convictions. That makes him difficult to interrogate."**
 
 ### Gojan
 
-[[Gojan]] ist Richtig grundsätzlich zuwider. Dass der Verwalter der Wasserwerke mit Druck arbeitet, bestätigt Richtigs Verdacht auf nominativ-deterministischem Terror.
+[[Gojan]] is fundamentally repugnant to Richtig. The fact that the administrator of the waterworks operates under "pressure" only confirms Richtig’s suspicion of "nominative-deterministic" terror.
 
-Gleichzeitig weiß der Komissar, dass Gojan's hervorragende Kenntnisse über die Kanalisation von NeuBerlin ein Schlüsselfaktor zum Erfolg seiner Mission Pension ist. 
+At the same time, the Commissioner knows that Gojan’s exceptional knowledge of the New Berlin sewer system is a key factor in the success of his "Mission: Retirement."
 
-Richtig betrachtet Gojan deshalb als eine Mischung aus Verdächtigem, Informanten und unverzichtbarem Fachpersonal. Was ihn außerordentlich nervt.
+Consequently, Richtig views Gojan as a hybrid of suspect, informant, and indispensable specialist—a combination that annoys him to no end.
 
 ### Nero
 
-[[Nero]] ist einer der wenigen Menschen, bei denen Richtigs Ermittlungsmodus auf Alarmstufe Rot geht. Er betrachtet Nero als Querolanten mit pyromanischem Leistungsanreiz, und ahnt, dass Gojan eine wichtige Informationsquelle sein wird.
+[[Nero]] is one of the few individuals who triggers "red alert" status in Richtig’s investigative mode. He perceives Nero as a troublemaker with a pyromaniacal streak, and he suspects that Gojan will prove to be a vital source of information.
 
-Richtig könnte versuchen, Gojan's familiäre Bindungen und Verantwortlichkeiten als Druckpunkte in einer Ermittlung zu nutzen. 
+Richtig might attempt to leverage Gojan’s familial ties and responsibilities as pressure points during an investigation.
 
 ### Kokolores
 
-Auf [[Kokolores]] hält Kommissar Richtig große Stücke. Er respektiert ihre empathische Haltung gegenüber anderen Menschen sowie ihre Fähigkeit, völlig unterschiedliche Temperamente zusammenzuhalten.
+Commissioner Richtig holds [[Kokolores]] in high regard. He respects her empathetic attitude toward others, as well as her ability to hold together people of vastly different temperaments.
 
-Kokolores besitzt eine Form natürlicher Autorität, die Richtig aus seinem Berufsleben kaum kennt und ihn beeindruckt.
+Kokolores possesses a form of natural authority—something Richtig rarely encountered in his professional life—which leaves him impressed.
 
 ### Fibo
 
-Sein Verhältnis zu [[Fibo]] ist zunächst professionell. Richtig erkennt Fibos technische Fähigkeiten schnell und ohne große emotionale Zeremonie an. Fibo wiederum ist für ihn einer jener Menschen, bei denen nicht immer klar ist, ob sie gerade ein Problem lösen oder ein erheblich größeres erzeugen.
+His relationship with [[Fibo]] is, for the time being, strictly professional. Richtig acknowledges Fibo’s technical skills quickly and without any great emotional fanfare. For his part, Richtig views Fibo as one of those people—the kind where it’s never quite clear whether they are currently solving a problem or creating a significantly larger one.
 
-Das verschlüsselte Funkgerät, das Fibo für ihn eingerichtet hat, betrachtet Richtig als äußerst nützlich. Dass er nicht versteht, wie die Verschlüsselung funktioniert, gefällt ihm weniger. 
+Richtig finds the encrypted radio that Fibo set up for him to be extremely useful. The fact that he doesn’t understand how the encryption works, however, pleases him rather less.
 
-### Spasti
+## Spasti
 
-[[Spasti]] hält Kommissar Richtig für einen ungezogenen Bengel. Spasti hält Kommissar Richtig für eine wandelnde Dienstvorschrift. Damit ist die Ausgangslage geklärt.
+[[Spasti]] considers Commissioner Richtig an ill-mannered rascal. Spasti also sees Richtig as a walking, talking set of official regulations. That pretty much sums up the dynamic between them.
 
+## Technology
 
-## Technik
+His radio has been technically modified by [[Fibo]]. At the Commissioner’s explicit request, it includes an encrypted private channel. Richtig uses this for, among other things, sensitive investigations within the [[Neu Berlin.canvas|Consortium Mitte]].
 
-Sein Funkgerät wurde von [[Fibo]] technisch erweitert. Auf ausdrücklichen Wunsch des Kommissars besitzt es einen verschlüsselten privaten Kanal. Richtig verwendet ihn unter anderem für sensible Ermittlungen innerhalb des [[Clans of NeuBerlin.canvas|Konsortium Mitte]].
+Although he is fundamentally distrustful of modern technology, he makes intensive use of it—provided someone can show him where the off switch is.
 
-Obwohl er moderner Technik grundsätzlich misstraut, verwendet er sie intensiv, sofern ihm jemand erklären kann, wo der Ausschalter ist.
+## Resources
 
-## Ressourcen
+As a veteran of the [[Neu Berlin.canvas|Consortium Mitte]], Richtig has access to parts of the former Berlin Police weapons arsenal. The extent to which this access remains legal is difficult to determine.
 
-Als Veteran des [[Clans of NeuBerlin.canvas|Konsortium Mitte]] besitzt Richtig Zugang zu Teilen des ehemaligen Waffenarsenals der Berliner Polizei. Wie legal dieser Zugriff noch ist, lässt sich schwer beurteilen.
+Commissioner Richtig himself considers this the wrong question to ask.
 
-Kommissar Richtig selbst betrachtet die Frage als falsch gestellt.
-
-> [!quote]  
-> **„Die Waffen wurden nie ordnungsgemäß aus dem Bestand ausgetragen.“**
+> [!quote]
+> **“The weapons were never properly struck from the inventory.”**

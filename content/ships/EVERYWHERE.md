@@ -4,43 +4,40 @@ ship: "[[EVERYWHERE]]"
 wings-hub: true
 class: ship
 ---
-> [!summary] Kurzklassifikation  
-> Zweimotoriger, hochautomatisierter Leichtfrachter für Wasser- und Himmelsfahrt. Die KARAT dient dem Himmelfahrtskommando als Versorgungs-, Karten- und Bergungsschiff. Sie beherbergt das Fundbüro der EVERYTHING sowie die zentrale Flugroutenkartografie von Open Wings. Zwei unabhängig installierte Candytrons ermöglichen sicheren Start, wirtschaftlichen Reiseflug und eingeschränkten Weiterflug mit nur einem Triebwerk.
+> [!summary] Brief Classification
+> A twin-engine, highly automated light freighter designed for both aquatic and aerial travel. The KARAT serves the "Suicide Squad" (Ascension Command) as a supply, mapping, and salvage vessel. It houses the "EVERYTHING" lost-and-found office, as well as the central flight-route cartography for Open Wings. Two independently installed "Candytrons" (propulsion units) ensure safe takeoff, fuel-efficient cruising, and the ability to continue flight—albeit in a limited capacity—using only a single engine.
 
 Carrier Ship. Add more EVERYWHEREs later on.
 
 
-## Volier
+## Dovecote
 
+...
 
+## Data
 
-## Daten
-
-| Merkmal                             | Festgelegter Wert                                         |
-| ----------------------------------- | --------------------------------------------------------- |
-| Schiffstyp                          | zweimastiger Leichtfrachter / Fracht-Ewer des Jahres 2126 |
-| Kennung                             | F_KARAT                                                   |
-| Gesamtlänge                         | 28,6 m                                                    |
-| Länge an der Wasserlinie            | 26,9 m                                                    |
-| Gesamtbreite Rumpf                  | 7,2 m                                                     |
-| maximale Spannweite im Flug         | 48 m                                                      |
-| Tiefgang bei Flugkonfiguration      | 1,35 m                                                    |
-| Tiefgang bei maximaler Wasserfracht | 1,75 m                                                    |
-| Freibord mittschiffs                | 2,15 m                                                    |
-| Höhe bis Hauptdeck                  | 3,25 m                                                    |
-| Masthöhe über Wasserlinie           | 17,8 m                                                    |
-| Leermasse                           | 65,0 t                                                    |
-| typische Wasserverdrängung          | 102 t                                                     |
-| maximale Wasserverdrängung          | 125 t                                                     |
-| reguläre Flugmasse                  | 90 t                                                      |
-| zulässige maximale Flugmasse        | 96 t                                                      |
-| strukturelle Flug-Überlastgrenze    | 104 t; nur Notfall, keine Startfreigabe                   |
-| Stammbesatzung                      | 3 Personen                                                |
-| zusätzliche Personen                | 5 kurzfristig; maximal 8 insgesamt                        |
-| reguläre Luftfracht                 | 10–15 t einschließlich Fundsachen und Kartenarchiv        |
-| maximale reine Wasserfracht         | 45 t bei entsprechend reduzierten Vorräten                |
-| Fahrtgebiet Wasser                  | Flüsse, Kanäle, Küste, mäßige offene See                  |
-| Fahrtgebiet Luft                    | untere Troposphäre; regulär bis 3.000 m                   |
-
-
-
+| Characteristic                   | Specified Value                                                          |
+| -------------------------------- | ------------------------------------------------------------------------ |
+| Vessel Type                      | Two-masted light freighter / cargo *Ewer* (barge-ketch) of the year 2126 |
+| Identifier                       | F_KARAT                                                                  |
+| Total Length                     | 28.6 m                                                                   |
+| Length at Waterline              | 26.9 m                                                                   |
+| Total Hull Beam                  | 7.2 m                                                                    |
+| Maximum Wingspan (in flight)     | 48 m                                                                     |
+| Draft (flight configuration)     | 1.35 m                                                                   |
+| Draft (maximum waterborne cargo) | 1.75 m                                                                   |
+| Freeboard (amidships)            | 2.15 m                                                                   |
+| Height to Main Deck              | 3.25 m                                                                   |
+| Mast Height (above waterline)    | 17.8 m                                                                   |
+| Empty Mass                       | 65.0 t                                                                   |
+| Typical Water Displacement       | 102 t                                                                    |
+| Maximum Water Displacement       | 125 t                                                                    |
+| Standard Flight Mass             | 90 t                                                                     |
+| Maximum Permissible Flight Mass  | 96 t                                                                     |
+| Structural Flight Overload Limit | 104 t; emergency use only, takeoff not permitted                         |
+| Core Crew                        | 3 persons                                                                |
+| Additional Personnel             | 5 (short-term); 8 total maximum                                          |
+| Standard Air Cargo               | 10–15 t (including recovered items and map archive)                      |
+| Maximum Waterborne Cargo (net)   | 45 t (with correspondingly reduced supplies)                             |
+| Operational Area (Water)         | Rivers, canals, coastal waters, moderate open seas                       |
+| Operational Area (Air)           | Lower troposphere; standard ceiling up to 3,000 m                        |

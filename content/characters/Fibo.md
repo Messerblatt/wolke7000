@@ -3,11 +3,18 @@ clan:
 ship: NIMBUS
 location: canteen-kreuzberg
 ---
+	
+
+![[imgs/characters/fibo/fibo_third.jpg]]
+
+>[!warning]
+>Page needs redrafting
+
+> [!abstract] Profile
+> [[Fibo]] is the helmsman of the [[NIMBUS ]]; a hacker, inventor, and all-around technical genius. His extensive expertise in everything related to technology makes him indispensable to the [[Himmelfahrtskommando]].
 
 
-![[fibo_third-2.jpg]]
-
-Fibo, born and raised in NeuBerlin, earned his living for a long time as a ghostwriter for academic imposters. His doctoral dissertation for [[Okta⁸]] led to a momentous interlude that is yet to be resolved on Cloud 7000.
+Fibo, born and raised in Neu Berlin, earned his living for a long time as a ghostwriter for academic imposters. His doctoral dissertation for [[Okta⁸]] led to a momentous interlude that is yet to be resolved on Cloud 7000.
 
 Although established scientists became aware of his true authorship, Fibo remained aloof from the academic world. To this day, headhunters from the last remaining universities continue to try to recruit him for profitable research projects. Fibo ignores these invitations without exception.
 
@@ -17,7 +24,7 @@ Although established scientists became aware of his true authorship, Fibo remain
 
 He met [[Kokolores]] at a party in the cafeteria. They hit it off immediately and decided to join forces in the search for treasure.
 
-They stole the [[NIMBUS]] from the docks in the southern Spandau district and have been navigating the waterways of NeuBerlin together ever since. He usually takes the helm.
+They stole the [[NIMBUS]] from the docks in the southern Spandau district and have been navigating the waterways of Neu Berlin together ever since. He usually takes the helm.
 
 During an exploration mission into the southern waters of NewBerlin initiated by Fibo, he and [[Kokolores]] encountered [[Spasti]]. Spasti was in the process of emerging from the tunnels of [[Exilium AG]] to the surface.
 

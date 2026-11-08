@@ -3,111 +3,111 @@ ship: INFINITY
 archive_presence: true
 location: tempelhof-diskoord
 ---
+![[salt_brah.png]]
+
+
+>[!warning]
+> page needs redrafting
+
+> [!abstract] Profile
+> [[Salt Brah]] is the founder of the [[Open Wings]] Foundation and captain of the [[INFINITY]]. Born and raised during the Alster War in Hamburg_2, he first gained public attention through his illegal concerts and mass uprisings. In Neu Berlin, he—alongside [[Ciao Von Bella]] and [[funky (dot) blend|Funky.blend]]—serves as one of the three administrators of the [[Tempelhof Diskoord]].
 
 
 
-Salt Brah wurde während des **Alsterkriegs von Hamburg_2** geboren. Über seine Familie ist wenig bekannt. Unzuverlässige Quellen deuten zumindest darauf hin, dass er als Jugendlicher eine Klavierausbildung absolvierte und auffällige Sympathien für historische Verräter wie Judas, Brutus oder [[Nero]] zeigte.
+Salt Brah was born during the **Alster War of Hamburg_2**. Little is known about his family. Unreliable sources suggest that, as a youth, he received piano training and displayed a notable affinity for historical traitors such as Judas, Brutus, or Nero.
 
-Seine ersten öffentlichen Auftritte in den verlassenen Lagerhallen von Hamburg_2 bestritt er mit gehackten Gameboys, die er an Gitarrenverstärker anschloss und auf 140 Dezibel aufdrehte.
+He made his first public appearances in the abandoned warehouses of Hamburg_2, using hacked Game Boys connected to guitar amplifiers, cranked up to 140 decibels.
 
-Die aggressive Grundstimmung seiner Konzerte führte zu regelmäßigem Eingreifen der Polizei. Während eines dieser Konzerte rüstete Salt einen Gitarrenverstärker zu einem Hochfrequenzsender um und verband ihn mit einem improvisierten Modulator. Das ausgestrahlte Signal erzeugte Frequenzen, die mehrere hungrige Wölfe aus den verwilderten Außenbezirken anzogen.
+The aggressive atmosphere of his concerts frequently drew police intervention. During one such show, Salt converted a guitar amplifier into a high-frequency transmitter, hooking it up to an improvised modulator. The resulting signal generated frequencies that attracted several hungry wolves from the overgrown outskirts of the city.
 
-Während die Polizei versuchte, ihre Kommunikation wiederherzustellen, hielt Salt eine Rede gegen die lokalen Machthaber, worauf das Publikum anschließend begann, Stühle, Tische und Teile der Bühnentechnik auf die Einsatzkräfte zu werfen.
+As the police struggled to restore their communications, Salt delivered a speech against the local authorities; the audience responded by hurling chairs, tables, and pieces of stage equipment at the officers.
 
-Nach dem Vorfall sprayte ein Unbekannter den Satz **„A Brah KaDah Brah!“** an eine benachbarte Wand. Das Graffito wurde zum Symbol der Hamburg_2 Aufstände und begründete Salt Brahs Ruf als revolutionäre Figur.
+Following the incident, an unknown person spray-painted the phrase **“A Brah KaDah Brah!”** on a nearby wall. The graffiti became a symbol of the Hamburg_2 uprisings and established Salt Brah’s reputation as a revolutionary figure.
 
-Seine Auftritte wurden in den folgenden Jahren zunehmend zu politischen Versammlungen. Salt sprach gegen Überwachung, lokale Oligarchien und jedwede Form von Autortität, was seinen Ruf als Anführer weiter festigte.
+In the years that followed, his performances increasingly evolved into political rallies. Salt spoke out against surveillance, local oligarchies, and all forms of authority—further cementing his status as a leader.
 
-Nach der Gründung NeuBerlins verließ Salt Hamburg_2. Öffentlich erklärte er, er wolle sich „von den Kakerlaken da oben“ distanzieren. Vermutlich reizte ihn jedoch vor allem die politische Offenheit der neuen Stadt. NeuBerlin war noch nicht in feste Verwaltungsformen gegossen und sozialen Strukturen wurden täglich neu ausgehandelt. Möglicherweise hat Salt dies als Möglichkeit gesehen, im neu gegründeten Berlin eine für ihn vorteilhafte Machtposition zu ergattern.
+After the founding of New Berlin, Salt left Hamburg_2. He publicly stated that he wished to distance himself from “the cockroaches up there,” though it is likely that he was primarily drawn by the political openness of the new city. New Berlin had not yet been cast into rigid administrative forms, and social structures were being renegotiated on a daily basis. Salt may well have seen this as an opportunity to secure a position of power advantageous to himself within the newly founded city.
 
-In Tempelhof beteiligte er sich am Aufbau des **[[Tempelhof Diskoord]]**, das sich unter ihm, [[Ciao Von Bella]] und [[funky (dot) blend|Funky]] zur wichtigsten freien Werft und Reparaturinfrastruktur NeuBerlins entwickelte.
+In Tempelhof, he played a role in establishing the **Tempelhof Diskoord**, which—under his guidance, along with that of **Ciao Von Bella** and **Funky**—evolved into New Berlin’s primary independent shipyard and repair facility.
 
-Er gründete die **Open Wing Foundation**, die er vom Funkturm des Diskoords aus koordiniert, zudem ist er Kapitän der **[[INFINITY]]**, eines selbst gebauten Schiffes, dessen Bauteile größtenteils von den Sentinels geplündert wurden. 
+He founded the **Open Wing Foundation**, which he coordinates from the Diskoord’s radio tower; he also serves as captain of the **INFINITY**, a vessel he built himself using components largely scavenged from the Sentinels.
 
-Sein Beitritt zum **[[Himmelfahrtskommando]]** begann mit einer Sammelbestellung von zehn [[Candytron|Candytrons]], die aus unbekannten Gründen aus dem Himmel fielen. Innerhalb weniger Tage baute Salt das KaDeWe zu einer improvisierten Flaschenpost-Startrampe um, bei der er eine gigantische Glasflasche mit der Öffnung nach oben in das Dachgeschoss des Gebäudes einhing, die [[INFINITY]] auseinandernahm und innerhalb der Flasche neu zusammensetztze. Während der Montage des Candytrons an das Achterdeck der [[INFINITY]] kam es zu einer folgenreichen Zusammenkunft mit der [[NIMBUS]]-Crew, bei der sich Salt dem von [[Kokolores]] angedachtem Himmelfahrtskommandos anschloss.
+His entry into the **Suicide Squad** (a "suicide mission" or "ascent-to-the-heavens" squad) began with a bulk delivery of ten **Candytrons**—devices that, for reasons unknown, fell from the sky. Within a few days, Salt transformed the KaDeWe department store into an improvised launch site for "message-in-a-bottle" style vessels: he suspended a gigantic glass bottle—opening-side up—within the building’s attic, then dismantled the **INFINITY** and reassembled it inside the bottle. While he was in the process of attaching a Candytron to the aft deck of the **INFINITY**, a fateful encounter with the crew of the **NIMBUS** took place, leading Salt to join the Suicide Squad—an initiative conceived by **Kokolores**.
 
-## Fähigkeiten
+## Skills
 
-### Multimediale Instrumentenkunst
+### Multimedia Instrumental Art
 
-Salt Brah beherrscht eine Vielzahl elektronischer, akustischer und improvisierter Musikinstrumente. Seine Begabung besteht darin, Instrumente zur Manipulation der Umgebung einzusetzen. Beispielsweise nutzt er Gitarrenverstärker als Störsender und Druckwaffe zur Erzeugung kollektiver Wut.
+Salt Brah has mastered a wide array of electronic, acoustic, and improvised musical instruments. His unique talent lies in using these instruments to manipulate his environment; for instance, he employs guitar amplifiers as signal jammers or as sonic weapons capable of inciting collective rage.
 
-Dabei besitzen seine Instrumente selten eine eindeutige Funktion. Ein von ihm entwickeltes Gameboy-Orchester kann ein Publikum zur Revolution anstiften, lokale Funknetze überlasten oder durch Resonanz schlecht befestigte Fensterscheiben aus ihren Rahmen lösen. Häufig erfüllt es alle drei Aufgaben gleichzeitig.
+His instruments rarely serve a single, clear-cut purpose. A "Game Boy orchestra" of his own design might simultaneously incite a crowd to revolution, overload local wireless networks, and—through the power of resonance—shake poorly secured windowpanes right out of their frames.
 
-### Technische Improvisation
+### Technical Improvisation
 
-Salt besitzt außergewöhnliches Verständnis für Elektronik und Signalverarbeitung. Anders als [[funky (dot) blend|Funky]], die präzise konstruiert und komplexe Modelle vorab prüft, arbeitet Salt intuitiv und lernt _on the fly_. Er beginnt häufig mit einer Wirkung, die er erzielen möchte, und findet anschließend heraus, welche physikalischen Gesetze dafür ignoriert werden müssen.
+Salt possesses an extraordinary grasp of electronics and signal processing. Unlike [[funky (dot) blend|Funky]]—who builds with precision and rigorously tests complex models beforehand—Salt works intuitively, learning as he goes. He typically starts with a desired effect, then figures out which laws of physics need to be disregarded to achieve it.
 
-Seine Konstruktionen gelten als genial, schwer reproduzierbar und gefährlich. Meist sind sie mit Beschriftungen versehen, die auf die improvisierte Funktionsweise hindeuten, wie etwa: "NICHT BEIDE SCHALTER GLEICHZEITIG DRÜCKEN, AUSSER BEI POLIZEI"
+His creations are considered ingenious, difficult to replicate, and dangerous. They often bear labels that hint at their improvised nature, such as: "DO NOT PRESS BOTH SWITCHES AT THE SAME TIME—UNLESS THE POLICE ARE PRESENT."
 
-### Rede und Massenmobilisierung
+### Oratory and Mass Mobilization
 
-Brah ist ein mitreißender Redner mit einem ausgeprägten Gespür für die Stimmung einer Menschenmenge. Er ist in der Lage, aus einer unzufriedenen Gruppe innerhalb weniger Minuten eine organisierte Protestbewegung zu formen.
+Brah is a compelling speaker with an acute sense for the mood of a crowd. He is capable of transforming a disgruntled group into an organized protest movement in a matter of minutes.
 
-Salt besitzt keine klassische Führungsdoktrin. Er erscheint einfach dort, wo Widerstand nötig ist, und verschwindet wieder, sobald seine neu konvertierten Rebellen anfangen, Schaden anzurichten.
+Salt follows no conventional doctrine of leadership. He simply appears wherever resistance is required—and vanishes the moment his newly converted rebels begin to wreak havoc.
+### Captain of the [[INFINITY]]
 
-### Kapitän der [[INFINITY]]
+As captain, Salt combines strategic boldness with a disregard for nautical conventions. He generally leaves precise maneuvers and weapons systems to Funky, while [[Ciao Von Bella]] remains in the crow’s nest as an observer. His primary contributions as captain consist of setting an objective and determining the level of escalation.
 
-Als Kapitän verbindet Salt strategische Kühnheit mit einer Geringschätzung für nautische Konventionen. Meist überlässt er Funky die präzisen Manöver und Waffensysteme, während [[Ciao Von Bella]] als Beobachterin im Ausguck bleibt. Seine Beiträge als Kapitän bestehen meist darin, ein Ziel vorzugeben und den Eskalationsgrad zu bestimmen.
-
-## Beziehungen
+## Relationships
 
 ### [[Ciao Von Bella]]
 
-Bei der Entwicklung von Open Wing war [[Ciao Von Bella]] für die Beschaffung und Trainingsflüge der Brieftauben verantwortlich, womit die Falknerin genau jene Kenntnisse einbrachte, die ihm fehlten. 
+During the development of Open Wing, [[Ciao Von Bella]] was responsible for procuring and conducting training flights for the carrier pigeons—contributing the very expertise that Salt lacked.
 
-Während Salt politische Visionen formuliert und Systeme gern unter maximaler öffentlicher Aufmerksamkeit testet, besitzt Ciao die Geduld und soziale Intelligenz, aus seinen Ideen funktionsfähige Institutionen zu machen. So ist aus ihren sich gegenseitig ergänzenden Fähigkeiten eine langjährige Komplizenschaft geworden.
+While Salt formulates political visions and prefers to test systems under maximum public scrutiny, Ciao possesses the patience and social intelligence required to transform his ideas into functional institutions. Their complementary skill sets have evolved into a long-standing partnership.
 
 
----
 
 ### Funky.blend
 
-[[funky (dot) blend|Funky]] unterstützte Salt maßgeblich bei der Entwicklung der Netztopologie von [[Open Wings]]. Ihr Verhältnis ist von produktivem Widerspruch geprägt. [[funky (dot) blend|Funky]] lehnt Hierarchien ebenso ab wie Salt und fordert seine Führungsposition regelmäßig heraus. Salt reagiert darauf selten beleidigt, weil er ihren Widerstand als Qualitätskontrolle betrachtet.
+[[funky (dot) blend|Funky]] played a key role in helping Salt develop the network topology of [[Open Wings]]. Their relationship is defined by productive friction; like Salt, [[funky (dot) blend|Funky]] rejects hierarchies and frequently challenges his leadership position. Salt rarely takes offense, viewing her resistance instead as a form of quality control.
 
-> [!quote] [[funky (dot) blend|Funky]] über Salt  
-> „Wer so durchgeknallt is, muss entweder’n hervorragender Anführer sein oder dringend aus der Werkstatt raus. Bis jetzt hält sich dit in  Waage.“
+> [!quote] [[funky (dot) blend|Funky]] on Salt
+> “Anyone this unhinged has to be either an exceptional leader—or someone who desperately needs to be kicked out of the workshop. So far, it’s a pretty even split.”
 
-[[funky (dot) blend|Funky]] erkennt in seinem Wahnsinn eine erkennbare moralische Richtung. Sie respektiert, dass er seine technischen Fähigkeiten zum Schutz anderer einsetzt und bereit ist, die Konsequenzen eigener Entscheidungen selbst zu tragen. Salt wiederum schätzt, dass [[funky (dot) blend|Funky]] seine Visionen belastbar macht, anstatt sie nur zu bewundern, so wie alle anderen es häufig tun. 
+[[funky (dot) blend|Funky]] perceives a clear moral direction within his madness. She respects the fact that he uses his technical skills to protect others and is willing to bear the consequences of his own decisions. Salt, for his part, values ​​the fact that [[funky (dot) blend|Funky]] puts his visions to the test—ensuring they are robust—rather than simply admiring them, as so many others often do.
 
-> [!quote] Brah über [[funky (dot) blend|Funky]]
-> „Sie sagt immer erst, warum’s nich geht. Dann baut sie es besser, als ich es gemeint hab.“
+> [!quote] Brah on [[funky (dot) blend|Funky]]
+> “She always starts by explaining why something won’t work. Then, she builds it even better than I had originally envisioned.”
 
----
 
 ### Kokolores
 
-Salt betrachtet [[Kokolores]] als praktisch. Ihre Fähigkeit, unterschiedliche Menschen auf ein gemeinsames Ziel auszurichten, macht sie seiner Auffassung zufolge zu einer nützlichen Anführerin.
+Salt considers [[Kokolores]] to be practical. In his view, her ability to align diverse individuals toward a common goal makes her a useful leader.
 
-### Spasti und Fibo
+### Spasti and Fibo
 
-Zu Beginn zeigt Salt wenig Interesse an [[Spasti]] und [[Fibo]] und betrachtet sie eher als [[Kokolores]] Assistenten. Fibos Intelligenz erkennt Salt durchaus, empfindet dessen analytische Zurückhaltung jedoch als unnötig höflich gegenüber Problemen, die nach seiner Ansicht längst hätten gesprengt werden sollen. 
+Initially, Salt shows little interest in [[Spasti]] and [[Fibo]], viewing them primarily as assistants to [[Kokolores]]. While Salt acknowledges [[Fibo]]’s intelligence, he finds the latter’s analytical reserve to be unnecessarily polite when faced with problems that, in Salt’s opinion, should have been blown to bits long ago.
 
-[[Fibo]] wiederum hält Brah's Konstruktionen für gefährlich und unverantwortlich, was Salt als angemessenes Qualitätsurteil betrachtet.
+[[Fibo]], for his part, considers Brah’s constructions dangerous and irresponsible—a judgment on their quality that Salt finds quite fitting.
 
-> [!quote]  
-> **[[Fibo]]:** „Das System besitzt keine ausreichende Abschirmung.“  
-> **Salt:** „Doch. Abstand.“
+> [!quote]
+> **[[Fibo]]:** “The system lacks sufficient shielding.”
+> **Salt:** “It has some. Distance.”
 
-[[Spasti]] interessiert Salt zunächst kaum, bis er dessen Fähigkeit beobachtet, unterschiedliche Kraftstoffe zu trinken und entsprechend verschiedene Formen von Feuer zu erzeugen. 
+Salt is barely interested in [[Spasti]] at first—until he observes his ability to consume various types of fuel and, in turn, produce different kinds of fire.
 
-> [!quote] Salt über [[Spasti]]  
-> „Er kann Feuer spucken? Warum hat man mir das nicht früher gesagt?
+> [!quote] Salt on [[Spasti]]
+> “He can breathe fire? Why didn’t anyone tell me that sooner?”
 
-[[Spasti]] bewundert Salts Hang zu Aufständen, versteht die politischen Hintergründe aber nur selten. Salt sieht darin kein Problem; nach seiner Erfahrung benötigen Revolutionen zwei Arten von Menschen: Die, die Manifeste schreiben, und die, die mit Tischen werfen. [[Spasti]] sei für die Tische zuständig.
-
-
+[[Spasti]] admires Salt’s penchant for insurrection, though he rarely grasps the underlying political context. Salt sees no issue with this; in his experience, revolutions require two types of people: those who write manifestos, and those who throw tables. [[Spasti]], he concludes, is the one responsible for the tables.
 
 ## Items
 
-- Modifizierter Game Boy.
-- Feedback-Kanonen-Kondensator.
-- Gitarrenplektrum aus Leiterplatte.
-- 140-dB-Messprotokoll.
-- Mini-Bassbock.
-- Applausmaschinen-Taster.
-- „Aufstandsglocke“-Klöppel.
-- Ohrstöpsel. Extrem wertvoll im Kontext.
-- Kabel, das laut Salt „mehr Haltung als Signal“ überträgt.
-
-
+- Modified Game Boy.
+- Feedback-cannon capacitor.
+- Guitar pick made from a circuit board.
+- 140 dB measurement log.
+- Mini bass stand.
+- Button for an “applause machine.”
+- Clapper for an “insurrection bell.”
+- Earplugs. Extremely valuable in this context. - A cable that, according to Salt, transmits “more attitude than signal.”

@@ -4,58 +4,36 @@ ship: "[[EVERYTIME]]"
 wings-hub: true
 class: ship
 ---
-Solo Mio's captaining Ship
-
-```letter
-husonaut-56
-from: [[Solo Mio]]
-recipient: [[Mia]]
-destination: [[die-maxista]]
-content: Willste den 4. Pfau jetzt noch auf die Rechnung nehmen? In zehn Minuten ist es zu spät.
-```
-
-```wings
-send(letter-id, location)
-```
-
-
 ## Material Index
-
-
-Also: Bestellung aus den Places kommt bei der EVERYTIME rein. Wir checken den Index. Bestellung auf Lager? -> Post an EVERYWHERE, bitte aus dem Lager holen und an folgende Adresse schicken.
-
-EVERYWHERE disponiert und liefert, gleichzeitig Post an EVERYTIME: Disposition buchen.
 
 
 
 ## Lost and Found
 
-
-
+...
 
 ## Dovecote
 
-aktuelle Karten sämtlicher erreichbarer Schläge sowie Informationen über Sperrungen von Wasserwegen, eingestürzte Gebäude oder vorübergehend verlegte Stationen.
+...up-to-date maps of all reachable lofts, as well as information regarding waterway closures, collapsed buildings, or temporarily relocated stations.
 
 
-## Network Card
+## Network Map
 
-Melde regelmäßig:
+Regular reports are submitted concerning:
 
-- welche Verbindungen offen sind,
-- wie viele Tauben bereitstehen,
-- welche Flugkorridore durch Sturm, Rauch oder Raubvögel gestört sind,
-- wie hoch die aktuelle Transportzeit ist.
+- which connections are open,
+- how many pigeons are available,
+- which flight corridors are obstructed by storms, smoke, or birds of prey,
+- the current transit time.
 
-Aus diesen Meldungen wird eine vollständige Karte des Netzes erstellt. Danach berechnet jede Hauptstation selbst die günstigste Route. Link-State-Protokolle funktionieren genau nach diesem Grundprinzip: Die Knoten tauschen Zustandsinformationen aus und berechnen anschließend kürzeste Wege.
+These reports are used to construct a complete map of the network. Each main station then independently calculates the most efficient route. Link-state protocols operate on this very principle: nodes exchange status information and subsequently calculate the shortest paths.
 
-In NeuBerlin könnte das vollkommen analog aussehen:
+In New Berlin, this process could be entirely analog:
 
-- Jede Station stanzt ihren Zustand auf eine dünne Karte.
-- Rundflug-Tauben verteilen Kopien an alle Hauptstationen.
-- Kartografen stecken die Daten auf großen Messingtafeln um.
-- Gewichte werden mit verschiebbaren Marken aktualisiert.
-- Ein mechanischer Routenrechner oder Fibo selbst bestimmt die Wege.
+- Each station records its status by punching holes into a thin card.
+- Pigeons flying circuit routes distribute copies to all main stations.
+- Cartographers update the data on large brass boards.
+- Weights are adjusted using movable markers.
+- A mechanical route calculator—or Fibo himself—determines the paths.
 
-Das wäre langsamer als digitales Routing, aber erstaunlich robust.
-
+While slower than digital routing, this approach would be remarkably robust.

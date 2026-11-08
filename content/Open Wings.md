@@ -1,143 +1,135 @@
 
-![[icon_openWing.png]]
+![[imgs/icon_openWing.png]]
 
 
-Die **Open Wings** Foundation ist eine gemeinnützige Stiftung zur Nachrichtenübermittlung und Informationskoordination in NeuBerlin. Sie betreibt das gleichnamige Brieftaubennetz, das die Stadtteile sowie zahlreiche Außenposten der Wasserstraßen von NeuBerlin miteinander verbindet. Open Wings gilt als eine der ältesten noch aktiven Institutionen der Stadt und wird als „Internet 1“ in die Geschichte von NeuBerlin eingehen. Anders als das "Internet 0" der Alten Welt transportiert Open Wings ausschließlich physische Nachrichtenkapseln. Die Stiftung verfolgt die Grundsätze der Freiheit, Überprüfbarkeit und Unabhängigkeit des Informationsaustausches. Open Wings agiert unabhängig von zentraler Kontrolle und wird vom [[Tempelhof Diskoord]] koordiniert.
+The **Open Wings** Foundation is a non-profit organization dedicated to message delivery and information coordination in Neu Berlin. It operates a carrier pigeon network—also called "Open Wings"—that connects the city’s various districts, as well as numerous outposts along Neu Berlin’s waterways. Open Wings is considered one of the oldest still-active institutions in the city and is destined to go down in the history of Neu Berlin as "Internet 1." Unlike the "Internet 0" of the Old World, Open Wings exclusively transports physical message capsules. The foundation upholds the principles of freedom, verifiability, and independence in the exchange of information. Open Wings operates free from central control and is coordinated by the [[Tempelhof Diskoord]].
 
-### Geschichte
+### History
 
-Die Gründung von Open Wings geht auf das Jahr 2108 zurück und wird den drei Admins des Tempelhof Diskoord [[Salt Brah]], [[Ciao Von Bella]] und [[funky (dot) blend|Funky.blend]] zugeschrieben.
+The founding of Open Wings dates back to the year 2108 and is credited to the three admins of the Tempelhof Diskoord: [[Salt Brah]], [[Ciao Von Bella]], and [[funky (dot) blend|Funky.blend]].
 
-Auslöser war Salt Brahs zunehmende Frustration über den Zustand des Internets der vorherigen Version. Automatisch startende Videos, Cookie-Banner, Ad-Targeting, Phishing-Kampagnen, Scammer und AI Slop hätten das Internet zu einer "Kloake der bilateralen Abzocke" verkommen lassen. Daraus entstand Salt Brah's Vision, das Internet ausgehend von der ursprünglichen Idee her neu zu denken und in Form eines von Brieftauben getragenen Informationsnetzes in den Domain-Zonen von NeuBerlin zu etablieren.
+The catalyst was Salt Brah’s growing frustration with the state of the internet as it existed previously. Autoplaying videos, cookie banners, targeted advertising, phishing campaigns, scammers, and "AI slop" had, in his view, turned the internet into a "cesspool of mutual exploitation." This gave rise to Salt Brah’s vision: to reimagine the internet by returning to its original core concept—establishing it within the domain zones of Neu Berlin as an information network carried by pigeons.
 
-### Die ersten Tauben
+### The First Pigeons
 
-Zusammen mit der Falknerin **Ciao Von Bella** wurde ein Taubenschwarm, bestehend aus NeuBerlin's schnellsten Tauben, zusammengestellt. Der erste Testflug am 12. Oktober 2109 verlief erfolgreich. 
-
-Hierbei wurde auch die Gelegenheit genutzt, die Vorgängerversion des Internet durch das Austragen eines Wettrennens zu blamieren: Um Punkt 12 Uhr wurden auf dem Dach des Tempelhofer Diskoords zeitgleich zwei identische Fassungen der Botschaft "FF" (die Initialen für "Flieg Frei" - das Motto der Open Wings Foundation) auf dem Weg geschickt: Die erste per klassischer E-Mail, die zweite per Open Wings Brieftaube. Die Botschaft wurde an einen Computer verschickt, der sich in der Dachzentrale von Schloss Schönhausen in NeuBerlin Pankow befandt. Um der Taube den Ort des Computers zu markieren, wurden zuvor entsprechende Flaggen auf dem Dach des Schlosses angebracht.
+Together with the falconer **Ciao Von Bella**, a flock consisting of Neu Berlin’s fastest pigeons was assembled. The first test flight took place on October 12, 2109, and was a success. This also provided an opportunity to embarrass the internet’s predecessor by staging a race: at exactly 12 o’clock, two identical versions of the message "FF" (standing for "Flieg Frei" — "Fly Free" — the motto of the Open Wings Foundation) were dispatched simultaneously from the roof of the Tempelhof "Diskoord": the first via traditional email, the second via an Open Wings carrier pigeon. The message was sent to a computer located in the rooftop headquarters of Schönhausen Palace in Neu-Berlin Pankow. To help the pigeon identify the location of the computer, flags had been placed on the roof of the palace.
 
 >[!info]
-> Diese 11,7 km lange Luftlinie konnte von der Brieftaube zuerst absolviert werden, womit Open Wings das Rennen gewann. Das Ansehen von Open Wings stieg dadurch erheblich.
+> The carrier pigeon was the first to complete this 11.7 km (as the crow flies) route, securing a race victory for Open Wings. This significantly boosted the reputation of Open Wings.
 
-Jener "Castle-Race", wie er in den Logfiles späterer Open Wings Versionierungen häufig zitiert wurde, brachte dem alten Internet einen hehren Ansehensschaden ein. Mittels Letter-Flooding "flutete" die Open Wings Foundation Taubenpost im großen Rahmen an die Bewohnerinnen und Bewohner von NeuBerlin, in denen das alte Internet als "offiziell lame" bezeichnet wurde.
+This "Castle Race"—as it was frequently referred to in the log files of later Open Wings versions—dealt a serious blow to the reputation of the "Old Internet." Through a tactic of "letter flooding," the Open Wings Foundation inundated the residents of New Berlin with pigeon-delivered mail, in which the Old Internet was dismissed as "officially lame."
 
-In den darauffolgenden Jahren wurde Open Wings großflächig in NeuBerlin etabliert, wobei Funky.blend maßgebliche Beiträge leistete, die zugrundeliegende Netz-Topologie der Flugrouten zu optimieren und in hohen Volumen nutzbar zu machen. Stand Juli 2126 koordiniert Open Wings einen aktiven Schwarm von rund 22.000 Brieftauben in NeuBerlin.
+In the years that followed, Open Wings became widely established throughout New Berlin. Funky.blend played a pivotal role in optimizing the underlying network topology of the flight paths, enabling the system to handle high volumes of traffic. As of July 2126, Open Wings coordinates an active flock of approximately 22,000 carrier pigeons across New Berlin.
 
-### Organisation
+### Organization
 
-Open Wings versteht sich ausdrücklich nicht als Postdienst, sondern als öffentliche Infrastruktur. Die Stiftung transportiert ausschließlich Briefe. Waren werden grundsätzlich nicht durch Brieftauben befördert.
+Open Wings explicitly defines itself not as a postal service, but as a piece of public infrastructure. The Foundation transports only letters; it does not carry physical goods.
 
-Stattdessen dient Open Wings als Kommunikationsschicht über dem Wasserverkehr der Stadt. Benötigt eine Werkstatt beispielsweise ein bestimmtes Ventil, wird zunächst eine Nachricht über Open Wings an den Material-Index der [[EVERYTHING|EVERYTHING]] übermittelt. Dort wird geprüft, welcher Lastkahn den gesuchten Gegenstand führt und auf welchem Kanal er sich befindet. Erst danach macht sich ein Versorgungsboot auf den Weg.
+Instead, Open Wings functions as a communication layer operating above the city’s water-based transport network. For instance, if a workshop requires a specific valve, a message is sent via Open Wings to the material index of [[EVERYTHING|EVERYTHING]]. The system then identifies which barge is carrying the requested item and determines its current channel location. Only then is a supply boat dispatched to retrieve it.
 
-Die Verbindung zwischen Open Wings und EVERYTHING gilt als eines der elementaren logistischen Systeme NeuBerlins und wird häufig mit dem Verhältnis zwischen Daten- und Transportnetzen der Alten Welt verglichen.
+The integration between Open Wings and EVERYTHING is considered one of New Berlin’s fundamental logistical systems—often compared to the relationship between data networks and physical transport networks in the Old World.
 
-Open Wings genießt in NeuBerlin eine umfassende Akzeptanz und gilt als das bevorzugte System zur Nachrichtenübermittlung.
+Open Wings enjoys widespread acceptance throughout New Berlin and is regarded as the preferred system for transmitting messages.
+
+## Homing Pigeons
 
 
-## Die Brieftauben
+Homing pigeons possess magnetic receptors in their heads and beaks, which make them sensitive to the Earth’s magnetic field. They use the position of the sun and an internal clock to make course corrections. Furthermore, homing pigeons imprint on the scent patterns of their home region; in a figurative sense, they "smell" their way back home. In doing so, they also orient themselves by following the paths of rivers, road networks, large buildings, and distinct color patterns. Through carefully structured training flights, Ciao Von Bella even succeeded in teaching the "Open Wings" homing pigeons to recognize flags.
 
+In experiments, homing pigeons are often able to locate their home loft with an accuracy of just a few meters—even from hundreds of kilometers away.
 
-Brieftauben besitzen Magnet-Rezeptoren in Kopf und Schnabel, was sie für das Erdmagnetfeld sensibilisiert. Sie nutzen den Stand der Sonne  und eine innere Uhr, um Kurskorrekturen durchzuführen. Auch prägen Brieftauben sich Geruchsmuster ihrer Heimatregion ein; sie „riechen“ im übertragenen Sinne den Weg nach Hause. Dabei orientieren sie sich auch an Flussverläufe, Straßennetze, große Gebäude und farbliche Muster. Durch gezieltes Durchführen von Trainingsflügen war es Ciao Von Bella gelungen, den Open Wings Brieftauben auch das Erkennen von Flaggen anzutrainieren.
+Homing pigeons do not navigate toward a specific *person*, but rather toward a *location* that they recognize as their home base. They cannot distinguish a person’s face from the air, nor can they fly toward a specific individual. They are unable to fly to unfamiliar recipients, nor can they identify specific human beings from the air.
 
-In Experimenten finden Brieftauben **ihren Heimatschlag oft auf wenige Meter genau** – selbst aus hunderten Kilometern Entfernung.
+Through flock behavior, internal hierarchies, and the distribution of roles (such as lead birds and follower birds), homing pigeons are capable of organizing themselves. "Flock hubs" can serve as gathering points where the pigeons rest; at these locations, messages may be collected or passed on. By using scent markers, the pigeons can align themselves with different "communication channels."---
 
-Brieftauben navigieren nicht zu einem _Menschen_, sondern zu einem _Ort_, den sie als Heimatbasis kennen. Sie erkennen nicht das Gesicht einer Person aus der Luft und fliegen nicht gezielt zu ihr. Sie können nicht unbekannte Empfänger anfliegen, und auch keine Menschen aus der Luft identifizieren.
+## Topology of Flight Routes
 
-Durch Schwarmverhalten, Hierarchien untereinander und Rollenverteilungen (Leitvögel, Folgevögel), können Brieftauben sich untereinander organisieren. **Schwarm-Knotenpunkte** können Sammelpunkte für Tauben sein, an denen sie sich ausruhen. Dort werden Nachrichten gesammelt oder weitergegeben. Mit **Geruchsmarkierungen** können Tauben sich unterschiedlichen **Nachrichtenkanälen** zuordnen.
+Each neighborhood maintains **pigeon lofts**, comparable to the "server nodes" of the old internet. Each pigeon knows exactly *one loft* to which it always returns. Messages are transported as **physical data packets** (scrolls of paper, capsules).
 
----
+Since pigeons can only fly *home*, intermediate stops are necessary—much like a "hop-by-hop" transmission in the old internet. For instance, to transport a message from Treptow to Prenzlauer Berg, pigeons—which may not know the entire route home—must head to intermediate stops (i.e., their own home lofts). At these points, the message is handed off to the next carrier pigeon, which then sets off for the next loft.
 
-## Topologie der Flugrouten 
-
-Jede Nachbarschaft unterhält **Taubenschläge**, vergleichbar mit den „Serverknoten“ des alten Internets. Die Tauben kennen exakt _einen Taubenschlag_, zu dem sie immer zurückfliegen. Nachrichten werden **als physische Datenpakete** transportiert (Papierrollen, Kapseln).
-
-Da Tauben nur _nach Hause_ fliegen können, sind Zwischenstationen nötig, Wie bei einer „Hop-by-Hop“-Übertragung im alten Internet. Um eine Nachricht beispielsweise von Treptow zum Prenzlauer Berg zu transportieren, müssen Tauben, die einen solchen Nachhauseweg nicht als Ganzes kennen, Zwischenstationen ansteuern, also ihren eigentlichen Heimatschlag. Hier wird die Nachricht an die nächste Brieftaube übergeben, und der nächste Taubenschlag wird angesteuert:
-
-Dabei gilt: 1 Abschnitt = 1 Taube.
+The rule here is: 1 segment = 1 pigeon.
 
 ---
 
-### Routing
+## Routing
 
-Die Nachrichten werden zwischen **Taubenschlägen** weitergereicht, die über ganz NeuBerlin verteilt sind. Da Brieftauben grundsätzlich zu ihrem Heimatschlag zurückkehren, erfolgt die eigentliche Routenplanung durch die Menschen. Jede Station besitzt daher aktuelle Karten sämtlicher erreichbarer Schläge sowie Informationen über Sperrungen von Wasserwegen, eingestürzte Gebäude oder vorübergehend verlegte Stationen.
+Messages are passed between **pigeon lofts** distributed throughout "Neu Berlin." Because carrier pigeons always return to their home loft, the actual route planning is handled by humans. Consequently, every station keeps up-to-date maps of all reachable lofts, as well as information regarding blocked waterways, collapsed buildings, or temporarily relocated stations.
 
-## Fehlerkorrektur
+## Error Correction
 
-Mitunter können Briefsendungen verloren gehen. Das tut der Brieftaube natürlich leid, denn sie hat ihr bestes gegeben. Trotzdem kannst du, um auf Nummer sicher zu gehen, mehrere Tauben mit der gleichen Nachricht losschicken (Sicherungskopien). Damit reduzierst du das Risiko einer verloren Briefsendung auf ein Minimum.
+Occasionally, a message might go missing. The carrier pigeon—having done its absolute best—will naturally feel sorry about this. Nevertheless, to be on the safe side, you can dispatch multiple pigeons with the same message (creating backup copies). This minimizes the risk of a message being lost.
 
 ---
 
-## Das Taubennetz von EVERYTHING
+## The Pigeon Network of EVERYTHING
 
-Jede größere Station besitzt mehrere Taubenschläge. Die dort gehaltenen Tauben gehören jeweils zu anderen Stationen:
+Every major station houses several pigeon lofts. The pigeons kept at each location belong to different stations:
 
-Soll ein Päckchen von Köpenick nach Wedding, muss keine Taube beide Orte kennen:
+If a package needs to go from Köpenick to Wedding, no single pigeon needs to know both locations:
 
-Das Paket wird an jeder Station umgeladen. Die Tauben sind die **Leitungen**, die Schläge sind die **Router**, und Menschen oder mechanische Sortierwerke führen den Algorithmus aus.
+The package is transferred at each station. The pigeons act as the **links**, the lofts serve as the **routers**, and humans or mechanical sorting systems execute the algorithm.
 
-### Distance Vector: Jede Station kennt nur ihre Nachbarn
+### Distance Vector: Each station only knows its neighbors
 
-Jede Station führt ein handgeschriebenes **Routenbuch**:
+Every station maintains a handwritten **routing table**:
 
-|Ziel|Nächster Schlag|geschätzte Dauer|
+|Destination|Next Loft|Estimated Duration|
 |---|---|---|
-|Wedding|Alexanderhafen|70 Minuten|
-|Spandau|Moabitdock|110 Minuten|
-|Köpenick|Treptower Schleuse|95 Minuten|
+|Wedding|Alexanderhafen|70 minutes|
+|Spandau|Moabitdock|110 minutes|
+|Köpenick|Treptower Schleuse|95 minutes|
 
-Die Station muss nicht das gesamte Netz kennen. Sie fragt nur:
+The station does not need to know the entire network. It simply asks:
 
-> „Welcher meiner Nachbarn bringt das Paket dem Ziel voraussichtlich näher?“
+> "Which of my neighbors is most likely to bring the package closer to its destination?"
 
-Das entspricht einem Distance-Vector-Verfahren, also einer verteilten Form von Bellman-Ford. Reale Routingprotokolle wie Babel bauen auf diesem Prinzip auf und ergänzen Mechanismen gegen Routenschleifen.
+This corresponds to a distance-vector approach—a distributed version of the Bellman-Ford algorithm. Real-world routing protocols, such as Babel, are built on this principle and include mechanisms to prevent routing loops.
 
-In NeuBerlin könnten die Tabellen einmal täglich mit Kurierkarten aktualisiert werden. Ein Eintrag wäre beispielsweise:
+In "New Berlin," these tables could be updated once a day via courier messages. An entry might look like this:
 
-Problematisch wird es, wenn eine Station ausfällt und die anderen noch veraltete Informationen besitzen. Dann könnte ein Paket im Kreis geschickt werden. Daher braucht jeder Behälter einen **Hop-Zähler**: Nach beispielsweise sechs Umladungen wird er nicht weitergeschickt, sondern landet im Fundbüro der EVERYTHING
+Problems arise if a station fails while others still hold outdated information; a package could end up being sent in circles. To prevent this, every container includes a **hop counter**: after, say, six transfers, it is no longer forwarded but instead sent to the "EVERYTHING" lost-and-found office.
 
+### Link-State Routing: The comprehensive network map
 
-### Link-State-Routing: die große Netzkarte
+Larger, more affluent hub stations could operate based on the OSPF principle. Each station regularly reports:
 
-Die reicheren Hauptstationen könnten nach dem Prinzip von OSPF arbeiten. Jede Station meldet regelmäßig:
+- which connections are open,
+- how many pigeons are available,
+- which flight corridors are obstructed by storms, smoke, or birds of prey,
+- the current transit time. These reports are used to construct a complete map of the network. Each main station then calculates the most efficient route for itself. Link-state protocols operate on this very principle: nodes exchange status information and subsequently calculate the shortest paths.
 
-- welche Verbindungen offen sind,
-- wie viele Tauben bereitstehen,
-- welche Flugkorridore durch Sturm, Rauch oder Raubvögel gestört sind,
-- wie hoch die aktuelle Transportzeit ist.
+In New Berlin, the process could look something like this:
 
-Aus diesen Meldungen wird eine vollständige Karte des Netzes erstellt. Danach berechnet jede Hauptstation selbst die günstigste Route. Link-State-Protokolle funktionieren genau nach diesem Grundprinzip: Die Knoten tauschen Zustandsinformationen aus und berechnen anschließend kürzeste Wege.
+- Each station records its status onto a thin card.
+- Carrier pigeons distribute copies to all main stations.
+- Cartographers update the data on large brass boards.
+- Weights are adjusted using movable markers.
+- A mechanical route calculator—or Fibo himself—determines the paths.
 
-In NeuBerlin könnte das vollkommen analog aussehen:
+While slower than digital routing, this method would be remarkably robust.
 
-- Jede Station stanzt ihren Zustand auf eine dünne Karte.
-- Rundflug-Tauben verteilen Kopien an alle Hauptstationen.
-- Kartografen stecken die Daten auf großen Messingtafeln um.
-- Gewichte werden mit verschiebbaren Marken aktualisiert.
-- Ein mechanischer Routenrechner oder Fibo selbst bestimmt die Wege.
+### Flooding: Broadcasting to Everyone in an Emergency
 
-Das wäre langsamer als digitales Routing, aber erstaunlich robust.
+In the event of a storm surge, an epidemic, or an attack, a message is not routed to a specific destination. Instead, each station forwards it to **all neighboring stations**, which in turn pass it on.
 
-### Flooding: im Notfall an alle
+This is known as "flooding."
 
-Bei einer Sturmflut, Epidemie oder einem Angriff wird eine Nachricht nicht gezielt geroutet. Jede Station schickt sie an **alle benachbarten Stationen**, die sie ihrerseits weiterverteilen.
+To prevent the same message from circulating indefinitely, it is assigned:
 
-Das ist Flooding.
+- a unique serial number,
+- a timestamp,
+- a maximum number of forwards.
 
-Damit nicht dieselbe Nachricht endlos zirkuliert, erhält sie:
+Each station checks: "Have I already seen message 7-114-B?" If so, it is not forwarded again.
 
-- eine eindeutige Seriennummer,
-- einen Zeitstempel,
-- eine maximale Anzahl von Weiterleitungen.
+This approach is suitable for:
 
-Die Station prüft: „Habe ich Nummer 7-114-B schon gesehen?“ Falls ja, wird sie nicht noch einmal verschickt.
+- evacuation warnings,
+- reports of missing ships,
+- water contamination,
+- fires,
+- manhunts by the Sentinel Seven,
+- public announcements.
 
-Das eignet sich für:
-
-- Evakuierungswarnungen
-- vermisste Schiffe
-- Wasserverseuchung
-- Feuer
-- Fahndungen der Sentinel Seven
-- öffentliche Aufrufe
-
-Der Nachteil: Flooding verbraucht sehr viele Tauben.
+The downside: flooding consumes a great many pigeons.

@@ -8,16 +8,17 @@ location: canteen-kreuzberg
 ---
 
 
-![[angel_2.png]]
+![[imgs/characters/Kokolores/angel_2.png]]
 
 
+>[!warning]
+>Page needs redrafting
+
+
+> [!abstract] Profile
+> [[Kokolores]], usually called **Koko**, is an angel, a treasure hunter, and the initiator of the **Suicide Squad**. She is among the earliest followers of **Wolke 7000** and is regarded as its spiritual leader aboard the [[NIMBUS]].
 
 Emphatisch, sensibel und verträumt. Eine gute Diplomatin, wäre sie nur nicht so oft mit dem Kopf in Wolke 7000.
-
-
-
-
-
 
 
 ## Vox 21 - His last flight
@@ -34,20 +35,13 @@ Ships can fly, because I. To the place where Vox has returned. Dead. Alive.
 > Kokolores comes from a poor background. She no longer has any contact with her family. She knows her relatives almost exclusively from vague childhood memories, which over the years have increasingly taken on the character of distant dreams.
 
 
-
-
-
-
 ## Appearance
 
-Koko = Angel. She has long white hair, which she usually ties into two pigtails and secures with shiny silver clips. Sometimes she wears her hair down and does whatever she wants.
+Koko = Angel. She has long white hair, which she usually ties into two pigtails and secures with shiny silver clips. Sometimes she wears her hair down.
 
 
 > [!quote] Koko über dieses eine Kleid
 > "Well... I don't know if that's still a dress. Maybe a whole flock of birds dressed up as a dress. It looks like someone taught a cloud to be arrogant. Of course I would just ask if the feathers help you fly. And if you can touch them. So the feathers."
-
-
----
 
 ## Persönlichkeit
 
@@ -62,19 +56,19 @@ Kokolores is considered social and sensitive. It recognizes emotional needs, med
 
 Photograph clouds. Fly a kite. Search disused buildings. Sailing aimlessly through the night. Keep a weather diary (your entries mix measurements with personal moods). Sewing (re)sewing clothes. Zines write about clouds, failed ventures and things she actually wanted to study. In some episodes, she broadcasts impromptu radio shows with music and breaking news about her zine - which is never finished - over a weak pirate radio station (she doesn't know if anyone is listening). Take art courses. Treasure diving.
 
-### Epiphanie
+### Epiphany
 
-Gemeinsam mit [[Gojan]] und [[Sam 3]] zählt Kokolores zu den sogenannten **Epiphanen**.
+Along with [[Gojan]] and [[Sam 3]], Kokolores is counted among the so-called **Epiphanes**.
 
-Epiphane Menschen sind in der Lage, Erscheinungen wahrzunehmen, die anderen verborgen bleiben. Bei Kokolores äußert sich diese Begabung vor allem durch die Botschaften von Wolke 7000.
+Epiphane individuals possess the ability to perceive phenomena that remain hidden from others. In the case of Kokolores, this gift manifests primarily through messages from "Cloud 7000."
 
-> [!question] Offene Frage  
-> Wird Kokolores tatsächlich von Wolke 7000 gerufen – oder deutet sie natürliche Phänomene im Sinne ihrer eigenen Sehnsüchte?
+> [!question] Open Question
+> Is Kokolores truly being summoned by Cloud 7000—or is she interpreting natural phenomena in a way that aligns with her own deep-seated desires?
 
-### Kampf
+### Combat
 
-Im direkten Handgemenge ist Kokolores vergleichsweise schwach. Sie verfügt weder über [[Fibo|Fibos]] technische Ausrüstung noch über [[Spasti|Spastis]] körperliche Kampfkraft.
+In a direct physical altercation, Kokolores is relatively weak. She possesses neither the technical equipment of [[Fibo]] nor the physical combat prowess of [[Spasti]].
 
-Sie verlässt sich auf Verhandlungen, Ablenkungen, oder der Durchschlagskraft ihrer Crew.
+Instead, she relies on negotiation, distraction, or the sheer force of her crew.
 
-Ihre eigentliche Stärke liegt darin, Kämpfe zu verhindern oder andere dazu zu bringen, für sie einzutreten.
+Her true strength lies in preventing conflicts from occurring or in persuading others to intervene on her behalf.

@@ -5,13 +5,13 @@ What is Wolke7000?
 
 What makes it unique?
 What should it feel like?
-What is NeuBerlin?
+What is Neu Berlin?
 Who is the player/viewer?
 What are the core themes?
 What must never become generic?
 
 
-## NeuBerlin als Wasserstadt
+## Neu Berlin als Wasserstadt
 
 ...
 

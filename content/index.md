@@ -4,57 +4,59 @@ publish: true
 tags:
 ---
 
-
-![[poster_4.png]]
-
-
-Das ist der Digital Garden von **Wolke 7000**, einem open-end und open-world open-source Solarpunk Projekt, bei dem es um fliegende Schiffe und einer besseren Zukunft geht.
-
-
+![[title.png]]
 
 ---
 
+
+## Characters
+
 ![[koko_third.png]]
 
-
 >[!tip]
-> Zu den Characters gehts [[Characters Übersicht|hier]]
+> Click [[Characters Overview|here]] for an Overview of New Berlin's characters.
 
-## Warum?
+---
 
-Die bisher so naiven Umsetzungen von Solarpunk brachten mich dazu, einen besseren, nicht-naiven Ansatz zu wählen, und so konzipiere ich nun diese Welt, die unserer Welt neue Möglichkeiten und Lösungsansätze bietet, um Dystopien zu überwinden.
+## Ships
 
-## Die Lore
 
-Die Geschichte beginnt im Jahre 2126 in [NeuBerlin](https://wolke7000.com/neuberlin). Durch Atomkriege und Klimakatastrophen ist die Welt am Untergehen. Der entfesselte Raubtierkapitalismus und die Schwarmdummheit der Menschen haben dafür gesorgt, dass die Menschheit das Fliegen verlernte. Dann crashen auch noch die letzten finanzierbaren Raumfahrtprojekte, und die Menschheit steht da, ohne Fluchttaxi ins All, hilflos im Archipel der letzten noch bewohnbaren Oasen der Erde.
+![[infinity_1.png]]
 
-[NeuBerlin](https://wolke7000.com/neuberlin) ist eine solche Oase, und hier beginnt die Geschichte.
+
+> [!tip] 
+> Ther story casts a prominent light on flying Ships. Click [[INFINITY|here]].
+
+---
+
+## The Story
+
+The story begins in the year 2126 in [[Neu Berlin.canvas|Neu Berlin]]. The world is on the brink of collapse, ravaged by nuclear wars and climate desasters. Predatory capitalism and human stupidity have left humanity grounded ———— unable to take flight. With the final, space exploration crashed, so humanity is left stranded. Without escape routes into space. Helplessly within an archipelago of the Earth’s few remaining oases.
+
+[[Neu Berlin.canvas|Neu Berlin]] is one such oasis. 
+
+And here the story begins.
+
+![[neuberlin_above.png]]
 
 > [!info]
-> [NeuBerlin](https://wolke7000.com/neuberlin) ist das alte Berlin, nur dass [NeuBerlin](https://wolke7000.com/neuberlin) halb unter Wasser versunken liegt und die Anarchie in der Stadt ausgebrochen ist. Boote und Schiffe sind die bevorzugten Transportmittel.
+> Neu Berlin is the old Berlin ——— or what remains of it. Half-submerged in water, the city has descended into anarchy. Boats and ships have become the primary mode of transport.
 
-Die Stadt wird von 4 Schleusen - eine pro Himmelsrichtung - mit Wasser versorgt, das durch strategische Bombeneinschläge in den umherliegenden Territorien zur Stadt bewegt wird. [NeuBerlin](https://wolke7000.com/neuberlin) ist bevölkert von einer Liga der außergewöhnlichen [Characters](https://wolke7000.com/characters-%C3%BCbersicht).
+The city is supplied with water via four sluice gates —— one in each cardinal direction —— fed by water channeled toward the city through strategic bomb impacts in the surrounding territories. Neu Berlin is inhabited by a league of extraordinary [[Characters Overview|Characters]]
 
 ![](https://wolke7000.com/imgs/icon_openwing.png)
 
 > [!info]
-> Zu [Open Wings](https://wolke7000.com/open-wings) gehts [hier](https://wolke7000.com/open-wings)
+> Check out [[Open Wings]] for a first dive into the story.
 
-Das Internet, wie wir es kennen, wurde in [NeuBerlin](https://wolke7000.com/neuberlin) durch [Open Wings](https://wolke7000.com/open-wings) ersetzt. Ein Hacker namens [Salt Brah](https://wolke7000.com/salt-brah) koordiniert die Brieftauben vom Funkturm des [Tempelhof Diskoord](https://wolke7000.com/tempelhof-diskoord). [Ciao Von Bella](https://wolke7000.com/ciao-von-bella) und [Funky.blend](https://wolke7000.com/funky-\(dot\)-blend) kümmern sich darum, dass Brieftauben und Schiffe die Infrastruktur mit Informationen und Material der [EVERYTHING](https://wolke7000.com/everything) versorgen. Die [EVERYTHING](https://wolke7000.com/everything) ist ein Meta-Schiff, und was das zu bedeuten hat, weiß ich auch noch nicht.
+In New Berlin, the internet as we know it has been replaced by [[Open Wings]]. A hacker named [[Salt Brah]] coordinates carrier pigeons from the radio tower at [[Tempelhof Diskoord]]. [[Ciao Von Bella]] and [[funky (dot) blend|Funky]] ensure that carrier pigeons and ships supply the infrastructure with information and materials from [[EVERYTHING]].
 
-Die Saga beginnt.
-
-## Was aus Wolke 7000 werden könnte
-
-Weiß ich nicht. Keine Ahnung. Das ganze Thema sollte ursprünglich in einem Sci-fi Roman kulminieren, aber mit sci-fi bin ich skeptisch: Seit weiß-gott-wie-vielen Jahren schreibt die Sci-Fi Community über KI. Jetzt ist die KI da, und die sci-fi Leute checken nicht, dass KI keine Fiction mehr ist.
-
-### Alles langweilig und immer das Gleiche
-
-In der Geschichte von Wolke 7000 spielt KI keine Rolle. Und naja weißt du, weil die Geschichte zum Rausgehen animiert, geht auch der Roman eine Runde in neuen Medienformen spazieren. Ich probiere hier irgendwas, und falls du zugucken willst, wie die Geschichte das Fliegen lernt: Ich stoße jeden Sonntag einen neuen `git commit` an, und die CI-Pipeline deployed die neuen Inhalte hier auf wolke7000.com. Komm nächste Woche noch einmal wieder.
 
 ## About
 
+Wolke7000.com is the Digital Garden of **Wolke 7000**M; a Solarpunk project centered on flying ships and a better future.
+
+
 ![](https://wolke7000.com/imgs/markus_pic.jpg)
 
-Ich bin Markus. Meine Website findest du hier: [markus6000.com](https://markus6000.com/). Falls du mir eine Mail schreiben möchtest, lass gerne von dir hören: markusmeyer2000 [at] protonmail.com.
-
+I’m Markus. You can find my website here: [markus6000.com](https://markus6000.com/). If you would like to send me an email, feel free to reach out: markusmeyer2000 [at] protonmail.com.

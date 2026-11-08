@@ -5,38 +5,37 @@ location: tempelhof-diskoord
 ---
 
 
-> [!abstract] Kurzdefinition  
-> Die **F_INFINITY** ist ein bewaffneter Hochleistungs-Trimaran für Wasser- und Himmelsfahrt. Je ein vollständiger [[Candytron]] sitzt achtern in jedem Außenrumpf. Der Hauptrumpf enthält die Dockgasse für Funkys Speedboat **FLITZA**. Die INFINITY ist schneller und wendiger als die übrigen Schiffe des Himmelfahrtskommandos, besitzt aber nur leichte Selbstverteidigungsbewaffnung.
-
-## Volier
+![[infinity_1.png]]
 
 
-## Daten
+> [!abstract] Description
+> The **INFINITY** is a high-performance, armed trimaran capable of both aquatic and aerial travel, under control of Captain [[Salt Brah]]. A complete [[Candytron]] unit is housed in the aft section of each outrigger hull. The main hull contains a docking bay for Funky’s speedboat, **FLITZA**. While the INFINITY is faster and more maneuverable than the other vessels in the "suicide squad" (Suicide Squad), it carries only light defensive weaponry.
 
-|Merkmal|Wert|
-|---|---|
-|Schiffstyp|bewaffneter Trimaran-Kutter|
-|Kennung|F_INFINITY|
-|Bau-/Umbaujahr|2126|
-|Gesamtlänge|**22,0 m**|
-|Länge an der Wasserlinie|**21,2 m**|
-|Gesamtbreite|**9,0 m**|
-|Breite mit ausgefahrenem Flugrigg|**30 m**|
-|Breite des Hauptrumpfs|**3,7 m**|
-|Tiefgang bei 53 t|**1,35 m**|
-|Freibord am Hauptrumpf|**2,1 m**|
-|Masthöhe über Wasserlinie|**16,0 m**|
-|Leermasse|**34 t**|
-|typische Einsatzmasse|**53 t**|
-|maximale reguläre Flugmasse|**65 t**|
-|strukturelle Überlastmasse|**78 t; Wasserfahrt erlaubt, Flug verboten**|
-|reguläre Besatzung|**3 Personen**|
-|zusätzliche Personen|**bis 5 kurzfristig**|
-|Candytrons|**2 vollständige Einheiten**|
-|Flugsegelfläche|**760 m²**|
-|Standard-Reisefahrt|**165 km/h IAS**|
-|Flottenfahrt|**145 km/h IAS**|
-|strukturelle Höchstfahrt|**225 km/h IAS**|
+## Dovecote
 
+## Data
 
-## Volier
+| Feature                         | Value                                                       |
+| ------------------------------- | ----------------------------------------------------------- |
+| Vessel Type                     | Armed trimaran cutter                                       |
+| Identifier                      | F_INFINITY                                                  |
+| Year of Construction/Conversion | 2126                                                        |
+| Overall Length                  | **22.0 m**                                                  |
+| Waterline Length                | **21.2 m**                                                  |
+| Overall Beam                    | **9.0 m**                                                   |
+| Beam with extended flight rig   | **30 m**                                                    |
+| Main Hull Beam                  | **3.7 m**                                                   |
+| Draft at 53 t                   | **1.35 m**                                                  |
+| Freeboard (main hull)           | **2.1 m**                                                   |
+| Mast Height above Waterline     | **16.0 m**                                                  |
+| Empty Mass                      | **34 t**                                                    |
+| Typical Operational Mass        | **53 t**                                                    |
+| Maximum Standard Flight Mass    | **65 t**                                                    |
+| Structural Overload Mass        | **78 t; waterborne operation permitted, flight prohibited** |
+| Standard Crew                   | **3 persons**                                               |
+| Additional Personnel            | **up to 5 (short-term)**                                    |
+| Candytrons                      | **2 complete units**                                        |
+| Flight Sail Area                | **760 m²**                                                  |
+| Standard Cruising Speed         | **165 km/h IAS**                                            |
+| Fleet Cruising Speed            | **145 km/h IAS**                                            |
+| Maximum Structural Speed        | **225 km/h IAS**                                            |
